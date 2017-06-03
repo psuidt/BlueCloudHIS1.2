@@ -1,0 +1,15 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.ZY_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.ZY_BLL.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZY_BLL\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.pdb
+E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\HIS.ZY_BLL.dll
+E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\HIS.ZY_BLL.pdb
+E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\ResolveAssemblyReference.cache
+E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.dll
+E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.pdb
+D:\efwplus产品目录\BlueCloudHIS1.2\Utility\HIS.ZY_BLL.dll
+D:\efwplus产品目录\BlueCloudHIS1.2\Utility\HIS.ZY_BLL.pdb
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.csprojResolveAssemblyReference.cache
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.dll
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.ZY_BLL\obj\Release\HIS.ZY_BLL.pdb

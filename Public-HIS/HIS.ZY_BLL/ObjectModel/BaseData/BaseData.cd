@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIS.ZY_BLL.ObjectModel.BaseData.BaseData">
+    <Position X="4.25" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAGAAAAAAAAAgAAAAAAAAAAAAAAAAgAQA=</HashCode>
+      <FileName>ObjectModel\BaseData\BaseData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.ObjectModel.BaseData.BaseDataFactory">
+    <Position X="4.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\BaseData\BaseDataFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="HIS.ZY_BLL.ObjectModel.BaseData.baseDataType">
+    <Position X="1.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEBAAAAAAAAAAAIgBABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\BaseData\BaseDataFactory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

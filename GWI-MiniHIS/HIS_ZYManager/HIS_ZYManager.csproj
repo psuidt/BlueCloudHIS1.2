@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_ZYManager</RootNamespace>
+    <AssemblyName>HIS_ZYManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CostOverSee, Version=1.0.3418.26722, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\CostOverSee.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI_DesReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3397.17136, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.MediInsInterface_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePromptManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PrintController.cs" />
+    <Compile Include="Action\OperationAction\FrmCostController.cs" />
+    <Compile Include="Action\OperationAction\IFrmCostView.cs" />
+    <Compile Include="日常业务\FrmCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmCost.Designer.cs">
+      <DependentUpon>FrmCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmChargeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmChargeRpt.Designer.cs">
+      <DependentUpon>FrmChargeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmInPatientRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmInPatientRpt.Designer.cs">
+      <DependentUpon>FrmInPatientRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmOutPatientRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmOutPatientRpt.Designer.cs">
+      <DependentUpon>FrmOutPatientRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmPatFeeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmPatFeeRpt.Designer.cs">
+      <DependentUpon>FrmPatFeeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmPatientNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmPatientNum.Designer.cs">
+      <DependentUpon>FrmPatientNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\GraphControl.cs" />
+    <Compile Include="药品统领\DsMessageData.cs">
+      <DependentUpon>DsMessageData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="药品统领\DsMessageData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsMessageData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="药品统领\FrmAddDrugMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品统领\FrmAddDrugMessage.Designer.cs">
+      <DependentUpon>FrmAddDrugMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药品统领\FrmCollectDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品统领\FrmCollectDrug.Designer.cs">
+      <DependentUpon>FrmCollectDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药品统领\FrmStatDrugMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品统领\FrmStatDrugMessage.Designer.cs">
+      <DependentUpon>FrmStatDrugMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmBadTicketManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmBadTicketManager.Designer.cs">
+      <DependentUpon>FrmBadTicketManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Action\OperationAction\BaseController.cs" />
+    <Compile Include="Action\OperationAction\FrmPresManagerController.cs" />
+    <Compile Include="Action\OperationAction\FrmRegisterController.cs" />
+    <Compile Include="Action\OperationAction\IFrmPresManagerView.cs" />
+    <Compile Include="Action\OperationAction\IFrmRegisterView.cs" />
+    <Compile Include="Action\OperationAction\IBaseView.cs" />
+    <Compile Include="日常业务\FrmClearPatData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmClearPatData.Designer.cs">
+      <DependentUpon>FrmClearPatData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmPresManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmPresManager.Designer.cs">
+      <DependentUpon>FrmPresManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmSearchPat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmSearchPat.Designer.cs">
+      <DependentUpon>FrmSearchPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmAdjustInvoiceNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmAdjustInvoiceNo.Designer.cs">
+      <DependentUpon>FrmAdjustInvoiceNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmAllotInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmAllotInvoice.Designer.cs">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmInvoiceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\InvoiceManager\FrmInvoiceManager.Designer.cs">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Action\QueryAction\FrmAllAccountController.cs" />
+    <Compile Include="Action\QueryAction\IFrmAllAccountView.cs" />
+    <Compile Include="查询统计\老报表\DataSet_Rpt.cs">
+      <DependentUpon>DataSet_Rpt.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\DataSet_Rpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Rpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmAccount.Designer.cs">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmCharge.Designer.cs">
+      <DependentUpon>FrmCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmCostDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmCostDiag.Designer.cs">
+      <DependentUpon>FrmCostDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmCostList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmCostList.Designer.cs">
+      <DependentUpon>FrmCostList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmAllAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmAllAccount.Designer.cs">
+      <DependentUpon>FrmAllAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmCostTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmCostTotal.Designer.cs">
+      <DependentUpon>FrmCostTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmDeptRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmDeptRpt.Designer.cs">
+      <DependentUpon>FrmDeptRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmItemList.Designer.cs">
+      <DependentUpon>FrmItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmTicketManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmTicketManage.Designer.cs">
+      <DependentUpon>FrmTicketManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmFeeRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmFeeRpt.Designer.cs">
+      <DependentUpon>FrmFeeRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmKJDeptRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmKJDeptRpt.Designer.cs">
+      <DependentUpon>FrmKJDeptRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmPatientRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmPatientRpt.Designer.cs">
+      <DependentUpon>FrmPatientRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmTicketRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmTicketRpt.Designer.cs">
+      <DependentUpon>FrmTicketRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmTicketTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\老报表\FrmTicketTotal.Designer.cs">
+      <DependentUpon>FrmTicketTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\ZYBaseFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\ZYBaseFrom.Designer.cs">
+      <DependentUpon>ZYBaseFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="日常业务\FrmCost.resx">
+      <DependentUpon>FrmCost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmChargeRpt.resx">
+      <DependentUpon>FrmChargeRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmInPatientRpt.resx">
+      <DependentUpon>FrmInPatientRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmOutPatientRpt.resx">
+      <DependentUpon>FrmOutPatientRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmPatFeeRpt.resx">
+      <DependentUpon>FrmPatFeeRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmPatientNum.resx">
+      <DependentUpon>FrmPatientNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品统领\FrmAddDrugMessage.resx">
+      <DependentUpon>FrmAddDrugMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品统领\FrmCollectDrug.resx">
+      <DependentUpon>FrmCollectDrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品统领\FrmStatDrugMessage.resx">
+      <DependentUpon>FrmStatDrugMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmAccount.resx">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmBadTicketManager.resx">
+      <DependentUpon>FrmBadTicketManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmCharge.resx">
+      <DependentUpon>FrmCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmClearPatData.resx">
+      <DependentUpon>FrmClearPatData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmCostDiag.resx">
+      <DependentUpon>FrmCostDiag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmCostList.resx">
+      <DependentUpon>FrmCostList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmPresManager.resx">
+      <DependentUpon>FrmPresManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmSearchPat.resx">
+      <DependentUpon>FrmSearchPat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\InvoiceManager\FrmAdjustInvoiceNo.resx">
+      <DependentUpon>FrmAdjustInvoiceNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\InvoiceManager\FrmAllotInvoice.resx">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\InvoiceManager\FrmInvoiceManager.resx">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmAllAccount.resx">
+      <DependentUpon>FrmAllAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\老报表\FrmCostTotal.resx">
+      <DependentUpon>FrmCostTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\老报表\FrmDeptRpt.resx">
+      <DependentUpon>FrmDeptRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmItemList.resx">
+      <DependentUpon>FrmItemList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmTicketManage.resx">
+      <DependentUpon>FrmTicketManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmFeeRpt.resx">
+      <DependentUpon>FrmFeeRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\老报表\FrmKJDeptRpt.resx">
+      <DependentUpon>FrmKJDeptRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\老报表\FrmPatientRpt.resx">
+      <DependentUpon>FrmPatientRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmTicketRpt.resx">
+      <DependentUpon>FrmTicketRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\老报表\FrmTicketTotal.resx">
+      <DependentUpon>FrmTicketTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\ZYBaseFrom.resx">
+      <DependentUpon>ZYBaseFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="查询统计\老报表\DataSet_Rpt.xsc">
+      <DependentUpon>DataSet_Rpt.xsd</DependentUpon>
+    </None>
+    <None Include="查询统计\老报表\DataSet_Rpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Rpt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="查询统计\老报表\DataSet_Rpt.xss">
+      <DependentUpon>DataSet_Rpt.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_page.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_accept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_history.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_network.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_package_get.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_cross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_user_dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re_left_icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\复制.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪切.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\目录.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\日期.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设计报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索~.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粘贴.gif" />
+    <None Include="Action\QueryAction\AllAccount.cd" />
+    <None Include="药品统领\DsMessageData.xsc">
+      <DependentUpon>DsMessageData.xsd</DependentUpon>
+    </None>
+    <None Include="药品统领\DsMessageData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsMessageData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="药品统领\DsMessageData.xss">
+      <DependentUpon>DsMessageData.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Interface\HIS.Interface.csproj">
+      <Project>{6798B52A-D999-4005-94BF-D92EA602A0D9}</Project>
+      <Name>HIS.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Public_BLL\HIS.Public_BLL.csproj">
+      <Project>{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}</Project>
+      <Name>HIS.Public_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.ZY_BLL\HIS.ZY_BLL.csproj">
+      <Project>{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}</Project>
+      <Name>HIS.ZY_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS_PublicManager\HIS_PublicManager.csproj">
+      <Project>{A0328ED7-13B4-49A7-8093-710E1ACAD80E}</Project>
+      <Name>HIS_PublicManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

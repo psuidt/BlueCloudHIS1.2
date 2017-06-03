@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{024DC798-990B-419E-B1D9-B5C06C679C01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.MZ_BLL</RootNamespace>
+    <AssemblyName>HIS.MZ_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HIS.Base_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Interface, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.MediInsInterface_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Public_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountBook\BaseAccountBook.cs" />
+    <Compile Include="BaseDataSet.cs" />
+    <Compile Include="BaseDataController.cs" />
+    <Compile Include="Controllers\CardController.cs" />
+    <Compile Include="Controllers\ChargeControl.cs" />
+    <Compile Include="ChargeObject\BaseCharge.cs" />
+    <Compile Include="ChargeObject\ChargeFactory.cs" />
+    <Compile Include="ChargeObject\GeneralCharge.cs" />
+    <Compile Include="ChargeObject\GeneralChargeEx.cs" />
+    <Compile Include="ChargeObject\NccmCharge.cs" />
+    <Compile Include="AccountBook\CollectAccountBook.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ErrorWriter.cs" />
+    <Compile Include="Exceptions\OperatorException.cs" />
+    <Compile Include="ILControl.cs" />
+    <Compile Include="InsurInterface\IInsureCharge.cs" />
+    <Compile Include="InsurInterface\InsurInterfaceFactory.cs" />
+    <Compile Include="InsurInterface\MZ_NccmInterface.cs" />
+    <Compile Include="InsurInterface\NcmsInterfaceException.cs" />
+    <Compile Include="Invoice\Invoice.cs" />
+    <Compile Include="Invoice\InvoiceManager.cs" />
+    <Compile Include="Invoice\BaseInvoice.cs" />
+    <Compile Include="Invoice\RegisterInvoice.cs" />
+    <Compile Include="MZClinicInterface.cs" />
+    <Compile Include="MZ_DAL.cs" />
+    <Compile Include="OPDParamter.cs" />
+    <Compile Include="Patient\BasePatient.cs" />
+    <Compile Include="Patient\OutPatient.cs" />
+    <Compile Include="Patient\RegPatient.cs" />
+    <Compile Include="AccountBook\PrivyAccountBook.cs" />
+    <Compile Include="Controllers\PrescriptionController.cs" />
+    <Compile Include="AccountBook\PrivyAccountBookController.cs" />
+    <Compile Include="PrescMoneyCalculate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicDataReader.cs" />
+    <Compile Include="Query\BaseQuery.cs" />
+    <Compile Include="Query\InvoiceQuery.cs" />
+    <Compile Include="Query\PatientQuery.cs" />
+    <Compile Include="Query\PrescriptionQuery.cs" />
+    <Compile Include="Controllers\RegController.cs" />
+    <Compile Include="RegisterObject\BaseRegister.cs" />
+    <Compile Include="RegisterObject\GeneralRegister.cs" />
+    <Compile Include="RegisterObject\RegisterFactory.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Report\BaseReport.cs" />
+    <Compile Include="Report\DepartmentIncomeReport.cs" />
+    <Compile Include="Report\DoctorIncomeReport.cs" />
+    <Compile Include="Report\PatientFeeReport.cs" />
+    <Compile Include="Report\PatientTypeIncomReport.cs" />
+    <Compile Include="Report\PerformOfficeIncomeReport.cs" />
+    <Compile Include="Report\RegisterPersonTimeReport.cs" />
+    <Compile Include="Report\TollerIncomeReport.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="UserCustomSetting.cs" />
+    <Compile Include="YP_Interface.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

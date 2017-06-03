@@ -1,0 +1,7 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.ZYNurse_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.ZYNurse_BLL.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZYNurse_BLL\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZYNurse_BLL\obj\Release\HIS.ZYNurse_BLL.Properties.Resources.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZYNurse_BLL\obj\Release\HIS.ZYNurse_BLL.csproj.GenerateResource.Cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZYNurse_BLL\obj\Release\HIS.ZYNurse_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.ZYNurse_BLL\obj\Release\HIS.ZYNurse_BLL.pdb

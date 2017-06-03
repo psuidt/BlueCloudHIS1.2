@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E214F513-F11C-4930-88DC-1D761E7E264D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_DJSFManager</RootNamespace>
+    <AssemblyName>HIS_DJSFManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="窗口\FrmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmAccount.Designer.cs">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmCharge.Designer.cs">
+      <DependentUpon>FrmCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmChargeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmChargeInfo.Designer.cs">
+      <DependentUpon>FrmChargeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="窗口\FrmAccount.resx">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmCharge.resx">
+      <DependentUpon>FrmCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmChargeInfo.resx">
+      <DependentUpon>FrmChargeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmPatientList.resx">
+      <DependentUpon>FrmPatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmUnCharge.resx">
+      <DependentUpon>FrmUnCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\FrmViewInvoice.resx">
+      <DependentUpon>FrmViewInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\InvoiceManager\FrmAllotInvoice.resx">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\InvoiceManager\FrmInvoiceManager.resx">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Query\FrmInvoiceQuery.resx">
+      <DependentUpon>FrmInvoiceQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Query\FrmPrescriptionQuery.resx">
+      <DependentUpon>FrmPrescriptionQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="窗口\FrmPatientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmPatientList.Designer.cs">
+      <DependentUpon>FrmPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmUnCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmUnCharge.Designer.cs">
+      <DependentUpon>FrmUnCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\FrmViewInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\FrmViewInvoice.Designer.cs">
+      <DependentUpon>FrmViewInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\InvoiceManager\FrmAllotInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\InvoiceManager\FrmAllotInvoice.Designer.cs">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\InvoiceManager\FrmInvoiceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\InvoiceManager\FrmInvoiceManager.Designer.cs">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Query\FrmInvoiceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Query\FrmInvoiceQuery.Designer.cs">
+      <DependentUpon>FrmInvoiceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Query\FrmPrescriptionQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Query\FrmPrescriptionQuery.Designer.cs">
+      <DependentUpon>FrmPrescriptionQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\AccountBook\BaseAccountBook.cs" />
+    <Compile Include="类\AccountBook\CollectAccountBook.cs" />
+    <Compile Include="类\AccountBook\PrivyAccountBook.cs" />
+    <Compile Include="类\ChargeControl.cs" />
+    <Compile Include="类\ChargeObject\BaseCharge.cs" />
+    <Compile Include="类\ChargeObject\ChargeFactory.cs" />
+    <Compile Include="类\ChargeObject\GeneralCharge.cs" />
+    <Compile Include="类\ChargeObject\GeneralChargeEx.cs" />
+    <Compile Include="类\DataReader.cs" />
+    <Compile Include="类\Enums.cs" />
+    <Compile Include="类\InvoiceManager.cs" />
+    <Compile Include="类\Invoice\BaseInvoice.cs" />
+    <Compile Include="类\Invoice\Invoice.cs" />
+    <Compile Include="类\Item.cs" />
+    <Compile Include="类\Patient\BasePatient.cs" />
+    <Compile Include="类\Patient\OutPatient.cs" />
+    <Compile Include="类\Patient\RegPatient.cs" />
+    <Compile Include="类\PrintController.cs" />
+    <Compile Include="类\PrivyAccountBookController.cs" />
+    <Compile Include="类\Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\GWI_DesReport\GWI_DesReport.csproj">
+      <Project>{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}</Project>
+      <Name>GWI_DesReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.LocalDb\HIS.LocalDb.csproj">
+      <Project>{13E4995E-EEEE-47D0-980A-119F927B887D}</Project>
+      <Name>HIS.LocalDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.DownUpLoadData\HIS.DownUpLoadData.csproj">
+      <Project>{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}</Project>
+      <Name>HIS.DownUpLoadData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MSAccess\HIS.MSAccess.csproj">
+      <Project>{589BB126-84AA-4D83-84A4-FDC44A724F9C}</Project>
+      <Name>HIS.MSAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="grdesLib">
+      <Guid>{0CDAC26E-8F92-47EE-9E2E-844DBF787039}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C867}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BFA75CD-F35C-466F-B797-742E0D97CF6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_YPManager</RootNamespace>
+    <AssemblyName>HIS_YPManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3365.22738, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Interface, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2, Version=8.1.2.1, Culture=neutral, PublicKeyToken=7c307b91aa13d208">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\IBM.Data.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="日常业务\药品入库\FrmSupportHis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmSupportHis.Designer.cs">
+      <DependentUpon>FrmSupportHis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\FrmQueryDispOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\FrmQueryDispOrder.Designer.cs">
+      <DependentUpon>FrmQueryDispOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugDispenseJG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugDispenseJG.Designer.cs">
+      <DependentUpon>ZYFrmDrugDispenseJG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmPresDispense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmPresDispense.Designer.cs">
+      <DependentUpon>ZYFrmPresDispense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\采购计划制定\FrmStockPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\采购计划制定\FrmStockPlan.Designer.cs">
+      <DependentUpon>FrmStockPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDeptSetType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDeptSetType.Designer.cs">
+      <DependentUpon>FrmDeptSetType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugDept.Designer.cs">
+      <DependentUpon>FrmDrugDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmSetStoreLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmSetStoreLimit.Designer.cs">
+      <DependentUpon>FrmSetStoreLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\采购计划制定\FrmStockControl.cs" />
+    <Compile Include="日常业务\药品入库\FrmSelectOutDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmSelectOutDept.Designer.cs">
+      <DependentUpon>FrmSelectOutDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmInMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmInMaster.Designer.cs">
+      <DependentUpon>FrmInMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmInOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmInOrder.Designer.cs">
+      <DependentUpon>FrmInOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品调价\FrmYPAdjMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品调价\FrmYPAdjMaster.Designer.cs">
+      <DependentUpon>FrmYPAdjMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品调价\FrmYPAdjOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品调价\FrmYPAdjOrder.Designer.cs">
+      <DependentUpon>FrmYPAdjOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmSupportDic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmSupportDic.Designer.cs">
+      <DependentUpon>FrmSupportDic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckMaster.Designer.cs">
+      <DependentUpon>FrmCheckMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckOrder.Designer.cs">
+      <DependentUpon>FrmCheckOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品盘点\FrmCheckType.Designer.cs">
+      <DependentUpon>FrmCheckType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugByname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugByname.Designer.cs">
+      <DependentUpon>FrmDrugByname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\MZFrmDrugRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\MZFrmDrugRefund.Designer.cs">
+      <DependentUpon>MZFrmDrugRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\MZFrmDrugDispense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\MZFrmDrugDispense.Designer.cs">
+      <DependentUpon>MZFrmDrugDispense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugDispense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugDispense.Designer.cs">
+      <DependentUpon>ZYFrmDrugDispense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugMaker.Designer.cs">
+      <DependentUpon>FrmDrugMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药房发退药\ZYFrmDrugRefund.Designer.cs">
+      <DependentUpon>ZYFrmDrugRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmDrugSpec.Designer.cs">
+      <DependentUpon>FrmDrugSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmYFApplyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmYFApplyMaster.Designer.cs">
+      <DependentUpon>FrmYFApplyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmYFApplyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品入库\FrmYFApplyOrder.Designer.cs">
+      <DependentUpon>FrmYFApplyOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmDispenseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmDispenseQuery.Designer.cs">
+      <DependentUpon>FrmDispenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmIOSQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmIOSQuery.Designer.cs">
+      <DependentUpon>FrmIOSQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmOrderAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmOrderAccount.Designer.cs">
+      <DependentUpon>FrmOrderAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品出库\FrmOutMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品出库\FrmOutMaster.Designer.cs">
+      <DependentUpon>FrmOutMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品出库\FrmOutOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品出库\FrmOutOrder.Designer.cs">
+      <DependentUpon>FrmOutOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据维护\FrmProductDic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据维护\FrmProductDic.Designer.cs">
+      <DependentUpon>FrmProductDic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\药品月结\FrmMonthAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\药品月结\FrmMonthAccount.Designer.cs">
+      <DependentUpon>FrmMonthAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmProductIOQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmProductIOQuery.Designer.cs">
+      <DependentUpon>FrmProductIOQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmStoreLimitQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmStoreLimitQuery.Designer.cs">
+      <DependentUpon>FrmStoreLimitQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmStoreQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmStoreQuery.Designer.cs">
+      <DependentUpon>FrmStoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="框架接口\InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="日常业务\药品入库\FrmSupportHis.resx">
+      <DependentUpon>FrmSupportHis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\FrmQueryDispOrder.resx">
+      <DependentUpon>FrmQueryDispOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\ZYFrmDrugDispenseJG.resx">
+      <DependentUpon>ZYFrmDrugDispenseJG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\ZYFrmPresDispense.resx">
+      <DependentUpon>ZYFrmPresDispense.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\采购计划制定\FrmStockPlan.resx">
+      <DependentUpon>FrmStockPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmDeptSetType.resx">
+      <DependentUpon>FrmDeptSetType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmDrugDept.resx">
+      <DependentUpon>FrmDrugDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmSetStoreLimit.resx">
+      <DependentUpon>FrmSetStoreLimit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品入库\FrmSelectOutDept.resx">
+      <DependentUpon>FrmSelectOutDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品入库\FrmInMaster.resx">
+      <DependentUpon>FrmInMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品入库\FrmInOrder.resx">
+      <DependentUpon>FrmInOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品调价\FrmYPAdjMaster.resx">
+      <DependentUpon>FrmYPAdjMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品调价\FrmYPAdjOrder.resx">
+      <DependentUpon>FrmYPAdjOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmSupportDic.resx">
+      <DependentUpon>FrmSupportDic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品盘点\FrmCheckMaster.resx">
+      <DependentUpon>FrmCheckMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品盘点\FrmCheckOrder.resx">
+      <DependentUpon>FrmCheckOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品盘点\FrmCheckType.resx">
+      <DependentUpon>FrmCheckType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmDrugByname.resx">
+      <DependentUpon>FrmDrugByname.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\MZFrmDrugRefund.resx">
+      <DependentUpon>MZFrmDrugRefund.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\MZFrmDrugDispense.resx">
+      <DependentUpon>MZFrmDrugDispense.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\ZYFrmDrugDispense.resx">
+      <DependentUpon>ZYFrmDrugDispense.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmDrugMaker.resx">
+      <DependentUpon>FrmDrugMaker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药房发退药\ZYFrmDrugRefund.resx">
+      <DependentUpon>ZYFrmDrugRefund.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmDrugSpec.resx">
+      <DependentUpon>FrmDrugSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品入库\FrmYFApplyMaster.resx">
+      <DependentUpon>FrmYFApplyMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品入库\FrmYFApplyOrder.resx">
+      <DependentUpon>FrmYFApplyOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmDispenseQuery.resx">
+      <DependentUpon>FrmDispenseQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmIOSQuery.resx">
+      <DependentUpon>FrmIOSQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmOrderAccount.resx">
+      <DependentUpon>FrmOrderAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品出库\FrmOutMaster.resx">
+      <DependentUpon>FrmOutMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品出库\FrmOutOrder.resx">
+      <DependentUpon>FrmOutOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据维护\FrmProductDic.resx">
+      <DependentUpon>FrmProductDic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\药品月结\FrmMonthAccount.resx">
+      <DependentUpon>FrmMonthAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmProductIOQuery.resx">
+      <DependentUpon>FrmProductIOQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmStoreLimitQuery.resx">
+      <DependentUpon>FrmStoreLimitQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmStoreQuery.resx">
+      <DependentUpon>FrmStoreQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmValidityDate.resx">
+      <DependentUpon>FrmValidityDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\HIS.Model.YP_BynameDic.datasource" />
+    <None Include="Properties\DataSources\HIS.Model.YP_DRMaster.datasource" />
+    <None Include="Properties\DataSources\HIS.Model.YP_DROrder.datasource" />
+    <None Include="Properties\DataSources\HIS.Model.YP_ProductDic.datasource" />
+    <None Include="Properties\DataSources\HIS.Model.YP_SupportDic.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="统计查询\FrmValidityDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmValidityDate.Designer.cs">
+      <DependentUpon>FrmValidityDate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.YP_BLL\HIS.YP_BLL.csproj">
+      <Project>{DF256C72-00AE-4D26-A821-698B088251F5}</Project>
+      <Name>HIS.YP_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TownShipHIS", "GWI-MiniHIS\TownShipHIS\TownShipHIS.csproj", "{8B6138A3-B108-42F7-9713-944D27DBBB35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{643E8AC5-61A3-44C6-9D92-FFBED1128545}"
+	ProjectSection(SolutionItems) = preProject
+		GWI-MiniHIS\GWI-MiniHIS.vsmdi = GWI-MiniHIS\GWI-MiniHIS.vsmdi
+		GWI-MiniHIS\LocalTestRun.testrunconfig = GWI-MiniHIS\LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_ZYDocManager", "GWI-MiniHIS\HIS_ZYDocManager\HIS_ZYDocManager.csproj", "{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.ZYDoc_BLL", "Public-HIS\HIS.ZYDoc_BLL\HIS.ZYDoc_BLL.csproj", "{8E10CEE1-A2D4-413E-B8D3-36134976B56D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E10CEE1-A2D4-413E-B8D3-36134976B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E10CEE1-A2D4-413E-B8D3-36134976B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E10CEE1-A2D4-413E-B8D3-36134976B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E10CEE1-A2D4-413E-B8D3-36134976B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

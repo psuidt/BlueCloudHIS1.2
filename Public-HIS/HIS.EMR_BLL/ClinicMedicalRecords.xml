@@ -1,0 +1,37 @@
+﻿<chs>
+  <table>
+    <row type="0">
+      <dahid>档案号id</dahid>
+      <zs>主诉</zs>
+      <xbs>现病史</xbs>
+      <jws>既往史</jws>
+      <jzs>家族史</jzs>
+      <gms>过敏史</gms>
+      <yjs>月经史</yjs>
+      <hys>婚育史</hys>
+      <tw>体温</tw>
+      <hx>呼吸</hx>
+      <mb>脉搏</mb>
+      <ssy>SBP</ssy>
+      <szy>DBP</szy>
+      <tgjc>其他体格检查信息</tgjc>
+      <hzjc>辅助检查</hzjc>
+      <zd>诊断</zd>
+      <zd2>诊断2</zd2>
+      <zd3>诊断3</zd3>
+      <zd4>诊断4</zd4>
+      <zdqt>其他诊断</zdqt>
+      <cf>处方信息</cf>
+      <jzrq>就诊日期</jzrq> 
+      <jzys>就诊医生</jzys>
+      <jzjg>就诊机构名称</jzjg>
+      <jgdm>就诊机构代码</jgdm>
+      <djr>登记人</djr>
+      <djrq>登记日期</djrq>
+      <grs>个人史</grs>
+      <his_blbh>病历编号</his_blbh>
+      <sfxz></sfxz>
+      <xzrq></xzrq>
+    </row>
+  </table>
+</chs>

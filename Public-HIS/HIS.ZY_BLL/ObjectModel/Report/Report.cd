@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIS.ZY_BLL.Report.ChargeDateReport">
+    <Position X="2.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAQAAAAAAAACAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\ChargeDateReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.DataReport">
+    <Position X="4" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAIAAABBQ=</HashCode>
+      <FileName>ObjectModel\Report\DataReport.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="operationList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.CTicketRpt">
+    <Position X="2.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAUAAAAFQAAAAAAAAAAEAAAECoAAAAAIBbCAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\CTicketRpt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.OperationDataList">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAABCIAIAAAAAAAAAAAAAAAAAAABAAAAAIA=</HashCode>
+      <FileName>ObjectModel\Report\OperationDataList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.TicketReport">
+    <Position X="5" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\TicketReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.TicketRpt">
+    <Position X="5" Y="6.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>hKEIAAAjFQAwAAgEAAAQAAAQACABAAQAIOyCAAAACAA=</HashCode>
+      <FileName>ObjectModel\Report\TicketRpt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.AdvanceFeeReport">
+    <Position X="9.25" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAIAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\AdvanceFeeReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.AdvanceRpt">
+    <Position X="10" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAYAAgAHQAAAAAAAAAAAAAgACgAAQAAIASCAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\AdvanceRpt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.PatFeeReport">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\PatFeeReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.Report.PatFeeRpt">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAIAAAAFQAAAAgAAAAQAAAAACAAAAQAQAyCEAAACAA=</HashCode>
+      <FileName>ObjectModel\Report\PatFeeRpt.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="HIS.ZY_BLL.Report.IDataReport">
+    <Position X="15.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAEAAAAAAQAAAAAAAAACAAAAAAAACCAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\IDataReport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HIS.ZY_BLL.Report.IPatFeeDataReport">
+    <Position X="15" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\IDataReport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HIS.ZY_BLL.Report.IAdvanceDataReport">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Report\IAdvanceDataReport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="HIS.ZY_BLL.Report.Total_Type" Collapsed="true">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ObjectModel\Report\Enum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIS.ZY_BLL.Report.Item_Type" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAAg=</HashCode>
+      <FileName>ObjectModel\Report\Enum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIS.ZY_BLL.Report.Date_Type" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAARA=</HashCode>
+      <FileName>ObjectModel\Report\Enum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

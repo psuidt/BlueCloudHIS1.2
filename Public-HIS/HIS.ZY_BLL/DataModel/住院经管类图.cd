@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="HIS.ZY_BLL.Op_PatFee" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAABAA=</HashCode>
+      <FileName>DataModel\DataStruct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_Ticket" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qSADkrgEME4GhzAgAIELyMAAKthgiYgOIHSAhIo0IBg=</HashCode>
+      <FileName>DataModel\ZY_Ticket.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.PatientInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAZAQjgEZgIAAAAUgQAAAAKIAqOEgkAMoAISBgUMgAA=</HashCode>
+      <FileName>DataModel\PatientInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_Account" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADIQAOAABbASAAiAIjgmohAgACIjAERAgAQ0UEAhMBA=</HashCode>
+      <FileName>DataModel\ZY_Account.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_ChargeList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAjCIQQAABICEaiALMiCJEABgAEIAggAERQQAgBA=</HashCode>
+      <FileName>DataModel\ZY_ChargeList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_CostMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICtEFzCMOV5YCUiWL8pCrgBUPDBpIwQEgwAFTQAygBg=</HashCode>
+      <FileName>DataModel\ZY_CostMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_CostOrder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAADggABACAACEAQAABgAAAABgAAAAAAAARAAAABA=</HashCode>
+      <FileName>DataModel\ZY_CostOrder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_DRUGMESSAGE_MASTER" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAFAAAAAKAAAEAAAYIABAAAAAAEAAIEAAAACKAE=</HashCode>
+      <FileName>DataModel\ZY_DRUGMESSAGE_MASTER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_DRUGMESSAGE_ORDER" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCA4IhYhAOAECQcBEIAmBFLHNASoUEwhCCJgAAiFBc=</HashCode>
+      <FileName>DataModel\ZY_DRUGMESSAGE_ORDER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_INVOICE" Collapsed="true">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAQABAAgABAAQBAAABBAIIAIEABwABCAAAEAAA=</HashCode>
+      <FileName>DataModel\ZY_INVOICE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_PatList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgYSVjkKglQACMTEARjEgSQCCQkCAFA0MoAAByIQCDA=</HashCode>
+      <FileName>DataModel\ZY_PatList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HIS.ZY_BLL.DataModel.ZY_PresOrder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gYVEUXm8gNj4QyDXqIlwroGgGchjEpS0EyLKREEUQ7c=</HashCode>
+      <FileName>DataModel\ZY_PresOrder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="HIS.ZY_BLL.PatFee">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAIAAAAAAAIAAgAACAAIAAAAABAAIAAAAA=</HashCode>
+      <FileName>DataModel\DataStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="HIS.ZY_BLL.AccountFee">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAEAgAAAAIAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>DataModel\DataStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="HIS.ZY_BLL.AccountMenoyFee">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>DataModel\DataStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="HIS.ZY_BLL.DataModel.IPatientInfo">
+    <Position X="1.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAZAAjgEZgAAAAAQAAAAAACIAIGAAAAMAAICBgEMgAA=</HashCode>
+      <FileName>DataModel\IPatientInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

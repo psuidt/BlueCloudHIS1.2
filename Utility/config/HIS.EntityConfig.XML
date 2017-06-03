@@ -1,0 +1,2596 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HIS>
+<Entity code="BASE_WORK_UNIT"  name="BASE_WORK_UNIT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+</Entity>
+<Entity code="BASE_TEMPLATE_ITEM"  name="BASE_TEMPLATE_ITEM" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="TMPLATE_ID">TMPLATE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TMPLATE_NAME">TMPLATE_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TMPLATE_TYPE">TMPLATE_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EXEC_DEPT_ID">EXEC_DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXEC_DEPT_NAME">EXEC_DEPT_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CREATOR_ID">CREATOR_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CREATOR_NAME">CREATOR_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPT_NAME">DEPT_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SHARE_LEVEL">SHARE_LEVEL</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CREATE_DATE">CREATE_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_USEAGE_FEE"  name="BASE_USEAGE_FEE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USE_NAME">USE_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NUM">NUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="HSITEM_ID">HSITEM_ID</Field>
+</Entity>
+<Entity code="BASE_TEMPLATE_DETAIL"  name="BASE_TEMPLATE_DETAIL" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="TEMPLATE_ID">TEMPLATE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BIGITEMCODE">BIGITEMCODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DOSAGE">DOSAGE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FREQUEN_ID">FREQUEN_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FREQUEN_NAME">FREQUEN_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DAYS">DAYS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USAGE_NAME">USAGE_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="GROUP_FLAG">GROUP_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="SORT_NO">SORT_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="AMOUNT">AMOUNT</Field>
+</Entity>
+<Entity code="BASE_COMPLEX_DETAIL"  name="BASE_COMPLEX_DETAIL" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SERVICE_ITEM_ID">SERVICE_ITEM_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="NUM">NUM</Field>
+</Entity>
+<Entity code="BASE_COMPLEX_ITEM"  name="BASE_COMPLEX_ITEM" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="COMPLEX_NAME">COMPLEX_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_CONFIG"  name="BASE_CONFIG" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CONFIG">CONFIG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NOTE">NOTE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODULE_ID">MODULE_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CSJB">CSJB</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RWBZ">RWBZ</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BLBZ">BLBZ</Field>
+</Entity>
+<Entity code="BASE_DEPT_LAYER"  name="BASE_DEPT_LAYER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="LAYER_ID">LAYER_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="P_LAYER_ID">P_LAYER_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+</Entity>
+<Entity code="BASE_DEPT_PROPERTY"  name="BASE_DEPT_PROPERTY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="P_DEPT_ID">P_DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LAYER">LAYER</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE_CODE">TYPE_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NSDEPTCODE">NSDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MZ_FLAG">MZ_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ZY_FLAG">ZY_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="YJ_FLAG">YJ_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="JZ_FLAG">JZ_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETED">DELETED</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPTADDR">DEPTADDR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ISJZ">ISJZ</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ISFACT">ISFACT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SORT_ID">SORT_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="HZ_FLAG">HZ_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="SM_FLAG">SM_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+</Entity>
+<Entity code="BASE_DEPT_TYPE"  name="BASE_DEPT_TYPE" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SERVER">SERVER</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="COMMENT">COMMENT</Field>
+</Entity>
+<Entity code="BASE_DISEASE"  name="BASE_DISEASE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODING">CODING</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SERIALNO">SERIALNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ATTACH">ATTACH</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="COMMENT">COMMENT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SLIMIT">SLIMIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LLIMIT">LLIMIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SORT">SORT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SORTID">SORTID</Field>
+</Entity>
+<Entity code="BASE_DOCTOR_TYPE"  name="BASE_DOCTOR_TYPE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="TYPE_ID">TYPE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE_NAME">TYPE_NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GHF_ID">GHF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ZCF_ID">ZCF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JCF_ID">JCF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="FZF_ID">FZF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JGHF_ID">JGHF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JZCF_ID">JZCF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JJCF_ID">JJCF_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JFZF_ID">JFZF_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+</Entity>
+<Entity code="BASE_EMP_DEPT_ROLE"  name="BASE_EMP_DEPT_ROLE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ROLE_ID">ROLE_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEFAULT">DEFAULT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+</Entity>
+<Entity code="BASE_EMPLOYEE_PROPERTY"  name="BASE_EMPLOYEE_PROPERTY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SEX">SEX</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BRITHDAY">BRITHDAY</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MARITALS">MARITALS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MAX_DEGREE">MAX_DEGREE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NATIONALITY">NATIONALITY</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FOLK">FOLK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TECHNICAL">TECHNICAL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="BIRTHADDR">BIRTHADDR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOORADDR">DOORADDR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DOORSTREET">DOORSTREET</Field>
+<Field DataKey="none" DataType="INTEGER"  code="HOMEADDR">HOMEADDR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HOMESTREET">HOMESTREET</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HOME_TEL">HOME_TEL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HANDLE_TEL">HANDLE_TEL</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_BIT">DELETE_BIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FP_FLAG">FP_FLAG</Field>
+</Entity>
+<Entity code="BASE_GROUP"  name="BASE_GROUP" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ADMINISTRATORS">ADMINISTRATORS</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="EVERYONE">EVERYONE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PROPERTY">PROPERTY</Field>
+</Entity>
+<Entity code="BASE_GROUP_MENU"  name="BASE_GROUP_MENU" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODULE_ID">MODULE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MENU_ID">MENU_ID</Field>
+</Entity>
+<Entity code="BASE_GROUP_USER"  name="BASE_GROUP_USER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="USER_ID">USER_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+</Entity>
+<Entity code="BASE_HZK"  name="BASE_HZK" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="HZ">HZ</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PYM">PYM</Field>
+</Entity>
+<Entity code="BASE_ITEM_DEPT"  name="BASE_ITEM_DEPT" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>	
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEFAULT_FLAG">DEFAULT_FLAG</Field>
+</Entity>
+<Entity code="BASE_MENU"  name="BASE_MENU" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="MENU_ID">MENU_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SORT_ID">SORT_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DLL_NAME">DLL_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FUNCTION_NAME">FUNCTION_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FUNCTION_TAG">FUNCTION_TAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODULE_ID">MODULE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="P_MENU_ID">P_MENU_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MENU_TOOLBAR">MENU_TOOLBAR</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MENU_OUTLOOKBAR">MENU_OUTLOOKBAR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BLOB"  code="IMAGE">IMAGE</Field>
+</Entity>
+<Entity code="BASE_MODULE"  name="BASE_MODULE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="MODULE_ID">MODULE_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SORT_ID">SORT_ID</Field>
+</Entity>
+<Entity code="BASE_NATIONCO"  name="BASE_NATIONCO" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE2">CODE2</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDERS">ORDERS</Field>
+</Entity>
+<Entity code="BASE_ITEM_FAVORABLE"  name="BASE_ITEM_FAVORABLE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="PATTYPECODE">PATTYPECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMCODE">ITEMCODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ITEMTYPE_FLAG">ITEMTYPE_FLAG</Field>
+<Field DataKey="none" DataType="DOUBLE"  code="FAVORABLE_SCALE">FAVORABLE_SCALE</Field>
+</Entity>
+<Entity code="BASE_ITEMMX_FAVORABLE"  name="BASE_ITEMMX_FAVORABLE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="PATTYPECODE">PATTYPECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="DOUBLE"  code="FAVORABLE_SCALE">FAVORABLE_SCALE</Field>
+</Entity>
+<Entity code="BASE_PATIENTTYPE"  name="BASE_PATIENTTYPE" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+</Entity>
+<Entity code="BASE_PATIENTTYPE_COST"  name="BASE_PATIENTTYPE_COST" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="PATTYPECODE">PATTYPECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="DOUBLE"  code="FAVORABLE_SCALE">FAVORABLE_SCALE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FAVORABLE_TYPE">FAVORABLE_TYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MZ_FLAG">MZ_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ZY_FLAG">ZY_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDSAFECODE">MEDSAFECODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+</Entity>
+<Entity code="BASE_PYMWBM"  name="BASE_PYMWBM" type="Table" IsGB="True">
+<Field DataKey="none" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HZ">HZ</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="BASE_ROLE_DOCTOR"  name="BASE_ROLE_DOCTOR" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="DOC_ID">DOC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="YS_CODE">YS_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CF_RIGHT">CF_RIGHT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MZ_RIGHT">MZ_RIGHT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DM_RIGHT">DM_RIGHT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="YS_TYPEID">YS_TYPEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PASSWORD">PASSWORD</Field>
+</Entity>
+<Entity code="BASE_ROLE_NURSE"  name="BASE_ROLE_NURSE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="NURSE_ID">NURSE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PASSWORD">PASSWORD</Field>
+</Entity>
+<Entity code="BASE_SERVICE_ITEMS"  name="BASE_SERVICE_ITEMS" type="Table" IsGB="True">
+<Field DataKey="key" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="STD_CODE">STD_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NCMS_COMP_RATE">NCMS_COMP_RATE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="INSUR_TYPE">INSUR_TYPE</Field>
+</Entity>
+<Entity code="BASE_HOSPITAL_ITEMS"  name="BASE_HOSPITAL_ITEMS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+</Entity>
+<Entity code="BASE_STAT_BA"  name="BASE_STAT_BA" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_HS"  name="BASE_STAT_HS" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_ITEM"  name="BASE_STAT_ITEM" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MZKJ_CODE">MZKJ_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ZYKJ_CODE">ZYKJ_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MZFP_CODE">MZFP_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ZYFP_CODE">ZYFP_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HS_CODE">HS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BA_CODE">BA_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MZYB_CODE">MZYB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ZYYB_CODE">ZYYB_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ITEM_TYPE">ITEM_TYPE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CFLX_CODE">CFLX_CODE</Field>
+</Entity>
+<Entity code="BASE_STAT_MZFP"  name="BASE_STAT_MZFP" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_MZKJ"  name="BASE_STAT_MZKJ" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_MZYB"  name="BASE_STAT_MZYB" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_ZYFP"  name="BASE_STAT_ZYFP" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_ZYKJ"  name="BASE_STAT_ZYKJ" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_STAT_ZYYB"  name="BASE_STAT_ZYYB" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="BASE_SYSTEMUPDATE"  name="BASE_SYSTEMUPDATE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="TYPE">TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="UPDATE_TIME">UPDATE_TIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="VERSION">VERSION</Field>
+<Field DataKey="none" DataType="BLOB"  code="FILE_VALUE">FILE_VALUE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_USER"  name="BASE_USER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="USER_ID">USER_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PASSWORD">PASSWORD</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="YB_OPERATOR">YB_OPERATOR</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="JZ_OPERATOR">JZ_OPERATOR</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="JK_OPERATOR">JK_OPERATOR</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CHG_PWD_NEXTIME">CHG_PWD_NEXTIME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DENY_CHG_PWD">DENY_CHG_PWD</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PWD_NEVER_EXPIRE">PWD_NEVER_EXPIRE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CHG_PWD_LASTIME">CHG_PWD_LASTIME</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="PWD_EXPIRE_TIME">PWD_EXPIRE_TIME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="LOCK">LOCK</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CURFPNO">CURFPNO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CURSJNO">CURSJNO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CURTKDNO">CURTKDNO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CURYJNO">CURYJNO</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="MEMO">MEMO</Field>
+</Entity>
+<Entity code="BASE_WARD"  name="BASE_WARD" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WARD_NAME">WARD_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="JZ_FLAG">JZ_FLAG</Field>
+</Entity>
+<Entity code="BASE_WARDRDEPT"  name="BASE_WARDRDEPT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MINEXECYE">MINEXECYE</Field>
+</Entity>
+<Entity code="BASE_EXAMINEPLACE"  name="BASE_EXAMINEPLACE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+</Entity>
+<Entity code="BASE_ORDER_ITEMS"  name="BASE_ORDER_ITEMS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_NAME">ORDER_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_UNIT">ORDER_UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_TYPE">ORDER_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEFAULT_USAGE">DEFAULT_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_BIT">DELETE_BIT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BOOK_DATE">BOOK_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="DEL_DATE">DEL_DATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+</Entity>
+<Entity code="BASE_ORDER_TYPE"  name="BASE_ORDER_TYPE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="COMMENTS">COMMENTS</Field>
+</Entity>
+<Entity code="BASE_MEDICAL_CLASS"  name="BASE_MEDICAL_CLASS" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDERS">ORDERS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="COMMENT">COMMENT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CLASS_TYPE">CLASS_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRINTTYPE">PRINTTYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MULTSELECT">MULTSELECT</Field>
+</Entity>
+<Entity code="BASE_ENTRUST"  name="BASE_ENTRUST" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_FREQUENCY"  name="BASE_FREQUENCY" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="EXECNUM">EXECNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CYCLEDAY">CYCLEDAY</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECTIME">EXECTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_PARAM"  name="BASE_PARAM" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_SAMPLE"  name="BASE_SAMPLE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_USAGEDICTION"  name="BASE_USAGEDICTION" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PRINT_LONG">PRINT_LONG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PRINT_TEMP">PRINT_TEMP</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="BASE_USAGE_USETYPE_ROLE"  name="BASE_USAGE_USETYPE_ROLE" type="Table" IsGB="True">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE_NAME">TYPE_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="USAGE_ID">USAGE_ID</Field>
+</Entity>
+<Entity code="GB_ITEM_NAME"  name="GB_ITEM_NAME" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="GB_CODE">GB_CODE</Field>
+</Entity>
+<Entity code="GB_SUB_ITEM"  name="GB_SUB_ITEM" type="Table" IsGB="True">
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SUB_CODE">SUB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SUB_ITEM_NAME">SUB_ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DESCRIBTION">DESCRIBTION</Field>
+</Entity>
+<Entity code="GB_STANDARD_SERVICE_ITEMS"  name="GB_STANDARD_SERVICE_ITEMS" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="XH">XH</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CWFL">CWFL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FBM">FBM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BM">BM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MC">MC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NH">NH</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="YBCW">YBCW</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DW">DW</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SM">SM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SJJG">SJJG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="EJJG">EJJG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="YJJG">YJJG</Field>
+</Entity>
+<Entity code="BASE_TABLE_CONFIG"  name="BASE_TABLE_CONFIG" type="Table" IsGB="True">
+<Field DataKey="none" DataType="CHARACTER"  code="TABLE_DB_NAME">TABLE_DB_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="TABLE_CN_NAME">TABLE_CN_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="FIELD_DB_NAME">FIELD_DB_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="FIELD_CN_NAME">FIELD_CN_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FIELD_DB_TYPE">FIELD_DB_TYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="IS_PRIMARY_KEY">IS_PRIMARY_KEY</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUTO_INCREASE">AUTO_INCREASE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ALLOW_EMPTY">ALLOW_EMPTY</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MAXLENGTH">MAXLENGTH</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="IS_FOREIGNER_KEY">IS_FOREIGNER_KEY</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="FOREIGNER_TABLE">FOREIGNER_TABLE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="FOREIGNER_FIELD_DB_NAME">FOREIGNER_FIELD_DB_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="FOREIGNER_FIELD_CN_NAME">FOREIGNER_FIELD_CN_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FOREIGNER_FILTER_SQL">FOREIGNER_FILTER_SQL</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UIC_TYPE">UIC_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LOCATION_X">LOCATION_X</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LOCATION_Y">LOCATION_Y</Field>
+<Field DataKey="none" DataType="INTEGER"  code="WIDTH">WIDTH</Field>
+<Field DataKey="none" DataType="INTEGER"  code="HEIGHT">HEIGHT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TABINDEX">TABINDEX</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GRID_COL_WIDTH">GRID_COL_WIDTH</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ALLOW_EDIT">ALLOW_EDIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FIELD_MARK_TYPE">FIELD_MARK_TYPE</Field>
+</Entity>
+<Entity code="BASE_VINDICATE_TABLE"  name="BASE_VINDICATE_TABLE" type="Table" IsGB="True">
+<Field DataKey="none" DataType="CHARACTER"  code="BASE_TABLE_DB_NAME">BASE_TABLE_DB_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="BASE_TABLE_CN_NAME">BASE_TABLE_CN_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ALLOW_USER_EDIT">ALLOW_USER_EDIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ALLOW_PHYSIC_DELETE">ALLOW_PHYSIC_DELETE</Field>
+</Entity>
+<Entity code="HIS_LOG"  name="HIS_LOG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="OPERATOR_ID">OPERATOR_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPERATOR_TYPE">OPERATOR_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CONTENTS">CONTENTS</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="STARTTIME">STARTTIME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="ERRLEVEL">ERRLEVEL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WORKSTATION">WORKSTATION</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODULE_ID">MODULE_ID</Field>
+</Entity>
+<Entity code="HIS_REPORT"  name="HIS_REPORT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="REPORTID">REPORTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REPORTNAME">REPORTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REPORTPATH">REPORTPATH</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BUILDEMPNAME">BUILDEMPNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BUILDEMPCODE">BUILDEMPCODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BUILDDATETIME">BUILDDATETIME</Field>
+</Entity>
+<Entity code="HIS_WORKERS"  name="HIS_WORKERS" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="WORKNO">WORKNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WORKNAME">WORKNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WORKMEMO">WORKMEMO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TABLEHEAD">TABLEHEAD</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CRYP_FLAG">CRYP_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PASSLENGTH">PASSLENGTH</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PASSBACK">PASSBACK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REGKEY">REGKEY</Field>
+</Entity>
+<Entity code="INSUR_PATIENT_INFO"  name="INSUR_PATIENT_INFO" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="AREA_ID">AREA_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PERSON_CODE">PERSON_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SEX">SEX</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="IDCARD">IDCARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BIRTHDATE">BIRTHDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="AGE">AGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FAMILY_CODE">FAMILY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDCARD_ID">MEDCARD_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TRANS_ORGCODE">TRANS_ORGCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TRANS_ORGLEVEL">TRANS_ORGLEVEL</Field>
+</Entity>
+<Entity code="MZ_CONFIG"  name="MZ_CONFIG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALUE">VALUE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+  </Entity>
+<Entity code="ZY_CONFIG"  name="ZY_CONFIG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALUE">VALUE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="MZ_DOCTYPE_REGTYPE"  name="MZ_DOCTYPE_REGTYPE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="DOCTOR_TYPE_ID">DOCTOR_TYPE_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_TYPE_CODE">REG_TYPE_CODE</Field>
+</Entity>
+<Entity code="MZ_ACCOUNT"  name="MZ_ACCOUNT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="LASTDATE">LASTDATE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CASH_FEE">CASH_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="POS_FEE">POS_FEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ACCOUNTCODE">ACCOUNTCODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ACCOUNTDATE">ACCOUNTDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BLANKOUT">BLANKOUT</Field>
+</Entity>
+<Entity code="MZ_COSTMASTER"  name="MZ_COSTMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COSTMASTERID">COSTMASTERID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNUM">TICKETNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETCODE">TICKETCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGENAME">CHARGENAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELF_FEE">SELF_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="VILLAGE_FEE">VILLAGE_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FAVOR_FEE">FAVOR_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="POS_FEE">POS_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MONEY_FEE">MONEY_FEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="TICKET_FLAG">TICKET_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="COSTDATE">COSTDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OLDID">OLDID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="HANG_FLAG">HANG_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="HURRIED_FLAG">HURRIED_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELF_TALLY">SELF_TALLY</Field>	
+</Entity>
+<Entity code="MZ_COSTORDER"  name="MZ_COSTORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COSTORDERID">COSTORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="COSTID">COSTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNUM">TICKETNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETCODE">TICKETCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+</Entity>
+<Entity code="MZ_INCOME_DETAIL"  name="MZ_INCOME_DETAIL" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RPTID">RPTID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CHARGE_NAME">CHARGE_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="DEPT_NAME">DEPT_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ITEM_FEE">ITEM_FEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="SORT_NO">SORT_NO</Field>
+</Entity>
+<Entity code="MZ_INCOME_RPT"  name="MZ_INCOME_RPT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="RPTID">RPTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="REPORT_TYPE">REPORT_TYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="STAT_TYPE">STAT_TYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="STAT_YEAR">STAT_YEAR</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="STAT_MONTH">STAT_MONTH</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="STAT_DATE_TYPE">STAT_DATE_TYPE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BEGIN_DATE">BEGIN_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="END_DATE">END_DATE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPERATOR">OPERATOR</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="LAST_CHANGE_DATE">LAST_CHANGE_DATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CREATOR">CREATOR</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CREATE_DATE">CREATE_DATE</Field>
+</Entity>
+<Entity code="MZ_INVOICE"  name="MZ_INVOICE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="INVOICE_TYPE">INVOICE_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="START_NO">START_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="END_NO">END_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CURRENT_NO">CURRENT_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ALLOT_DATE">ALLOT_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ALLOT_USER">ALLOT_USER</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PERFCHAR">PERFCHAR</Field>	
+</Entity>
+<Entity code="MZ_PATIENT"  name="MZ_PATIENT" type="Table" IsGB="False">
+<Field DataKey="none" DataType="DECIMAL"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CARDNO">CARDNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SEX">SEX</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TYPE">TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE_NAME">TYPE_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="IDCARD">IDCARD</Field>
+<Field DataKey="none" DataType="DATE"  code="BORNDAY">BORNDAY</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FOLK">FOLK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TEL">TEL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OCCUPATION">OCCUPATION</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+</Entity>
+<Entity code="MZ_PATLIST"  name="MZ_PATLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATCODE">PATCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="VISITNO">VISITNO</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="REGCODE">REGCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REGNAME">REGNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DEPT_CODE">REG_DEPT_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DOC_CODE">REG_DOC_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DOC_NAME">REG_DOC_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DEPT_NAME">REG_DEPT_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATSEX">PATSEX</Field>
+<Field DataKey="none" DataType="INTEGER"  code="AGE">AGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICARD">MEDICARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDITYPE">MEDITYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HPCODE">HPCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HPGRADE">HPGRADE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CUREDEPTCODE">CUREDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CUREEMPCODE">CUREEMPCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DISEASECODE">DISEASECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DISEASENAME">DISEASENAME</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CUREDATE">CUREDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CURESTATUS">CURESTATUS</Field>
+</Entity>
+<Entity code="MZ_PRESMASTER"  name="MZ_PRESMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDOCCODE">PRESDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDEPTCODE">PRESDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDOCCODE">EXECDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESCOSTCODE">PRESCOSTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PRESAMOUNT">PRESAMOUNT</Field> 
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="COSTMASTERID">COSTMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OLDID">OLDID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNUM">TICKETNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETCODE">TICKETCODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CHARGE_FLAG">CHARGE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DRUG_FLAG">DRUG_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="PRESDATE">PRESDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="HAND_FLAG">HAND_FLAG</Field>  
+<Field DataKey="none" DataType="DECIMAL"  code="ROUNGINGMONEY">ROUNGINGMONEY</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOCPRESID">DOCPRESID</Field>
+</Entity>
+<Entity code="MZ_PRESORDER"  name="MZ_PRESORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESORDERID">PRESORDERID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BIGITEMCODE">BIGITEMCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PRESAMOUNT">PRESAMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOLAL_FEE">TOLAL_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="COMP_MONEY">COMP_MONEY</Field>  
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_FLAG">ORDER_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PASSID">PASSID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CASEID">CASEID</Field>
+</Entity>
+<Entity code="MZ_REG_DEPT_FEE"  name="MZ_REG_DEPT_FEE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+</Entity>
+<Entity code="MZ_REG_ITEM_FEE"  name="MZ_REG_ITEM_FEE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="CHARACTER"  code="TYPE_CODE">TYPE_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+</Entity>
+<Entity code="MZ_REG_TYPE"  name="MZ_REG_TYPE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="CHARACTER"  code="TYPE_CODE">TYPE_CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="TYPE_NAME">TYPE_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>
+<Entity code="MZ_REPORT_LIST"  name="MZ_REPORT_LIST" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="REPORT_NAME">REPORT_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CREATOR">CREATOR</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CRRATORDATE">CRRATORDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LASTCHAGEUSER">LASTCHAGEUSER</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="LASTCHAGEDATE">LASTCHAGEDATE</Field>
+</Entity>
+<Entity code="MZ_REPORT_TITLE"  name="MZ_REPORT_TITLE" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="REPORT_NAME">REPORT_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TITLE_NAME">TITLE_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SORTNO">SORTNO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FIXCOL">FIXCOL</Field>
+</Entity>
+<Entity code="MZ_REPORT_TITLE_FIELD"  name="MZ_REPORT_TITLE_FIELD" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="REPORT_NAME">REPORT_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TITLE_NAME">TITLE_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FIELD_NAME">FIELD_NAME</Field>
+</Entity>
+<Entity code="MZ_SERIAL_NO"  name="MZ_SERIAL_NO" type="Table" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="VISIT_NO">VISIT_NO</Field>
+</Entity>
+<Entity code="MZ_DOC_CONFIG"  name="MZ_DOC_CONFIG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="VALUE">VALUE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+</Entity>
+<Entity code="MZ_DOC_COMMONDIAGNOSIS"  name="MZ_DOC_COMMONDIAGNOSIS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COMMONDIAGNOSISID">COMMONDIAGNOSISID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DIAGNOSIS_CODE">DIAGNOSIS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DIAGNOSIS_NAME">DIAGNOSIS_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RECORD_DOC">RECORD_DOC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FREQUENCY">FREQUENCY</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="MZ_DOC_COMMONITEM"  name="MZ_DOC_COMMONITEM" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COMMONITEMID">COMMONITEMID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RECORD_DOC">RECORD_DOC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FREQUENCY">FREQUENCY</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TYPE">TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="MZ_DOC_PRESHEAD"  name="MZ_DOC_PRESHEAD" type="Table" IsGB="False"><Field DataKey="key" DataType="BIGINT"  code="PRESHEADID">PRESHEADID</Field><Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>   
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRES_DOC">PRES_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRES_DEPT">PRES_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRES_EXEDEPT">PRES_EXEDEPT</Field>
+<Field DataKey="none" DataType="DATE"  code="PRES_DATE">PRES_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PRES_FLAG">PRES_FLAG</Field>
+</Entity>
+<Entity code="MZ_DOC_PRESLIST"  name="MZ_DOC_PRESLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESLISTID">PRESLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESHEADID">PRESHEADID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDERNO">ORDERNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ITEM_PRICE">ITEM_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="USAGE_AMOUNT">USAGE_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USAGE_UNIT">USAGE_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="USAGE_RATE">USAGE_RATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOSAGE">DOSAGE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="USAGE_ID">USAGE_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="FREQUENCY_ID">FREQUENCY_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DAYS">DAYS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_AMOUNT">ITEM_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_RATE">ITEM_RATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SKINTEST_FLAG">SKINTEST_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SELFDRUG_FLAG">SELFDRUG_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ENTRUST">ENTRUST</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FOOTNOTE">FOOTNOTE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SERVICE_ITEM_ID">SERVICE_ITEM_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESORDERID">PRESORDERID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="MZ_DOC_PRESMOULDHEAD"  name="MZ_DOC_PRESMOULDHEAD" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESMOULDHEADID">PRESMOULDHEADID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="P_ID">P_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MOULD_NAME">MOULD_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MOULD_TYPE">MOULD_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MOULD_LEVEL">MOULD_LEVEL</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_DOC">CREATE_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_DEPT">CREATE_DEPT</Field>
+<Field DataKey="none" DataType="DATE"  code="CREATE_DATE">CREATE_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="MZ_DOC_PRESMOULDLIST"  name="MZ_DOC_PRESMOULDLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESMOULDLISTID">PRESMOULDLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMOULDHEADID">PRESMOULDHEADID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PRESNO">PRESNO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDERNO">ORDERNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="USAGE_AMOUNT">USAGE_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USAGE_UNIT">USAGE_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="USAGE_RATE">USAGE_RATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOSAGE">DOSAGE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="USAGE_ID">USAGE_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="FREQUENCY_ID">FREQUENCY_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DAYS">DAYS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_AMOUNT">ITEM_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_RATE">ITEM_RATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ENTRUST">ENTRUST</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FOOTNOTE">FOOTNOTE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SERVICE_ITEM_ID">SERVICE_ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_BIT">DELETE_BIT</Field>
+</Entity>
+<Entity code="MZ_DOC_MEDICAL_APPLY"  name="MZ_DOC_MEDICAL_APPLY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="APPLYID">APPLYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESLISTID">PRESLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="APPLY_TYPE">APPLY_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="APPLY_CONTENT">APPLY_CONTENT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="APPLY_DOC">APPLY_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="APPLY_DEPT">APPLY_DEPT</Field>
+<Field DataKey="none" DataType="DATE"  code="APPLY_DATE">APPLY_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="APPLY_STATUS">APPLY_STATUS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+</Entity>
+<Entity code="MZ_DOC_MEDICALAPPLY_MOULD"  name="MZ_DOC_MEDICALAPPLY_MOULD" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ELEMENT_NAME">ELEMENT_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEVEL">LEVEL</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_EMP">CREATE_EMP</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_DEPT">CREATE_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CONTENT">CONTENT</Field>
+</Entity>
+<Entity code="MZ_DOC_ZY_INPAT_REG"  name="MZ_DOC_ZY_INPAT_REG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="REGID">REGID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_CONTENT">REG_CONTENT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REG_EMP">REG_EMP</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REG_DATE">REG_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="REG_STATUS">REG_STATUS</Field>
+</Entity>
+<Entity code="NCMS_DRUG_CATALOG"  name="NCMS_DRUG_CATALOG" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_ALIAS">DRUG_ALIAS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_CODE">DRUG_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_CODE2">DRUG_CODE2</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_FORM">DRUG_FORM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_NAME">DRUG_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUG_TYPE">DRUG_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DRUGCLASS_CODE">DRUGCLASS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_DEPT">LIMIT_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_DESC">LIMIT_DESC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_DISEASE">LIMIT_DISEASE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_DOCTOR">LIMIT_DOCTOR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_FORM">LIMIT_FORM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_HOSPITAL">LIMIT_HOSPITAL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_LINE">LIMIT_LINE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_MAKER">LIMIT_MAKER</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_PRICE">LIMIT_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_PRICEFIELDSPECI">LIMIT_PRICEFIELDSPECI</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_UNIT_NAME">LIMIT_UNIT_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LIMIT_UNIT_NUM">LIMIT_UNIT_NUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MARK">MARK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USE_LEVEL">USE_LEVEL</Field>
+</Entity>
+<Entity code="NCMS_MATCH_CATALOG"  name="NCMS_MATCH_CATALOG" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="APPROVETIME">APPROVETIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="APPROVE_STATUS">APPROVE_STATUS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HOSPITAL_CODE">HOSPITAL_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="IF_EQUAL">IF_EQUAL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDORG_CODE">MEDORG_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NCMS_CODE">NCMS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REGION_CODE">REGION_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE">TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UPLOAD_TIME">UPLOAD_TIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UPLOADER">UPLOADER</Field>
+</Entity>
+<Entity code="NCMS_MATCH_CATALOG_TEMP"  name="NCMS_MATCH_CATALOG_TEMP" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="HOSPITAL_CODE">HOSPITAL_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDORG_CODE">MEDORG_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NCMS_CODE">NCMS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REGION_CODE">REGION_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPE">TYPE</Field>
+</Entity>
+<Entity code="NCMS_THERAPY_CATALOG"  name="NCMS_THERAPY_CATALOG" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="EXCLUDE_CONTENT">EXCLUDE_CONTENT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FINANCE_TYPE">FINANCE_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CONTENT">ITEM_CONTENT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MARK">MARK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDCLASS_CODE">MEDCLASS_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRICE1">PRICE1</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRICE2">PRICE2</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRICE3">PRICE3</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPECS">SPECS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+</Entity>
+<Entity code="PATIENTINFO"  name="PATIENTINFO" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATCODE">PATCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATSEX">PATSEX</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FAMILYCODE">FAMILYCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICARD">MEDICARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURENO">CURENO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CURENUM">CURENUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNUMBER">PATNUMBER</Field>
+<Field DataKey="none" DataType="DATE"  code="PATBRIDATE">PATBRIDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATGROUP">PATGROUP</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATTEL">PATTEL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATADDRESS">PATADDRESS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATCASENO">PATCASENO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATJOB">PATJOB</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ACCOUNTTYPE">ACCOUNTTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKMAN">LINKMAN</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKTEL">LINKTEL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKADDRESS">LINKADDRESS</Field>
+</Entity>
+<Entity code="PUB_IPINFORMATION"  name="PUB_IPINFORMATION" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="IP_ADDRESS">IP_ADDRESS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HOSTNAME">HOSTNAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PORT">PORT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DTYPE">DTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="D_DEPT_ID">D_DEPT_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="D_USER">D_USER</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="D_DATE">D_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="USE_FLAG">USE_FLAG</Field>
+</Entity>
+<Entity code="PUB_MESSAGE"  name="PUB_MESSAGE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BDATE">BDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EDATE">EDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TITLE">TITLE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CONTENT">CONTENT</Field>
+<Field DataKey="none" DataType="BLOB"  code="INFORM">INFORM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BOOK_USER">BOOK_USER</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BOOK_DATE">BOOK_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MTYPE">MTYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FLAG">FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="READER">READER</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="READ_DATE">READ_DATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SDEPT_ID">SDEPT_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="LEVEL">LEVEL</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="XTYPE">XTYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TLSJ">TLSJ</Field>
+</Entity>
+<Entity code="PUB_MESSAGE_DEPT"  name="PUB_MESSAGE_DEPT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="P_ID">P_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="IP_ADDRESS">IP_ADDRESS</Field>
+</Entity>
+<Entity code="PUB_REGISTER"  name="PUB_REGISTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="D_USER">D_USER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="D_DEPT_ID">D_DEPT_ID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="D_DATE">D_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="L_DATE">L_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="USE_FLAG">USE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DTYPE">DTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="IP_ADDRESS">IP_ADDRESS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="HOSTNAME">HOSTNAME</Field>
+</Entity>
+<Entity code="YF_ACCOUNT"  name="YF_ACCOUNT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MACCOUNTID">MACCOUNTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTYEAR">ACCOUNTYEAR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTMONTH">ACCOUNTMONTH</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTTYPE">ACCOUNTTYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKPRICE">STOCKPRICE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEBITNUM">DEBITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LENDERNUM">LENDERNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="OVERNUM">OVERNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEBITFEE">DEBITFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LENDERFEE">LENDERFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BALANCEFEE">BALANCEFEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BALANCE_FLAG">BALANCE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTHISTORYID">ACCOUNTHISTORYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDERID">ORDERID</Field>
+</Entity>
+<Entity code="YF_ACCOUNTHIS"  name="YF_ACCOUNTHIS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ACCOUNTHISTORYID">ACCOUNTHISTORYID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTYEAR">ACCOUNTYEAR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTMONTH">ACCOUNTMONTH</Field>
+<Field DataKey="none" DataType="DATE"  code="BEGINTIME">BEGINTIME</Field>
+<Field DataKey="none" DataType="DATE"  code="ENDTIME">ENDTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="REGMAN">REGMAN</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YF_CHECKMASTER"  name="YF_CHECKMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERCHECKID">MASTERCHECKID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITNUM">AUDITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MORERETAILFEE">MORERETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MORETRADEFEE">MORETRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LESSRETAILFEE">LESSRETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LESSTRADEFEE">LESSTRADEFEE</Field>
+</Entity>
+<Entity code="YF_CHECKORDER"  name="YF_CHECKORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="CHECKORDERID">CHECKORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="STORAGEID">STORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CHECKNUM">CHECKNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CKTRADEFEE">CKTRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CKRETAILFEE">CKRETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FACTNUM">FACTNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FTTRADEFEE">FTTRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FTRETAILFEE">FTRETAILFEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="DATE"  code="BILLTIME">BILLTIME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="GROUPNUM">GROUPNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MASTERCHECKID">MASTERCHECKID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BATCHNUM">BATCHNUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+</Entity>
+<Entity code="YF_DRMASTER"  name="YF_DRMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERDRUGOCID">MASTERDRUGOCID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INPATIENTID">INPATIENTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RECIPEID">RECIPEID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RECIPENUM">RECIPENUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATIENTNO">PATIENTNO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATIENTID">PATIENTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATIENTNAME">PATIENTNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOCID">DOCID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPPEOPLEID">OPPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OPTIME">OPTIME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CHARGE_FLAG">CHARGE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DRUGOC_FLAG">DRUGOC_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RECEIPTCODE">RECEIPTCODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSAGEMAN">DOSAGEMAN</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CHARGEDATE">CHARGEDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CHARGEMAN">CHARGEMAN</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="UNIFORMID">UNIFORMID</Field>
+</Entity>
+<Entity code="YF_DRORDER"  name="YF_DRORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ORDERDRUGOCID">ORDERDRUGOCID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTERDRUGOCID">MASTERDRUGOCID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDERRECIPEID">ORDERRECIPEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INPATIENTID">INPATIENTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHEMNAME">CHEMNAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DRUGOCNUM">DRUGOCNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOSENUM">DOSENUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DRUGOC_FLAG">DRUGOC_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="REFUNDMENT_FLAG">REFUNDMENT_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNIFORM_FLAG">UNIFORM_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="UNIFORMID">UNIFORMID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CUREDEPTID">CUREDEPTID</Field>
+</Entity>
+<Entity code="YF_INMASTER"  name="YF_INMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERINSTORAGEID">MASTERINSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPMANID">OPMANID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKFEE">STOCKFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="INVOICEDATE">INVOICEDATE</Field>
+<Field DataKey="none" DataType="DATE"  code="BILLDATE">BILLDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SUPPORTDICID">SUPPORTDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DELIVERNUM">DELIVERNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PAY_FLAG">PAY_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YF_INORDER"  name="YF_INORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="INSTORAGEID">INSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BATCHNUM">BATCHNUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RECSCALE">RECSCALE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="INNUM">INNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKPRICE">STOCKPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKFEE">STOCKFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTERINSTORAGEID">MASTERINSTORAGEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DELIVERNUM">DELIVERNUM</Field>
+</Entity>
+<Entity code="YF_OUTMASTER"  name="YF_OUTMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTEROUTSTORAGEID">MASTEROUTSTORAGEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OUTFEE">OUTFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="INVOICEDATE">INVOICEDATE</Field>
+<Field DataKey="none" DataType="DATE"  code="BILLDATE">BILLDATE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YF_OUTORDER"  name="YF_OUTORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="OUTSTORAGEID">OUTSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OUTNUM">OUTNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RECSCALE">RECSCALE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNUM">PRODUCTNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OUTREASON">OUTREASON</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OUTDEPTID">OUTDEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTEROUTSTORAGEID">MASTEROUTSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YF_STORAGE"  name="YF_STORAGE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="STORAGEID">STORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PLACE">PLACE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LSTOCKPRICE">LSTOCKPRICE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="UPPERLIMIT">UPPERLIMIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LOWERLIMIT">LOWERLIMIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YK_ACCOUNT"  name="YK_ACCOUNT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MACCOUNTID">MACCOUNTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTYEAR">ACCOUNTYEAR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTMONTH">ACCOUNTMONTH</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTTYPE">ACCOUNTTYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKPRICE">STOCKPRICE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEBITNUM">DEBITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LENDERNUM">LENDERNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="OVERNUM">OVERNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEBITFEE">DEBITFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LENDERFEE">LENDERFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BALANCEFEE">BALANCEFEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BALANCE_FLAG">BALANCE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTHISTORYID">ACCOUNTHISTORYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDERID">ORDERID</Field>
+</Entity>
+<Entity code="YK_ACCOUNTHIS"  name="YK_ACCOUNTHIS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ACCOUNTHISTORYID">ACCOUNTHISTORYID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTYEAR">ACCOUNTYEAR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTMONTH">ACCOUNTMONTH</Field>
+<Field DataKey="none" DataType="DATE"  code="BEGINTIME">BEGINTIME</Field>
+<Field DataKey="none" DataType="DATE"  code="ENDTIME">ENDTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="REGMAN">REGMAN</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YK_CHECKMASTER"  name="YK_CHECKMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERCHECKID">MASTERCHECKID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITNUM">AUDITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MORERETAILFEE">MORERETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MORETRADEFEE">MORETRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LESSRETAILFEE">LESSRETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LESSTRADEFEE">LESSTRADEFEE</Field>
+</Entity>
+<Entity code="YK_CHECKORDER"  name="YK_CHECKORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="CHECKORDERID">CHECKORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="STORAGEID">STORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CHECKNUM">CHECKNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CKTRADEFEE">CKTRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CKRETAILFEE">CKRETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FACTNUM">FACTNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FTTRADEFEE">FTTRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FTRETAILFEE">FTRETAILFEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="DATE"  code="BILLTIME">BILLTIME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="GROUPNUM">GROUPNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MASTERCHECKID">MASTERCHECKID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BATCHNUM">BATCHNUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+</Entity>
+<Entity code="YK_BATCH"  name="YK_BATCH" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="INSTORETIME">INSTORETIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BATCHNUM">BATCHNUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+</Entity>
+<Entity code="YK_INMASTER"  name="YK_INMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERINSTORAGEID">MASTERINSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPMANID">OPMANID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKFEE">STOCKFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="INVOICEDATE">INVOICEDATE</Field>
+<Field DataKey="none" DataType="DATE"  code="BILLDATE">BILLDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SUPPORTDICID">SUPPORTDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DELIVERNUM">DELIVERNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PAY_FLAG">PAY_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YK_INORDER"  name="YK_INORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="INSTORAGEID">INSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BATCHNUM">BATCHNUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RECSCALE">RECSCALE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="INNUM">INNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKPRICE">STOCKPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKFEE">STOCKFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTERINSTORAGEID">MASTERINSTORAGEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DELIVERNUM">DELIVERNUM</Field>
+</Entity>
+<Entity code="YK_OUTMASTER"  name="YK_OUTMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTEROUTSTORAGEID">MASTEROUTSTORAGEID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="AUDITTIME">AUDITTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="AUDITPEOPLEID">AUDITPEOPLEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLEID">REGPEOPLEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OUTFEE">OUTFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INVOICENUM">INVOICENUM</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="INVOICEDATE">INVOICEDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BILLDATE">BILLDATE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OUTDEPTID">OUTDEPTID</Field>
+</Entity>
+<Entity code="YK_OUTORDER"  name="YK_OUTORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="OUTSTORAGEID">OUTSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OUTNUM">OUTNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RECSCALE">RECSCALE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNUM">PRODUCTNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OUTREASON">OUTREASON</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OUTDEPTID">OUTDEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTEROUTSTORAGEID">MASTEROUTSTORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YK_STORAGE"  name="YK_STORAGE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="STORAGEID">STORAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PLACE">PLACE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LSTOCKPRICE">LSTOCKPRICE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="UPPERLIMIT">UPPERLIMIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="LOWERLIMIT">LOWERLIMIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YP_ADJMASTER"  name="YP_ADJMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MASTERADJPRICEID">MASTERADJPRICEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLE">REGPEOPLE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADJCODE">ADJCODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EXETIME">EXETIME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="OVER_FLAG">OVER_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YP_ADJORDER"  name="YP_ADJORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ORDERADJPRICEID">ORDERADJPRICEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTERIADJPRICED">MASTERIADJPRICED</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OLDTRADEPRICE">OLDTRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NEWTRADEPRICE">NEWTRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ADJTRADEFEE">ADJTRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OLDRETAILPRICE">OLDRETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NEWRETAILPRICE">NEWRETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ADJRETAILFEE">ADJRETAILFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="AUDIT_FLAG">AUDIT_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ADJNUM">ADJNUM</Field>
+</Entity>
+<Entity code="YP_BILLNUMDIC"  name="YP_BILLNUMDIC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="BILLNUMDICID">BILLNUMDICID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="OPTYPE">OPTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BILLNUM">BILLNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YP_BYNAMEDIC"  name="YP_BYNAMEDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="BYNAMEDICID">BYNAMEDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="YP_CONFIG"  name="YP_CONFIG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALUE">VALUE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YP_DEPT_YPTYPE"  name="YP_DEPT_YPTYPE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTDICID">DEPTDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+</Entity>
+<Entity code="YP_DEPTDIC"  name="YP_DEPTDIC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="DEPTDICID">DEPTDICID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="DEPTNAME">DEPTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPTTYPE1">DEPTTYPE1</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPTTYPE2">DEPTTYPE2</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="USE_FLAG">USE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="YP_DISPDEPTHIS"  name="YP_DISPDEPTHIS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DISPDEPT">DISPDEPT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTALFEE">TOTALFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OPTIME">OPTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPMAN">OPMAN</Field>
+</Entity>
+<Entity code="YP_DOSEDIC"  name="YP_DOSEDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DOSENAME">DOSENAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="YP_MAKERDIC"  name="YP_MAKERDIC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BALENUM">BALENUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BARCODE">BARCODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRODUCTID">PRODUCTID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="HRETAILPRICE">HRETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="APPROVENUM">APPROVENUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALIDITYDATE">VALIDITYDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MEDICAREDICID">MEDICAREDICID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="OWNPAYSCALE">OWNPAYSCALE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEFRECSCALE">DEFRECSCALE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEFSTOCKPRICE">DEFSTOCKPRICE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="OWNPAY_FLAG">OWNPAY_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VIRULENT_FLAG">VIRULENT_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="NARCOTIC_FLAG">NARCOTIC_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="SKINTEST_FLAG">SKINTEST_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECIPE_FLAG">RECIPE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="LUNACY_FLAG">LUNACY_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="COSTLY_FLAG">COSTLY_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BIGTRANSFU_FLAG">BIGTRANSFU_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="GMP_FLAG">GMP_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MEDICARE_FLAG">MEDICARE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="USEOUT_FLAG">USEOUT_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="GETWAY">GETWAY</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="UNIFGETTYPE">UNIFGETTYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDI_INVERSE">MEDI_INVERSE</Field>
+</Entity>
+<Entity code="YP_MEDICAREDIC"  name="YP_MEDICAREDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="MEDICAREDICID">MEDICAREDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICARENAME">MEDICARENAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICAREREMARK">MEDICAREREMARK</Field>
+</Entity>
+<Entity code="YP_PRODUCTDIC"  name="YP_PRODUCTDIC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRODUCTID">PRODUCTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WMB">WMB</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKPHONE">LINKPHONE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKNAME">LINKNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+</Entity>
+<Entity code="YP_PHARMACOLOGY"  name="YP_PHARMACOLOGY" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="FID">FID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="YP_SPECDIC"  name="YP_SPECDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="GBCODE">GBCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHEMNAME">CHEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAMEREMARK">NAMEREMARK</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PHARMACOLOGY">PHARMACOLOGY</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOSENUM">DOSENUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOSEUNIT">DOSEUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKNUM">PACKNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="USENUM">USENUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPEC">SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CUREDISEASE">CUREDISEASE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REMARK">REMARK</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="USEWAY">USEWAY</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RECIPELVL">RECIPELVL</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LATINNAME">LATINNAME</Field>
+</Entity>
+<Entity code="YP_SUPPORTDIC"  name="YP_SUPPORTDIC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="SUPPORTDICID">SUPPORTDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PHONE">PHONE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LINKMAN">LINKMAN</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+</Entity>
+<Entity code="YP_TYPEDIC"  name="YP_TYPEDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TYPENAME">TYPENAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="YP_UNITDIC"  name="YP_UNITDIC" type="Table" IsGB="True">
+<Field DataKey="key" DataType="BIGINT"  code="UNITDICID">UNITDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PYM">PYM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WBM">WBM</Field>
+</Entity>
+<Entity code="ZY_BADTICKET"  name="ZY_BADTICKET" type="Table" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNO">TICKETNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EMPCODE">EMPCODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BADDATE">BADDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+</Entity>
+<Entity code="ZY_ACCOUNT"  name="ZY_ACCOUNT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ACCOUNTTYPE">ACCOUNTTYPE</Field>
+<Field DataKey="none" DataType="DATE"  code="LASTDATE">LASTDATE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="WTICKETFEE">WTICKETFEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="WTICKETNUM">WTICKETNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BTICKETFEE">BTICKETFEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="BTICKETNUM">BTICKETNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CASH_FEE">CASH_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="POS_FEE">POS_FEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ACCOUNTCODE">ACCOUNTCODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ACCOUNTDATE">ACCOUNTDATE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="COSTFEE">COSTFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FAOVERFEE">FAOVERFEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PRINTNUM">PRINTNUM</Field>
+</Entity>
+<Entity code="ZY_CHARGELIST"  name="ZY_CHARGELIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="CHARGELISTID">CHARGELISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURENO">CURENO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BILLNO">BILLNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OLDBILLNO">OLDBILLNO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FEETYPE">FEETYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="COSTDATE">COSTDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+</Entity>
+<Entity code="ZY_COSTMASTER"  name="ZY_COSTMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COSTMASTERID">COSTMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="NTYPE">NTYPE</Field>
+<Field DataKey="none" DataType="DATE"  code="DISCHARGE_DATE">DISCHARGE_DATE</Field>
+<Field DataKey="none" DataType="DATE"  code="DISCHARGE_BDATE">DISCHARGE_BDATE</Field>
+<Field DataKey="none" DataType="DATE"  code="DISCHARGE_EDATE">DISCHARGE_EDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNUM">TICKETNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETCODE">TICKETCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEPTOSIT_FEE">DEPTOSIT_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELF_FEE">SELF_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="VILLAGE_FEE">VILLAGE_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="FAVOR_FEE">FAVOR_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="REALITY_FEE">REALITY_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="POS_FEE">POS_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MONEY_FEE">MONEY_FEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="TICKET_FLAG">TICKET_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="COSTDATE">COSTDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ACCOUNTID">ACCOUNTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OLDID">OLDID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NCCM_NO">NCCM_NO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VILLAGE_TYPE">VILLAGE_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATTYPE">PATTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WORKUNIT">WORKUNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="WORKUNIT_FEE">WORKUNIT_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NOTWORKUNIT_FEE">NOTWORKUNIT_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RATION_FEE">RATION_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="MORERATION_FEE">MORERATION_FEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELFDRUG_FEE">SELFDRUG_FEE</Field>
+</Entity>
+<Entity code="ZY_COSTORDER"  name="ZY_COSTORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="COSTORDERID">COSTORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="COSTID">COSTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETNUM">TICKETNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="TICKETCODE">TICKETCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BIGITEMCODE">BIGITEMCODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+</Entity>
+<Entity code="ZY_INVOICE"  name="ZY_INVOICE" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="INVOICE_TYPE">INVOICE_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EMPLOYEE_ID">EMPLOYEE_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="START_NO">START_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="END_NO">END_NO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PERFCHAR">PERFCHAR</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CURRENT_NO">CURRENT_NO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ALLOT_DATE">ALLOT_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ALLOT_USER">ALLOT_USER</Field>
+</Entity>
+<Entity code="ZY_PATIENTNO"  name="ZY_PATIENTNO" type="Table" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="PATNO">PATNO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="BILLNO">BILLNO</Field>
+<Field DataKey="none" DataType="DATE"  code="TODAYDATE">TODAYDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TICKETNO">TICKETNO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="NCCM_NO">NCCM_NO</Field>
+</Entity>
+<Entity code="ZY_PATLIST"  name="ZY_PATLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURENO">CURENO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATIENTCODE">PATIENTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CUREDEPTCODE">CUREDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CUREDOCCODE">CUREDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORIGINDEPTCODE">ORIGINDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORIGINDOCCODE">ORIGINDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATTYPE">PATTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DISEASECODE">DISEASECODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DISEASENAME">DISEASENAME</Field>
+<Field DataKey="none" DataType="DATE"  code="CUREDATE">CUREDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURRDEPTCODE">CURRDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BEDCODE">BEDCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURESTATE">CURESTATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="OUT_FLAG">OUT_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OUTDIAGNCODE">OUTDIAGNCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="OUTDIAGNNAME">OUTDIAGNNAME</Field>
+<Field DataKey="none" DataType="DATE"  code="OUTDATE">OUTDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="REALIVENUM">REALIVENUM</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="MARKDATE">MARKDATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MARKEMPCODE">MARKEMPCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NCCM_NO">NCCM_NO</Field>
+</Entity>
+<Entity code="ZY_PRESMASTER"  name="ZY_PRESMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOTAL_FEE">TOTAL_FEE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PRES_FLAG">PRES_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="PRESDATE">PRESDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DEL_FLAG">DEL_FLAG</Field>
+</Entity>
+<Entity code="ZY_PRESORDER"  name="ZY_PRESORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PRESORDERID">PRESORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="PRESAMOUNT">PRESAMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOLAL_FEE">TOLAL_FEE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDEPTCODE">PRESDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDOCCODE">PRESDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="DATE"  code="PRESDATE">PRESDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="MARKDATE">MARKDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="COSTDATE">COSTDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_FLAG">ORDER_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CHARGE_FLAG">CHARGE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DRUG_FLAG">DRUG_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OLDID">OLDID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="COSTMASTERID">COSTMASTERID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="COST_FLAG">COST_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PASSID">PASSID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="COMP_MONEY">COMP_MONEY</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_TYPE">ORDER_TYPE</Field>
+</Entity>
+<Entity code="ZY_DOC_CONFIG"  name="ZY_DOC_CONFIG" type="Table" IsGB="False">
+<Field DataKey="key" DataType="INTEGER"  code="ID">ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VALUE">VALUE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="ZY_DOC_ORDERMODELLIST"  name="ZY_DOC_ORDERMODELLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MODELLIST_ID">MODELLIST_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MODEL_ID">MODEL_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_TYPE">ITEM_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRESAMOUNT">PRESAMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_STRUC">ORDER_STRUC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FRIST_TIMES">FRIST_TIMES</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_USAGE">ORDER_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_FRENQUECY">ORDER_FRENQUECY</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DROPSPER">DROPSPER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SEVERS_ID">SEVERS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FLAG">FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNITTYPE">UNITTYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODELLIST_A1">MODELLIST_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODELLIST_A2">MODELLIST_A2</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="doseunit">doseunit</Field>
+</Entity>
+<Entity code="ZY_DOC_ORDERRECORD"  name="ZY_DOC_ORDERRECORD" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABYID">BABYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PAT_DEPTID">PAT_DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRES_DEPTID">PRES_DEPTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_TYPE">ORDER_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_DOC">ORDER_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ORDER_BDATE">ORDER_BDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_TYPE">ITEM_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SERIAL_ID">SERIAL_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDITEM_ID">ORDITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MAKEDICID">MAKEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_CONTENT">ORDER_CONTENT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRES_AMOUNT">PRES_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNITTYPE">UNITTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_SPEC">ORDER_SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_STRUC">ORDER_STRUC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_USAGE">ORDER_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FREQUENCY">FREQUENCY</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DROPSPEC">DROPSPEC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FIRSET_TIMES">FIRSET_TIMES</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEMINAL_TIMES">TEMINAL_TIMES</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TRANS_NURSE">TRANS_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="TRANS_DATE">TRANS_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CHECK_NURSE">CHECK_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CHECK_DATE">CHECK_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="VERIFY_NURSE">VERIFY_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VERIFY_DATE">VERIFY_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_DATE">EORDER_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_DOC">EORDER_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_TSNURSE">EORDER_TSNURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_TSDATE">EORDER_TSDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_CHKNURSE">EORDER_CHKNURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_CHKDATE">EORDER_CHKDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_VENURSE">EORDER_VENURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_VEDATE">EORDER_VEDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS_FALG">STATUS_FALG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPRERATOR">OPRERATOR</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OP_DATE">OP_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PS_FLAG">PS_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PS_ORDERID">PS_ORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PS_USER">PS_USER</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NOEXE_FLAG">NOEXE_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CHARGE_FLAG">CHARGE_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ORDER_PRICE">ORDER_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SEVERS_ID">SEVERS_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORECORD_A1">ORECORD_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORECORD_A2">ORECORD_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_TESTAPPLY"  name="ZY_DOC_TESTAPPLY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="TESTAPPLY_ID">TESTAPPLY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_CONTENT">ORDER_CONTENT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SAMPLE">SAMPLE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_DOC">ORDER_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ORDER_DATE">ORDER_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FINISH_FLAG">FINISH_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXPLAIN">EXPLAIN</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SERVERS_ID">SERVERS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEST_A1">TEST_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEST_A2">TEST_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_TRANSDEPT"  name="ZY_DOC_TRANSDEPT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="TRANSDEPT_ID">TRANSDEPT_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORIGE_DEPT">ORIGE_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GET_DEPT">GET_DEPT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="TRANSFER_DATE">TRANSFER_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OPERATE_DATE">OPERATE_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPERATOR">OPERATOR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DESCRIPTION">DESCRIPTION</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CANCEL_FLAG">CANCEL_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CANCEL_DATE">CANCEL_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CANCEL_USER">CANCEL_USER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FINISH_FLAG">FINISH_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TRSDPT_A1">TRSDPT_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TRSDPT_A2">TRSDPT_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_CHECKAPPLY"  name="ZY_DOC_CHECKAPPLY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="CHECKAPPLY_ID">CHECKAPPLY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHECK_PLACE">CHECK_PLACE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PLACE_NUM">PLACE_NUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICAL_STATE">MEDICAL_STATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DIAGNOSIS">DIAGNOSIS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHECK_NO">CHECK_NO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SEVERS_ID">SEVERS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CHECK_A1">CHECK_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CHECK_A2">CHECK_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_DIAGNOSIS"  name="ZY_DOC_DIAGNOSIS" type="Table" IsGB="False">
+<Field DataKey="key" DataType="DECIMAL"  code="DIAGNOSIS_ID">DIAGNOSIS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DIAG_NAME">DIAG_NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DIAG_DOC">DIAG_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="DIAG_DATE">DIAG_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DELETE_DOC">DELETE_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="DELETE_DATE">DELETE_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DIAG_A1">DIAG_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DIAG_A2">DIAG_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_ORDERMODEL"  name="ZY_DOC_ORDERMODEL" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MODEL_ID">MODEL_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="P_ID">P_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MODEL_NAME">MODEL_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MODEL_LEVEL">MODEL_LEVEL</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODEL_TYPE">MODEL_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_DEPT">CREATE_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CREATE_DOC">CREATE_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CREATE_DATE">CREATE_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="UPDATE_DATE">UPDATE_DATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODEL_A1">MODEL_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODEL_A2">MODEL_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_ORDERMODELLIST"  name="ZY_DOC_ORDERMODELLIST" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="MODELLIST_ID">MODELLIST_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MODEL_ID">MODEL_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_TYPE">ITEM_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRESAMOUNT">PRESAMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_STRUC">ORDER_STRUC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FRIST_TIMES">FRIST_TIMES</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_USAGE">ORDER_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_FRENQUECY">ORDER_FRENQUECY</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DROPSPER">DROPSPER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SEVERS_ID">SEVERS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FLAG">FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNITTYPE">UNITTYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODELLIST_A1">MODELLIST_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MODELLIST_A2">MODELLIST_A2</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="doseunit">doseunit</Field>
+
+</Entity>
+<Entity code="ZY_DOC_ORDERRECORD"  name="ZY_DOC_ORDERRECORD" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABYID">BABYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PAT_DEPTID">PAT_DEPTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRES_DEPTID">PRES_DEPTID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_TYPE">ORDER_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_DOC">ORDER_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ORDER_BDATE">ORDER_BDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_TYPE">ITEM_TYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SERIAL_ID">SERIAL_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDITEM_ID">ORDITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MAKEDICID">MAKEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_CODE">ITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_CONTENT">ORDER_CONTENT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRES_AMOUNT">PRES_AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNITTYPE">UNITTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_SPEC">ORDER_SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_STRUC">ORDER_STRUC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_USAGE">ORDER_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="FREQUENCY">FREQUENCY</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DROPSPEC">DROPSPEC</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FIRSET_TIMES">FIRSET_TIMES</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEMINAL_TIMES">TEMINAL_TIMES</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TRANS_NURSE">TRANS_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="TRANS_DATE">TRANS_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CHECK_NURSE">CHECK_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CHECK_DATE">CHECK_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="VERIFY_NURSE">VERIFY_NURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="VERIFY_DATE">VERIFY_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_DATE">EORDER_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_DOC">EORDER_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_TSNURSE">EORDER_TSNURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_TSDATE">EORDER_TSDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_CHKNURSE">EORDER_CHKNURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_CHKDATE">EORDER_CHKDATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EORDER_VENURSE">EORDER_VENURSE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="EORDER_VEDATE">EORDER_VEDATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS_FALG">STATUS_FALG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPRERATOR">OPRERATOR</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OP_DATE">OP_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PS_FLAG">PS_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PS_ORDERID">PS_ORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PS_USER">PS_USER</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NOEXE_FLAG">NOEXE_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="CHARGE_FLAG">CHARGE_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ORDER_PRICE">ORDER_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SEVERS_ID">SEVERS_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORECORD_A1">ORECORD_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORECORD_A2">ORECORD_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_TESTAPPLY"  name="ZY_DOC_TESTAPPLY" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="TESTAPPLY_ID">TESTAPPLY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_CONTENT">ORDER_CONTENT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SAMPLE">SAMPLE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EXEC_DEPT">EXEC_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_DOC">ORDER_DOC</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ORDER_DATE">ORDER_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DELETE_FLAG">DELETE_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FINISH_FLAG">FINISH_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXPLAIN">EXPLAIN</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SERVERS_ID">SERVERS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TC_ID">TC_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEST_A1">TEST_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TEST_A2">TEST_A2</Field>
+</Entity>
+<Entity code="ZY_DOC_TRANSDEPT"  name="ZY_DOC_TRANSDEPT" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="TRANSDEPT_ID">TRANSDEPT_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORIGE_DEPT">ORIGE_DEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GET_DEPT">GET_DEPT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="TRANSFER_DATE">TRANSFER_DATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="OPERATE_DATE">OPERATE_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OPERATOR">OPERATOR</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DESCRIPTION">DESCRIPTION</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CANCEL_FLAG">CANCEL_FLAG</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CANCEL_DATE">CANCEL_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CANCEL_USER">CANCEL_USER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FINISH_FLAG">FINISH_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TRSDPT_A1">TRSDPT_A1</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TRSDPT_A2">TRSDPT_A2</Field>
+</Entity>
+<Entity code="ZY_NURSE_BED"  name="ZY_NURSE_BED" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="BED_ID">BED_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WARD_ID">WARD_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ROOM_NO">ROOM_NO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BED_NO">BED_NO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BED_FEE">BED_FEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ZZ_DOC">ZZ_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ZY_DOC">ZY_DOC</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="IS_PLUS">IS_PLUS</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CHARGE_NURSE">CHARGE_NURSE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLIST_ID">PATLIST_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="INPATIENT_DEPT">INPATIENT_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BED_SEX">BED_SEX</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="IS_USE">IS_USE</Field>
+</Entity>
+<Entity code="ZY_NURSE_BED_ASSIGN"  name="ZY_NURSE_BED_ASSIGN" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ASSIGN_ID">ASSIGN_ID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BED_ID">BED_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="INPATIENT_ID">INPATIENT_ID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="ASSIGN_DATE">ASSIGN_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ASSIGN_USER">ASSIGN_USER</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="STOP_DATE">STOP_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="STOP_USER">STOP_USER</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FINISH_BIT">FINISH_BIT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BOOK_DATE">BOOK_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CANCEL_BIT">CANCEL_BIT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATDEPT">PATDEPT</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="BEGIN_FLAG">BEGIN_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="STOP_FLAG">STOP_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ZZ_DOC">ZZ_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ZY_DOC">ZY_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="JZ_NURSE">JZ_NURSE</Field>
+</Entity>
+<Entity code="ZY_NURSE_FEE_SPECI"  name="ZY_NURSE_FEE_SPECI" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESORDERID">PRESORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="OREDEREXEC_ID">OREDEREXEC_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESCRIPTION_ID">PRESCRIPTION_ID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRESC_NO">PRESC_NO</Field>
+<Field DataKey="none" DataType="DATE"  code="BOOK_DATE">BOOK_DATE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="BOOK_NAME">BOOK_NAME</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="TCID">TCID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SDVALUE">SDVALUE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="ACVALUE">ACVALUE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FEETYPE">FEETYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="HS_BIT">HS_BIT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="HS_ID">HS_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="GROUP_ID">GROUP_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="APPLY_ID">APPLY_ID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="APPLY_DATE">APPLY_DATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="FYBS_BIT">FYBS_BIT</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="FY_DATE">FY_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FY_PERSON">FY_PERSON</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PY_PERSON">PY_PERSON</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MEN_ID">MEN_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_LY">DEPT_LY</Field>
+</Entity>
+<Entity code="ZY_NURSE_INPATIENT_BABY"  name="ZY_NURSE_INPATIENT_BABY" type="Table" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="INPATIENT_ID">INPATIENT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INPATIENT_NO">INPATIENT_NO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_NO">BABY_NO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BABY_NAME">BABY_NAME</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="BIRTHDAY">BIRTHDAY</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SEX">SEX</Field>
+</Entity>
+<Entity code="ZY_DRUGMESSAGE_MASTER"  name="ZY_DRUGMESSAGE_MASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="DRUGMESSAGEID">DRUGMESSAGEID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="SENDTIME">SENDTIME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DISPDEPT">DISPDEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESDEPTID">PRESDEPTID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DR_FLAG">DR_FLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="MESSAGETYPE">MESSAGETYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SENDER">SENDER</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SENDERNAME">SENDERNAME</Field>
+</Entity>
+<Entity code="ZY_DRUGMESSAGE_ORDER"  name="ZY_DRUGMESSAGE_ORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="DRUGMESSAGEID">DRUGMESSAGEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MASTERID">MASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHEMNAME">CHEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPEC">SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BEDNO">BEDNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURENO">CURENO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CUREDEPT">CUREDEPT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CUREDOC">CUREDOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RECIPENUM">RECIPENUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DRUGNUM">DRUGNUM</Field>
+<Field DataKey="none" DataType="BIGINT"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITNUM">UNITNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DOSENAME">DOSENAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="RECIPEMASTERID">RECIPEMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDERRECIPEID">ORDERRECIPEID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="CHARGEMAN">CHARGEMAN</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="CHARGEDATE">CHARGEDATE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="REFUNDFLAG">REFUNDFLAG</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="UNIFORM_FLAG">UNIFORM_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDERGROUP_ID">ORDERGROUP_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DOCORDERTYPE">DOCORDERTYPE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOCORDERID">DOCORDERID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="DISP_FLAG">DISP_FLAG</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="NODRUG_FLAG">NODRUG_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+
+</Entity>
+<Entity code="ZY_NURSE_ORDEREXEC"  name="ZY_NURSE_ORDEREXEC" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="DATE"  code="EXEC_DATE">EXEC_DATE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="EXEC_USER">EXEC_USER</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATIENT_ID">PATIENT_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="BABY_ID">BABY_ID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REALEXEC_USER">REALEXEC_USER</Field>
+<Field DataKey="none" DataType="DATE"  code="REALEXEC_TIME">REALEXEC_TIME</Field>
+</Entity>
+<Entity code="VI_DRUG_DIC"  name="VI_DRUG_DIC" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPEC">SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKNUM">PACKNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DEFSTOCKPRICE">DEFSTOCKPRICE</Field>
+</Entity>
+<Entity code="VI_DRUG_YF"  name="VI_DRUG_YF" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPEC">SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKNUM">PACKNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LUNITNAME">LUNITNAME</Field>
+</Entity>
+<Entity code="VI_DRUG_YK"  name="VI_DRUG_YK" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="NAME">NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="TYPEDICID">TYPEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="SPEC">SPEC</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKNUM">PACKNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="CURRENTNUM">CURRENTNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPTID">DEPTID</Field>
+</Entity>
+<Entity code="VI_ITEM_DRUG"  name="VI_ITEM_DRUG" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STORENUM">STORENUM</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTNAME">EXECDEPTNAME</Field>
+</Entity>
+<Entity code="VI_ITEM_PROJECT"  name="VI_ITEM_PROJECT" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTNAME">EXECDEPTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BYNAME">BYNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ISDRUG">ISDRUG</Field>
+</Entity>
+<Entity code="VI_MZ_SHOWCARD"  name="VI_MZ_SHOWCARD" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CODE">CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHEM_NAME">CHEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BASE_UNIT">BASE_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ISDRUG">ISDRUG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="HJXS">HJXS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXEC_DEPT_NAME">EXEC_DEPT_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="EXEC_DEPT_CODE">EXEC_DEPT_CODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NCMS_COMP_RATE">NCMS_COMP_RATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INSUR_TYPE">INSUR_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ISTEMPLATE">ISTEMPLATE</Field>
+</Entity>
+<Entity code="VI_BASE_HOSPITAL_ITEMS"  name="VI_BASE_HOSPITAL_ITEMS" type="View" IsGB="False">
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STD_CODE">STD_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COMPLEX_ID">COMPLEX_ID</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NCMS_COMP_RATE">NCMS_COMP_RATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INSUR_TYPE">INSUR_TYPE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="VALID_FLAG">VALID_FLAG</Field>
+</Entity>	
+<Entity code="VI_REG_PATLIST"  name="VI_REG_PATLIST" type="View" IsGB="False">
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="VISITNO">VISITNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CARDNO">CARDNO</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DEPT">REG_DEPT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_TYPE">REG_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_DOC">REG_DOC</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="REG_FEE">REG_FEE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REG_DATE">REG_DATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REG_INVOICENO">REG_INVOICENO</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="RECORD_FLAG">RECORD_FLAG</Field>
+</Entity>
+<Entity code="VI_ZY_SENDDRUG"  name="VI_ZY_SENDDRUG" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="PRESORDERID">PRESORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESMASTERID">PRESMASTERID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ISDISPENSE">ISDISPENSE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CURENO">CURENO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DOSEDICID">DOSEDICID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRODUCTNAME">PRODUCTNAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNITID">UNITID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="AMOUNT">AMOUNT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TOLAL_FEE">TOLAL_FEE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PRESAMOUNT">PRESAMOUNT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDEPTCODE">PRESDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDEPTNAME">PRESDEPTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDOCCODE">PRESDOCCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PRESDOCNAME">PRESDOCNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="CHARGECODE">CHARGECODE</Field>
+<Field DataKey="none" DataType="DATE"  code="PRESDATE">PRESDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="MARKDATE">MARKDATE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="COSTDATE">COSTDATE</Field>
+</Entity>
+<Entity code="VI_ITEM_ZY_DRUG"  name="VI_ITEM_ZY_DRUG" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="SPECDICID">SPECDICID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESTYPE">PRESTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMTYPE">ITEMTYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="INTEGER"  code="RELATIONNUM">RELATIONNUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDI_INVERSE">MEDI_INVERSE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STORENUM">STORENUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SCALE">SCALE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INSUR_TYPE">INSUR_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="GBCODE">GBCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+</Entity>
+<Entity code="VI_CLINICAL_ALL_ITEMS"  name="VI_CLINICAL_ALL_ITEMS" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="ITEMID">ITEMID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEMNAME">ITEMNAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_TYPE">ORDER_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="STANDARD">STANDARD</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PACKUNIT">PACKUNIT</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNPICKUNIT">UNPICKUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNPICKNUM">UNPICKNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="LEASTUNIT">LEASTUNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="PACKNUM">PACKNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DOSEUNIT">DOSEUNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="DOSENUM">DOSENUM</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NCMS_COMP_RATE">NCMS_COMP_RATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INSUR_TYPE">INSUR_TYPE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="BUY_PRICE">BUY_PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="SELL_PRICE">SELL_PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ADDRESS">ADDRESS</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STORENUM">STORENUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="EXECDEPTCODE">EXECDEPTCODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="EXECDEPTNAME">EXECDEPTNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="SERVER_ITEM_ID">SERVER_ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="UNPICK_FLAG">UNPICK_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="FLOAT_FLAG">FLOAT_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="VIRULENT_FLAG">VIRULENT_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NARCOTIC_FLAG">NARCOTIC_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="SKINTEST_FLAG">SKINTEST_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="LUNACY_FLAG">LUNACY_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="COSTLY_FLAG">COSTLY_FLAG</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DRUG_FLAG">DRUG_FLAG</Field>
+</Entity>
+<Entity code="VI_CLINICAL_ORDER"  name="VI_CLINICAL_ORDER" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="ORDER_ID">ORDER_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_NAME">ORDER_NAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ORDER_UNIT">ORDER_UNIT</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ORDER_TYPE">ORDER_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="INTEGER"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPT_NAME">DEPT_NAME</Field>
+<Field DataKey="none" DataType="CHARACTER"  code="STATITEM_CODE">STATITEM_CODE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="NCMS_COMP_RATE">NCMS_COMP_RATE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="INSUR_TYPE">INSUR_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEFAULT_USAGE">DEFAULT_USAGE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PY_CODE">PY_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="WB_CODE">WB_CODE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="D_CODE">D_CODE</Field>
+<Field DataKey="none" DataType="SMALLINT"  code="CLASS_TYPE">CLASS_TYPE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEDICAL_CLASS_NAME">MEDICAL_CLASS_NAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="TC_FLAG">TC_FLAG</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BZ">BZ</Field>
+</Entity>
+<Entity code="VI_MZ_MEDICAL_APPLY"  name="VI_MZ_MEDICAL_APPLY" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="APPLYID">APPLYID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATLISTID">PATLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PRESLISTID">PRESLISTID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="APPLY_TYPE">APPLY_TYPE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="MEDICAL_CLASS">MEDICAL_CLASS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="APPLY_CONTENT">APPLY_CONTENT</Field>
+<Field DataKey="none" DataType="BIGINT"  code="APPLY_DOC">APPLY_DOC</Field>
+<Field DataKey="none" DataType="BIGINT"  code="APPLY_DEPT">APPLY_DEPT</Field>
+<Field DataKey="none" DataType="DATE"  code="APPLY_DATE">APPLY_DATE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="APPLY_STATUS">APPLY_STATUS</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="MEMO">MEMO</Field>
+<Field DataKey="none" DataType="INTEGER"  code="STATUS">STATUS</Field>
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="DEPT_NAME">DEPT_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NUM">NUM</Field>
+</Entity>
+<Entity code="VI_ZY_NURSE_BEDSHO"  name="VI_ZY_NURSE_BEDSHO" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="DEPT_ID">DEPT_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="BED_NO">BED_NO</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PATID">PATID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATNAME">PATNAME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="PATSEX">PATSEX</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ACCOUNTTYPE">ACCOUNTTYPE</Field>
+</Entity>
+<Entity code="YK_PLANMASTER"  name="YK_PLANMASTER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PLANMASTERID">PLANMASTERID</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="REGTIME">REGTIME</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="REGPEOPLENAME">REGPEOPLENAME</Field>
+<Field DataKey="none" DataType="BIGINT"  code="REGPEOPLE">REGPEOPLE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="TIMESTAMP"  code="LASTCHANGTIME">LASTCHANGTIME</Field>
+</Entity>
+<Entity code="YK_PLANORDER"  name="YK_PLANORDER" type="Table" IsGB="False">
+<Field DataKey="key" DataType="BIGINT"  code="PLANORDERID">PLANORDERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="PLANMASTERID">PLANMASTERID</Field>
+<Field DataKey="none" DataType="BIGINT"  code="MAKERDICID">MAKERDICID</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILPRICE">RETAILPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEPRICE">TRADEPRICE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="TRADEFEE">TRADEFEE</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="RETAILFEE">RETAILFEE</Field>
+<Field DataKey="none" DataType="BIGINT"  code="UNIT">UNIT</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="STOCKNUM">STOCKNUM</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="UNITNAME">UNITNAME</Field>
+</Entity>
+<Entity code="VI_USEAGE_FEE"  name="VI_USEAGE_FEE" type="View" IsGB="False">
+<Field DataKey="none" DataType="BIGINT"  code="ID">ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="USE_NAME">USE_NAME</Field>
+<Field DataKey="none" DataType="INTEGER"  code="NUM">NUM</Field>
+<Field DataKey="none" DataType="INTEGER"  code="HSITEM_ID">HSITEM_ID</Field>
+<Field DataKey="none" DataType="INTEGER"  code="ITEM_ID">ITEM_ID</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_NAME">ITEM_NAME</Field>
+<Field DataKey="none" DataType="DECIMAL"  code="PRICE">PRICE</Field>
+<Field DataKey="none" DataType="VARCHAR"  code="ITEM_UNIT">ITEM_UNIT</Field>
+</Entity>
+</HIS>

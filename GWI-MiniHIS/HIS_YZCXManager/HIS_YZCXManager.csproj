@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D435A59C-157B-4BF5-B6C7-03371B688D44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_YZCXManager</RootNamespace>
+    <AssemblyName>HIS_YZCXManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3453.42529, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="查询统计\FrmDispStatQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmDispStatQuery.Designer.cs">
+      <DependentUpon>FrmDispStatQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmMZPatFeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmMZPatFeeQuery.Designer.cs">
+      <DependentUpon>FrmMZPatFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmMZRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmMZRegister.Designer.cs">
+      <DependentUpon>FrmMZRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmShowGraphic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmShowGraphic.Designer.cs">
+      <DependentUpon>FrmShowGraphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmZYFeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmZYFeeQuery.Designer.cs">
+      <DependentUpon>FrmZYFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmMZFeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmMZFeeQuery.Designer.cs">
+      <DependentUpon>FrmMZFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="界面控制\FrmCheckQueryControl.cs" />
+    <Compile Include="界面控制\FrmDispQueryControl.cs" />
+    <Compile Include="界面控制\FrmInOutQueryControl.cs" />
+    <Compile Include="界面控制\FrmPrjfeeQueryControl.cs" />
+    <Compile Include="界面控制\FrmStorequeryControl.cs" />
+    <Compile Include="查询统计\FrmDrugCheckQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmDrugCheckQuery.Designer.cs">
+      <DependentUpon>FrmDrugCheckQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmDrugInOutQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmDrugInOutQuery.Designer.cs">
+      <DependentUpon>FrmDrugInOutQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmManagerDiary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmManagerDiary.Designer.cs">
+      <DependentUpon>FrmManagerDiary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmZYPatfeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmZYPatfeeQuery.Designer.cs">
+      <DependentUpon>FrmZYPatfeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmProjectfeeQurey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmProjectfeeQurey.Designer.cs">
+      <DependentUpon>FrmProjectfeeQurey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmStoreQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmStoreQuery.Designer.cs">
+      <DependentUpon>FrmStoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="框架接口\InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="查询统计\FrmDispStatQuery.resx">
+      <DependentUpon>FrmDispStatQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmDrugCheckQuery.resx">
+      <DependentUpon>FrmDrugCheckQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmDrugInOutQuery.resx">
+      <DependentUpon>FrmDrugInOutQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmMZPatFeeQuery.resx">
+      <DependentUpon>FrmMZPatFeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmMZRegister.resx">
+      <DependentUpon>FrmMZRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmShowGraphic.resx">
+      <DependentUpon>FrmShowGraphic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmZYFeeQuery.resx">
+      <DependentUpon>FrmZYFeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmManagerDiary.resx">
+      <DependentUpon>FrmManagerDiary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmZYPatfeeQuery.resx">
+      <DependentUpon>FrmZYPatfeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmProjectfeeQurey.resx">
+      <DependentUpon>FrmProjectfeeQurey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmMZFeeQuery.resx">
+      <DependentUpon>FrmMZFeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmStoreQuery.resx">
+      <DependentUpon>FrmStoreQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="界面控制\FrmZYFeeQueryControl.cs" />
+    <Compile Include="界面控制\FrmZYPatfeeQueryControl.cs" />
+    <Compile Include="界面控制\GraphControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Entity\HIS.Entity.csproj">
+      <Project>{9FD609C2-B3D3-47A9-B087-A3647DE6F8CB}</Project>
+      <Name>HIS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.YZCX_BLL\HIS.YZCX_BLL.csproj">
+      <Project>{78E37369-C60D-4673-BC09-66CA537125D1}</Project>
+      <Name>HIS.YZCX_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

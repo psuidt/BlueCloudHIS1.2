@@ -1,0 +1,30 @@
+1,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",101,"",0,0
+1,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",102,"",0,0
+5,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",134,"",0,0
+5,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",135,"",0,0
+5,"所有","V_TYPE",4,1,"IN",2,0,0,"",0,0,"","",136,"",0,0
+5,"住院科室","V_ZYDEPT",4,1,"IN",4,0,0,"",0,0,"","",137," select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where zy_flag=1",0,0
+5,"ERR_CODE","ERR_CODE",4,1,"OUT",0,0,0,"",0,0,"","",138,"",0,0
+5,"ERR_TEXT","ERR_TEXT",100,0,"OUT",0,0,0,"",0,0,"","",139,"",0,0
+6,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",140,"",0,0
+6,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",141,"",0,0
+6,"所有","V_TYPE",4,1,"IN",2,0,0,"",0,0,"","",142,"",0,0
+6,"住院科室","V_ZYDEPT",4,1,"IN",4,0,0,"",0,0,"","",143," select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where zy_flag=1",0,0
+6,"ERR_CODE","ERR_CODE",4,1,"OUT",0,0,0,"",0,0,"","",144,"",0,0
+6,"ERR_TEXT","ERR_TEXT",100,0,"OUT",0,0,0,"",0,0,"","",145,"",0,0
+8,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",152,"",0,0
+8,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",153,"",0,0
+8,"所有","V_TYPE",4,1,"IN",2,0,0,"",0,0,"","",154,"",0,0
+8,"门诊科室","V_MZDEPT",4,1,"IN",4,0,0,"",0,0,"","",155," select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where mz_flag=1",0,0
+8,"ERR_CODE","ERR_CODE",4,1,"OUT",0,0,0,"",0,0,"","",156,"",0,0
+8,"ERR_TEXT","ERR_TEXT",100,0,"OUT",0,0,0,"",0,0,"","",157,"",0,0
+3,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",179,"",0,0
+3,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",180,"",0,0
+3,"所有","V_TYPE",4,1,"IN",2,0,0,"",0,0,"","",181,"",0,0
+3,"选择收费员","V_ALLCHARGER",4,1,"IN",4,0,0,"",0,0,"","",182," select  EMPLOYEE_ID as id ,name,py_code  from  BASE_EMPLOYEE_PROPERTY  where EMPLOYEE_ID not in (select EMPLOYEE_ID from base_role_doctor) and EMPLOYEE_ID not in (select EMPLOYEE_ID from BASE_ROLE_NURSE)",0,0
+10,"开始日期","V_BTIME",10,2,"IN",3,0,0,"",0,0,"","",183,"",0,0
+10,"结束日期","V_ETIME",10,2,"IN",3,0,0,"",0,0,"","",184,"",0,0
+10,"选择收费员","V_ALLCHARGER",8,1,"IN",4,0,0,"",0,0,"","",185," select  EMPLOYEE_ID as id ,name,py_code  from  BASE_EMPLOYEE_PROPERTY  where EMPLOYEE_ID not in (select EMPLOYEE_ID from base_role_doctor) and EMPLOYEE_ID not in (select EMPLOYEE_ID from BASE_ROLE_NURSE)",0,0
+10,"所有","V_TYPE",2,1,"IN",2,0,0,"",0,0,"","",186,"",0,0
+10,"ERR_CODE","ERR_CODE",4,1,"OUT",0,0,0,"",0,0,"","",187,"",0,0
+10,"ERR_TEXT","ERR_TEXT",100,0,"OUT",0,0,0,"",0,0,"","",188,"",0,0

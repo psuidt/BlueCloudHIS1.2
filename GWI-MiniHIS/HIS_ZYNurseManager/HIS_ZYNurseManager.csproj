@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1482397B-B764-49C6-8B51-C2758130583C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_ZYNurseManager</RootNamespace>
+    <AssemblyName>HIS_ZYNurseManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWI_DesReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3561.28906, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Base_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePromptManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\MessagePromptManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\BaseController.cs" />
+    <Compile Include="Action\BaseIView.cs" />
+    <Compile Include="Action\FrmBedShowController.cs" />
+    <Compile Include="Action\IFrmBedShowView.cs" />
+    <Compile Include="CanAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanAccount.Designer.cs">
+      <DependentUpon>CanAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccountCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountCheck.Designer.cs">
+      <DependentUpon>FrmAccountCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddModel.Designer.cs">
+      <DependentUpon>FrmAddModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssignBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssignBed.Designer.cs">
+      <DependentUpon>FrmAssignBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBedAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBedAssign.Designer.cs">
+      <DependentUpon>FrmBedAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcanaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcanaccount.Designer.cs">
+      <DependentUpon>Frmcanaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFeeModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFeeModel.Designer.cs">
+      <DependentUpon>FrmFeeModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModelApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModelApply.Designer.cs">
+      <DependentUpon>FrmModelApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicClass.cs" />
+    <Compile Include="PublicFeeModel.cs" />
+    <Compile Include="床位管理\FrmModifyDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="床位管理\FrmModifyDoc.Designer.cs">
+      <DependentUpon>FrmModifyDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="床位管理\FrmNewBedAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="床位管理\FrmNewBedAssign.Designer.cs">
+      <DependentUpon>FrmNewBedAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="床位管理\FrmBedShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="床位管理\FrmBedShow.Designer.cs">
+      <DependentUpon>FrmBedShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInsertNewBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInsertNewBed.Designer.cs">
+      <DependentUpon>FrmInsertNewBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFeeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFeeInput.Designer.cs">
+      <DependentUpon>FrmFeeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderExec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderExec.Designer.cs">
+      <DependentUpon>FrmOrderExec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderManager.Designer.cs">
+      <DependentUpon>FrmOrderManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderPrint.designer.cs">
+      <DependentUpon>FrmOrderPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderRePrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderRePrt.designer.cs">
+      <DependentUpon>FrmOrderRePrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatOut.Designer.cs">
+      <DependentUpon>FrmPatOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="FrmOrderTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderTrans.Designer.cs">
+      <DependentUpon>FrmOrderTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CanAccount.resx">
+      <DependentUpon>CanAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccountCheck.resx">
+      <DependentUpon>FrmAccountCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddModel.resx">
+      <DependentUpon>FrmAddModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssignBed.resx">
+      <DependentUpon>FrmAssignBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBedAssign.resx">
+      <DependentUpon>FrmBedAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFeeModel.resx">
+      <DependentUpon>FrmFeeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModelApply.resx">
+      <DependentUpon>FrmModelApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="床位管理\FrmModifyDoc.resx">
+      <DependentUpon>FrmModifyDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="床位管理\FrmNewBedAssign.resx">
+      <DependentUpon>FrmNewBedAssign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="床位管理\FrmBedShow.resx">
+      <DependentUpon>FrmBedShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcanaccount.resx">
+      <DependentUpon>Frmcanaccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInsertNewBed.resx">
+      <DependentUpon>FrmInsertNewBed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFeeInput.resx">
+      <DependentUpon>FrmFeeInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderManager.resx">
+      <DependentUpon>FrmOrderManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderPrint.resx">
+      <DependentUpon>FrmOrderPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderRePrt.resx">
+      <DependentUpon>FrmOrderRePrt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderTrans.resx">
+      <DependentUpon>FrmOrderTrans.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderExec.resx">
+      <DependentUpon>FrmOrderExec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatOut.resx">
+      <DependentUpon>FrmPatOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="床位管理\FrmNotAssignBed.resx">
+      <DependentUpon>FrmNotAssignBed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="床位管理\FrmTransDept.resx">
+      <DependentUpon>FrmTransDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\.svn\entries" />
+    <None Include="Resources\.svn\prop-base\action_refresh.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\action_stop.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\blue-loading.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\copy.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\folder_new.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\folder_page.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\icon_accept.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\icon_history.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\icon_network.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\icon_package_get.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\image.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\large-loading.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\list_users.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\page_cross.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\page_edit.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\page_key.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\page_refresh.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\page_user_dark.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\re_left_icon04.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\table_delete.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\保存.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\修改.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\删除报表.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\刷新.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\剪切.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\复制.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\帮助.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\打印.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\搜索.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\搜索~.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\新建.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\日期.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\目录.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\粘贴.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\系统设置.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\菜单设置.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\设置.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\设计报表.gif.svn-base" />
+    <None Include="Resources\.svn\prop-base\退出.png.svn-base" />
+    <None Include="Resources\.svn\prop-base\预览.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\action_refresh.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\action_stop.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\blue-loading.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\copy.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\folder_new.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\folder_page.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\icon_accept.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\icon_history.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\icon_network.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\icon_package_get.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\image.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\large-loading.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\list_users.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\page_cross.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\page_edit.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\page_key.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\page_refresh.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\page_user_dark.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\re_left_icon04.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\table_delete.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\保存.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\修改.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\删除报表.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\刷新.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\剪切.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\复制.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\帮助.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\打印.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\搜索.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\搜索~.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\新建.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\日期.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\目录.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\粘贴.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\系统设置.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\菜单设置.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\设置.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\设计报表.gif.svn-base" />
+    <None Include="Resources\.svn\text-base\退出.png.svn-base" />
+    <None Include="Resources\.svn\text-base\预览.gif.svn-base" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="床位管理\FrmNotAssignBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="床位管理\FrmNotAssignBed.Designer.cs">
+      <DependentUpon>FrmNotAssignBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="床位管理\FrmTransDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="床位管理\FrmTransDept.Designer.cs">
+      <DependentUpon>FrmTransDept.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MedicalConfir_BLL\HIS.MedicalConfir_BLL.csproj">
+      <Project>{856843F0-A669-40CC-8A80-3797CD01489A}</Project>
+      <Name>HIS.MedicalConfir_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.ZYNurse_BLL\HIS.ZYNurse_BLL.csproj">
+      <Project>{0D83658B-BA71-4A0C-BA47-9CA100660BAD}</Project>
+      <Name>HIS.ZYNurse_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.ZY_BLL\HIS.ZY_BLL.csproj">
+      <Project>{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}</Project>
+      <Name>HIS.ZY_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\action_refresh.gif" />
+    <Content Include="Resources\action_stop.gif" />
+    <Content Include="Resources\blue-loading.gif" />
+    <Content Include="Resources\copy.gif" />
+    <Content Include="Resources\folder_new.gif" />
+    <Content Include="Resources\folder_page.gif" />
+    <Content Include="Resources\icon_accept.gif" />
+    <Content Include="Resources\icon_history.gif" />
+    <Content Include="Resources\icon_network.gif" />
+    <Content Include="Resources\icon_package_get.gif" />
+    <Content Include="Resources\image.gif" />
+    <Content Include="Resources\large-loading.gif" />
+    <Content Include="Resources\list_users.gif" />
+    <Content Include="Resources\page_cross.gif" />
+    <Content Include="Resources\page_edit.gif" />
+    <Content Include="Resources\page_key.gif" />
+    <Content Include="Resources\page_refresh.gif" />
+    <Content Include="Resources\page_user_dark.gif" />
+    <Content Include="Resources\re_left_icon04.gif" />
+    <Content Include="Resources\table_delete.gif" />
+    <Content Include="Resources\保存.gif" />
+    <Content Include="Resources\修改.gif" />
+    <Content Include="Resources\删除报表.gif" />
+    <Content Include="Resources\刷新.gif" />
+    <Content Include="Resources\剪切.gif" />
+    <Content Include="Resources\复制.gif" />
+    <Content Include="Resources\帮助.gif" />
+    <Content Include="Resources\打印.gif" />
+    <Content Include="Resources\搜索.gif" />
+    <Content Include="Resources\搜索~.gif" />
+    <Content Include="Resources\新建.gif" />
+    <Content Include="Resources\日期.gif" />
+    <Content Include="Resources\目录.gif" />
+    <Content Include="Resources\粘贴.gif" />
+    <Content Include="Resources\系统设置.gif" />
+    <Content Include="Resources\菜单设置.gif" />
+    <Content Include="Resources\设置.gif" />
+    <Content Include="Resources\设计报表.gif" />
+    <Content Include="Resources\退出.png" />
+    <Content Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\.svn\props\" />
+    <Folder Include="Resources\.svn\tmp\prop-base\" />
+    <Folder Include="Resources\.svn\tmp\props\" />
+    <Folder Include="Resources\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

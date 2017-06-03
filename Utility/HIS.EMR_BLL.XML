@@ -1,0 +1,1344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIS.EMR_BLL</name>
+    </assembly>
+    <members>
+        <member name="T:CHIService">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getYfjzInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetYfjzInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetYfjzInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getYfjzInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getYfjzInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkHth(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegincheckHth(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndcheckHth(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkHthAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkHthAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Medical_InspectionInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_Medical_InspectionInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_Medical_InspectionInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Medical_InspectionInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Medical_InspectionInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMzInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BeginuploadMzInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EnduploadMzInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMzInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMzInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Clinic_Medical_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_Clinic_Medical_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_Clinic_Medical_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Clinic_Medical_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Clinic_Medical_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Mzcf_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_Mzcf_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_Mzcf_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Mzcf_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Mzcf_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadCrbInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BeginuploadCrbInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EnduploadCrbInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadCrbInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadCrbInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyBcInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetZyBcInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetZyBcInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyBcInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyBcInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getPatientInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetPatientInfo(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetPatientInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getPatientInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getPatientInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMbInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetMbInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetMbInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMbInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMbInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyryInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetZyryInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetZyryInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyryInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZyryInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZhxx(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetZhxx(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetZhxx(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZhxxAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZhxxAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMbInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BeginuploadMbInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EnduploadMbInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMbInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadMbInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_To_Hospital_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_To_Hospital_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_To_Hospital_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_To_Hospital_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_To_Hospital_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjrq(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetTjrq(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetTjrq(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjrqAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjrqAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkZy(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegincheckZy(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndcheckZy(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkZyAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkZyAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycyInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetZycyInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetZycyInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycyInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycyInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadZxsr(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BeginuploadZxsr(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EnduploadZxsr(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadZxsrAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadZxsrAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetTjInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetTjInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getTjInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Zycf_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_Zycf_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_Zycf_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Zycf_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Zycf_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzblInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetMzblInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetMzblInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzblInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzblInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getJkdaInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetJkdaInfo(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetJkdaInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getJkdaInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getJkdaInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzcfInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetMzcfInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetMzcfInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzcfInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getMzcfInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Out_Hospital_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_Out_Hospital_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_Out_Hospital_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Out_Hospital_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_Out_Hospital_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadGrdaInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BeginuploadGrdaInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EnduploadGrdaInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadGrdaInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.uploadGrdaInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycfInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegingetZycfInfo(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndgetZycfInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycfInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.getZycfInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_In_Hospital_Records(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Beginupload_In_Hospital_Records(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.Endupload_In_Hospital_Records(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_In_Hospital_RecordsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.upload_In_Hospital_RecordsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkMz(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.BegincheckMz(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.EndcheckMz(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkMzAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.checkMzAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:CHIService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getYfjzInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.checkHthCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_Medical_InspectionInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.uploadMzInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_Clinic_Medical_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_Mzcf_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.uploadCrbInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getZyBcInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getPatientInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getMbInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getZyryInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getZhxxCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.uploadMbInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_To_Hospital_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getTjrqCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.checkZyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getZycyInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.uploadZxsrCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getTjInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_Zycf_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getMzblInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getJkdaInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getMzcfInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_Out_Hospital_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.uploadGrdaInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.getZycfInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.upload_In_Hospital_RecordsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:CHIService.checkMzCompleted">
+            <remarks/>
+        </member>
+        <member name="T:getYfjzInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getYfjzInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getYfjzInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:checkHthCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:checkHthCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:checkHthCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_Medical_InspectionInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_Medical_InspectionInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_Medical_InspectionInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:uploadMzInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:uploadMzInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:uploadMzInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_Clinic_Medical_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_Clinic_Medical_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_Clinic_Medical_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_Mzcf_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_Mzcf_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_Mzcf_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:uploadCrbInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:uploadCrbInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:uploadCrbInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getZyBcInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getZyBcInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getZyBcInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getPatientInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getPatientInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getPatientInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getMbInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getMbInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getMbInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getZyryInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getZyryInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getZyryInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getZhxxCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getZhxxCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getZhxxCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:uploadMbInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:uploadMbInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:uploadMbInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_To_Hospital_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_To_Hospital_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_To_Hospital_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getTjrqCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getTjrqCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getTjrqCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:checkZyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:checkZyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:checkZyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getZycyInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getZycyInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getZycyInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:uploadZxsrCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:uploadZxsrCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:uploadZxsrCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getTjInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getTjInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getTjInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_Zycf_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_Zycf_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_Zycf_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getMzblInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getMzblInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getMzblInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getJkdaInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getJkdaInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getJkdaInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getMzcfInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getMzcfInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getMzcfInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_Out_Hospital_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_Out_Hospital_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_Out_Hospital_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:uploadGrdaInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:uploadGrdaInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:uploadGrdaInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:getZycfInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:getZycfInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:getZycfInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:upload_In_Hospital_RecordsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:upload_In_Hospital_RecordsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:upload_In_Hospital_RecordsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:checkMzCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:checkMzCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:checkMzCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:HIS.EMR_BLL.EmrElement">
+            <summary>
+            病历元素
+            </summary>
+        </member>
+        <member name="F:HIS.EMR_BLL.EmrElement._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.#ctor">
+            <summary>
+            病历元素
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            病历元素
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.CreateElement(System.String)">
+            <summary>
+            获得病历元素
+            </summary>
+            <param name="elementCode">元素编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.GetChiefElement">
+            <summary>
+            获得主元素
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.GetAllElement">
+            <summary>
+            获得所有的病历元素
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.GetElementMould">
+            <summary>
+            获得病历元素模板列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElement.GetElementMould(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            获得病历元素模板列表
+            </summary>
+            <param name="level">模板级别</param>
+            <param name="employeeId">员工Id</param>
+            <param name="deptId">科室Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.EMR_BLL.EmrMould">
+            <summary>
+            病历模板
+            </summary>
+        </member>
+        <member name="F:HIS.EMR_BLL.EmrMould._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.#ctor">
+            <summary>
+            病历模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            病历模板
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.Add">
+            <summary>
+            添加模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.Update">
+            <summary>
+            修改模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.Delete">
+            <summary>
+            删除模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.GetAllMouldClass">
+            <summary>
+            获得病历模板分类信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrMould.GetAllMouldClass(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            获得病历模板分类信息
+            </summary>
+            <param name="level">模板级别</param>
+            <param name="employeeId">员工Id</param>
+            <param name="deptId">科室Id</param>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.EMR_BLL.EmrMould.MouldContent">
+            <summary>
+            Xml格式的病历模板内容
+            </summary>
+        </member>
+        <member name="T:HIS.EMR_BLL.EmrRecord">
+            <summary>
+            病历记录
+            </summary>
+        </member>
+        <member name="F:HIS.EMR_BLL.EmrRecord._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.#ctor">
+            <summary>
+            病历记录
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            病历记录
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.#ctor(System.Int64,System.Int64,System.String)">
+            <summary>
+            病历记录
+            </summary>
+            <param name="patId">病人ID</param>
+            <param name="patListId">病人就诊ID</param>
+            <param name="emrTypeCode">病历类型编码</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.Add">
+            <summary>
+            添加病历记录
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.Update">
+            <summary>
+            修改病历记录
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.Delete">
+            <summary>
+            删除病历记录
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrRecord.Invalid">
+            <summary>
+            作废病历记录
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.EmrRecord.RecordContentXml">
+            <summary>
+            Xml格式的病历记录内容
+            </summary>
+        </member>
+        <member name="T:HIS.EMR_BLL.OP_EmrDataUpdate">
+            <summary>
+            病历上传操作类
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetEmrPatList(System.Boolean)">
+            <summary>
+            获得病人列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetEmrRecord(System.String,System.Boolean)">
+            <summary>
+            获得病历列表
+            </summary>
+            <param name="patIdList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetMzcfRecord(System.Int64)">
+            <summary>
+            获得门诊处方信息
+            </summary>
+            <param name="patListId">病人就诊Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZycfRecord(System.Int64)">
+            <summary>
+            获得住院处方信息
+            </summary>
+            <param name="patListId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.UploaEmrRecord(System.String,System.Collections.Generic.List{HIS.EMR_BLL.EmrRecord})">
+            <summary>
+            上传病历记录
+            </summary>
+            <param name="records">病历记录列表</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetPatFileId(System.String)">
+            <summary>
+            获得健康档案病人信息
+            </summary>
+            <param name="patName">病人姓名</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetPatFileId(System.String,System.String)">
+            <summary>
+            获得健康档案病人档案号ID
+            </summary>
+            <param name="mediCard"></param>
+            <param name="patName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_Clinic_Medical_Records(System.String,HIS.EMR_BLL.EmrRecord)">
+            <summary>
+            上传门诊病历记录
+            </summary>
+            <param name="record">病历记录</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_Mzcf_Records(System.Int32,System.String,System.Int32)">
+            <summary>
+            上传门诊处方记录
+            </summary>
+            <param name="patListId">病人就诊Id</param>
+            <param name="dahId">档案号Id</param>
+            <param name="recordId">门诊病历记录Id</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_To_Hospital_Records(System.String,HIS.EMR_BLL.EmrRecord)">
+            <summary>
+            上传入院记录
+            </summary>
+            <param name="record">病历记录</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_In_Hospital_Records(System.String,HIS.EMR_BLL.EmrRecord)">
+            <summary>
+            上传病程记录
+            </summary>
+            <param name="record">病历记录</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_Out_Hospital_Records(System.String,HIS.EMR_BLL.EmrRecord)">
+            <summary>
+            上传出院记录
+            </summary>
+            <param name="record">病历记录</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.Upload_Zycf_Records(System.Int32,System.String,System.Int32)">
+            <summary>
+            上传住院费用
+            </summary>
+            <param name="patListId"></param>
+            <param name="dahId"></param>
+            <param name="recordId"></param>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.CheckMz(System.String,System.String)">
+            <summary>
+            判断是否已上传该门诊病历信息
+            </summary>
+            <param name="dahid">档案号</param>
+            <param name="his_blbh">病历编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.CheckZy(System.String,System.String)">
+            <summary>
+            判断是否已上传该住院病历信息
+            </summary>
+            <param name="dahid">档案号</param>
+            <param name="his_blbh">病历编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.LoadEmrRecord(System.String,System.String)">
+            <summary>
+            下载病人历史病历信息
+            </summary>
+            <param name="dahId"></param>
+            <param name="recordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetMzblInfo(System.String)">
+            <summary>
+            查询门诊病历信息
+            </summary>
+            <param name="dahid">档案号Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetMzcfInfo(System.String)">
+            <summary>
+            查询门诊处方信息
+            </summary>
+            <param name="dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZyryInfo(System.String)">
+            <summary>
+            查询住院入院信息
+            </summary>
+            <param name="dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZyBcInfo(System.String)">
+            <summary>
+            查询病程记录信息
+            </summary>
+            <param name="dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZycyInfo(System.String)">
+            <summary>
+            查询出院记录信息
+            </summary>
+            <param name="dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZycfInfo(System.String)">
+            <summary>
+            查询住院处方信息
+            </summary>
+            <param name="dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetTjInfo(System.String)">
+            <summary>
+            查询体检信息
+            </summary>
+            <param name="s_dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetMbInfo(System.String)">
+            <summary>
+            查询慢病信息
+            </summary>
+            <param name="s_dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetYfjzInfo(System.String)">
+            <summary>
+            查询预防接种信息
+            </summary>
+            <param name="s_dahid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.EMR_BLL.OP_EmrDataUpdate.GetTjrq(System.String,System.String)">
+            <summary>
+            查询体检日期
+            </summary>
+            <param name="s_ylzh"></param>
+            <param name="s_sfz"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:HIS.EMR_BLL.OP_EmrDataUpdate.GetZhxx(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="T:HIS.EMR_BLL.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.ClinicMedicalRecords">
+            <summary>
+              查找类似 &lt;chs&gt;
+             &lt;table&gt;
+               &lt;row type=&quot;0&quot;&gt;
+                 &lt;dahid&gt;1481&lt;/dahid&gt;
+                 &lt;zs&gt;主诉&lt;/zs&gt;
+                 &lt;xbs&gt;现病史&lt;/xbs&gt;
+                 &lt;jws&gt;既往史&lt;/jws&gt;
+                 &lt;jzs&gt;家族史&lt;/jzs&gt;
+                 &lt;gms&gt;过敏史&lt;/gms&gt;
+                 &lt;yjs&gt;月经史&lt;/yjs&gt;
+                 &lt;hys&gt;婚育史&lt;/hys&gt;
+                 &lt;tw&gt;体温&lt;/tw&gt;
+                 &lt;hx&gt;呼吸&lt;/hx&gt;
+                 &lt;mb&gt;脉搏&lt;/mb&gt;
+                 &lt;ssy&gt;SBP&lt;/ssy&gt;
+                 &lt;szy&gt;DBP&lt;/szy&gt;
+                 &lt;tgjc&gt;其他体格检查信息&lt;/tgjc&gt;
+                 &lt;hzjc&gt;辅助检查&lt;/hzjc&gt;
+                 &lt;zd&gt;诊断&lt;/zd&gt;
+                 &lt;zd2&gt;诊断2&lt;/zd2&gt;
+                 &lt;zd3&gt;诊断3&lt;/zd3&gt;
+                 &lt;zd4&gt;诊断4&lt;/zd4&gt;
+                 &lt;zdqt&gt;其他诊断&lt;/zdqt&gt;
+                 &lt;cf&gt;处方信息&lt;/cf&gt;
+                 &lt;jzr [字符串的其余部分被截断]&quot;; 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.InHospitalRecords">
+            <summary>
+              查找类似 &lt;chs&gt;
+             &lt;table&gt;
+               &lt;row  type=&quot;0&quot;&gt;
+                 &lt;zyid&gt;住院号id &lt;/zyid&gt;
+                 &lt;dahid&gt;档案号id&lt;/dahid&gt;
+                 &lt;tw&gt;体温 &lt;/tw&gt;
+                 &lt;hx&gt;呼吸&lt;/hx&gt;
+                 &lt;mb&gt;脉搏&lt;/mb&gt;
+                 &lt;ssy&gt;SBP&lt;/ssy&gt;
+                 &lt;szy&gt;DBP&lt;/szy&gt;
+                 &lt;tgjc&gt;体格检查&lt;/tgjc&gt;
+                 &lt;hzjc&gt;辅助检查&lt;/hzjc&gt;
+                 &lt;zd&gt;诊断&lt;/zd&gt;
+                 &lt;cf&gt;处方&lt;/cf&gt;
+                 &lt;qt&gt;其他&lt;/qt&gt;
+                 &lt;zdqt&gt;其他诊断&lt;/zdqt&gt;
+                 &lt;ryqk&gt;入院情况&lt;/ryqk&gt;
+                 &lt;zdyj&gt;诊断依据&lt;/zdyj&gt;
+                 &lt;jbzd&gt;鉴别诊断 &lt;/jbzd&gt;
+                 &lt;jcrq&gt;检查日期&lt;/jcrq&gt;
+                 &lt;jcys&gt;检查医生&lt;/jcys&gt;
+                 &lt;jgdm&gt;机构代码&lt;/jgdm&gt;
+                 &lt;djr&gt;登记人&lt;/djr&gt;
+                 &lt;djrq [字符串的其余部分被截断]&quot;; 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.MzcfRecords">
+             <summary>
+               查找类似 &lt;chs&gt;
+              &lt;table&gt;
+                &lt;row type=&quot;0&quot;&gt;
+                  &lt;CFBH&gt;处方编号&lt;/CFBH&gt;
+                  &lt;DAHID&gt;档案号ID&lt;/DAHID&gt;
+                  &lt;JZSJ&gt;就诊时间&lt;/JZSJ&gt;
+                  &lt;XMMC&gt; 项目名称&lt;/XMMC&gt;
+                  &lt;GG&gt;规格&lt;/GG&gt;
+                  &lt;CS&gt;产商&lt;/CS&gt;
+                  &lt;PH&gt;批号&lt;/PH&gt;
+                  &lt;SL&gt;数量&lt;/SL&gt;
+                  &lt;DW&gt;单位&lt;/DW&gt;
+                  &lt;DJ&gt;单价&lt;/DJ&gt;
+                  &lt;YF&gt;用法&lt;/YF&gt;
+                  &lt;YL&gt;用量&lt;/YL&gt;
+                  &lt;PL&gt;频率&lt;/PL&gt;
+                  &lt;DJR&gt;登记人&lt;/DJR&gt;
+                  &lt;DJRQ&gt;登记日期&lt;/DJRQ&gt;
+                  &lt;JGDM&gt;机构代码&lt;/JGDM&gt;
+                  &lt;HIS_BLBH&gt;病历编号&lt;/HIS_BLBH&gt;
+                &lt;/row&gt;
+              &lt;/table&gt;
+            &lt;/chs&gt;
+             的本地化字符串。
+             </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.OutHospitalRecords">
+             <summary>
+               查找类似 &lt;chs&gt;
+              &lt;table&gt;
+                &lt;row  type=&quot;0&quot;&gt;
+                  &lt;zyid&gt;住院ID&lt;/zyid&gt;
+                  &lt;dahid&gt;档案号ID&lt;/dahid&gt;
+                  &lt;zzys&gt;主治医生&lt;/zzys&gt;
+                  &lt;ryqk&gt;入院情况&lt;/ryqk&gt;
+                  &lt;cyrq&gt;出院日期&lt;/cyrq&gt;
+                  &lt;cyqk&gt;出院情况&lt;/cyqk&gt;
+                  &lt;cyzd&gt;出院诊断&lt;/cyzd&gt;
+                  &lt;cyyz&gt;出院医嘱&lt;/cyyz&gt;
+                  &lt;zdqt&gt;其他诊断&lt;/zdqt&gt;
+                  &lt;qt&gt;其他&lt;/qt&gt;
+                  &lt;zljg&gt;诊疗经过&lt;/zljg&gt;
+                  &lt;jgdm&gt;医院代码&lt;/jgdm&gt;
+                  &lt;djr&gt;登记人&lt;/djr&gt;
+                  &lt;djrq&gt;登记日期&lt;/djrq&gt;
+                &lt;/row&gt;
+              &lt;/table&gt;
+            &lt;/chs&gt; 的本地化字符串。
+             </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.ToHospitalRecords">
+            <summary>
+              查找类似 &lt;chs&gt;
+             &lt;table&gt;
+               &lt;row  type=&quot;0&quot;&gt;
+                 &lt;zyid&gt;住院ID&lt;/zyid&gt;
+                 &lt;zyh&gt;住院号&lt;/zyh&gt;
+                 &lt;dahid&gt;档案号ID&lt;/dahid&gt;
+                 &lt;zs&gt;主诉&lt;/zs&gt;
+                 &lt;xbs&gt;现病史&lt;/xbs&gt;
+                 &lt;jws&gt;既往史&lt;/jws&gt;
+                 &lt;jzs&gt;家族史&lt;/jzs&gt;
+                 &lt;gms&gt;过敏史&lt;/gms&gt;
+                 &lt;yjs&gt;月经史&lt;/yjs&gt;
+                 &lt;hys&gt;婚育史&lt;/hys&gt;
+                 &lt;zylx&gt;住院类型&lt;/zylx&gt;
+                 &lt;fffs&gt;付费方式&lt;/fffs&gt;
+                 &lt;ryrq&gt;入院时间&lt;/ryrq&gt;
+                 &lt;ryqk&gt;入院情况&lt;/ryqk&gt;
+                 &lt;ryzd&gt;入院诊断&lt;/ryzd&gt;
+                 &lt;zdqt&gt;其他诊断&lt;/zdqt&gt;
+                 &lt;ryks&gt;科室&lt;/ryks&gt;
+                 &lt;ch&gt;床号&lt;/ch&gt;
+                 &lt;zzys&gt;主治医生&lt;/zzys&gt;
+                 &lt;qt&gt;其他&lt;/qt&gt;
+                 &lt;jzyy [字符串的其余部分被截断]&quot;; 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:HIS.EMR_BLL.Properties.Resources.ZycfRecords">
+             <summary>
+               查找类似   &lt;chs&gt;
+                &lt;table&gt;
+                  &lt;row type=&quot;0&quot;&gt;
+                    &lt;CFBH&gt;处方编号&lt;/CFBH&gt;
+                    &lt;DAHID&gt;档案号ID&lt;/DAHID&gt;
+                    &lt;JZSJ&gt;就诊时间&lt;/JZSJ&gt;
+                    &lt;XMMC&gt; 项目名称&lt;/XMMC&gt;
+                    &lt;GG&gt;规格&lt;/GG&gt;
+                    &lt;CS&gt;产商&lt;/CS&gt;
+                    &lt;PH&gt;批号&lt;/PH&gt;
+                    &lt;SL&gt;数量&lt;/SL&gt;
+                    &lt;DW&gt;单位&lt;/DW&gt;
+                    &lt;DJ&gt;单价&lt;/DJ&gt;
+                    &lt;YF&gt;用法&lt;/YF&gt;
+                    &lt;YL&gt;用量&lt;/YL&gt;
+                    &lt;PL&gt;频率&lt;/PL&gt;
+                    &lt;DJR&gt;登记人&lt;/DJR&gt;
+                    &lt;DJRQ&gt;登记日期&lt;/DJRQ&gt;
+                    &lt;JGDM&gt;机构代码&lt;/JGDM&gt;
+                    &lt;HIS_BLBH&gt;病历编号&lt;/HIS_BLBH&gt;
+                  &lt;/row&gt;
+                &lt;/table&gt;
+              &lt;/chs&gt;
+            
+             的本地化字符串。
+             </summary>
+        </member>
+        <member name="T:HIS.EMR_BLL.EmrElementMould">
+            <summary>
+            病历元素模板
+            </summary>
+        </member>
+        <member name="F:HIS.EMR_BLL.EmrElementMould._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElementMould.#ctor">
+            <summary>
+            病历元素模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElementMould.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            病历元素模板
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElementMould.Add">
+            <summary>
+            添加模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElementMould.Update">
+            <summary>
+            修改模板
+            </summary>
+        </member>
+        <member name="M:HIS.EMR_BLL.EmrElementMould.Delete">
+            <summary>
+            删除模板
+            </summary>
+        </member>
+    </members>
+</doc>

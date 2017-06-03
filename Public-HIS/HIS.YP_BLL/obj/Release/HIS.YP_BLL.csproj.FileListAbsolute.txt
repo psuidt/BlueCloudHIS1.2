@@ -1,0 +1,5 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.YP_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.YP_BLL.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.YP_BLL\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.YP_BLL\obj\Release\HIS.YP_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.YP_BLL\obj\Release\HIS.YP_BLL.pdb

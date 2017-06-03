@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FF7DE30-4868-4E62-8C07-0D7439DC8B7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_MZManager</RootNamespace>
+    <AssemblyName>HIS_MZManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWI_DesReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3404.19425, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Base_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.DownUpLoadData, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Interface, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_PublicManager, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\FrmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FrmAccount.Designer.cs">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FrmAccoutStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FrmAccoutStatItem.Designer.cs">
+      <DependentUpon>FrmAccoutStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FrmAllAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FrmAllAccount.Designer.cs">
+      <DependentUpon>FrmAllAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FrmViewInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FrmViewInvoice.Designer.cs">
+      <DependentUpon>FrmViewInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportingEventArgs.cs" />
+    <Compile Include="FrmDownLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownLoad.Designer.cs">
+      <DependentUpon>FrmDownLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GH\FrmInputRegInvoiceNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GH\FrmInputRegInvoiceNo.Designer.cs">
+      <DependentUpon>FrmInputRegInvoiceNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GH\FrmMzgh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GH\FrmMzgh.Designer.cs">
+      <DependentUpon>FrmMzgh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GH\FrmMzghController.cs" />
+    <Compile Include="HJSF\FrmAdjustInvoiceNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmAdjustInvoiceNo.Designer.cs">
+      <DependentUpon>FrmAdjustInvoiceNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\New\FrmBudgetBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\New\FrmBudgetBalance.Designer.cs">
+      <DependentUpon>FrmBudgetBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\FrmChargeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmChargeInfo.Designer.cs">
+      <DependentUpon>FrmChargeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\FrmHJSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmHJSF.Designer.cs">
+      <DependentUpon>FrmHJSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\FrmInsurPatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmInsurPatientInfo.Designer.cs">
+      <DependentUpon>FrmInsurPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\New\FrmOutPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\New\FrmOutPatient.Designer.cs">
+      <DependentUpon>FrmOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\New\FrmPreviousInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\New\FrmPreviousInfo.Designer.cs">
+      <DependentUpon>FrmPreviousInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\FrmUnCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HJSF\FrmUnCharge.Designer.cs">
+      <DependentUpon>FrmUnCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HJSF\New\界面控制器\DelegetAndEventClass.cs" />
+    <Compile Include="HJSF\New\界面控制器\FormViewInterface.cs" />
+    <Compile Include="HJSF\New\界面控制器\FrmBudgetBalanceController\FrmBudgetBalanceController1.cs" />
+    <Compile Include="HJSF\New\界面控制器\FrmBudgetBalanceController\FrmBudgetBalanceController2.cs" />
+    <Compile Include="HJSF\New\界面控制器\FrmOutPatientController\FrmOutPatientController.cs" />
+    <Compile Include="HJSF\New\界面控制器\PatientConvert.cs" />
+    <Compile Include="HJSF\New\界面控制器\UIOutPatient.cs" />
+    <Compile Include="ILControl\ILSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ILControl\ILSelectDialog.Designer.cs">
+      <DependentUpon>ILSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="InvoiceManager\FrmAllotInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceManager\FrmAllotInvoice.Designer.cs">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceManager\FrmInvoiceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceManager\FrmInvoiceManager.Designer.cs">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account\FrmAccount.resx">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\FrmAccoutStatItem.resx">
+      <DependentUpon>FrmAccoutStatItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\FrmAllAccount.resx">
+      <DependentUpon>FrmAllAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\FrmViewInvoice.resx">
+      <DependentUpon>FrmViewInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownLoad.resx">
+      <DependentUpon>FrmDownLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GH\FrmInputRegInvoiceNo.resx">
+      <DependentUpon>FrmInputRegInvoiceNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GH\FrmMzgh.resx">
+      <DependentUpon>FrmMzgh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmAdjustInvoiceNo.resx">
+      <DependentUpon>FrmAdjustInvoiceNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\New\FrmBudgetBalance.resx">
+      <DependentUpon>FrmBudgetBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmChargeInfo.resx">
+      <DependentUpon>FrmChargeInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmHJSF.resx">
+      <DependentUpon>FrmHJSF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmInsurPatientInfo.resx">
+      <DependentUpon>FrmInsurPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\New\FrmOutPatient.resx">
+      <DependentUpon>FrmOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\New\FrmPreviousInfo.resx">
+      <DependentUpon>FrmPreviousInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HJSF\FrmUnCharge.resx">
+      <DependentUpon>FrmUnCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ILControl\ILSelectDialog.resx">
+      <DependentUpon>ILSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceManager\FrmAllotInvoice.resx">
+      <DependentUpon>FrmAllotInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceManager\FrmInvoiceManager.resx">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmChargeUserQuery.resx">
+      <DependentUpon>FrmChargeUserQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmInvoiceQuery.resx">
+      <DependentUpon>FrmInvoiceQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmItemFeeQuery.resx">
+      <DependentUpon>FrmItemFeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmPatientFeeQuery.resx">
+      <DependentUpon>FrmPatientFeeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmPatientSelect.resx">
+      <DependentUpon>FrmPatientSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmPrescriptionQuery.resx">
+      <DependentUpon>FrmPrescriptionQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmPatientFeeReport.resx">
+      <DependentUpon>FrmPatientFeeReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmPerformSectionIncomeReport.resx">
+      <DependentUpon>FrmPerformSectionIncomeReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRegisterReport.resx">
+      <DependentUpon>FrmRegisterReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmReportDesign.resx">
+      <DependentUpon>FrmReportDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Query\FrmChargeUserQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmChargeUserQuery.Designer.cs">
+      <DependentUpon>FrmChargeUserQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmInvoiceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmInvoiceQuery.Designer.cs">
+      <DependentUpon>FrmInvoiceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmItemFeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmItemFeeQuery.Designer.cs">
+      <DependentUpon>FrmItemFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmPatientFeeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmPatientFeeQuery.Designer.cs">
+      <DependentUpon>FrmPatientFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmPatientSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmPatientSelect.Designer.cs">
+      <DependentUpon>FrmPatientSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmPrescriptionQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmPrescriptionQuery.Designer.cs">
+      <DependentUpon>FrmPrescriptionQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmPatientFeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmPatientFeeReport.Designer.cs">
+      <DependentUpon>FrmPatientFeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmPerformSectionIncomeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmPerformSectionIncomeReport.Designer.cs">
+      <DependentUpon>FrmPerformSectionIncomeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRegisterReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRegisterReport.Designer.cs">
+      <DependentUpon>FrmRegisterReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmReportDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmReportDesign.Designer.cs">
+      <DependentUpon>FrmReportDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GraphControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粘贴.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索~.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设计报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\日期.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\目录.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪切.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\复制.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re_left_icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_user_dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_cross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_package_get.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_network.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_history.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_accept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_page.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HJSF\New\说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MZ_BLL\HIS.MZ_BLL.csproj">
+      <Project>{024DC798-990B-419E-B1D9-B5C06C679C01}</Project>
+      <Name>HIS.MZ_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

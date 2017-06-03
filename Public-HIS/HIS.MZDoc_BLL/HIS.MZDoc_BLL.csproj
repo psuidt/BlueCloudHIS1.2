@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B571EC62-34DF-41C0-B2D1-7F787A157BDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.MZDoc_BLL</RootNamespace>
+    <AssemblyName>HIS.MZDoc_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Utility\HIS.MZDoc_BLL.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWMHIS, Version=1.0.3561.28906, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InterFacePart\ClinicDataInterFace.cs" />
+    <Compile Include="DAL\MZDoc_DAL.cs" />
+    <Compile Include="Entity\CommonPart\CommonDiagnosis.cs" />
+    <Compile Include="Entity\CommonPart\IBaseCommon.cs" />
+    <Compile Include="Entity\CommonPart\CommonDrug.cs" />
+    <Compile Include="Entity\CommonPart\CommonItem.cs" />
+    <Compile Include="Entity\MedicalPart\MedicalExamine.cs" />
+    <Compile Include="Entity\MedicalPart\BaseMedical.cs" />
+    <Compile Include="Entity\MedicalPart\MedicalAssay.cs" />
+    <Compile Include="Entity\MedicalPart\MedicalTreat.cs" />
+    <Compile Include="Entity\MedicalPart\MedicalApplyFactory.cs" />
+    <Compile Include="Entity\MedicalPart\Medical_Order_Item.cs" />
+    <Compile Include="Entity\PresPart\IBasePresList.cs" />
+    <Compile Include="InterFacePart\PACSReport_Great.cs" />
+    <Compile Include="InterFacePart\IBaseInterFace.cs" />
+    <Compile Include="InterFacePart\ILISReportInterFace.cs" />
+    <Compile Include="InterFacePart\MedicalReportFactory.cs" />
+    <Compile Include="InterFacePart\MedicalReportInterFace.cs" />
+    <Compile Include="InterFacePart\IPACSReportInterFace.cs" />
+    <Compile Include="InterFacePart\LISReport_Great.cs" />
+    <Compile Include="Entity\MedicalPart\MedicalApplyMould.cs" />
+    <Compile Include="Entity\Other\Patient.cs" />
+    <Compile Include="Entity\PresPart\PresMouldHead.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\PresPart\PresMouldList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\PresPart\Prescription.cs" />
+    <Compile Include="Entity\PresPart\PresListFactory.cs" />
+    <Compile Include="OP\OP_Prescription.cs" />
+    <Compile Include="OP\OP_ReportQuery.cs" />
+    <Compile Include="OP\OP_ReadBaseData.cs" />
+    <Compile Include="OP\OP_Patient.cs" />
+    <Compile Include="InterFacePart\PrescMoneyCalculateInterFace.cs" />
+    <Compile Include="Entity\PresPart\PresDetail.cs" />
+    <Compile Include="Entity\PresPart\PresHead.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicPart\Enum.cs" />
+    <Compile Include="PublicPart\Function.cs" />
+    <Compile Include="PublicPart\StaticConfig.cs" />
+    <Compile Include="PublicPart\Struct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicPart\XmlFunction.cs" />
+    <Compile Include="Entity\Other\ZyInpatRegist.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Interface\HIS.Interface.csproj">
+      <Project>{6798B52A-D999-4005-94BF-D92EA602A0D9}</Project>
+      <Name>HIS.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InterFacePart\Entrance\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_BaseManager</RootNamespace>
+    <AssemblyName>HIS_BaseManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3365.21049, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.MediInsInterface_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCreatePYWB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreatePYWB.Designer.cs">
+      <DependentUpon>FrmCreatePYWB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="人员科室维护\FrmDeptAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员科室维护\FrmDeptAttr.Designer.cs">
+      <DependentUpon>FrmDeptAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人员科室维护\FrmEmployeeAtter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员科室维护\FrmEmployeeAtter.Designer.cs">
+      <DependentUpon>FrmEmployeeAtter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人员科室维护\FrmLayerAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员科室维护\FrmLayerAttr.Designer.cs">
+      <DependentUpon>FrmLayerAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人员科室维护\FrmEmpDeptSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员科室维护\FrmEmpDeptSetting.Designer.cs">
+      <DependentUpon>FrmEmpDeptSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="单位维护\FrmWorkUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单位维护\FrmWorkUnit.Designer.cs">
+      <DependentUpon>FrmWorkUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本数据维护\Controller\FrmBaseDataVindicatorController.cs" />
+    <Compile Include="基本数据维护\Controller\FrmTableConfigController.cs" />
+    <Compile Include="基本数据维护\Controller\FrmVindicatorConfigController.cs" />
+    <Compile Include="基本数据维护\Controller\Interfaces.cs" />
+    <Compile Include="基本数据维护\FrmBaseDataVindicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本数据维护\FrmBaseDataVindicator.Designer.cs">
+      <DependentUpon>FrmBaseDataVindicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本数据维护\FrmInsurMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本数据维护\FrmInsurMatch.Designer.cs">
+      <DependentUpon>FrmInsurMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本数据维护\FrmSetLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本数据维护\FrmSetLocation.Designer.cs">
+      <DependentUpon>FrmSetLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本数据维护\FrmTableConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本数据维护\FrmTableConfig.Designer.cs">
+      <DependentUpon>FrmTableConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本数据维护\FrmVindicatorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本数据维护\FrmVindicatorConfig.Designer.cs">
+      <DependentUpon>FrmVindicatorConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工作组菜单维护\FrmEditGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工作组菜单维护\FrmEditGroup.Designer.cs">
+      <DependentUpon>FrmEditGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工作组菜单维护\FrmGroupMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表管理\FrmHisReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表管理\FrmHisReport.Designer.cs">
+      <DependentUpon>FrmHisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表管理\FrmReportManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表管理\FrmReportManager.Designer.cs">
+      <DependentUpon>FrmReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表管理\FrmNewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报表管理\FrmNewReport.Designer.cs">
+      <DependentUpon>FrmNewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报表管理\HisReport.cs" />
+    <Compile Include="挂号类型设置\FrmRegBaseDataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="挂号类型设置\FrmRegBaseDataSet.Designer.cs">
+      <DependentUpon>FrmRegBaseDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="挂号类型设置\UIControllerFrmRegBaseDataSet.cs" />
+    <Compile Include="收费项目维护\Frmadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\Frmadd.Designer.cs">
+      <DependentUpon>Frmadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmHospitalItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmHospitalItems.Designer.cs">
+      <DependentUpon>FrmHospitalItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSelectServiceItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSelectServiceItem.Designer.cs">
+      <DependentUpon>FrmSelectServiceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSFXM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSFXM.Designer.cs">
+      <DependentUpon>FrmSFXM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmStatItem.Designer.cs">
+      <DependentUpon>FrmStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmStatItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmStatItemEdit.Designer.cs">
+      <DependentUpon>FrmStatItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSubItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费项目维护\FrmSubItemEdit.Designer.cs">
+      <DependentUpon>FrmSubItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费项目维护\UIController\FrmComplexController.cs" />
+    <Compile Include="收费项目维护\UIController\FormViewInterface.cs" />
+    <Compile Include="收费项目维护\UIController\FrmItemExecDeptController.cs" />
+    <Compile Include="收费项目维护\UIController\FrmOrderItemController.cs" />
+    <Compile Include="收费项目维护\UIController\FrmHospitalItemsController.cs" />
+    <Compile Include="收费项目维护\UIController\FrmUsageItemController.cs" />
+    <Compile Include="模板维护\FrmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模板维护\FrmTemplate.Designer.cs">
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\FrmParameterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\FrmParameterSet.Designer.cs">
+      <DependentUpon>FrmParameterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\BaseDataSet.cs">
+      <DependentUpon>BaseDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\BaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\IParameter.cs" />
+    <Compile Include="系统参数管理\模块参数\UC_MZJG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_MZJG.Designer.cs">
+      <DependentUpon>UC_MZJG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_MZYS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_MZYS.Designer.cs">
+      <DependentUpon>UC_MZYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_YPGL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_YPGL.Designer.cs">
+      <DependentUpon>UC_YPGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYHS.Designer.cs">
+      <DependentUpon>UC_ZYHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYJG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYJG.Designer.cs">
+      <DependentUpon>UC_ZYJG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYYS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="系统参数管理\模块参数\UC_ZYYS.Designer.cs">
+      <DependentUpon>UC_ZYYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="资料查询\FrmGBDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="资料查询\FrmGBDictionary.Designer.cs">
+      <DependentUpon>FrmGBDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="资料查询\FrmInforSerch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="资料查询\FrmInforSerch.Designer.cs">
+      <DependentUpon>FrmInforSerch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmCreatePYWB.resx">
+      <DependentUpon>FrmCreatePYWB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员科室维护\FrmDeptAttr.resx">
+      <DependentUpon>FrmDeptAttr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员科室维护\FrmEmployeeAtter.resx">
+      <DependentUpon>FrmEmployeeAtter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员科室维护\FrmLayerAttr.resx">
+      <DependentUpon>FrmLayerAttr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员科室维护\FrmEmpDeptSetting.resx">
+      <DependentUpon>FrmEmpDeptSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单位维护\FrmWorkUnit.resx">
+      <DependentUpon>FrmWorkUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本数据维护\FrmBaseDataVindicator.resx">
+      <DependentUpon>FrmBaseDataVindicator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本数据维护\FrmInsurMatch.resx">
+      <DependentUpon>FrmInsurMatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本数据维护\FrmSetLocation.resx">
+      <DependentUpon>FrmSetLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本数据维护\FrmTableConfig.resx">
+      <DependentUpon>FrmTableConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本数据维护\FrmVindicatorConfig.resx">
+      <DependentUpon>FrmVindicatorConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工作组菜单维护\FrmEditGroup.resx">
+      <DependentUpon>FrmEditGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工作组菜单维护\FrmGroupMenu.resx">
+      <DependentUpon>FrmGroupMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表管理\FrmHisReport.resx">
+      <DependentUpon>FrmHisReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表管理\FrmReportManager.resx">
+      <DependentUpon>FrmReportManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报表管理\FrmNewReport.resx">
+      <DependentUpon>FrmNewReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="挂号类型设置\FrmRegBaseDataSet.resx">
+      <DependentUpon>FrmRegBaseDataSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\Frmadd.resx">
+      <DependentUpon>Frmadd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmHospitalItems.resx">
+      <DependentUpon>FrmHospitalItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmSelectServiceItem.resx">
+      <DependentUpon>FrmSelectServiceItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmSFXM.resx">
+      <DependentUpon>FrmSFXM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmStatItem.resx">
+      <DependentUpon>FrmStatItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmStatItemEdit.resx">
+      <DependentUpon>FrmStatItemEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费项目维护\FrmSubItemEdit.resx">
+      <DependentUpon>FrmSubItemEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模板维护\FrmTemplate.resx">
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\FrmParameterSet.resx">
+      <DependentUpon>FrmParameterSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_MZJG.resx">
+      <DependentUpon>UC_MZJG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_MZYS.resx">
+      <DependentUpon>UC_MZYS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_YPGL.resx">
+      <DependentUpon>UC_YPGL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_ZYHS.resx">
+      <DependentUpon>UC_ZYHS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_ZYJG.resx">
+      <DependentUpon>UC_ZYJG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统参数管理\模块参数\UC_ZYYS.resx">
+      <DependentUpon>UC_ZYYS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="资料查询\FrmGBDictionary.resx">
+      <DependentUpon>FrmGBDictionary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="资料查询\FrmInforSerch.resx">
+      <DependentUpon>FrmInforSerch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粘贴.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索~.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设计报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除报表.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\日期.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\目录.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪切.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\复制.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re_left_icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_user_dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_cross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_package_get.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_network.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_history.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_accept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_page.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_refresh.gif" />
+    <None Include="系统参数管理\模块参数\BaseDataSet.xsc">
+      <DependentUpon>BaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="系统参数管理\模块参数\BaseDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="系统参数管理\模块参数\BaseDataSet.xss">
+      <DependentUpon>BaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Base_BLL\HIS.Base_BLL.csproj">
+      <Project>{C2A0B478-E7B6-4216-8A06-F11B75B506B4}</Project>
+      <Name>HIS.Base_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

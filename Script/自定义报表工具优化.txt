@@ -1,0 +1,39 @@
+1.新建一个控件类型表,有些控件有一个默认的sql数据源。
+
+2.报表参数表中，有个字段保存控件绑定的数据源SQL，SQL可以在界面上编写完成，如果用户不编辑，就默认是那个控件本身的SQL ，每次调用的时候，根据此字段自动绑定此控件的数据源。
+
+3.报表类型中，增加报表类型，父节点报表。就像医嘱模板一样，可以自己手动编辑类型名。
+
+4.不要新增报表和生成报表按钮，新增报表和医嘱模板一样右键增加，并且右键可以修改，删除报表信息，存储过程名。点查询的时候，如果没有报表，则自动生成报表，有此报表的话就不生成，在报表预览中增加报表编辑按钮。
+
+5. 不要入参维护和提取数据按钮，选择参数类型和输入输出时，如果是输入，则弹出一个对话框，选择参数控件和编写控件绑定的SQL语句。按常规直接在数据库中保存控件大小和位置。 
+
+V_BTIME timestamp   开始时间     datatimepicker
+V_ETIME timestamp    结束时间
+V_CURRDEPTID interger   当前科室ID
+V_CURREMPLOYEEID interger  当前人员ID
+V_ALLDEPTID  interger     所有科室ID
+V_ALLDOCTORID interger       所有医生ID
+V_STATTYPE interger       统计大类
+V_MZDEPT interger         门诊科室
+V_ZYDEPT  interger     住院科室
+V_ALLCHARGER  interger     所有收费员
+V_TYPE interger 所有
+V_ALLCHARGER  所有收费员
+V_ITEMDRUG    所有药品项目明细
+
+
+base_enume 中的remark字段增长至2000
+
+
+
+insert into base_enume values(1,'统计大类','',17);
+insert into base_enume values(2,'门诊科室','select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where mz_flag=1',17);
+insert into base_enume values(3,'住院科室','select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where zy_flag=1',17);
+insert into base_enumeorder values(1,'发票项目',0,1,17);
+insert into base_enumeorder values(2,'会计项目',1,1,17);
+insert into base_enumeorder values(3,'核算项目',2,1,17);
+
+
+
+

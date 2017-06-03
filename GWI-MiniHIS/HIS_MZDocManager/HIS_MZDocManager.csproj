@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_MZDocManager</RootNamespace>
+    <AssemblyName>HIS_MZDocManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FormSite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\FormSite.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI_DesReport, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWMHIS, Version=1.0.3561.28906, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_EMRManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePromptManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\MessagePromptManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="公共部分\FrmQueryShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公共部分\FrmQueryShow.Designer.cs">
+      <DependentUpon>FrmQueryShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\Action\DockingController.cs" />
+    <Compile Include="日常业务\FrmMedicalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmMedicalReport.Designer.cs">
+      <DependentUpon>FrmMedicalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公共部分\Action\BasePresController.cs" />
+    <Compile Include="公共部分\Action\IBasePresView.cs" />
+    <Compile Include="公共部分\InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="公共部分\FrmQueryShow.resx">
+      <DependentUpon>FrmQueryShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmMedicalReport.resx">
+      <DependentUpon>FrmMedicalReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公共部分\FrmEditFootNote.resx">
+      <DependentUpon>FrmEditFootNote.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmApplyFormat.resx">
+      <DependentUpon>FrmApplyFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmCommonDiagnosis.resx">
+      <DependentUpon>FrmCommonDiagnosis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmCommonItem.resx">
+      <DependentUpon>FrmCommonItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmEditMould.resx">
+      <DependentUpon>FrmEditMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmPreMould.resx">
+      <DependentUpon>FrmPreMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据维护\FrmCommonDrug.resx">
+      <DependentUpon>FrmCommonDrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmApplyMould.resx">
+      <DependentUpon>FrmApplyMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmMedicalManage.resx">
+      <DependentUpon>FrmMedicalManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmPatInfoEdit.resx">
+      <DependentUpon>FrmPatInfoEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmTransfusionCard.resx">
+      <DependentUpon>FrmTransfusionCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmZyInpatReg.resx">
+      <DependentUpon>FrmZyInpatReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\UserControl\UCOfenDiagnosis.resx">
+      <DependentUpon>UCOfenDiagnosis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\UserControl\UCOfenDrug.resx">
+      <DependentUpon>UCOfenDrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\UserControl\UCOfenItem.resx">
+      <DependentUpon>UCOfenItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\UserControl\UCPatientList.resx">
+      <DependentUpon>UCPatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\UserControl\UCPresMould.resx">
+      <DependentUpon>UCPresMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmDocWorkQuery.resx">
+      <DependentUpon>FrmDocWorkQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmHisPreQuery.resx">
+      <DependentUpon>FrmHisPreQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计查询\FrmWardBedQuery.resx">
+      <DependentUpon>FrmWardBedQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="公共部分\app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="公共部分\FrmEditFootNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公共部分\FrmEditFootNote.Designer.cs">
+      <DependentUpon>FrmEditFootNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公共部分\GraphControl.cs" />
+    <Compile Include="公共部分\XmlOperate.cs" />
+    <Compile Include="数据维护\Action\FrmDataInstallController.cs" />
+    <Compile Include="数据维护\Action\FrmPreMouldController.cs" />
+    <Compile Include="数据维护\Action\IDataInstall.cs" />
+    <Compile Include="数据维护\Action\IFrmPreMouldView.cs" />
+    <Compile Include="数据维护\FrmApplyFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmApplyFormat.Designer.cs">
+      <DependentUpon>FrmApplyFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonDiagnosis.Designer.cs">
+      <DependentUpon>FrmCommonDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonItem.Designer.cs">
+      <DependentUpon>FrmCommonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据维护\FrmEditMould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmEditMould.Designer.cs">
+      <DependentUpon>FrmEditMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据维护\FrmPreMould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmPreMould.Designer.cs">
+      <DependentUpon>FrmPreMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据维护\FrmCommonDrug.Designer.cs">
+      <DependentUpon>FrmCommonDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\Action\FrmMedicalManageController.cs" />
+    <Compile Include="日常业务\Action\IFrmMedicalManageView.cs" />
+    <Compile Include="日常业务\Action\IFrmMedicalApplyView.cs" />
+    <Compile Include="日常业务\Action\FrmMedicalApplyController.cs" />
+    <Compile Include="日常业务\FrmApplyMould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmApplyMould.Designer.cs">
+      <DependentUpon>FrmApplyMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmPatInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmPatInfoEdit.Designer.cs">
+      <DependentUpon>FrmPatInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmTransfusionCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmTransfusionCard.Designer.cs">
+      <DependentUpon>FrmTransfusionCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmZyInpatReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmZyInpatReg.Designer.cs">
+      <DependentUpon>FrmZyInpatReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\UserControl\IDockingCont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenDiagnosis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenDiagnosis.Designer.cs">
+      <DependentUpon>UCOfenDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenDrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenDrug.Designer.cs">
+      <DependentUpon>UCOfenDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCOfenItem.Designer.cs">
+      <DependentUpon>UCOfenItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCPatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCPatientList.Designer.cs">
+      <DependentUpon>UCPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmMedicalManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmMedicalManage.Designer.cs">
+      <DependentUpon>FrmMedicalManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCPresMould.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="日常业务\UserControl\UCPresMould.Designer.cs">
+      <DependentUpon>UCPresMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmDocWorkQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmDocWorkQuery.Designer.cs">
+      <DependentUpon>FrmDocWorkQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmHisPreQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmHisPreQuery.Designer.cs">
+      <DependentUpon>FrmHisPreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="统计查询\FrmWardBedQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计查询\FrmWardBedQuery.Designer.cs">
+      <DependentUpon>FrmWardBedQuery.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\action_refresh.gif" />
+    <Content Include="Resources\action_stop.gif" />
+    <Content Include="Resources\blue-loading.gif" />
+    <Content Include="Resources\copy.gif" />
+    <Content Include="Resources\folder_new.gif" />
+    <Content Include="Resources\folder_page.gif" />
+    <Content Include="Resources\icon_accept.gif" />
+    <Content Include="Resources\icon_history.gif" />
+    <Content Include="Resources\icon_network.gif" />
+    <Content Include="Resources\icon_package_get.gif" />
+    <Content Include="Resources\image.gif" />
+    <Content Include="Resources\large-loading.gif" />
+    <Content Include="Resources\list_users.gif" />
+    <Content Include="Resources\page_cross.gif" />
+    <Content Include="Resources\page_edit.gif" />
+    <Content Include="Resources\page_key.gif" />
+    <Content Include="Resources\page_refresh.gif" />
+    <Content Include="Resources\page_user_dark.gif" />
+    <Content Include="Resources\re_left_icon04.gif" />
+    <Content Include="Resources\table_delete.gif" />
+    <Content Include="Resources\保存.gif" />
+    <Content Include="Resources\修改.gif" />
+    <Content Include="Resources\删除报表.gif" />
+    <Content Include="Resources\刷新.gif" />
+    <Content Include="Resources\剪切.gif" />
+    <Content Include="Resources\复制.gif" />
+    <Content Include="Resources\帮助.gif" />
+    <Content Include="Resources\打印.gif" />
+    <Content Include="Resources\搜索.gif" />
+    <Content Include="Resources\搜索~.gif" />
+    <Content Include="Resources\新建.gif" />
+    <Content Include="Resources\日期.gif" />
+    <Content Include="Resources\目录.gif" />
+    <Content Include="Resources\粘贴.gif" />
+    <Content Include="Resources\系统设置.gif" />
+    <Content Include="Resources\菜单设置.gif" />
+    <Content Include="Resources\设置.gif" />
+    <Content Include="Resources\设计报表.gif" />
+    <Content Include="Resources\退出.png" />
+    <Content Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Entity\HIS.Entity.csproj">
+      <Project>{9FD609C2-B3D3-47A9-B087-A3647DE6F8CB}</Project>
+      <Name>HIS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Interface\HIS.Interface.csproj">
+      <Project>{6798B52A-D999-4005-94BF-D92EA602A0D9}</Project>
+      <Name>HIS.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MZDoc_BLL\HIS.MZDoc_BLL.csproj">
+      <Project>{B571EC62-34DF-41C0-B2D1-7F787A157BDF}</Project>
+      <Name>HIS.MZDoc_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

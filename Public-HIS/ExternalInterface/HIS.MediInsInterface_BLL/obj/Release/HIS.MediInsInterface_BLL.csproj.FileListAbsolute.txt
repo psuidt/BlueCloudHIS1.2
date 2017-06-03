@@ -1,0 +1,10 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.MediInsInterface_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.MediInsInterface_BLL.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\HIS.MediInsInterface_BLL.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\HIS.MediInsInterface_BLL.pdb
+E:\BlueCloudHIS1.2\Utility\HIS.MediInsInterface_BLL.dll
+E:\BlueCloudHIS1.2\Utility\HIS.MediInsInterface_BLL.pdb
+E:\BlueCloudHIS1.2\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\ResolveAssemblyReference.cache
+E:\BlueCloudHIS1.2\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\HIS.MediInsInterface_BLL.dll
+E:\BlueCloudHIS1.2\Public-HIS\ExternalInterface\HIS.MediInsInterface_BLL\obj\Release\HIS.MediInsInterface_BLL.pdb

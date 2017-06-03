@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_MediConfirManager</RootNamespace>
+    <AssemblyName>HIS_MediConfirManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3561.28906, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\FrmConfirController.cs" />
+    <Compile Include="Action\IFrmConfirView.cs" />
+    <Compile Include="FrmMzConfir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMzConfir.Designer.cs">
+      <DependentUpon>FrmMzConfir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZyConfir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZyConfir.Designer.cs">
+      <DependentUpon>FrmZyConfir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="PatInfoControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMzConfir.resx">
+      <DependentUpon>FrmMzConfir.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZyConfir.resx">
+      <DependentUpon>FrmZyConfir.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粘贴.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_accept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_network.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_package_get.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_cross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_user_dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re_left_icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImages1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\复制.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪切.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索~.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Entity\HIS.Entity.csproj">
+      <Project>{9FD609C2-B3D3-47A9-B087-A3647DE6F8CB}</Project>
+      <Name>HIS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MedicalConfir_BLL\HIS.MedicalConfir_BLL.csproj">
+      <Project>{856843F0-A669-40CC-8A80-3797CD01489A}</Project>
+      <Name>HIS.MedicalConfir_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.ZY_BLL\HIS.ZY_BLL.csproj">
+      <Project>{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}</Project>
+      <Name>HIS.ZY_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

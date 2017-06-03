@@ -1,0 +1,14 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS_SSManager.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS_SSManager.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmAfterSs.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmNewBed.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmNewRoom.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmRepot.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmSsArrange.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmSsMain.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.FrmSsRoom.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.Properties.Resources.resources
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.csproj.GenerateResource.Cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\GWI-MiniHIS\HIS_SSManager\obj\Release\HIS_SSManager.pdb

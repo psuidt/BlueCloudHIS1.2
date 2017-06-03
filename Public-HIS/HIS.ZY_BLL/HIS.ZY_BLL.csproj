@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.ZY_BLL</RootNamespace>
+    <AssemblyName>HIS.ZY_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HIS.MediInsInterface_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\Account\AccountDao.cs" />
+    <Compile Include="Dao\Account\IaccountDao.cs" />
+    <Compile Include="Dao\BaseDataManager\BaseDataDao.cs" />
+    <Compile Include="Dao\BaseDataManager\IbaseDataDao.cs" />
+    <Compile Include="Dao\ChargeListManager\ChargeListDao.cs" />
+    <Compile Include="Dao\ChargeListManager\IchargeListDao.cs" />
+    <Compile Include="Dao\CostManager\CostDao.cs" />
+    <Compile Include="Dao\CostManager\IcostDao.cs" />
+    <Compile Include="Dao\DaoFactory.cs" />
+    <Compile Include="Dao\FeeBillManager\FeeBillManagerDao.cs" />
+    <Compile Include="Dao\FeeBillManager\IfeeBillManager.cs" />
+    <Compile Include="Dao\IbaseDao.cs" />
+    <Compile Include="Dao\Invoice\Iinvoice.cs" />
+    <Compile Include="Dao\Invoice\InvoiceDao.cs" />
+    <Compile Include="Dao\PatientManager\IpatListDao.cs" />
+    <Compile Include="Dao\PatientManager\PatListDao.cs" />
+    <Compile Include="Dao\PresManager\IpresDao.cs" />
+    <Compile Include="Dao\PresManager\PresDao.cs" />
+    <Compile Include="Dao\Report\Ireport.cs" />
+    <Compile Include="Dao\Report\ReportDao.cs" />
+    <Compile Include="Dao\SendDrugMessage\IsendDrugMessage.cs" />
+    <Compile Include="Dao\SendDrugMessage\SendDrugMessageDao.cs" />
+    <Compile Include="DataModel\IPatientInfo.cs" />
+    <Compile Include="DataModel\IZY_PatList.cs" />
+    <Compile Include="DataModel\IZY_PresOrder.cs" />
+    <Compile Include="DataModel\PatientInfo.cs" />
+    <Compile Include="DataModel\ZY_Account.cs" />
+    <Compile Include="DataModel\ZY_ChargeList.cs" />
+    <Compile Include="DataModel\ZY_CostMaster.cs" />
+    <Compile Include="DataModel\ZY_CostOrder.cs" />
+    <Compile Include="DataModel\ZY_DRUGMESSAGE_MASTER.cs" />
+    <Compile Include="DataModel\ZY_DRUGMESSAGE_ORDER.cs" />
+    <Compile Include="DataModel\ZY_INVOICE.cs" />
+    <Compile Include="DataModel\ZY_PatList.cs" />
+    <Compile Include="DataModel\ZY_PresOrder.cs" />
+    <Compile Include="ObjectModel\AccountManager\AbstractAllAccount.cs" />
+    <Compile Include="ObjectModel\AccountManager\AbstractChargeAccountRpt.cs" />
+    <Compile Include="ObjectModel\AccountManager\AbstractCostAccountRpt.cs" />
+    <Compile Include="ObjectModel\AccountManager\AbstractCostAccountRpt_sz.cs" />
+    <Compile Include="ObjectModel\AccountManager\AllAccount.cs" />
+    <Compile Include="ObjectModel\AccountManager\AllAccountList.cs" />
+    <Compile Include="ObjectModel\AccountManager\NotAllAccountList.cs" />
+    <Compile Include="ObjectModel\CommMethod.cs" />
+    <Compile Include="ObjectModel\CostManager\AbstractInvoice.cs" />
+    <Compile Include="ObjectModel\CostManager\InvoiceFactory.cs" />
+    <Compile Include="ObjectModel\CostManager\Invoice_HN.cs" />
+    <Compile Include="ObjectModel\NccmManager\Enums.cs" />
+    <Compile Include="ObjectModel\Report\IAdvanceDataReport.cs" />
+    <Compile Include="ObjectModel\AOP\AopProxyAttribute.cs" />
+    <Compile Include="ObjectModel\AOP\AopProxyBase.cs" />
+    <Compile Include="ObjectModel\AOP\CommonDef.cs" />
+    <Compile Include="ObjectModel\AOP\MethodAopSwitcherAttribute.cs" />
+    <Compile Include="ObjectModel\BaseData\BaseData.cs" />
+    <Compile Include="ObjectModel\BaseData\BaseDataFactory.cs" />
+    <Compile Include="ObjectModel\CostManager\CostMaster.cs" />
+    <Compile Include="ObjectModel\CostManager\CostOrder.cs" />
+    <Compile Include="ObjectModel\CostManager\IcostManager.cs" />
+    <Compile Include="ObjectModel\DurgMessage\OP_DurgMessage.cs" />
+    <Compile Include="ObjectModel\FeeBillManager\FeeBillManager.cs" />
+    <Compile Include="DataModel\DataStruct.cs" />
+    <Compile Include="ObjectModel\InvoiceManager\InvoiceManager.cs" />
+    <Compile Include="ObjectModel\ObjectFactory.cs" />
+    <Compile Include="ObjectModel\PatientManager\Iilinic.cs" />
+    <Compile Include="ObjectModel\PatientManager\ImzPatInfo.cs" />
+    <Compile Include="ObjectModel\PatientManager\PatientInfo.cs" />
+    <Compile Include="ObjectModel\PresOrderManager\IpresOrderManager.cs" />
+    <Compile Include="ObjectModel\Report\AdvanceFeeReport.cs" />
+    <Compile Include="ObjectModel\Report\AdvanceRpt.cs" />
+    <Compile Include="ObjectModel\Report\OP_ReportTotal.cs" />
+    <Compile Include="ObjectModel\BaseData\OP_ZYConfigSetting.cs" />
+    <Compile Include="ObjectModel\AccountManager\AbstractAccount.cs" />
+    <Compile Include="ObjectModel\ChargeListManager\ChargeList.cs" />
+    <Compile Include="ObjectModel\PatientManager\PatList.cs" />
+    <Compile Include="ObjectModel\PresOrderManager\PresOrder.cs" />
+    <Compile Include="ObjectModel\CostManager\Invoice_GD.cs" />
+    <Compile Include="ObjectModel\Report\PatFeeReport.cs" />
+    <Compile Include="ObjectModel\Report\PatFeeRpt.cs" />
+    <Compile Include="ObjectModel\Report\PatientRpt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ObjectModel\Report\ChargeDateReport.cs" />
+    <Compile Include="ObjectModel\Report\PatientNum.cs" />
+    <Compile Include="ObjectModel\Report\TicketReport.cs" />
+    <Compile Include="ObjectModel\Report\CTicketRpt.cs" />
+    <Compile Include="ObjectModel\Report\DataReport.cs" />
+    <Compile Include="ObjectModel\Report\Enum.cs" />
+    <Compile Include="ObjectModel\Report\IDataReport.cs" />
+    <Compile Include="ObjectModel\Report\OperationDataList.cs" />
+    <Compile Include="ObjectModel\Report\TicketRpt.cs" />
+    <Compile Include="ObjectModel\BaseData\YP_Interface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ObjectModel\BaseData\BaseData.cd" />
+    <None Include="ObjectModel\NccmManager\NccmManager.cd" />
+    <None Include="ObjectModel\Report\Report.cd" />
+    <None Include="DataModel\住院经管类图.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Entity\HIS.Entity.csproj">
+      <Project>{9FD609C2-B3D3-47A9-B087-A3647DE6F8CB}</Project>
+      <Name>HIS.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

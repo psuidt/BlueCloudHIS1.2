@@ -1,0 +1,20 @@
+﻿<chs>
+  <table>
+    <row  type="0">
+      <zyid>住院ID</zyid>
+      <dahid>档案号ID</dahid>
+      <zzys>主治医生</zzys>
+      <ryqk>入院情况</ryqk>
+      <cyrq>出院日期</cyrq>
+      <cyqk>出院情况</cyqk>
+      <cyzd>出院诊断</cyzd>
+      <cyyz>出院医嘱</cyyz>
+      <zdqt>其他诊断</zdqt>
+      <qt>其他</qt>
+      <zljg>诊疗经过</zljg>
+      <jgdm>医院代码</jgdm>
+      <djr>登记人</djr>
+      <djrq>登记日期</djrq>
+    </row>
+  </table>
+</chs>

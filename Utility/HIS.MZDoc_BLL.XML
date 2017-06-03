@@ -1,0 +1,2985 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIS.MZDoc_BLL</name>
+    </assembly>
+    <members>
+        <member name="T:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace">
+            <summary>
+            门诊临床数据接口
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.GetPrescriptions(System.Int32)">
+            <summary>
+            获取病人未收费处方明细
+            </summary>
+            <param name="patListId">门诊病人就诊Id</param>
+            <returns>门诊收费处方结构体组</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.ChangePresStatus(System.Int32,System.Int32)">
+            <summary>
+            修改病人处方状态
+            </summary>
+            <param name="presHeadId">处方头ID</param>
+            <param name="status">处方状态 1:收费，2:退费</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.CheckPresStatus(System.Int32)">
+            <summary>
+            检查处方状态
+            </summary>
+            <param name="presHeadId">处方头Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.GetInpatRegInfo(System.Int32)">
+            <summary>
+            获取住院证信息
+            </summary>
+            <param name="regId">住院证ID</param>
+            <returns>住院证信息数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.CreateTransfuCardData(System.Data.DataTable)">
+            <summary>
+            组织输液卡打印数据
+            </summary>
+            <param name="presTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.GetTransfuCardPrintInfo(System.String,System.String)">
+            <summary>
+            获取门诊输液卡打印数据
+            </summary>
+            <param name="invoiceNo"></param>
+            <param name="printer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.CreateDocHerbPresData(System.Data.DataTable)">
+            <summary>
+            组织中药处方打印数据
+            </summary>
+            <param name="presTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.CreateDocNoHerbPresData(System.Data.DataTable)">
+            <summary>
+            组织西成药处方打印数据
+            </summary>
+            <param name="presTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ClinicDataInterFace.GetDocPresPrintInfo(System.Int64)">
+            <summary>
+            获取门诊处方打印数据
+            </summary>
+            <param name="presHeadId">门诊收费处方头ID</param>
+        </member>
+        <member name="T:HIS.DAL.MZDoc_DAL">
+            <summary>
+            门诊医生数据访问层
+            </summary>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            门诊医生数据访问层构造函数
+            </summary>
+            <param name="oleDb"></param>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalAssayDept">
+            <summary>
+            获得医技化验科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalExamineDept">
+            <summary>
+            获得医技检查科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalTreatDept">
+            <summary>
+            获得医技治疗科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalClass(System.String)">
+            <summary>
+            获得医技项目类型列表
+            </summary>
+            <param name="sqlstr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.SaveMedicalClass(HIS.Model.Base_Medical_Class)">
+            <summary>
+            修改医技项目类型信息
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.SaveMedicalClass(System.Int32,System.String)">
+            <summary>
+            修改医技项目类型的打印格式信息
+            </summary>
+            <param name="id"></param>
+            <param name="printType"></param>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalAssayClass">
+            <summary>
+            获得医技化验项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalExamineClass">
+            <summary>
+            获得医技检查项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalTreatClass">
+            <summary>
+            获得医技治疗项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalItem">
+            <summary>
+            获取医技项目基础数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_MedicalApplyList(System.Int64,System.DateTime,System.DateTime)">
+            <summary>
+            获得已产生报告的医技申请列表
+            </summary>
+            <param name="patid">病人ID</param>
+            <param name="bDate">开始时间</param>
+            <param name="eDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_DoctorData">
+            <summary>
+            获得医生列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_CommonDrug(System.Int64)">
+            <summary>
+            加载常用药品数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_CommonItem(System.Int64)">
+            <summary>
+            加载常用项目数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Load_DrugDic">
+            <summary>
+            j加载药品词典
+            </summary>
+            <returns>药品词典数据表</returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Search_PatList(HIS.MZDoc_BLL.Public.PatientSearchInfo)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="patientSearchInfo">病人查询信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Search_PatList(System.DateTime,System.DateTime)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="beginTime">就诊时间段查询的开始时间</param>
+            <param name="endTime">就诊时间段查询的结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Query_DocWork(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            统计医生工作量
+            </summary>
+            <param name="employeeId">员工ID</param>
+            <param name="beginDate">统计开始时间</param>
+            <param name="endDate">统计结束时间</param>
+            <returns>查询结果</returns>
+        </member>
+        <member name="M:HIS.DAL.MZDoc_DAL.Query_ZyDeptBed">
+            <summary>
+            统计病区床位情况
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.CommonDiagnosis">
+            <summary>
+            常用诊断类
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.IBaseCommon">
+            <summary>
+            常用数据基础类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBaseCommon.LoadCommonData(System.Int64)">
+            <summary>
+            加载常用数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns>常用数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBaseCommon.LoadShowCardData">
+            <summary>
+            加载检索数据
+            </summary>
+            <returns>基础数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBaseCommon.Add">
+            <summary>
+            新增常用数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBaseCommon.Update">
+            <summary>
+            修改常用数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBaseCommon.Delete">
+            <summary>
+            删除常用数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.CommonDiagnosis._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.#ctor">
+            <summary>
+            常用诊断类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            常用诊断类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.LoadCommonData(System.Int64)">
+            <summary>
+            加载常用诊断数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns>常用诊断数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.LoadShowCardData">
+            <summary>
+            加载诊断数据
+            </summary>
+            <returns>诊断基础数据</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.Add">
+            <summary>
+            新增常用诊断数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.Update">
+            <summary>
+            修改常用诊断数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.Delete">
+            <summary>
+            删除常用诊断数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDiagnosis.Increase(System.String,System.Int64)">
+            <summary>
+            累加常用项
+            </summary>
+            <param name="diagnosisText">诊断内容</param>
+            <param name="employeeId">操作人员ID</param>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.CommonDrug">
+            <summary>
+            常用药品类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.CommonDrug._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.#ctor">
+            <summary>
+            常用药品类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            常用药品类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.LoadCommonData(System.Int64)">
+            <summary>
+            加载常用药品数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns>用药品数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.LoadShowCardData">
+            <summary>
+            加载检索数据
+            </summary>
+            <returns>药品基础数据</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.Add">
+            <summary>
+            新增常用药品数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.Update">
+            <summary>
+            修改常用药品数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.Delete">
+            <summary>
+            删除常用药品数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonDrug.Increase(System.Int32,System.Int64)">
+            <summary>
+            累加常用项
+            </summary>
+            <param name="itemId">药品Id</param>
+            <param name="employeeId">操作人员ID</param>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.itemname">
+            <summary>
+            药品名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.STANDARD">
+            <summary>
+            药品规格
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.unit">
+            <summary>
+            药品单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.ADDRESS">
+            <summary>
+            药品产地
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.PY_CODE">
+            <summary>
+            拼音码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.WB_CODE">
+            <summary>
+            五笔码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.D_CODE">
+            <summary>
+            数字码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonDrug.ItemId">
+            <summary>
+            药品ID
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.CommonItem">
+            <summary>
+            常用项目类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.CommonItem._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.#ctor">
+            <summary>
+            常用项目类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            常用项目类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.LoadCommonData(System.Int64)">
+            <summary>
+            加载常用项目数据
+            </summary>
+            <param name="employeeid">所属医生Id</param>
+            <returns>常用项目数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.LoadShowCardData">
+            <summary>
+            加载检索数据
+            </summary>
+            <returns>医嘱项目基础数据</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.Add">
+            <summary>
+            新增常用项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.Update">
+            <summary>
+            修改常用项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.Delete">
+            <summary>
+            删除常用项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.CommonItem.Increase(System.Int32,System.Int64)">
+            <summary>
+            累加常用项
+            </summary>
+            <param name="itemId">医嘱项目ID</param>
+            <param name="employeeId">操作人员ID</param>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Order_Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Order_Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Order_Type">
+            <summary>
+            医嘱类型
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Medical_Class">
+            <summary>
+            医技项目类型
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Default_Usage">
+            <summary>
+            默认用法
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Py_Code">
+            <summary>
+            拼音码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Wb_Code">
+            <summary>
+            五笔码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.D_Code">
+            <summary>
+            数字码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Tc_Flag">
+            <summary>
+            套餐标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.CommonItem.Bz">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.MedicalExamine">
+            <summary>
+            医技检查申请类
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.BaseMedical">
+            <summary>
+            医技申请基础类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.BaseMedical._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.LoadMedicalDept(System.Data.DataSet)">
+            <summary>
+            获得医技科室
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.LoadMedicalClass(System.Data.DataSet,System.Int32)">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.LoadMedicalClass">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.LoadMedicalItem(System.Data.DataSet,System.Int32,System.Int32)">
+            <summary>
+            获得医技项目明细
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <param name="medicalClass">医技分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.LoadMedicalItem(System.Data.DataSet)">
+            <summary>
+            获取医技项目基础数据
+            </summary>
+            <param name="dataSet">用来存放数据的数据集</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.CreateBaseApply(HIS.MZDoc_BLL.Medical_Order_Item)">
+            <summary>
+            创建申请记录
+            </summary>
+            <param name="item">医技申请项目</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.CreateApply(HIS.MZDoc_BLL.Medical_Order_Item)">
+            <summary>
+            创建申请记录
+            </summary>
+            <param name="item">医技申请项目类</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.ComposeApplyContent">
+            <summary>
+            合成申请内容
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.BaseMedical.DeComposeApplyContent">
+            <summary>
+            分解申请内容
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.StatItem_Code">
+            <summary>
+            大项目代码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Dept_Id">
+            <summary>
+            执行科室ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Dept_Name">
+            <summary>
+            执行科室名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Price">
+            <summary>
+            项目价格
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Num">
+            <summary>
+            项目数量
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Unit">
+            <summary>
+            项目单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Tc_Flag">
+            <summary>
+            套餐标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Service_Item_Id">
+            <summary>
+            收费项目ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Status">
+            <summary>
+            申请状态
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.BaseMedical.Selected">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.#ctor">
+            <summary>
+            医技检查申请类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            医技检查申请类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.LoadMedicalDept(System.Data.DataSet)">
+            <summary>
+            获得医技科室
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.LoadMedicalClass">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.LoadMedicalClass(System.Data.DataSet,System.Int32)">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.LoadMedicalItem(System.Data.DataSet,System.Int32,System.Int32)">
+            <summary>
+            获得医技项目明细
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <param name="medicalClass">医技分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.CreateApply(HIS.MZDoc_BLL.Medical_Order_Item)">
+            <summary>
+            创建申请记录
+            </summary>
+            <param name="item">医技申请项目</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.ComposeApplyContent">
+            <summary>
+            合成申请内容
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalExamine.DeComposeApplyContent">
+            <summary>
+            分解申请内容
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.MedicalExamine.Place">
+            <summary>
+            检查部位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.MedicalExamine.DiseaseHistory">
+            <summary>
+            简要病史
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.MedicalAssay">
+            <summary>
+            医技化验申请类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.#ctor">
+            <summary>
+            医技化验申请类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            医技化验申请类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.LoadMedicalDept(System.Data.DataSet)">
+            <summary>
+            获得医技科室
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.LoadMedicalClass">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.LoadMedicalClass(System.Data.DataSet,System.Int32)">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.LoadMedicalItem(System.Data.DataSet,System.Int32,System.Int32)">
+            <summary>
+            获得医技项目明细
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <param name="medicalClass">医技分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.CreateApply(HIS.MZDoc_BLL.Medical_Order_Item)">
+            <summary>
+            创建申请记录
+            </summary>
+            <param name="item">医技申请项目</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.ComposeApplyContent">
+            <summary>
+            合成申请内容
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalAssay.DeComposeApplyContent">
+            <summary>
+            分解申请内容
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.MedicalAssay.Sample">
+            <summary>
+            化验样本
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.MedicalAssay.Param">
+            <summary>
+            附加说明
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.MedicalTreat">
+            <summary>
+            治疗申请类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.#ctor">
+            <summary>
+            治疗申请类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            治疗申请类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.LoadMedicalDept(System.Data.DataSet)">
+            <summary>
+            获得医技科室
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.LoadMedicalClass">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.LoadMedicalClass(System.Data.DataSet,System.Int32)">
+            <summary>
+            获得医技项目类型
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.LoadMedicalItem(System.Data.DataSet,System.Int32,System.Int32)">
+            <summary>
+            获得医技项目明细
+            </summary>
+            <param name="dataSet">基础数据集</param>
+            <param name="deptId">科室ID</param>
+            <param name="medicalClass">医技分类</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.CreateApply(HIS.MZDoc_BLL.Medical_Order_Item)">
+            <summary>
+            创建申请记录
+            </summary>
+            <param name="item">医技申请项目</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.ComposeApplyContent">
+            <summary>
+            合成申请内容
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalTreat.DeComposeApplyContent">
+            <summary>
+            分解申请内容
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.MedicalApplyFactory">
+            <summary>
+            医技申请构造工厂
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyFactory.CreateMedicalApplyObject(HIS.MZDoc_BLL.Public.MedicalApplyType)">
+            <summary>
+            构造医技申请对象实例
+            </summary>
+            <param name="medicalApplyType">医技申请类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyFactory.CreateMedicalApplyObject(HIS.MZDoc_BLL.Public.MedicalApplyType,System.Data.DataRow)">
+            <summary>
+            构造医技申请对象实例
+            </summary>
+            <param name="medicalApplyType">医技申请类型</param>
+            <param name="row">医技申请数据行</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyFactory.CreateMedicalApplyObject(HIS.MZDoc_BLL.Public.MedicalApplyType,System.Data.DataRow[])">
+            <summary>
+            构造医技申请对象实例
+            </summary>
+            <param name="medicalApplyType">医技申请类型</param>
+            <param name="rows">医技申请数据行</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyFactory.CreateMedicalApplyObject(HIS.MZDoc_BLL.Public.MedicalApplyType,System.Data.DataTable)">
+            <summary>
+            构造医技申请对象实例
+            </summary>
+            <param name="medicalApplyType">医技申请类型</param>
+            <param name="table">医技申请数据表</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Medical_Order_Item">
+            <summary>
+            医技申请项目类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Medical_Order_Item.ToString">
+            <summary>
+            文本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Medical_Order_Item.StatItem_Code">
+            <summary>
+            大项目代码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Medical_Order_Item.Dept_Id">
+            <summary>
+            执行科室ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Medical_Order_Item.Dept_Name">
+            <summary>
+            执行科室名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Medical_Order_Item.Price">
+            <summary>
+            项目价格
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.IBasePresList">
+            <summary>
+            处方明细基础类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBasePresList.CalculateAmount">
+            <summary>
+            计算开药总量
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBasePresList.LoadData">
+            <summary>
+            加载属性
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBasePresList.Delete">
+            <summary>
+            删除单条处方明细记录
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.IBasePresList.Save(System.Collections.IList)">
+            <summary>
+            保存处方明细
+            </summary>
+            <param name="presList">处方明细列表</param>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.Item_Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.PresNo">
+            <summary>
+            处方序号
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.OrderNo">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.Status">
+            <summary>
+            处方状态
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.Usage_Id">
+            <summary>
+            用法ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.Frequency_Id">
+            <summary>
+            频次ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.Group_Id">
+            <summary>
+            分组标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.IBasePresList.IsDrug">
+            <summary>
+            药品标志
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.PACSReport_Great">
+            <summary>
+            华奕PACS报告接口类
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.IPACSReportInterFace">
+            <summary>
+            PACS报告接口基类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.IPACSReportInterFace.InitReportPort(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            初始化接口
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.IPACSReportInterFace.GetMedicalResultReport(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.IPACSReportInterFace.GetMedicalResultImage(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.IPACSReportInterFace.DisposeReportPort">
+            <summary>
+            释放报告接口
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PACSReport_Great.InitReportPort(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            初始化报告接口
+            </summary>
+            <param name="info">医技报告信息</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PACSReport_Great.GetMedicalResultReport(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PACSReport_Great.GetMedicalResultImage(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PACSReport_Great.DisposeReportPort">
+            <summary>
+            释放报告接口
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.IBaseInterFace">
+            <summary>
+            接口基类
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.ILISReportInterFace">
+            <summary>
+            LIS报告接口基类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ILISReportInterFace.InitReportPort(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            初始化报告接口
+            </summary>
+            <param name="info">医技报告信息</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ILISReportInterFace.GetMedicalResultReport(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ILISReportInterFace.GetMedicalResultImage(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.ILISReportInterFace.DisposeReportPort">
+            <summary>
+            释放报告接口
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.MedicalReportFactory">
+            <summary>
+            医技报告接口实例创建工厂类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportFactory.CreatePACSReportObject">
+            <summary>
+            创建PACS报告接口实例
+            </summary>
+            <returns>PACS报告接口实例</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportFactory.CreateLISReportObject">
+            <summary>
+            创建LIS报告接口实例
+            </summary>
+            <returns>LIS报告接口实例</returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace">
+            <summary>
+            医技报告接口
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace.#ctor">
+            <summary>
+            医技报告接口构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace.InitReportPort(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            初始化报告接口
+            </summary>
+            <param name="info">医技报告信息</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace.GetMedicalResultReport(HIS.MZDoc_BLL.Public.MedicalApplyType,HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="medicalApplyType">医技类型</param>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace.GetMedicalResultImage(HIS.MZDoc_BLL.Public.MedicalApplyType,HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告的图片
+            </summary>
+            <param name="medicalApplyType">医技类型</param>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.MedicalReportInterFace.DisposeReportPort">
+            <summary>
+            释放报告接口
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.LISReport_Great">
+            <summary>
+            华奕LIS报告接口类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.LISReport_Great.InitReportPort(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            初始化报告接口
+            </summary>
+            <param name="info">医技报告信息</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.LISReport_Great.GetMedicalResultReport(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.LISReport_Great.GetMedicalResultImage(HIS.MZDoc_BLL.Public.MedicalReportInfo)">
+            <summary>
+            获得医技结果报告
+            </summary>
+            <param name="info">医技报告信息</param>
+            <returns>报告结果</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.LISReport_Great.DisposeReportPort">
+            <summary>
+            释放报告接口
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.MedicalApplyMould">
+            <summary>
+            医技申请模板类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.MedicalApplyMould._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyMould.#ctor">
+            <summary>
+            医技申请模板类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.MedicalApplyMould.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            医技申请模板类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Patient">
+            <summary>
+            门诊病人类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.#ctor">
+            <summary>
+            门诊病人类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.#ctor(System.String)">
+            <summary>
+            门诊病人类构造函数
+            </summary>
+            <param name="visitNo">门诊号</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.#ctor(System.Int64)">
+            <summary>
+            门诊病人类构造函数
+            </summary>
+            <param name="patListId">病人就诊Id</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.#ctor(HIS.Model.MZ_PatList)">
+            <summary>
+            门诊病人类构造函数
+            </summary>
+            <param name="patList"></param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.CreateFormatVisitNo(System.String)">
+            <summary>
+            创建格式化的门诊号
+            </summary>
+            <param name="visitNo">门诊号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.LoadPatientInfo">
+            <summary>
+            加载病人基本信息
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.ChangeCureInfo(HIS.MZDoc_BLL.Public.PatCureStatus)">
+            <summary>
+            修改病人就诊状态
+            </summary>
+            <param name="status"></param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.ChangeDiagnosis">
+            <summary>
+            修改病人就诊诊断
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.EndCure">
+            <summary>
+            结束就诊
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.SavePatientInfo">
+            <summary>
+            新增门诊号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.UpdatePatientInfo">
+            <summary>
+            修改病人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetPatBirthday">
+            <summary>
+            计算病人出生日期
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetCurrentVisitNo">
+            <summary>
+            获得当前门诊号
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetSkinTestPres">
+            <summary>
+            获得病人皮试处方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetTransfusionPres">
+            <summary>
+            获得病人输液处方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetPrescription(System.Int64)">
+            <summary>
+            获得病人处方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.DeletePres(System.Int32)">
+            <summary>
+            删除整张处方
+            </summary>
+            <param name="presHeadId">处方头ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.SavePrescription(System.Collections.Generic.List{HIS.MZDoc_BLL.Prescription})">
+            <summary>
+            保存处方
+            </summary>
+            <param name="prescriptions">处方明细列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.SaveMedicalApply(System.Collections.IList)">
+            <summary>
+            保存医技申请
+            </summary>
+            <param name="medicalApplyList">医技申请列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.AddNewPresHead(System.Collections.IList)">
+            <summary>
+            添加新处方头
+            </summary>
+            <param name="medicalApplyList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.AddNewPresList(System.Int32,System.Int32,HIS.MZDoc_BLL.BaseMedical)">
+            <summary>
+            添加新处方明细
+            </summary>
+            <param name="presHeadNo"></param>
+            <param name="index"></param>
+            <param name="medicalApply"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetCurrentMedicalApplyList(HIS.MZDoc_BLL.Public.MedicalApplyType)">
+            <summary>
+            获得病人本次就诊的医技申请列表
+            </summary>
+            <param name="medicalApplyType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Patient.GetMedicalApplyReportList(System.DateTime,System.DateTime)">
+            <summary>
+            获得已产生报告的医技申请列表
+            </summary>
+            <param name="bDate">开始时间</param>
+            <param name="eDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Patient.PatientInfo">
+            <summary>
+            病人信息
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Patient.PatList">
+            <summary>
+            病人挂号信息
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Patient.FeeTypeName">
+            <summary>
+            费用类型
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.PresMouldHead">
+            <summary>
+            处方模板头类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.PresMouldHead._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.#ctor">
+            <summary>
+            处方模板头类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            处方模板头类
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.GetMouldHeadList(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            获得模板列表
+            </summary>
+            <param name="level">模板级别</param>
+            <param name="deptId">所属科室</param>
+            <param name="employeeId">所属医生</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.Add">
+            <summary>
+            添加模板
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.Update">
+            <summary>
+            修改模板
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.Delete">
+            <summary>
+            删除模板
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.GetMouldContents">
+            <summary>
+             获得模板内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldHead.GetMouldList">
+            <summary>
+             获得模板明细
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.PresMouldList">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.PresMouldList._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.#ctor">
+            <summary>
+            处方模板明细类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            处方模板明细类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.SetRealValue">
+            <summary>
+            将扩展的String类型的值赋到原属性上
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.CalculateAmount">
+            <summary>
+            计算开药总量
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.LoadData">
+            <summary>
+            加载属性
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.Save(System.Collections.IList)">
+            <summary>
+            保存模板明细
+            </summary>
+            <param name="mouldLists"></param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.Delete">
+            <summary>
+            删除单条处方明细记录
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.Delete(System.Collections.Generic.List{HIS.MZDoc_BLL.PresMouldList})">
+            <summary>
+            删除多条处方明细记录
+            </summary>
+            <param name="mouldLists">模板明细列表</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_Item_Name">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_Item_Name(System.String)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_PresNo">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_PresNo(System.Int32)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_OrderNo">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_OrderNo(System.Int32)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_Usage_Id">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_Usage_Id(System.Int32)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_Frequency_Id">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_Frequency_Id(System.Int32)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#get_Group_Id">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresMouldList.HIS#MZDoc_BLL#IBasePresList#set_Group_Id(System.Int32)">
+            <summary>
+            处方模板明细类
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Item_Id_S">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Item_Name_S">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Usage_Amount_S">
+            <summary>
+            每次用量
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Usage_Unit_S">
+            <summary>
+            用量单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Dosage_S">
+            <summary>
+            剂数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Days_S">
+            <summary>
+            开药天数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Item_Amount_S">
+            <summary>
+            开药数量
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Item_Unit_S">
+            <summary>
+            用量单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Dept_Name">
+            <summary>
+            执行科室名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Usage_Name">
+            <summary>
+            用法名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Frequency_Name">
+            <summary>
+            频次名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Frequency_ExecNum">
+            <summary>
+            频次对应的执行次数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Frequency_CycleDay">
+            <summary>
+            频次对应的执行周期
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.TmpNo">
+            <summary>
+            处方号
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Status">
+            <summary>
+            模板明细状态
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.IsDrug">
+            <summary>
+            药品标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.IsHerb">
+            <summary>
+            中药标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.Selected">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.PresMouldList.IsFloat">
+            <summary>
+            是否是按含量取整的药品
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Prescription">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Prescription._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.#ctor">
+            <summary>
+            处方信息类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            处方信息类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.SetRealValue">
+            <summary>
+            将扩展的String类型的值赋到原属性上
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.CalculateAmount">
+            <summary>
+            计算开药总量
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.CalculateItemMoney">
+            <summary>
+            计算处方金额
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.CalculateMoney">
+            <summary>
+            计算金额
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.LoadData">
+            <summary>
+            加载属性
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.Delete">
+            <summary>
+            删除单条处方明细记录
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.Save(System.Collections.IList)">
+            <summary>
+            保存处方明细
+            </summary>
+            <param name="prescriptions"></param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.CheckDrugStoreNum">
+            <summary>
+            检查药品实时库存
+            </summary>
+            <returns>库存是否充足</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.CurrentPresStatus">
+            <summary>
+            获取处方实时状态
+            </summary>
+            <returns>状态编号</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#get_Item_Name">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#set_Item_Name(System.String)">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#get_OrderNo">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#set_OrderNo(System.Int32)">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#get_Usage_Id">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#set_Usage_Id(System.Int32)">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#get_Frequency_Id">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#set_Frequency_Id(System.Int32)">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#get_Group_Id">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Prescription.HIS#MZDoc_BLL#IBasePresList#set_Group_Id(System.Int32)">
+            <summary>
+            处方信息类
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.PresNo">
+            <summary>
+            处方号
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.TmpNo">
+            <summary>
+            处方号
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Dept_Id">
+            <summary>
+            执行科室
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Status">
+            <summary>
+            模板明细状态
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Pres_Date">
+            <summary>
+            处方时间
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Id_S">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Name_S">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Price_S">
+            <summary>
+            项目单价
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Usage_Amount_S">
+            <summary>
+            每次用量
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Usage_Unit_S">
+            <summary>
+            用量单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Dosage_S">
+            <summary>
+            剂数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Days_S">
+            <summary>
+            开药天数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Amount_S">
+            <summary>
+            开药数量
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Unit_S">
+            <summary>
+            用量单位
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Item_Money">
+            <summary>
+            处方明细金额
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Dept_Name">
+            <summary>
+            执行科室名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Usage_Name">
+            <summary>
+            用法名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Frequency_Name">
+            <summary>
+            频次名称
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Frequency_ExecNum">
+            <summary>
+            频次对应的执行次数
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Frequency_CycleDay">
+            <summary>
+            频次对应的执行周期
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Frequency_Caption">
+            <summary>
+            频次说明
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.IsDrug">
+            <summary>
+            药品标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.IsHerb">
+            <summary>
+            中药标志
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Selected">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.IsFloat">
+            <summary>
+            是否是按含量取整的药品
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.BigItemCode">
+            <summary>
+            大项目代码
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Prescription.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.PresListFactory">
+            <summary>
+            处方明细构造工厂
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresListFactory.CreatePresListObject(HIS.MZDoc_BLL.Public.PresListType,System.Data.DataRow)">
+            <summary>
+            构造处方明细对象实例
+            </summary>
+            <param name="presListType">处方明细类型</param>
+            <param name="row">处方明细数据行</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresListFactory.CreatePresListObject(HIS.MZDoc_BLL.Public.PresListType)">
+            <summary>
+            构造处方明细对象实例
+            </summary>
+            <param name="presListType">处方明细类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresListFactory.CreatePresListObject(HIS.MZDoc_BLL.Public.PresListType,System.Int32)">
+            <summary>
+            构造处方明细对象实例
+            </summary>
+            <param name="presListType">处方明细类型</param>
+            <param name="headId">处方头ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.OP_Prescription">
+            <summary>
+            门诊处方操作类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Prescription.SkinTestPresProcess(System.Int32,System.Int32)">
+            <summary>
+            皮试处方处理
+            </summary>
+            <param name="presListId">处方明细Id</param>
+            <param name="result">皮试结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Prescription.GetPresTotalFee(System.Data.DataRow[])">
+            <summary>
+            计算处方费用
+            </summary>
+            <param name="rows">处方数据行</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Prescription.GetPresStatItemFeeTable(System.Data.DataRow[])">
+            <summary>
+            按大项目分类汇总处方费用
+            </summary>
+            <param name="rows">处方数据行</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.OP_ReportQuery">
+            <summary>
+            统计查询操作类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReportQuery.QueryDocWorkData(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            查询医生工作量
+            </summary>
+            <param name="employeeId">员工ID</param>
+            <param name="beginDate">统计开始时间</param>
+            <param name="endDate">统计结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReportQuery.QueryZyDeptBed">
+            <summary>
+            查询病区床位情况
+            </summary>
+            <returns>病区床位情况数据表</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReportQuery.GetFormerlyInpatInfo(System.String)">
+            <summary>
+            获得与病人姓名一致的其他入院信息
+            </summary>
+            <param name="patName">病人姓名</param>
+            <returns>数据表</returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.OP_ReadBaseData">
+            <summary>
+            基础数据读取操作类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetUnitName(System.Int32)">
+            <summary>
+            获得单位名称
+            </summary>
+            <param name="unitId">单位ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetUsageName(System.Int32)">
+            <summary>
+            获得用法名称
+            </summary>
+            <param name="usageId">用法ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetFrequencyName(System.Int32)">
+            <summary>
+            获得频次名称
+            </summary>
+            <param name="frequencyId">频次ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetDeptName(System.Int32)">
+            <summary>
+            获得科室名称
+            </summary>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetMedicalClassName(System.Int32)">
+            <summary>
+            获得医技类型的名称
+            </summary>
+            <param name="medicalClassId">医技类型ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetFeeTypeName(System.String)">
+            <summary>
+            获得费用类型名称
+            </summary>
+            <param name="feeType">费用类型代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetWorkUnitName(System.String)">
+            <summary>
+            获得工作单位名称
+            </summary>
+            <param name="feeType">工作单位代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetUnitData">
+            <summary>
+            获得所有药品单位数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetUsageData">
+            <summary>
+            获得所有用法数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetUsageFeeData">
+            <summary>
+            获得所有用法费用数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetTransUseageIdList">
+            <summary>
+            获得输液卡用法id列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetFrequencyData">
+            <summary>
+            获得所有频次数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetEntrustData">
+            <summary>
+            获得所有嘱托数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetSampleData">
+            <summary>
+            获得所有化验样本数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetParamData">
+            <summary>
+            获得所有附加说明数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetPlaceData">
+            <summary>
+            获得所有检查部位数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetAllBaseItemData">
+            <summary>
+            获得所有项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetBaseItemData">
+            <summary>
+            获得所有有效的项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetEastDiagnosisData">
+            <summary>
+            获得中医诊断列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetWastDiagnosisData">
+            <summary>
+            获得西医诊断列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetZYDeptData">
+            <summary>
+            获得住院临床科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetMZDeptData">
+            <summary>
+            获得门诊临床科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetDoctorData">
+            <summary>
+            获得医生列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetPatientTypeData">
+            <summary>
+            获得病人类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetWorkUnitData">
+            <summary>
+            获得工作单位列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetDeptData">
+            <summary>
+            获得科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetItemExeDeptData">
+            <summary>
+            获得收费项目执行科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetStatItemTable">
+            <summary>
+            获得大项目代码列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetStatMzfpTable">
+            <summary>
+            获得门诊发票代码列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetStatHsTable">
+            <summary>
+            获得核算项目代码列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetDeptStore(System.Int64)">
+            <summary>
+            获得科室药房对应关系
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.IsClinicDept(System.Int32)">
+            <summary>
+            获得科室是否是临床科室
+            </summary>
+            <param name="deptId">科室ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetConfigValue(System.String)">
+            <summary>
+            获取系统参数的值
+            </summary>
+            <param name="configCode">参数编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_ReadBaseData.GetMedicalApplyXmlDocument(System.Int32)">
+            <summary>
+            获取医技申请格式的Xml文本
+            </summary>
+            <param name="medicalClassId">医技类型Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.OP_Patient">
+            <summary>
+            门诊病人操作类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Patient.SearchPatList(System.DateTime,System.DateTime)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="beginTime">就诊时间段查询的开始时间</param>
+            <param name="endTime">就诊时间段查询的结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Patient.SearchPatList(System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="cardNo">诊疗卡号</param>
+            <param name="patName">病人姓名</param>
+            <param name="beginTime">就诊时间段查询的开始时间</param>
+            <param name="endTime">就诊时间段查询的结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Patient.SearchPatList(System.Boolean,HIS.MZDoc_BLL.Public.PatCureStatus,System.DateTime,System.DateTime)">
+            <summary>
+            获得就诊病人列表
+            </summary>
+            <param name="onlyCureDoc">是否是查找单个医生的病人</param>
+            <param name="status">病人状态</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.OP_Patient.SearchPatList(HIS.MZDoc_BLL.Public.PatientSearchInfo)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="patientSearchInfo">门诊查询信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace">
+            <summary>
+            处方金额计算接口
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.#ctor">
+            <summary>
+            处方金额计算接口
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(HIS.MZDoc_BLL.Prescription[],System.Collections.Hashtable@,System.Decimal@)">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <param name="htBigitemFee">大项目明细，返回值</param>
+            <param name="roundingMoney">舍入金额，返回值</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(HIS.MZDoc_BLL.Prescription[],System.Decimal@)">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <param name="roundingMoney">舍入金额，返回值</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(HIS.Interface.IPresDetail[])">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(System.Collections.Generic.List{HIS.MZDoc_BLL.Prescription},System.Collections.Hashtable@,System.Decimal@)">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <param name="htBigitemFee">大项目明细，返回值</param>
+            <param name="roundingMoney">舍入金额，返回值</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(System.Collections.Generic.List{HIS.MZDoc_BLL.Prescription},System.Decimal@)">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <param name="roundingMoney">舍入金额，返回值</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.InterFace.PrescMoneyCalculateInterFace.GetPrescriptionTotalMoney(System.Collections.Generic.List{HIS.MZDoc_BLL.Prescription})">
+            <summary>
+            按处方明细计算处方金额
+            </summary>
+            <param name="PrescDetails">处方明细</param>
+            <returns>四舍五入后的处方总金额</returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.PresDetail">
+            <summary>
+            处方明细类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.PresDetail._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.#ctor">
+            <summary>
+            处方明细类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            处方明细类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.#ctor(System.Int64)">
+            <summary>
+            处方明细类构造函数
+            </summary>
+            <param name="presHeadId">处方头Id</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.GetPresDetailList(System.String)">
+            <summary>
+            获得处方明细列表
+            </summary>
+            <param name="condition">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.GetSkinTestPresDetailList">
+            <summary>
+            获得皮试处方明细列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.GetTransPresDetailList">
+            <summary>
+            获得输液处方明细列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresDetail.GetAllPresDetailList">
+            <summary>
+            获得所有处方明细列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.PresHead">
+            <summary>
+            处方头类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.PresHead._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.#ctor">
+            <summary>
+            处方头类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            处方头类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.#ctor(System.Int64)">
+            <summary>
+            处方头类构造函数
+            </summary>
+            <param name="presHeadId">处方头Id</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.#ctor(System.Int64,System.Int32)">
+            <summary>
+            处方头类构造函数
+            </summary>
+            <param name="patListId">病人Id</param>
+            <param name="type">类型</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.GetPresHeadList(System.Int32)">
+            <summary>
+            获得处方头列表
+            </summary>
+            <param name="type">处方类型(1:未收费处方,2:未收费和已收费的正常处方,3:包含已退费的所有处方)</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.GetNoChangePresHeadList">
+            <summary>
+            获得未收费的处方头列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.GetNormalPresHeadList">
+            <summary>
+            获得正常的处方头列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.GetAllPresHeadList">
+            <summary>
+            获得所以处方头列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.PresHead.GetPresStatus">
+            <summary>
+            获取处方实时状态
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Properties.Resources.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Properties.Resources.MedicalAssayApplyContent">
+             <summary>
+               查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;ApplyContent&gt;
+              &lt;Sample&gt;&lt;/Sample&gt;
+              &lt;Param&gt;&lt;/Param&gt;
+            &lt;/ApplyContent&gt;
+             的本地化字符串。
+             </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Properties.Resources.MedicalExamineApplyContent">
+             <summary>
+               查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;ApplyContent&gt;
+              &lt;Place&gt;&lt;/Place&gt;
+              &lt;DiseaseHistory&gt;&lt;/DiseaseHistory&gt;
+            &lt;/ApplyContent&gt;
+             的本地化字符串。
+             </summary>
+        </member>
+        <member name="P:HIS.MZDoc_BLL.Properties.Resources.MedicalTreatApplyContent">
+             <summary>
+               查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;ApplyContent&gt;&lt;/ApplyContent&gt;
+             的本地化字符串。
+             </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.CurrentStatus">
+            <summary>
+            当前状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.CurrentStatus.查询状态">
+            <summary>
+            查询状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.CurrentStatus.新建状态">
+            <summary>
+            新建状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.CurrentStatus.修改状态">
+            <summary>
+            修改状态
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PresStatus">
+            <summary>
+            处方状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.保存状态">
+            <summary>
+            保存状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.收费状态">
+            <summary>
+            收费状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.退费状态">
+            <summary>
+            退费状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.删除状态">
+            <summary>
+            删除状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.新建状态">
+            <summary>
+            新建状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresStatus.修改状态">
+            <summary>
+            修改状态
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PresListType">
+            <summary>
+            处方明细类型
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresListType.处方模板明细">
+            <summary>
+            处方模板明细
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresListType.病人处方明细">
+            <summary>
+            病人处方明细
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.MedicalApplyType">
+            <summary>
+            医技申请类型
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalApplyType.医技化验申请">
+            <summary>
+            医技化验申请
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalApplyType.医技检查申请">
+            <summary>
+            医技检查申请
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalApplyType.医技治疗申请">
+            <summary>
+            医技治疗申请
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PatCureStatus">
+            <summary>
+            病人就诊状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatCureStatus.候诊状态">
+            <summary>
+            候诊状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatCureStatus.就诊状态">
+            <summary>
+            就诊状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatCureStatus.结束状态">
+            <summary>
+            结束状态
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.SkinTestStatus">
+            <summary>
+            处方皮试状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.SkinTestStatus.不需要皮试">
+            <summary>
+            不需要皮试
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.SkinTestStatus.需要皮试">
+            <summary>
+            需要皮试
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.SkinTestStatus.皮试阴性">
+            <summary>
+            皮试阴性
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.SkinTestStatus.皮试阳性">
+            <summary>
+            皮试阳性
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.SkinTestStatus.免试">
+            <summary>
+            免试
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.MedicalReportFormat">
+            <summary>
+            医技结果返回类型
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportFormat.图片">
+            <summary>
+            返回图片文件
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportFormat.无返回">
+            <summary>
+            不返回任何数据
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.Function">
+            <summary>
+            公共方法类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.SetValue(System.Object,System.Reflection.PropertyInfo,System.Object)">
+            <summary>
+            为对象赋值
+            </summary>
+            <param name="obj">对象</param>
+            <param name="property">需要赋值的属性</param>
+            <param name="objectValue">值</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.DataRowToObject``1(System.Data.DataRow)">
+            <summary>
+            将数据行转化为对象
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.DataRowsToList``1(System.Data.DataRow[])">
+            <summary>
+            将数据行集合转化为强类型列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.DataTableToList``1(System.Data.DataTable)">
+            <summary>
+            将数据表转化为强类型列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.TransformRow(System.Data.DataRow,System.Data.DataRow)">
+            <summary>
+            转换数据行格式
+            </summary>
+            <param name="oldRow"></param>
+            <param name="rowModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.ObjectToDataRow(System.Object)">
+            <summary>
+            将对象转化为数据行
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.ListToDataTable(System.Collections.IList,System.Object)">
+            <summary>
+             将集合类转换成DataTable
+             </summary>
+             <param name="list">集合</param>
+             <param name="obj"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.GetPresForeColor(HIS.MZDoc_BLL.Public.PresStatus)">
+            <summary>
+            获得处方字体的颜色
+            </summary>
+            <param name="status">处方状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.GetPresBackColor(System.Int32,HIS.MZDoc_BLL.Public.PresStatus)">
+            <summary>
+            获得处方背景的颜色
+            </summary>
+            <param name="itemId">处方项目ID</param>
+            <param name="status">处方状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.Function.TransBirthdayToAge(System.DateTime)">
+            <summary>
+            将生日转化成为年龄
+            </summary>
+            <param name="birthday"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.StaticConfig">
+            <summary>
+            静态参数
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.StaticConfig.CureDocCode">
+            <summary>
+            当前看诊医生代码
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.StaticConfig.CureDeptCode">
+            <summary>
+            当前看诊科室
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.StaticConfig.CurrentReportFormat">
+            <summary>
+            当前医技报告返回格式
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PeopleAge">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PeopleAge.AgeNum">
+            <summary>
+            年龄数
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PeopleAge.AgeUnit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PresColor">
+            <summary>
+            处方颜色
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColor.rowIndex">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColor.colIndex">
+            <summary>
+            列号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColor.ForeColor">
+            <summary>
+            行字体颜色
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColor.BackColor">
+            <summary>
+            行背景颜色
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PresCellReadOnly">
+            <summary>
+            处方列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.ItemIdReadOnly">
+            <summary>
+            项目编码列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.DeptNameReadOnly">
+            <summary>
+            科室名称列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.UsageAmountReadOnly">
+            <summary>
+            每次用量列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.UsageUnitReadOnly">
+            <summary>
+            用量单位列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.DosageReadOnly">
+            <summary>
+            剂数列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.UsageReadOnly">
+            <summary>
+            用法列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.FrequencyReadOnly">
+            <summary>
+            频次列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.DaysReadOnly">
+            <summary>
+            天数列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.ItemAmountReadOnly">
+            <summary>
+            开药数量列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.ItemUnitReadOnly">
+            <summary>
+            开药单位列只读状态
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresCellReadOnly.EntrustReadOnly">
+            <summary>
+            嘱托列只读状态
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PresColumnIndex">
+            <summary>
+            处方列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.ItemIdIndex">
+            <summary>
+            项目编码列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.DeptNameIndex">
+            <summary>
+            科室名称列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.UsageAmountIndex">
+            <summary>
+            每次用量列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.UsageUnitIndex">
+            <summary>
+            用量单位列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.DosageIndex">
+            <summary>
+            剂数列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.UsageIndex">
+            <summary>
+            用法列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.FrequencyIndex">
+            <summary>
+            频次列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.DaysIndex">
+            <summary>
+            天数列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.ItemAmountIndex">
+            <summary>
+            开药数量列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.ItemUnitIndex">
+            <summary>
+            开药单位列序号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PresColumnIndex.EntrustIndex">
+            <summary>
+            嘱托列序号
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.PatientSearchInfo">
+            <summary>
+            病人查询信息
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.CardNo">
+            <summary>
+            门诊卡号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.VisitNo">
+            <summary>
+            门诊号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.PatName">
+            <summary>
+            病人姓名
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.DeptId">
+            <summary>
+            就诊科室Id
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.DocId">
+            <summary>
+            就诊医生Id
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.Diagnosis">
+            <summary>
+            诊断
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.BeginTime">
+            <summary>
+            就诊日期时间段开始日期
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.PatientSearchInfo.EndTime">
+            <summary>
+            就诊日期时间段结束日期
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.MedicalReportInfo">
+            <summary>
+            医技报告信息
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.FormHandle">
+            <summary>
+            窗体句柄
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.Patid">
+            <summary>
+            病人ID
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.PatListid">
+            <summary>
+            病人就诊ID
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.TicketNum">
+            <summary>
+            发票号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.PresListId">
+            <summary>
+            处方明细编号
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.Public.MedicalReportInfo.VisitNo">
+            <summary>
+            门诊号
+            </summary>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.Public.XmlFunction">
+            <summary>
+            XML公共方法类
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.XmlFunction.ComposeXmlText(System.Object,System.String,System.String)">
+            <summary>
+            合成Xml文本
+            </summary>
+            <param name="obj">值来源对象</param>
+            <param name="modelText">Xml文档模板</param>
+            <param name="rootName">根节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.XmlFunction.DeComposeXmlText(System.Object,System.String,System.String)">
+            <summary>
+            分解Xml文本
+            </summary>
+            <param name="obj">写入值对象</param>
+            <param name="modelText">Xml文档</param>
+            <param name="rootName">根节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.XmlFunction.GetXmlCellValue(System.Xml.XmlNode,System.Data.DataTable)">
+            <summary>
+            获取XML节点值
+            </summary>
+            <param name="node">结点</param>
+            <param name="table">数据表</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.Public.XmlFunction.DeComposeXmlText(System.String,System.String,System.Data.DataTable)">
+            <summary>
+            分解Xml文本
+            </summary>
+            <param name="xmlText">XML文本内容</param>
+            <param name="rootName">根节点名称</param>
+            <param name="table">数据表</param>
+        </member>
+        <member name="T:HIS.MZDoc_BLL.ZyInpatRegist">
+            <summary>
+            住院证类
+            </summary>
+        </member>
+        <member name="F:HIS.MZDoc_BLL.ZyInpatRegist._oleDb">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.ZyInpatRegist.#ctor">
+            <summary>
+            住院证类构造函数
+            </summary>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.ZyInpatRegist.#ctor(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            住院证类构造函数
+            </summary>
+            <param name="oleDB">数据库对象</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.ZyInpatRegist.#ctor(System.Int32)">
+            <summary>
+            住院证类构造函数
+            </summary>
+            <param name="patListId">病人门诊就诊ID</param>
+        </member>
+        <member name="M:HIS.MZDoc_BLL.ZyInpatRegist.Save">
+            <summary>
+            保存住院证信息
+            </summary>
+        </member>
+    </members>
+</doc>

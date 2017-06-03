@@ -1,0 +1,38 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Name='ReportHeader1'
+			Height=10.6098
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox1'
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					Center=Horizontal
+					Left=4.41854
+					Top=0.79375
+					Width=7.19667
+					Height=1.00542
+					TextAlign=MiddleCenter
+					Text='住院收费收据'
+				End
+			End
+		End
+	End
+End

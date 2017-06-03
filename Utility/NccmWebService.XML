@@ -1,0 +1,1943 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NccmWebService</name>
+    </assembly>
+    <members>
+        <member name="T:NccmWebService.Enums.DownLoadItemType">
+            <summary>
+            下载项目类型
+            </summary>
+        </member>
+        <member name="T:NccmWebService.Enums.NcmsItemType">
+            <summary>
+            新农合项目类型定义
+            </summary>
+        </member>
+        <member name="T:NccmWebService.Enums.NcmsDataType">
+            <summary>
+            业务数据类型
+            </summary>
+        </member>
+        <member name="T:NccmWebService.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:NccmWebService.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的、缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:NccmWebService.Properties.Resources.Culture">
+            <summary>
+              为所有资源查找重写当前线程的 CurrentUICulture 属性，
+              方法是使用此强类型资源类。
+            </summary>
+        </member>
+        <member name="T:hisInterface">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveHospitalMatchInfo(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginrecieveHospitalMatchInfo(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndrecieveHospitalMatchInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveHospitalMatchInfoAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveHospitalMatchInfoAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveDetailFee(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginrecieveDetailFee(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndrecieveDetailFee(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveDetailFeeAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.recieveDetailFeeAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientSign(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginpatientSign(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndpatientSign(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientSignAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientSignAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadHospitalInfo(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegindownLoadHospitalInfo(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EnddownLoadHospitalInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadHospitalInfoAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadHospitalInfoAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.budgetFee(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginbudgetFee(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndbudgetFee(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.budgetFeeAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.budgetFeeAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadCenterItem(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegindownLoadCenterItem(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EnddownLoadCenterItem(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadCenterItemAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadCenterItemAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.testDemo(PatientSignInfo,BudgetFee,CanceDetail,DownLoadItem,FindPatientCompInfo,PatBaseInfo,PatientComp,PatientSign,RecieveHospitalMatchInfo,CompResult,DownLoadCenterItemResult,DownLoadHospitalInfoResult,DownLoadItemResult,FindPatientCompInfoResult,RecieveDetailFeeResult,RecieveHospitalMatchInfoResult,HisData,Condition,AduitStatus,ConditionArgName,PatientType,TherapyType,NcmsResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegintestDemo(PatientSignInfo,BudgetFee,CanceDetail,DownLoadItem,FindPatientCompInfo,PatBaseInfo,PatientComp,PatientSign,RecieveHospitalMatchInfo,CompResult,DownLoadCenterItemResult,DownLoadHospitalInfoResult,DownLoadItemResult,FindPatientCompInfoResult,RecieveDetailFeeResult,RecieveHospitalMatchInfoResult,HisData,Condition,AduitStatus,ConditionArgName,PatientType,TherapyType,NcmsResult,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndtestDemo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.testDemoAsync(PatientSignInfo,BudgetFee,CanceDetail,DownLoadItem,FindPatientCompInfo,PatBaseInfo,PatientComp,PatientSign,RecieveHospitalMatchInfo,CompResult,DownLoadCenterItemResult,DownLoadHospitalInfoResult,DownLoadItemResult,FindPatientCompInfoResult,RecieveDetailFeeResult,RecieveHospitalMatchInfoResult,HisData,Condition,AduitStatus,ConditionArgName,PatientType,TherapyType,NcmsResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.testDemoAsync(PatientSignInfo,BudgetFee,CanceDetail,DownLoadItem,FindPatientCompInfo,PatBaseInfo,PatientComp,PatientSign,RecieveHospitalMatchInfo,CompResult,DownLoadCenterItemResult,DownLoadHospitalInfoResult,DownLoadItemResult,FindPatientCompInfoResult,RecieveDetailFeeResult,RecieveHospitalMatchInfoResult,HisData,Condition,AduitStatus,ConditionArgName,PatientType,TherapyType,NcmsResult,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.findPatientCompInfo(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginfindPatientCompInfo(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndfindPatientCompInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.findPatientCompInfoAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.findPatientCompInfoAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadMatchInfo(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegindownLoadMatchInfo(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EnddownLoadMatchInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadMatchInfoAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadMatchInfoAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientComp(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BeginpatientComp(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndpatientComp(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientCompAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.patientCompAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceInPatientComp(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegincanceInPatientComp(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndcanceInPatientComp(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceInPatientCompAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceInPatientCompAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadDetailFee(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegindownLoadDetailFee(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EnddownLoadDetailFee(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadDetailFeeAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadDetailFeeAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.cancePatientSign(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegincancePatientSign(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndcancePatientSign(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.cancePatientSignAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.cancePatientSignAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceDetailFee(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegincanceDetailFee(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EndcanceDetailFee(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceDetailFeeAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.canceDetailFeeAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadAuditDetailFee(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.BegindownLoadAuditDetailFee(Message,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.EnddownLoadAuditDetailFee(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadAuditDetailFeeAsync(Message)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.downLoadAuditDetailFeeAsync(Message,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:hisInterface.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.recieveHospitalMatchInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.recieveDetailFeeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.patientSignCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.downLoadHospitalInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.budgetFeeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.downLoadCenterItemCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.testDemoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.findPatientCompInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.downLoadMatchInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.patientCompCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.canceInPatientCompCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.downLoadDetailFeeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.cancePatientSignCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.canceDetailFeeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:hisInterface.downLoadAuditDetailFeeCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Message">
+            <remarks/>
+        </member>
+        <member name="P:Message.DES">
+            <remarks/>
+        </member>
+        <member name="P:Message.DESSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Message.GZipCompress">
+            <remarks/>
+        </member>
+        <member name="P:Message.GZipCompressSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Message.dataContent">
+            <remarks/>
+        </member>
+        <member name="P:Message.errMsg">
+            <remarks/>
+        </member>
+        <member name="P:Message.success">
+            <remarks/>
+        </member>
+        <member name="P:Message.successSpecified">
+            <remarks/>
+        </member>
+        <member name="T:NcmsResult">
+            <remarks/>
+        </member>
+        <member name="P:NcmsResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:NcmsResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:NcmsResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:TherapyType">
+            <remarks/>
+        </member>
+        <member name="T:PatientType">
+            <remarks/>
+        </member>
+        <member name="T:ConditionArgName">
+            <remarks/>
+        </member>
+        <member name="T:AduitStatus">
+            <remarks/>
+        </member>
+        <member name="T:HisData">
+            <remarks/>
+        </member>
+        <member name="P:HisData.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:HisData.dataType">
+            <remarks/>
+        </member>
+        <member name="P:HisData.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:HisData.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:HisData.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:HisData.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:HisData.operType">
+            <remarks/>
+        </member>
+        <member name="P:HisData.password">
+            <remarks/>
+        </member>
+        <member name="P:HisData.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:HisData.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:HisData.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:DataClass">
+            <remarks/>
+        </member>
+        <member name="P:DataClass.dataClassName">
+            <remarks/>
+        </member>
+        <member name="P:DataClass.dataClassValue">
+            <remarks/>
+        </member>
+        <member name="T:DataType">
+            <remarks/>
+        </member>
+        <member name="P:DataType.dataTypeName">
+            <remarks/>
+        </member>
+        <member name="P:DataType.dataTypeValue">
+            <remarks/>
+        </member>
+        <member name="T:JoinArea">
+            <remarks/>
+        </member>
+        <member name="P:JoinArea.code">
+            <remarks/>
+        </member>
+        <member name="P:JoinArea.name">
+            <remarks/>
+        </member>
+        <member name="T:OperType">
+            <remarks/>
+        </member>
+        <member name="P:OperType.operTypeName">
+            <remarks/>
+        </member>
+        <member name="P:OperType.operTypeValue">
+            <remarks/>
+        </member>
+        <member name="T:RecieveHospitalMatchInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfoResult.itemMatchInfo">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfoResult.page">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfoResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfoResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfoResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:ItemMatchInfo">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.approveTime">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.approve_status">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.drug_alias">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.drug_form">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.drug_name">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.drug_type">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.hospital_code">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.if_equal">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.limit_desc">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.medorg_code">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.ncms_code">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.priceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price1">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price1Specified">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price2">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price2Specified">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price3">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.price3Specified">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.region_code">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.specs">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.status">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.therapy_content">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.therapy_exclude">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.therapy_name">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.type">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.unit">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.upload_time">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.uploader">
+            <remarks/>
+        </member>
+        <member name="P:ItemMatchInfo.use_level">
+            <remarks/>
+        </member>
+        <member name="T:PageInfo">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.pageNO">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.pageNOSpecified">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.pageSize">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.pageSizeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.totalPageNo">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.totalPageNoSpecified">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.totalRecordNo">
+            <remarks/>
+        </member>
+        <member name="P:PageInfo.totalRecordNoSpecified">
+            <remarks/>
+        </member>
+        <member name="T:RecieveDetailFeeResult">
+            <remarks/>
+        </member>
+        <member name="P:RecieveDetailFeeResult.feeDetail">
+            <remarks/>
+        </member>
+        <member name="P:RecieveDetailFeeResult.patBaseData">
+            <remarks/>
+        </member>
+        <member name="P:RecieveDetailFeeResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:RecieveDetailFeeResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:RecieveDetailFeeResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:FeeDetail">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.aduit_status">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.amount">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.amountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.audit_date">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.auditor">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.center_item_code">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.change_reason">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.change_sum">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.change_sumSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.comp_ratio">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.comp_ratioSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.doctor">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.doctorTitle">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.drugform">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.fact_comp_sum">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.fact_comp_sumSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.feeType">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.his_billno">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_class">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_code">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_equal">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_name">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_sn">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.item_use_time">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.money">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.moneySpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.nccm_comp_status">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.price">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.priceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.reverse_date">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.reverse_person">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.reverse_sn">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.reverse_status">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.specs">
+            <remarks/>
+        </member>
+        <member name="P:FeeDetail.unit">
+            <remarks/>
+        </member>
+        <member name="T:PatBaseData">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.age">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.area_id">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.birthdate">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.family_code">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.hisID">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.idCard">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.medcard_id">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.name">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.person_code">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.sex">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseData.visit_type">
+            <remarks/>
+        </member>
+        <member name="T:CompPatBaseData">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.age">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.area_id">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.birthdate">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.compStat">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.compStatSpecified">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.end_time">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.family_code">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.hisID">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.idCard">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.medcard_id">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.name">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.person_code">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.sex">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.start_time">
+            <remarks/>
+        </member>
+        <member name="P:CompPatBaseData.visit_type">
+            <remarks/>
+        </member>
+        <member name="T:FindPatientCompInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfoResult.compPatBaseData">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfoResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfoResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfoResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:DownLoadItemResult">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItemResult.itemMatchInfo">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItemResult.pageInfo">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItemResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItemResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItemResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:HospitalInfo">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.account_code">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.account_name">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.address">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.adm_class">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.data_time">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.dist_code">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.eco_type">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.email">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.host_code">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.loc_code">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.loc_name">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.medorg_code">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.medorg_name">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.opendate">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.org_class">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.org_id">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.phone">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.postalcode">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.principal">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.reg_money">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.reg_moneySpecified">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.sub_relation">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.userCode">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.userPWD">
+            <remarks/>
+        </member>
+        <member name="P:HospitalInfo.web">
+            <remarks/>
+        </member>
+        <member name="T:DownLoadHospitalInfoResult">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadHospitalInfoResult.hospitalInfo">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadHospitalInfoResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadHospitalInfoResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadHospitalInfoResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:Therapy">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.exclude_content">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.finance_type">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.item_code">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.item_content">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.item_name">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.mark">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.medclass_code">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.price1">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.price2">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.price3">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.specs">
+            <remarks/>
+        </member>
+        <member name="P:Therapy.unit">
+            <remarks/>
+        </member>
+        <member name="T:Drug">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_alias">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_code">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_code2">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_form">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_name">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drug_type">
+            <remarks/>
+        </member>
+        <member name="P:Drug.drugclass_code">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_dept">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_desc">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_disease">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_doctor">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_form">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_hospital">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_line">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_maker">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_price">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_priceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_unit_name">
+            <remarks/>
+        </member>
+        <member name="P:Drug.limit_unit_num">
+            <remarks/>
+        </member>
+        <member name="P:Drug.mark">
+            <remarks/>
+        </member>
+        <member name="P:Drug.use_level">
+            <remarks/>
+        </member>
+        <member name="T:DownLoadCenterItemResult">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.drug">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.drugPageInfo">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.resultString">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.therapy">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadCenterItemResult.therapyPageInfo">
+            <remarks/>
+        </member>
+        <member name="T:CompData">
+            <remarks/>
+        </member>
+        <member name="P:CompData.bill_no">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_drugfee">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_drugfeeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_money">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_moneySpecified">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_treatfee">
+            <remarks/>
+        </member>
+        <member name="P:CompData.comp_treatfeeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:CompData.is_topline">
+            <remarks/>
+        </member>
+        <member name="P:CompData.is_toplineSpecified">
+            <remarks/>
+        </member>
+        <member name="T:CompResult">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.compData">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.feeDetail">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.patBaseData">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.resultId">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:CompResult.resultString">
+            <remarks/>
+        </member>
+        <member name="T:RecieveHospitalMatchInfo">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.dataType">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.itemMatchInfo">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.operType">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.pageInfo">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.password">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:RecieveHospitalMatchInfo.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:PatientSign">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.dataType">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.mzPat">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.operType">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.password">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.uploadorg">
+            <remarks/>
+        </member>
+        <member name="P:PatientSign.zyPat">
+            <remarks/>
+        </member>
+        <member name="T:MzPatBaseData">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.accept_dept">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.accept_deptName">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.adm_state">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.age">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.area_id">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.birthdate">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.comp_classs">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.disease_code">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.disease_name">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.doctor">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.doctor_title">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.family_code">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.hisID">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.idCard">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.medcard_id">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.medorg_code">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.name">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.person_code">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.sex">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.status">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.trans_orgcode">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.trans_orglevel">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.visit_date">
+            <remarks/>
+        </member>
+        <member name="P:MzPatBaseData.visit_type">
+            <remarks/>
+        </member>
+        <member name="T:ZyPatBaseData">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.adm_date">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.adm_dept">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.adm_deptName">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.adm_state">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.age">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.area_id">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.bearcard_no">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.birthdate">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.canotice_no">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.comp_classs">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.complication_code">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.complication_name">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.dis_date">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.discharge_dept">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.discharge_deptName">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.doctor">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.doctor_title">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.family_code">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.hisID">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.his_billno">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.idCard">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.inpat_no">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.is_midway">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.maindiag_code">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.maindiag_name">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.maindiag_state">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.medcard_id">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.medorg_code">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.name">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.ops_code2">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.ops_name">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.person_code">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.sex">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.status">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.trans_orgcode">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.trans_orglevel">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.visitHospitalLevel">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.visitHospitalRank">
+            <remarks/>
+        </member>
+        <member name="P:ZyPatBaseData.visit_type">
+            <remarks/>
+        </member>
+        <member name="T:PatientComp">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.dataType">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.mzDetail">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.mzPat">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.operType">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.password">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.uploadorg">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.zyDetail">
+            <remarks/>
+        </member>
+        <member name="P:PatientComp.zyPat">
+            <remarks/>
+        </member>
+        <member name="T:PatBaseInfo">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.baseData">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.dataType">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.operType">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.password">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:PatBaseInfo.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:FindPatientCompInfo">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.conditions">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.dataType">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.operType">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.password">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:FindPatientCompInfo.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:Condition">
+            <remarks/>
+        </member>
+        <member name="P:Condition.condition_displayname">
+            <remarks/>
+        </member>
+        <member name="P:Condition.condition_name">
+            <remarks/>
+        </member>
+        <member name="P:Condition.condition_value">
+            <remarks/>
+        </member>
+        <member name="T:DownLoadItem">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.conditions">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.dataType">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.operType">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.pageInfo">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.password">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:DownLoadItem.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:CanceDetail">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.addData">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.baseData">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.cancelData">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.dataType">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.operType">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.password">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:CanceDetail.uploadorg">
+            <remarks/>
+        </member>
+        <member name="T:BudgetFee">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.dataClass">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.dataType">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.feeDetail">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.hos_class">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.hos_level">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.joinArea">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.medorg_level">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.operType">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.password">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.uploadPerson">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.uploadTime">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.uploadorg">
+            <remarks/>
+        </member>
+        <member name="P:BudgetFee.zyPat">
+            <remarks/>
+        </member>
+        <member name="T:PatientSignInfo">
+            <remarks/>
+        </member>
+        <member name="P:PatientSignInfo.resultId">
+            <remarks/>
+        </member>
+        <member name="P:PatientSignInfo.resultIdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:PatientSignInfo.resultString">
+            <remarks/>
+        </member>
+        <member name="T:recieveHospitalMatchInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:recieveHospitalMatchInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:recieveHospitalMatchInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:recieveDetailFeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:recieveDetailFeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:recieveDetailFeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:patientSignCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:patientSignCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:patientSignCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:downLoadHospitalInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:downLoadHospitalInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:downLoadHospitalInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:budgetFeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:budgetFeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:budgetFeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:downLoadCenterItemCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:downLoadCenterItemCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:downLoadCenterItemCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:testDemoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:findPatientCompInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:findPatientCompInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:findPatientCompInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:downLoadMatchInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:downLoadMatchInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:downLoadMatchInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:patientCompCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:patientCompCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:patientCompCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:canceInPatientCompCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:canceInPatientCompCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:canceInPatientCompCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:downLoadDetailFeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:downLoadDetailFeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:downLoadDetailFeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:cancePatientSignCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:cancePatientSignCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:cancePatientSignCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:canceDetailFeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:canceDetailFeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:canceDetailFeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:downLoadAuditDetailFeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:downLoadAuditDetailFeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:downLoadAuditDetailFeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:NccmWebService.NccmInterfaces">
+            <summary>
+            调用农合接口类
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.DownLoadHospitalInfo(HisData)">
+            <summary>
+            下载医院信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.DownLoadDrugListInfo(DownLoadItem)">
+            <summary>
+            下载药品目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.DownLoadTherapyListInfo(DownLoadItem)">
+            <summary>
+            下载诊疗目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.FindPatientCompInfo(FindPatientCompInfo)">
+            <summary>
+            参合病人信息查询
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.DownLoadDetailFee(DownLoadItem)">
+            <summary>
+            下载指定病人的所有费用明细数据
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.DownLoadMatchInfo(DownLoadItem)">
+            <summary>
+            下载医院的匹配关系
+            </summary>
+            <param name="hisData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.UploadMatchInfo(RecieveHospitalMatchInfo,ItemMatchInfo[]@,System.String@)">
+            <summary>
+            上传匹配信息
+            </summary>
+            <param name="hisData"></param>
+            <param name="upLoadfaildItems">返回的上传失败的记录</param>
+            <param name="strMsg">返回的消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.UploadPatientFeeDetail(BudgetFee)">
+            <summary>
+            上传病人费用明细(住院和门诊)
+            </summary>
+            <param name="hisData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.OutPatientBudegt(PatientComp)">
+            <summary>
+            门诊预算返回CompData类数组
+            </summary>
+            <param name="hisData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.OutPatientCharge(PatientComp)">
+            <summary>
+            正式结算
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.OutPatientCancelCharge(CanceDetail)">
+            <summary>
+            门诊退费
+            </summary>
+            <param name="hisData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.temp_trans_fee">
+            <summary>
+            临时用。。
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.InpatientRegister(PatientSign)">
+            <summary>
+            住院病人入院登记
+            </summary>
+            <param name="ps">病人信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.UploadZYPatFee(BudgetFee)">
+            <summary>
+            住院病人费用上传
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.OutZYPatientBudegt(PatientComp)">
+            <summary>
+            住院预算
+            </summary>
+            <param name="hisData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.OutZYPatientCharge(PatientComp)">
+            <summary>
+            住院正式结算
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.CanOutPatZYCharge(BudgetFee)">
+            <summary>
+            取消出院结算（中途结算）
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmInterfaces.CanInpatientRegister(PatBaseInfo)">
+            <summary>
+            住院病人取消入院（不包括已结算的病人）
+            </summary>
+        </member>
+        <member name="M:NccmWebService.NccmFunction.encrypt(System.String,System.String)">
+            <summary>
+            des加密
+            </summary>
+            <param name="message"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmFunction.decrypt(System.String,System.String)">
+            <summary>
+            des解密
+            </summary>
+            <param name="message"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmFunction.gZipCompress(System.String)">
+            <summary>
+            压缩   
+            </summary>
+            <param name="uncompressedString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NccmWebService.NccmFunction.gZipDeCompress(System.String)">
+            <summary>
+            解压   
+            </summary>
+            <param name="compressedString"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

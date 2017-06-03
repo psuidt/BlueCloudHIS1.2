@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{643E8AC5-61A3-44C6-9D92-FFBED1128545}"
+	ProjectSection(SolutionItems) = preProject
+		GWI-MiniHIS03住院经管.vsmdi = GWI-MiniHIS03住院经管.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TownShipHIS", "GWI-MiniHIS\TownShipHIS\TownShipHIS.csproj", "{8B6138A3-B108-42F7-9713-944D27DBBB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_ZYManager", "GWI-MiniHIS\HIS_ZYManager\HIS_ZYManager.csproj", "{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.ZY_BLL", "Public-HIS\HIS.ZY_BLL\HIS.ZY_BLL.csproj", "{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_PublicManager", "GWI-MiniHIS\HIS_PublicManager\HIS_PublicManager.csproj", "{A0328ED7-13B4-49A7-8093-710E1ACAD80E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.Public_BLL", "Public-HIS\HIS.Public_BLL\HIS.Public_BLL.csproj", "{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.Interface", "Public-HIS\HIS.Interface\HIS.Interface.csproj", "{6798B52A-D999-4005-94BF-D92EA602A0D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0328ED7-13B4-49A7-8093-710E1ACAD80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0328ED7-13B4-49A7-8093-710E1ACAD80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0328ED7-13B4-49A7-8093-710E1ACAD80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0328ED7-13B4-49A7-8093-710E1ACAD80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6798B52A-D999-4005-94BF-D92EA602A0D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6798B52A-D999-4005-94BF-D92EA602A0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6798B52A-D999-4005-94BF-D92EA602A0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6798B52A-D999-4005-94BF-D92EA602A0D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GWI-MiniHIS03住院经管.vsmdi
+	EndGlobalSection
+EndGlobal

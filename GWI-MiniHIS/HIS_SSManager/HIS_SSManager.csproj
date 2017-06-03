@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA8D4913-C531-4E8A-87D1-E8DF7F18B0B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_SSManager</RootNamespace>
+    <AssemblyName>HIS_SSManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWMHIS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.ZYDoc_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.ZY_BLL, Version=1.2.0.14, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS_ZYManager, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAfterSs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfterSs.Designer.cs">
+      <DependentUpon>FrmAfterSs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewBed.Designer.cs">
+      <DependentUpon>FrmNewBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewRoom.Designer.cs">
+      <DependentUpon>FrmNewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepot.Designer.cs">
+      <DependentUpon>FrmRepot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSsArrange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSsArrange.Designer.cs">
+      <DependentUpon>FrmSsArrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSsMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSsMain.Designer.cs">
+      <DependentUpon>FrmSsMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSsRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSsRoom.Designer.cs">
+      <DependentUpon>FrmSsRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="PatientControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAfterSs.resx">
+      <DependentUpon>FrmAfterSs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewBed.resx">
+      <DependentUpon>FrmNewBed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewRoom.resx">
+      <DependentUpon>FrmNewRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepot.resx">
+      <DependentUpon>FrmRepot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSsArrange.resx">
+      <DependentUpon>FrmSsArrange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSsMain.resx">
+      <DependentUpon>FrmSsMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSsRoom.resx">
+      <DependentUpon>FrmSsRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.bmp" />
+    <None Include="Resources\action_refresh.gif" />
+    <None Include="Resources\action_stop.gif" />
+    <None Include="Resources\blue-loading.gif" />
+    <None Include="Resources\folder_new.gif" />
+    <None Include="Resources\IconImages.resX">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\icon_accept.gif" />
+    <None Include="Resources\icon_network.gif" />
+    <None Include="Resources\icon_package_get.gif" />
+    <None Include="Resources\image.gif" />
+    <None Include="Resources\list_users.gif" />
+    <None Include="Resources\MenuImages.bmp" />
+    <None Include="Resources\page_cross.gif" />
+    <None Include="Resources\page_edit.gif" />
+    <None Include="Resources\page_key.gif" />
+    <None Include="Resources\page_refresh.gif" />
+    <None Include="Resources\page_user_dark.gif" />
+    <None Include="Resources\re_left_icon04.gif" />
+    <None Include="Resources\SampleImages.bmp" />
+    <None Include="Resources\SampleImages1.bmp" />
+    <None Include="Resources\table_delete.gif" />
+    <None Include="Resources\保存.gif" />
+    <None Include="Resources\修改.gif" />
+    <None Include="Resources\剪切.gif" />
+    <None Include="Resources\复制.gif" />
+    <None Include="Resources\帮助.gif" />
+    <None Include="Resources\打印.gif" />
+    <None Include="Resources\搜索.gif" />
+    <None Include="Resources\搜索~.gif" />
+    <None Include="Resources\新建.gif" />
+    <None Include="Resources\粘贴.gif" />
+    <None Include="Resources\系统设置.gif" />
+    <None Include="Resources\菜单设置.gif" />
+    <None Include="Resources\设置.gif" />
+    <None Include="Resources\退出.png" />
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.SS_BLL\HIS.SS_BLL.csproj">
+      <Project>{DE90F206-9B94-44A6-B339-DB5E72EC123A}</Project>
+      <Name>HIS.SS_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

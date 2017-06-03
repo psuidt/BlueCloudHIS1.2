@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42C22B76-2CEE-4C60-BAC0-F296050DAFFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_ZYDocManager</RootNamespace>
+    <AssemblyName>HIS_ZYDocManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWMHIS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="HIS.ZY_BLL, Version=1.2.0.14, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS_EMRManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="MessagePromptManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UtilityLibrary, Version=1.1.2.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\UtilityLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\BaseIView.cs" />
+    <Compile Include="Action\ControllerMethod.cs" />
+    <Compile Include="Action\FrmMediApplyController.cs" />
+    <Compile Include="Action\IFrmMediApplyView.cs" />
+    <Compile Include="Action\IFrmOrderManagerView.cs" />
+    <Compile Include="Action\IFrmDocModelView.cs" />
+    <Compile Include="Action\FrmOrderManagerController.cs" />
+    <Compile Include="Action\FrmModelController.cs" />
+    <Compile Include="Action\PublicController.cs" />
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmSsApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmSsApply.Designer.cs">
+      <DependentUpon>FrmSsApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\FrmSsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\FrmSsQuery.Designer.cs">
+      <DependentUpon>FrmSsQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\PatientControl.cs" />
+    <Compile Include="基础数据\FrmDocModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\FrmDocModel.Designer.cs">
+      <DependentUpon>FrmDocModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\FrmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\FrmNew.Designer.cs">
+      <DependentUpon>FrmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmNewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmNewModel.Designer.cs">
+      <DependentUpon>FrmNewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmSaveModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmSaveModel.Designer.cs">
+      <DependentUpon>FrmSaveModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\ImageReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\ImageReport.Designer.cs">
+      <DependentUpon>ImageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmCheckApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmCheckApply.Designer.cs">
+      <DependentUpon>FrmCheckApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmChgTemiTimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmChgTemiTimes.Designer.cs">
+      <DependentUpon>FrmChgTemiTimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmCureApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmCureApply.Designer.cs">
+      <DependentUpon>FrmCureApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmDeath.Designer.cs">
+      <DependentUpon>FrmDeath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\主页\FrmDocMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\主页\FrmDocMain.Designer.cs">
+      <DependentUpon>FrmDocMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmJZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmJZ.Designer.cs">
+      <DependentUpon>FrmJZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmLeave.Designer.cs">
+      <DependentUpon>FrmLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\FrmStop.Designer.cs">
+      <DependentUpon>FrmStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmStopOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmStopOrder.Designer.cs">
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmTestApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\治疗、医技申请\FrmTestApply.Designer.cs">
+      <DependentUpon>FrmTestApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\Frmtime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\医嘱管理\Frmtime.Designer.cs">
+      <DependentUpon>Frmtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmTransferDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日常业务\出院，转科，死亡医嘱\FrmTransferDept.Designer.cs">
+      <DependentUpon>FrmTransferDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmDocWorkQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmDocWorkQuery.Designer.cs">
+      <DependentUpon>FrmDocWorkQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\FrmPatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询统计\FrmPatientInfo.Designer.cs">
+      <DependentUpon>FrmPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询统计\GraphControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IconImages.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImageListPopup.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TreeViewImages.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\FrmDocModel.resx">
+      <DependentUpon>FrmDocModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\FrmNew.resx">
+      <DependentUpon>FrmNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmSsApply.resx">
+      <DependentUpon>FrmSsApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\FrmSsQuery.resx">
+      <DependentUpon>FrmSsQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\FrmNewModel.resx">
+      <DependentUpon>FrmNewModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\FrmSaveModel.resx">
+      <DependentUpon>FrmSaveModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\ImageReport.resx">
+      <DependentUpon>ImageReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\治疗、医技申请\FrmCheckApply.resx">
+      <DependentUpon>FrmCheckApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\出院，转科，死亡医嘱\FrmChgTemiTimes.resx">
+      <DependentUpon>FrmChgTemiTimes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\治疗、医技申请\FrmCureApply.resx">
+      <DependentUpon>FrmCureApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\出院，转科，死亡医嘱\FrmDeath.resx">
+      <DependentUpon>FrmDeath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\主页\FrmDocMain.resx">
+      <DependentUpon>FrmDocMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\FrmJZ.resx">
+      <DependentUpon>FrmJZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\出院，转科，死亡医嘱\FrmLeave.resx">
+      <DependentUpon>FrmLeave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\FrmStop.resx">
+      <DependentUpon>FrmStop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\出院，转科，死亡医嘱\FrmStopOrder.resx">
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\治疗、医技申请\FrmTestApply.resx">
+      <DependentUpon>FrmTestApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\医嘱管理\Frmtime.resx">
+      <DependentUpon>Frmtime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日常业务\出院，转科，死亡医嘱\FrmTransferDept.resx">
+      <DependentUpon>FrmTransferDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmDocWorkQuery.resx">
+      <DependentUpon>FrmDocWorkQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询统计\FrmPatientInfo.resx">
+      <DependentUpon>FrmPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImages1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_network.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_accept.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\帮助.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\复制.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪切.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粘贴.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预览.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统设置.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索~.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re_left_icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_user_dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_package_get.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_cross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.ZYDoc_BLL\HIS.ZYDoc_BLL.csproj">
+      <Project>{8E10CEE1-A2D4-413E-B8D3-36134976B56D}</Project>
+      <Name>HIS.ZYDoc_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

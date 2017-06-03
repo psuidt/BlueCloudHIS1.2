@@ -1,0 +1,21 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Items Parameter
+		Item
+			Name='开始日期'
+			Value='2011-6-15 0:00:00'
+		End
+		Item
+			Name='结束日期'
+		End
+	End
+End

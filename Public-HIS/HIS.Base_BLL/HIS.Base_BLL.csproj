@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2A0B478-E7B6-4216-8A06-F11B75B506B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Base_BLL</RootNamespace>
+    <AssemblyName>HIS.Base_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.MediInsInterface_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="基础数据\BaseDal.cs" />
+    <Compile Include="基础数据\BaseData.cs" />
+    <Compile Include="基础数据\Data.cs" />
+    <Compile Include="基础数据\DataCollection.cs" />
+    <Compile Include="基础数据\DataEnum.cs" />
+    <Compile Include="系统参数管理\ReadConfig.cs" />
+    <Compile Include="RegTypeItemController.cs" />
+    <Compile Include="其他类库\RegTypeItem.cs" />
+    <Compile Include="收费项目及医嘱维护\BaseItem.cs" />
+    <Compile Include="收费项目及医嘱维护\ComplexDetailItem.cs" />
+    <Compile Include="收费项目及医嘱维护\ComplexItem.cs" />
+    <Compile Include="收费项目及医嘱维护\LinkageItem.cs" />
+    <Compile Include="收费项目及医嘱维护\OrderItem.cs" />
+    <Compile Include="收费项目及医嘱维护\ServiceItem.cs" />
+    <Compile Include="收费项目及医嘱维护\UsageItem.cs" />
+    <Compile Include="系统参数管理\ParameterController.cs" />
+    <Compile Include="系统参数管理\Parameter.cs" />
+    <Compile Include="系统参数管理\Parameters.cs" />
+    <Compile Include="系统参数管理\ParametersEnum.cs" />
+    <Compile Include="系统参数管理\ParameterSet.cs" />
+    <Compile Include="通用数据维护\BaseDataController.cs" />
+    <Compile Include="通用数据维护\BaseDataFieldAndValue.cs" />
+    <Compile Include="BaseDataReader.cs" />
+    <Compile Include="通用数据维护\BaseDataRecord.cs" />
+    <Compile Include="BASE_DAL.cs" />
+    <Compile Include="其他类库\CustomException.cs" />
+    <Compile Include="人员科室及工作组\Department.cs" />
+    <Compile Include="人员科室及工作组\DepartmentLayer.cs" />
+    <Compile Include="人员科室及工作组\Employee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="ErrorController.cs" />
+    <Compile Include="通用数据维护\FieldConfig.cs" />
+    <Compile Include="GroupMenuManager.cs" />
+    <Compile Include="HIS_ReportManger.cs" />
+    <Compile Include="MatchManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServiceItemController.cs" />
+    <Compile Include="收费项目及医嘱维护\StatItem.cs" />
+    <Compile Include="收费项目及医嘱维护\SubStatItem.cs" />
+    <Compile Include="通用数据维护\TableAndFieldConfig.cs" />
+    <Compile Include="通用数据维护\TableConfig.cs" />
+    <Compile Include="收费项目及医嘱维护\TemplateDetailItem.cs" />
+    <Compile Include="收费项目及医嘱维护\TemplateItem.cs" />
+    <Compile Include="其他类库\WorkUnit.cs" />
+    <Compile Include="WorkUnitController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="系统参数管理\Parameters.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

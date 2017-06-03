@@ -1,0 +1,281 @@
+1.在基础数据维护里。大项目维护增加一个
+  代码为 00 名字为物资
+2.医嘱类型增加一个
+   insert into base_order_type values (0,'物资','00','wz','wz','',workid);
+3.医嘱视图
+
+-- Start of generated script for 192.168.60.52-CLDB-CSBZK (db2inst2)
+--  Aug-04-2010 at 16:45:18
+
+DROP VIEW "DB2INST2"."VI_CLINICAL_ALL_ITEMS";
+
+#SYNC 10;
+
+DROP VIEW "DB2INST2"."VI_CLINICAL_DRUG";
+
+#SYNC 20;
+
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_CLINICAL_DRUG"
+  AS  SELECT C.SPECDICID,A.MAKERDICID AS ITEMID, (
+    case
+      when C.TYPEDICID < 4
+        then C.TYPEDICID
+      when C.TYPEDICID=4
+        then 0
+    end )AS PRESTYPE, C.CHEMNAME AS ITEMNAME, (
+    case
+      when C.TypeDicID = 1
+        then '01'
+      when C.TypeDicID = 2
+        then '02'
+      when C.TypeDicID = 3
+        then '03'
+      when C.TypeDicID = 4 
+        then '00'
+    end) AS ItemType, C.Spec AS Standard, D.UNITNAME AS PACKUNIT, F.UNITNAME 
+    AS UNPICKUNIT,C.PACKNUM as UNPICKNUM, F.UNITNAME AS LEASTUNIT,C.PACKNUM , 
+    I.UNITNAME as DOSEUNIT, DOSENUM, B.MEDI_INVERSE, B.TRADEPRICE AS BUY_PRICE
+    , B.RETAILPRICE AS SELL_PRICE, E.PRODUCTNAME AS ADDRESS, A.CURRENTNUM AS 
+    STORENUM, CAST(A.DEPTID AS CHAR( 10)) EXECDEPTCODE, G.NAME AS EXECDEPTNAME
+    , G.WORKID,B.MEDI_INVERSE as scale , H.MEDICARENAME as insur_type, 1 as 
+    UNPICK_FLAG, (
+    case
+      when b.UNIFGETTYPE='02'
+        then 0
+      else 1
+    end) as FLOAT_FLAG, J.WBM AS WB_CODE,J.PYM AS PY_CODE, C.GBCODE AS D_CODE,
+    rtrim(ltrim(J.BYNAME))|| ' || '||C.CHEMNAME as BYNAME, B.VIRULENT_FLAG, 
+    B.NARCOTIC_FLAG, B.SKINTEST_FLAG, B.LUNACY_FLAG, B.COSTLY_FLAG,C.LATINNAME
+  FROM YF_STORAGE A
+    LEFT JOIN YP_MAKERDIC B
+    ON A.MAKERDICID=B.MAKERDICID
+    LEFT JOIN YP_SPECDIC C
+    ON B.SPECDICID=C.SPECDICID
+    LEFT JOIN YP_UNITDIC D
+    ON C.PACKUNIT=D.UNITDICID
+    LEFT JOIN YP_PRODUCTDIC E
+    ON B.PRODUCTID=E.PRODUCTID
+    LEFT JOIN YP_UNITDIC F
+    ON A.LEASTUNIT=F.UNITDICID
+    LEFT JOIN BASE_DEPT_PROPERTY G
+    ON A.DEPTID=G.DEPT_ID
+    LEFT JOIN YP_MEDICAREDIC H
+    ON B.MEDICAREDICID=H.MEDICAREDICID
+    LEFT JOIN YP_UNITDIC I
+    ON C.DOSEUNIT=I.UNITDICID
+    LEFT JOIN YP_BYNAMEDIC J
+    ON B.SPECDICID=J.SPECDICID
+  where B.DEL_FLAG=0
+    and B.GETWAY=0;
+
+#SYNC 30;
+
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_CLINICAL_ALL_ITEMS"
+  AS  SELECT ITEMID, ITEMNAME, PRESTYPE AS ORDER_TYPE, ItemType AS STATITEM_CODE, 
+    Standard, PACKUNIT, UNPICKUNIT, UNPICKNUM, LEASTUNIT, PACKNUM, DOSEUNIT, 
+    DOSENUM, scale AS NCMS_COMP_RATE, insur_type, BUY_PRICE, SELL_PRICE, 
+    ADDRESS, STORENUM, INTEGER(EXECDEPTCODE) AS EXECDEPTCODE, EXECDEPTNAME, 
+    PY_CODE, WB_CODE, D_CODE, ITEMID AS SERVER_ITEM_ID, 0 AS TC_FLAG, 
+    UNPICK_FLAG, FLOAT_FLAG, VIRULENT_FLAG, NARCOTIC_FLAG, SKINTEST_FLAG, 
+    LUNACY_FLAG, COSTLY_FLAG,ITEMNAME as PRINTNAME, 1 AS DRUG_FLAG, WORKID
+  FROM VI_CLINICAL_DRUG
+UNION ALL
+SELECT ORDER_ID AS ITEMID, ORDER_NAME AS ITEMNAME, ORDER_TYPE, STATITEM_CODE, 
+    '' AS Standard, ORDER_UNIT AS PACKUNIT, ORDER_UNIT AS UNPICKUNIT, 1 as 
+    UNPICKNUM, ORDER_UNIT AS LEASTUNIT, 1 AS PACKNUM, ORDER_UNIT AS DOSEUNIT, 
+    1 AS DOSENUM, NCMS_COMP_RATE, INSUR_TYPE, PRICE AS BUY_PRICE , PRICE AS 
+    SELL_PRICE,'' AS ADDRESS, 1 AS STORENUM, DEPT_ID AS EXECDEPTCODE, 
+    DEPT_NAME AS EXECDEPTNAME, PY_CODE, WB_CODE, D_CODE, ITEM_ID AS 
+    SERVER_ITEM_ID, TC_FLAG, 0 AS UNPICK_FLAG, 0 AS FLOAT_FLAG, 0 AS 
+    VIRULENT_FLAG, 0 AS NARCOTIC_FLAG, 0 AS SKINTEST_FLAG, 0 AS LUNACY_FLAG, 0
+    AS COSTLY_FLAG, ORDER_NAME AS PRINTNAME, 0 AS DRUG_FLAG, WORKID
+  FROM VI_CLINICAL_ORDER;
+
+#SYNC 40;
+
+
+
+-- End of generated script for 192.168.60.52-CLDB-CSBZK (db2inst2)
+
+
+门诊药品视图
+-- Start of generated script for 11.11.100.2-lldb1-PUBSDB (db2inst2)
+--  Aug-09-2010 at 15:27:41
+
+DROP VIEW "DB2INST2"."VI_ITEM_DRUG";
+
+#SYNC 10;
+
+DROP VIEW "DB2INST2"."VI_MZ_SHOWCARD";
+
+#SYNC 20;
+
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_ITEM_DRUG"
+  AS  SELECT F.WBM AS WB_CODE,F.PYM AS PY_CODE,GBCODE as D_CODE, F.BYNAME||' || '|| 
+    AA.ITEMNAME as BYNAME , AA . *
+  FROM YP_BYNAMEDIC F, (
+    SELECT C.SPECDICID,A.MAKERDICID AS ITEMID,C.TYPEDICID AS PRESTYPE, 
+        C.CHEMNAME AS ITEMNAME, (
+        case
+          when C.TypeDicID = 1
+            then '01'
+          when C.TypeDicID = 2
+            then '02'
+          when C.TypeDicID = 3 
+            then '03'
+          when C.TypeDicID = 4
+            then '00'
+        end) AS ItemType, C.Spec AS Standard, D.UNITNAME AS PACKUNIT, 
+        F.UNITNAME AS UNIT,C.PACKNUM AS RELATIONNUM, B.MEDI_INVERSE, 
+        B.TRADEPRICE AS BUY_PRICE , B.RETAILPRICE AS SELL_PRICE, E.PRODUCTNAME
+        AS ADDRESS, A.CURRENTNUM AS STORENUM, CAST(A.DEPTID AS CHAR(10)) 
+        EXECDEPTCODE, G.NAME AS EXECDEPTNAME,A.WORKID,B.MEDI_INVERSE as scale,
+        H.MEDICARENAME as insur_type,C.GBCODE
+      FROM YF_STORAGE A
+        LEFT JOIN YP_MAKERDIC B
+        ON A.MAKERDICID=B.MAKERDICID
+        and a.workid=b.workid
+        LEFT JOIN YP_SPECDIC C
+        ON B.SPECDICID=C.SPECDICID
+        LEFT JOIN YP_UNITDIC D
+        ON C.PACKUNIT=D.UNITDICID
+        LEFT JOIN YP_PRODUCTDIC E
+        ON B.PRODUCTID=E.PRODUCTID
+        and a.workid=e.workid
+        LEFT JOIN YP_UNITDIC F
+        ON A.LEASTUNIT=F.UNITDICID
+        LEFT JOIN BASE_DEPT_PROPERTY G
+        ON A.DEPTID=G.DEPT_ID
+        and a.workid=g.workid
+        LEFT JOIN YP_MEDICAREDIC H
+        ON B.MEDICAREDICID=H.MEDICAREDICID
+      where B.DEL_FLAG=0
+        and B.GETWAY=0) AA
+  WHERE F.SPECDICID=AA.SPECDICID;
+
+#SYNC 30;
+
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_MZ_SHOWCARD"
+  AS  select item_id,code,item_name,chem_name,py_code,wb_code,standard,item_unit, 
+    base_unit, price,complex_id,address,isdrug,statitem_code,hjxs, 
+    exec_dept_name, exec_dept_code,amount,ncms_comp_rate,insur_type,a.workid, 
+    istemplate
+  from (
+    select item_id,code,item_name,chem_name,py_code,wb_code,standard,item_unit
+        ,base_unit ,price,complex_id,address,isdrug,statitem_code,hjxs, 
+        exec_dept_name, exec_dept_code,amount ,ncms_comp_rate,insur_type, 
+        workid,0 as istemplate
+      from (
+        select aa.item_id,std_code as code,item_name,item_name as chem_name, 
+            py_code,wb_code,'' as standard,item_unit,item_unit as base_unit, 
+            price, complex_id,'' as address,0 as isdrug,statitem_code,1 as 
+            hjxs,bb.name as exec_dept_name, cast(bb.dept_id as char(10)) as 
+            exec_dept_code,1 as amount ,aa.ncms_comp_rate,rtrim(aa.insur_type)
+            as insur_type, bb.workid
+          from vi_base_hospital_items as aa
+            inner join (
+              select a.item_id,a.dept_id,b.name ,a.workid
+                from base_item_dept as a, base_dept_property as b
+                where a.dept_id = b.dept_id ) bb
+            on aa.item_id = bb.item_id
+            and aa.valid_flag=1
+        union all
+        select item_id,std_code as code,item_name,item_name as chem_name, 
+            py_code,wb_code,'' as standard,item_unit,item_unit as base_unit, 
+            price,complex_id,'' as address,0 as isdrug,statitem_code,1 as hjxs
+            ,'' as exec_dept_name, '0' as exec_dept_code,1 as amount , 
+            ncms_comp_rate, rtrim(insur_type) as insur_type,workid
+          from vi_base_hospital_items
+          where valid_flag=1 ) aaa
+    union all
+    (
+      select itemid as item_id,d_code as code, byname as item_name,itemname as
+          chem_name,py_code, wb_code,standard,packunit as item_unit,unit as 
+          base_unit,sell_price as price,0 as complex_id,address,1 as isdrug, 
+          itemtype as statitem_code,relationnum as hjxs,execdeptname as 
+          exec_dept_name, execdeptcode as exec_dept_code,storenum as amount , 
+          medi_inverse as ncms_comp_rate, insur_type, workid,0 as istemplate
+        from vi_item_drug
+        where storenum > 0 )
+    union all
+    (
+      select tmplate_id as item_id,'' as code,'★' || tmplate_name as 
+          item_name, tmplate_name as chem_name, py_code,wb_code,'' as standard
+          ,'' as item_unit,'' as base_unit,0 as price,0 as complex_id, '' as 
+          address, (
+          case
+            when tmplate_type = 0
+              then 1
+            else 0
+          end) as isdrug,'' as statitem_code,1 as hjxs,exec_dept_name,cast( 
+          exec_dept_id as char(10)) as exec_dept_code,1 as amount,0 as 
+          ncms_comp_rate, '' as insur_type,workid ,1 as istemplate
+        from base_template_item
+        where valid_flag=1 ) ) as a;
+
+#SYNC 40;
+
+
+
+-- End of generated script for 11.11.100.2-lldb1-PUBSDB (db2inst2)
+
+
+
+住院药品视图修改
+-- Start of generated script for 11.11.100.2-lldb1-PUBSDB (db2inst2)
+--  Aug-09-2010 at 15:37:47
+
+DROP VIEW "DB2INST2"."VI_ITEM_ZY_DRUG";
+
+#SYNC 10;
+
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_ITEM_ZY_DRUG"
+  AS  SELECT C.SPECDICID,A.MAKERDICID AS ITEMID,C.TYPEDICID AS PRESTYPE, C.CHEMNAME 
+    AS ITEMNAME, (
+    case
+      when C.TypeDicID = 1
+        then '01'
+      when C.TypeDicID = 2
+        then '02' 
+      when C.TypeDicID = 3
+        then '03'
+		when C.TypeDicID = 4
+        then '00'
+    end) AS ItemType,C.Spec AS Standard, C.PACKNUM AS RELATIONNUM, 
+    B.MEDI_INVERSE, B.TRADEPRICE AS BUY_PRICE , B.RETAILPRICE AS SELL_PRICE, 
+    A.CURRENTNUM AS STORENUM, A.DEPTID as EXECDEPTCODE, B.MEDI_INVERSE as 
+    scale, H.MEDICARENAME as insur_type,C.GBCODE , C.GBCODE as D_CODE,A.WorkID
+  FROM YF_STORAGE A
+    LEFT JOIN YP_MAKERDIC B
+    ON A.MAKERDICID=B.MAKERDICID
+    and a.workid=b.workid
+    LEFT JOIN YP_SPECDIC C
+    ON B.SPECDICID=C.SPECDICID
+    LEFT JOIN YP_MEDICAREDIC H
+    ON B.MEDICAREDICID=H.MEDICAREDICID
+  where B.GETWAY=0;
+
+#SYNC 20;
+
+4.修改表YP_DEPT_YPTYPE
+如果哪个药房要管理物资，在这个表中增加一条记录，typedicid为4

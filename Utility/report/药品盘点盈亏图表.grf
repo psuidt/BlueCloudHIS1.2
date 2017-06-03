@@ -1,0 +1,46 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Name='药品盘盈/亏表'
+			Height=5.79
+			Items Control
+				Item
+					Type=Chart
+					Name='ChartPie'
+					BorderStyles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+					Center=Horizontal
+					Left=0.608542
+					Top=0.608542
+					Width=14.7902
+					Height=4.60375
+					ChartType=PieChart
+					Title='盘点盈/亏图表'
+					Object TitleFont
+						Name='宋体'
+						Size=150000,0
+						Bold=T
+						Charset=134
+					End
+					XAxisTextFormat='0.##'
+					YAxisTextFormat='0.##'
+					GroupCount=3
+					SeriesCount=3
+					ValueFormat='0.00'
+					GroupLabel='~组标签0\r~组标签1\r~组标签2'
+					SeriesLabel='~序列标签0\r~序列标签1\r~序列标签2'
+				End
+			End
+		End
+	End
+End

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table_field" msprop:Generator_UserTableName="Table_field" msprop:Generator_RowDeletedName="Table_fieldRowDeleted" msprop:Generator_RowChangedName="Table_fieldRowChanged" msprop:Generator_RowClassName="Table_fieldRow" msprop:Generator_RowChangingName="Table_fieldRowChanging" msprop:Generator_RowEvArgName="Table_fieldRowChangeEvent" msprop:Generator_RowEvHandlerName="Table_fieldRowChangeEventHandler" msprop:Generator_TableClassName="Table_fieldDataTable" msprop:Generator_TableVarName="tableTable_field" msprop:Generator_RowDeletingName="Table_fieldRowDeleting" msprop:Generator_TablePropName="Table_field">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="选择" msprop:Generator_UserColumnName="选择" msprop:Generator_ColumnVarNameInTable="column选择" msprop:Generator_ColumnPropNameInRow="选择" msprop:Generator_ColumnPropNameInTable="选择Column" type="xs:boolean" minOccurs="0" />
+              <xs:element name="序号" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnVarNameInTable="column序号" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnPropNameInTable="序号Column" type="xs:int" minOccurs="0" />
+              <xs:element name="列名" msprop:Generator_UserColumnName="列名" msprop:Generator_ColumnVarNameInTable="column列名" msprop:Generator_ColumnPropNameInRow="列名" msprop:Generator_ColumnPropNameInTable="列名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="数据类型" msprop:Generator_UserColumnName="数据类型" msprop:Generator_ColumnVarNameInTable="column数据类型" msprop:Generator_ColumnPropNameInRow="数据类型" msprop:Generator_ColumnPropNameInTable="数据类型Column" type="xs:string" minOccurs="0" />
+              <xs:element name="主键" msprop:Generator_UserColumnName="主键" msprop:Generator_ColumnVarNameInTable="column主键" msprop:Generator_ColumnPropNameInRow="主键" msprop:Generator_ColumnPropNameInTable="主键Column" type="xs:boolean" minOccurs="0" />
+              <xs:element name="外键" msprop:Generator_UserColumnName="外键" msprop:Generator_ColumnVarNameInTable="column外键" msprop:Generator_ColumnPropNameInRow="外键" msprop:Generator_ColumnPropNameInTable="外键Column" type="xs:boolean" minOccurs="0" />
+              <xs:element name="表名" msprop:Generator_UserColumnName="表名" msprop:Generator_ColumnVarNameInTable="column表名" msprop:Generator_ColumnPropNameInRow="表名" msprop:Generator_ColumnPropNameInTable="表名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="关联外键_x0028_表_x0029_" msprop:Generator_UserColumnName="关联外键(表)" msprop:Generator_ColumnPropNameInRow="_关联外键_表_" msprop:Generator_ColumnVarNameInTable="_column关联外键_表_" msprop:Generator_ColumnPropNameInTable="_关联外键_表_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="关联外键_x0028_字段_x0029_" msprop:Generator_UserColumnName="关联外键(字段)" msprop:Generator_ColumnVarNameInTable="_column关联外键_字段_" msprop:Generator_ColumnPropNameInRow="_关联外键_字段_" msprop:Generator_ColumnPropNameInTable="_关联外键_字段_Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tablees" msprop:Generator_UserTableName="Tablees" msprop:Generator_RowDeletedName="TableesRowDeleted" msprop:Generator_RowChangedName="TableesRowChanged" msprop:Generator_RowClassName="TableesRow" msprop:Generator_RowChangingName="TableesRowChanging" msprop:Generator_RowEvArgName="TableesRowChangeEvent" msprop:Generator_RowEvHandlerName="TableesRowChangeEventHandler" msprop:Generator_TableClassName="TableesDataTable" msprop:Generator_TableVarName="tableTablees" msprop:Generator_RowDeletingName="TableesRowDeleting" msprop:Generator_TablePropName="Tablees">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="选择" msprop:Generator_UserColumnName="选择" msprop:Generator_ColumnVarNameInTable="column选择" msprop:Generator_ColumnPropNameInRow="选择" msprop:Generator_ColumnPropNameInTable="选择Column" type="xs:boolean" minOccurs="0" />
+              <xs:element name="表名" msprop:Generator_UserColumnName="表名" msprop:Generator_ColumnVarNameInTable="column表名" msprop:Generator_ColumnPropNameInRow="表名" msprop:Generator_ColumnPropNameInTable="表名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="类型" msprop:Generator_UserColumnName="类型" msprop:Generator_ColumnVarNameInTable="column类型" msprop:Generator_ColumnPropNameInRow="类型" msprop:Generator_ColumnPropNameInTable="类型Column" type="xs:string" minOccurs="0" />
+              <xs:element name="国标" msprop:Generator_UserColumnName="国标" msprop:Generator_ColumnPropNameInRow="国标" msprop:Generator_ColumnVarNameInTable="column国标" msprop:Generator_ColumnPropNameInTable="国标Column" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

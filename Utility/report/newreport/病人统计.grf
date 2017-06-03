@@ -1,0 +1,105 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Object DetailGrid
+		CenterView=F
+		Object Recordset
+			Items Field
+				Item
+					Name='user_id'
+				End
+				Item
+					Name='code'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=4.7625
+			End
+			Item
+				Name='Column2'
+				Width=1.69333
+			End
+		End
+		Object ColumnContent
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					DataField='user_id'
+				End
+				Item
+					Column='Column2'
+					DataField='code'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.608542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					Text='代码'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					Text='名称'
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='开始日期'
+		End
+		Item
+			Name='结束日期'
+		End
+		Item
+			Name='医院名称'
+		End
+		Item
+			Name='报表名称'
+		End
+		Item
+			Name='打印时间'
+		End
+		Item
+			Name='当前科室'
+		End
+		Item
+			Name='当前人员'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox1'
+					Left=4.60375
+					Top=1.00542
+					Width=2.80458
+					Height=0.608542
+					Text='StaticBox1'
+					Parameter='医院名称'
+				End
+			End
+		End
+		Item
+			Type=ReportFooter
+		End
+	End
+End

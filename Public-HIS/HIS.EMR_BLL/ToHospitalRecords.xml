@@ -1,0 +1,42 @@
+﻿<chs>
+  <table>
+    <row  type="0">
+      <zyid>住院ID</zyid>
+      <zyh>住院号</zyh>
+      <dahid>档案号ID</dahid>
+      <zs>主诉</zs>
+      <xbs>现病史</xbs>
+      <jws>既往史</jws>
+      <jzs>家族史</jzs>
+      <gms>过敏史</gms>
+      <yjs>月经史</yjs>
+      <hys>婚育史</hys>
+      <zylx>住院类型</zylx>
+      <fffs>付费方式</fffs>
+      <ryrq>入院时间</ryrq>
+      <ryqk>入院情况</ryqk>
+      <ryzd>入院诊断</ryzd>
+      <zdqt>其他诊断</zdqt>
+      <ryks>科室</ryks>
+      <ch>床号</ch>
+      <zzys>主治医生</zzys>
+      <qt>其他</qt>
+      <jzyy>就诊医院</jzyy>
+      <tw>体温</tw>
+      <hx>呼吸</hx>
+      <mb>脉搏</mb>
+      <ssy>SBP</ssy>
+      <szy>DBP</szy>
+      <tgjc>体格检查</tgjc>
+      <hzjc>辅助检查</hzjc>
+      <zkqk>专科情况</zkqk>
+      <grs>个人史</grs>
+      <csd>出生地</csd>
+      <gzdw>工作单位</gzdw>
+      <djr>登记人</djr>
+      <djrq>登记日期</djrq>
+      <jgdm>医院代码</jgdm>
+      <his_blbh>HIS病历号</his_blbh>
+    </row>
+  </table>
+</chs>

@@ -1,0 +1,10 @@
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.Entity.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\HIS.Entity.pdb
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.Entity\obj\Release\ResolveAssemblyReference.cache
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.Entity\obj\Release\HIS.Entity.dll
+D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Public-HIS\HIS.Entity\obj\Release\HIS.Entity.pdb
+D:\efwplus产品目录\BlueCloudHIS1.2\Utility\HIS.Entity.dll
+D:\efwplus产品目录\BlueCloudHIS1.2\Utility\HIS.Entity.pdb
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.Entity\obj\Release\HIS.Entity.csprojResolveAssemblyReference.cache
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.Entity\obj\Release\HIS.Entity.dll
+D:\efwplus产品目录\BlueCloudHIS1.2\Public-HIS\HIS.Entity\obj\Release\HIS.Entity.pdb

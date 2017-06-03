@@ -1,0 +1,27 @@
+﻿<chs>
+  <table>
+    <row  type="0">
+      <zyid>住院号id </zyid>
+      <dahid>档案号id</dahid>
+      <tw>体温 </tw>
+      <hx>呼吸</hx>
+      <mb>脉搏</mb>
+      <ssy>SBP</ssy>
+      <szy>DBP</szy>
+      <tgjc>体格检查</tgjc>
+      <hzjc>辅助检查</hzjc>
+      <zd>诊断</zd>
+      <cf>处方</cf>
+      <qt>其他</qt>
+      <zdqt>其他诊断</zdqt>
+      <ryqk>入院情况</ryqk>
+      <zdyj>诊断依据</zdyj>
+      <jbzd>鉴别诊断 </jbzd>
+      <jcrq>检查日期</jcrq>
+      <jcys>检查医生</jcys>
+      <jgdm>机构代码</jgdm>
+      <djr>登记人</djr>
+      <djrq>登记日期</djrq>
+    </row>
+  </table>
+</chs>

@@ -1,0 +1,89 @@
+SET SCHEMA DB2INST2;
+
+SET CURRENT PATH = "SYSIBM","SYSFUN","SYSPROC","SYSIBMADM","DB2INST2";
+
+CREATE VIEW "DB2INST2"."VI_ZY_SENDDRUG"
+  AS  select a.PRESORDERID,a.PATID,a.PATLISTID,a.PRESMASTERID,1 as isdispense, 
+    b.cureno,c.specdicid,d.DOSEDICID,e.PRODUCTNAME,d.UNIT unitid,f.UNITNAME 
+    unit ,ITEMID,ITEMTYPE,PRESTYPE,ITEMNAME,STANDARD,RELATIONNUM,BUY_PRICE, 
+    SELL_PRICE ,a.AMOUNT as amount ,a.TOLAL_FEE as tolal_fee ,a.presamount 
+    presamount, a.PRESDEPTCODE, i.NAME presdeptname, PRESDOCCODE, j.NAME 
+    presdocname , a.EXECDEPTCODE,a.CHARGECODE,a.PRESDATE,a.MARKDATE,a.COSTDATE
+    ,a.workid ,a.group_id
+  from ZY_PRESORDER a
+    left join ZY_PATLIST b
+    on a.patlistid=b.PATLISTID
+    and a.workid=b.workid
+    left join YP_MAKERDIC c
+    on a.itemid=c.MAKERDICID
+    and a.workid=c.workid
+    left join YP_SPECDIC d
+    on c.SPECDICID = d.specdicid
+    left join YP_PRODUCTDIC e
+    on e.PRODUCTID= c.PRODUCTID
+    and e.workid=c.workid
+    left join YP_UNITDIC f
+    on f.UNITDICID= d.UNIT
+    left join BASE_DEPT_PROPERTY i
+    on i.DEPT_ID=CAST((
+      case
+        WHEN a.PRESDEPTCODE = ''
+          THEN '0'
+        ELSE a.PRESDEPTCODE
+      end) as bigint)
+    and i.workid=a.workid
+    left join BASE_EMPLOYEE_PROPERTY j
+    on j.EMPLOYEE_ID=CAST((
+      case
+        WHEN a.PRESDOCCODE = ''
+          THEN '0'
+        ELSE a.PRESDOCCODE
+      end) as bigint)
+    and j.workid=a.workid
+  where a.CHARGE_FLAG = 1
+    AND a.DRUG_FLAG =0
+    AND a.PRESTYPE ='3'
+    AND a.RECORD_FLAG =0
+union all
+select a.PRESORDERID,a.PATID,a.PATLISTID,a.PRESMASTERID,1 as isdispense, 
+    b.cureno,c.specdicid,d.DOSEDICID,e.PRODUCTNAME,d.UNIT unitid,f.UNITNAME 
+    unit ,ITEMID,ITEMTYPE,PRESTYPE,ITEMNAME,STANDARD,RELATIONNUM,BUY_PRICE, 
+    SELL_PRICE ,a.amount as amount ,a.TOLAL_FEE as tolal_fee ,a.presamount 
+    presamount, a.PRESDEPTCODE, i.NAME presdeptname, PRESDOCCODE, j.NAME 
+    presdocname , a.EXECDEPTCODE,a.CHARGECODE,a.PRESDATE,a.MARKDATE,a.COSTDATE
+    ,a.workid,a.group_id
+  from ZY_PRESORDER a
+    left join ZY_PATLIST b
+    on a.patlistid=b.PATLISTID
+    and a.workid=b.workid
+    left join YP_MAKERDIC c
+    on a.itemid=c.MAKERDICID
+    and a.workid=c.workid
+    left join YP_SPECDIC d
+    on c.SPECDICID = d.specdicid
+    left join YP_PRODUCTDIC e
+    on e.PRODUCTID= c.PRODUCTID
+    and e.workid=c.workid
+    left join YP_UNITDIC f
+    on f.UNITDICID= d.UNIT
+    left join BASE_DEPT_PROPERTY i
+    on i.DEPT_ID=CAST((
+      case
+        WHEN a.PRESDEPTCODE = ''
+          THEN '0'
+        ELSE a.PRESDEPTCODE
+      end) as bigint)
+    and i.workid=a.workid
+    left join BASE_EMPLOYEE_PROPERTY j
+    on j.EMPLOYEE_ID=CAST((
+      case
+        WHEN a.PRESDOCCODE = ''
+          THEN '0'
+        ELSE a.PRESDOCCODE
+      end) as bigint)
+    and j.workid=a.workid
+  where a.CHARGE_FLAG = 1
+    AND a.DRUG_FLAG =1
+    AND a.PRESTYPE ='3'
+    AND a.RECORD_FLAG =1;
+

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Orders>
+   
+  <Order type0="DrugOrder" type1="LongOrder" type2="Normal" type3="Normal">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="LongOrder" type2="Normal" type3="Stop">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="LongOrder" type2="SelfPrepare" type3="Normal">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="LongOrder" type2="SelfPrepare" type3="Stop">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="TempOrder" type2="Normal">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="TempOrder" type2="HandPat">
+    <Again date=""></Again>
+  </Order>
+  <Order type0="DrugOrder" type1="TempOrder" type2="SelfPrepare">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type0="DrugOrder" type1="TempOrder" type2="OutDrug">
+  </Order>
+  <Order type0="DrugOrder" type1="TempOrder" type2="PsStatement">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+
+  <Order type0="StateOrder" type1="LongOrder">
+    <Again date=""></Again>
+  </Order>
+  <Order type0="StateOrder" type1="Normal">
+  </Order>
+  <Order type0="StateOrder" type1="PostPartum">
+  </Order>
+  <Order type0="StateOrder" type1="TurnDept">
+  </Order>
+  
+  <Order type="ItemOrder" type1="LongOrder" type2="Normal" type3="Normal">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type="ItemOrder" type1="LongOrder" type2="Normal" type3="Stop">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type="ItemOrder" type1="LongOrder" type2="Component" type3="Normal">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type="ItemOrder" type1="LongOrder" type2="Component" type3="Stop">
+    <Again date=""></Again>
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type="ItemOrder" type1="TempOrder" type2="Normal">
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  <Order type="ItemOrder" type1="TempOrder" type2="Component">
+    <LinkAge itemId="" num=""></LinkAge>
+  </Order>
+  
+</Orders>

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FD609C2-B3D3-47A9-B087-A3647DE6F8CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Entity</RootNamespace>
+    <AssemblyName>HIS.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Utility\HIS.Entity.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BASE_COMPLEX_DETAIL.cs" />
+    <Compile Include="BASE_COMPLEX_ITEM.cs" />
+    <Compile Include="BASE_DEPT_LAYER.cs" />
+    <Compile Include="BASE_DEPT_PROPERTY.cs" />
+    <Compile Include="BASE_EMPLOYEE_PROPERTY.cs" />
+    <Compile Include="BASE_EMP_DEPT_ROLE.cs" />
+    <Compile Include="Base_Entrust.cs" />
+    <Compile Include="BASE_ENUME.cs" />
+    <Compile Include="BASE_ENUMEORDER.cs" />
+    <Compile Include="Base_ExaminePlace.cs" />
+    <Compile Include="Base_Frequency.cs" />
+    <Compile Include="BASE_GROUP.cs" />
+    <Compile Include="BASE_GROUP_MENU.cs" />
+    <Compile Include="BASE_GROUP_REPORT.cs" />
+    <Compile Include="BASE_GROUP_USER.cs" />
+    <Compile Include="BASE_HOSPITAL_ITEMS.cs" />
+    <Compile Include="BASE_ITEM_DEPT.cs" />
+    <Compile Include="Base_Medical_Class.cs" />
+    <Compile Include="BASE_MENU.cs" />
+    <Compile Include="BASE_MODULE.cs" />
+    <Compile Include="Base_Order_Items.cs" />
+    <Compile Include="BASE_ORDER_TYPE.cs" />
+    <Compile Include="Base_Param.cs" />
+    <Compile Include="BASE_REPORT.cs" />
+    <Compile Include="BASE_REPORTMASTER.cs" />
+    <Compile Include="BASE_REPORT_PARAMETER.cs" />
+    <Compile Include="BASE_ROLE_DOCTOR.cs" />
+    <Compile Include="BASE_ROLE_NURSE.cs" />
+    <Compile Include="Base_Sample.cs" />
+    <Compile Include="BASE_SERVICE_ITEMS.cs" />
+    <Compile Include="BASE_SSANESTH.cs" />
+    <Compile Include="BASE_SSAPPLICE.cs" />
+    <Compile Include="BASE_SSBODY.cs" />
+    <Compile Include="BASE_SSGRADE.cs" />
+    <Compile Include="BASE_STAT_BA.cs" />
+    <Compile Include="BASE_STAT_HS.cs" />
+    <Compile Include="BASE_STAT_ITEM.cs" />
+    <Compile Include="BASE_STAT_MZFP.cs" />
+    <Compile Include="BASE_STAT_MZKJ.cs" />
+    <Compile Include="BASE_STAT_MZYB.cs" />
+    <Compile Include="BASE_STAT_ZYFP.cs" />
+    <Compile Include="BASE_STAT_ZYKJ.cs" />
+    <Compile Include="BASE_STAT_ZYYB.cs" />
+    <Compile Include="BASE_TABLE_CONFIG.cs" />
+    <Compile Include="BASE_TEMPLATE_DETAIL.cs" />
+    <Compile Include="BASE_TEMPLATE_ITEM.cs" />
+    <Compile Include="Base_UsageDiction.cs" />
+    <Compile Include="Base_Usage_UseType_Role.cs" />
+    <Compile Include="BASE_USEAGE_FEE.cs" />
+    <Compile Include="BASE_USER.cs" />
+    <Compile Include="BASE_VINDICATE_TABLE.cs" />
+    <Compile Include="BASE_WORK_UNIT.cs" />
+    <Compile Include="BillMaster.cs" />
+    <Compile Include="BillOrder.cs" />
+    <Compile Include="Emr_Base_Element.cs" />
+    <Compile Include="Emr_Mould_Class.cs" />
+    <Compile Include="Emr_Mould_Content.cs" />
+    <Compile Include="Emr_Mould_Element.cs" />
+    <Compile Include="Emr_Record.cs" />
+    <Compile Include="GB_STANDARD_SERVICE_ITEMS.cs" />
+    <Compile Include="HIS.BLL.Table&amp;View.cs" />
+    <Compile Include="HIS_LOG.cs" />
+    <Compile Include="Medical_Confir.cs" />
+    <Compile Include="MZ_CONFIG.cs" />
+    <Compile Include="MZ_DOCTYPE_REGTYPE.cs" />
+    <Compile Include="Mz_Doc_CommonDiagnosis.cs" />
+    <Compile Include="Mz_Doc_CommonItem.cs" />
+    <Compile Include="MZ_DOC_CONFIG.cs" />
+    <Compile Include="Mz_Doc_MedicalApply_Mould.cs" />
+    <Compile Include="Mz_Doc_Medical_Apply.cs" />
+    <Compile Include="Mz_Doc_PresHead.cs" />
+    <Compile Include="Mz_Doc_PresList.cs" />
+    <Compile Include="Mz_Doc_PresMouldHead.cs" />
+    <Compile Include="Mz_Doc_PresMouldList.cs" />
+    <Compile Include="Mz_Doc_Zy_Inpat_Reg.cs" />
+    <Compile Include="MZ_INVOICE.cs" />
+    <Compile Include="MZ_PATIENT.cs" />
+    <Compile Include="MZ_REG_DEPT_FEE.cs" />
+    <Compile Include="MZ_REG_ITEM_FEE.cs" />
+    <Compile Include="MZ_REG_TYPE.cs" />
+    <Compile Include="MZ_SERIAL_NO.cs" />
+    <Compile Include="NCMS_DRUG_CATALOG.cs" />
+    <Compile Include="NCMS_MATCH_CATALOG.cs" />
+    <Compile Include="NCMS_MATCH_CATALOG_TEMP.cs" />
+    <Compile Include="NCMS_THERAPY_CATALOG.cs" />
+    <Compile Include="SS_APPLY.cs" />
+    <Compile Include="SS_ARRANGE.cs" />
+    <Compile Include="SS_ROOM.cs" />
+    <Compile Include="SS_ROOMBED.cs" />
+    <Compile Include="YP_Batch.cs" />
+    <Compile Include="YP_BillNumDic.cs" />
+    <Compile Include="YP_BynameDic.cs" />
+    <Compile Include="YP_CONFIG.cs" />
+    <Compile Include="YP_DeptDic.cs" />
+    <Compile Include="Drug_DispensePat.cs" />
+    <Compile Include="YP_Dept_Yptype.cs" />
+    <Compile Include="YP_DispDeptHis.cs" />
+    <Compile Include="YP_DoseDic.cs" />
+    <Compile Include="YP_MakerDic.cs" />
+    <Compile Include="YP_MedicareDic.cs" />
+    <Compile Include="YP_Pharmacology.cs" />
+    <Compile Include="YP_PlanMaster.cs" />
+    <Compile Include="YP_PlanOrder.cs" />
+    <Compile Include="YP_ProductDic.cs" />
+    <Compile Include="YP_SpecDic.cs" />
+    <Compile Include="YP_Storage.cs" />
+    <Compile Include="YP_SupportDic.cs" />
+    <Compile Include="YP_TypeDic.cs" />
+    <Compile Include="YP_UnitDic.cs" />
+    <Compile Include="HIS_Report.cs" />
+    <Compile Include="YP_AccountHis.cs" />
+    <Compile Include="YP_AdjMaster.cs" />
+    <Compile Include="YP_CheckMaster.cs" />
+    <Compile Include="YP_DRMaster.cs" />
+    <Compile Include="YP_InMaster.cs" />
+    <Compile Include="YP_OutMaster.cs" />
+    <Compile Include="MZ_Account.cs" />
+    <Compile Include="MZ_CostMaster.cs" />
+    <Compile Include="MZ_CostOrder.cs" />
+    <Compile Include="MZ_INCOME_DETAIL.cs" />
+    <Compile Include="MZ_INCOME_RPT.cs" />
+    <Compile Include="MZ_PatList.cs" />
+    <Compile Include="MZ_PresMaster.cs" />
+    <Compile Include="MZ_PresMasterInfo.cs" />
+    <Compile Include="MZ_PresOrder.cs" />
+    <Compile Include="MZ_REPORT_LIST.cs" />
+    <Compile Include="MZ_REPORT_TITLE.cs" />
+    <Compile Include="MZ_REPORT_TITLE_FIELD.cs" />
+    <Compile Include="YP_AdjOrder.cs" />
+    <Compile Include="YP_CheckOrder.cs" />
+    <Compile Include="YP_DROrder.cs" />
+    <Compile Include="YP_InOrder.cs" />
+    <Compile Include="YP_Account.cs" />
+    <Compile Include="YF_OutOrder.cs" />
+    <Compile Include="PatientInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZY_Account.cs" />
+    <Compile Include="ZY_Account_Son.cs" />
+    <Compile Include="ZY_ChargeList.cs" />
+    <Compile Include="ZY_ChargeList_Son.cs" />
+    <Compile Include="ZY_CONFIG.cs" />
+    <Compile Include="ZY_CostMaster.cs" />
+    <Compile Include="ZY_CostMaster_Son.cs" />
+    <Compile Include="ZY_CostOrder.cs" />
+    <Compile Include="ZY_DOC_CHECKAPPLY.cs" />
+    <Compile Include="ZY_DOC_CONFIG.cs" />
+    <Compile Include="ZY_DOC_DIAGNOSIS.cs" />
+    <Compile Include="ZY_DOC_ORDERMODEL.cs" />
+    <Compile Include="ZY_DOC_ORDERMODELLIST.cs" />
+    <Compile Include="ZY_DOC_ORDERMODELLIST_E.cs" />
+    <Compile Include="ZY_DOC_ORDERRECORD.cs" />
+    <Compile Include="ZY_DOC_ORDERRECORD_SON.cs" />
+    <Compile Include="ZY_DOC_TESTAPPLY.cs" />
+    <Compile Include="ZY_DOC_TRANSDEPT.cs" />
+    <Compile Include="ZY_DRUGMESSAGE_MASTER.cs" />
+    <Compile Include="ZY_DRUGMESSAGE_ORDER.cs" />
+    <Compile Include="ZY_INVOICE.cs" />
+    <Compile Include="ZY_NURSE_BED.cs" />
+    <Compile Include="ZY_NURSE_BED_ASSIGN.cs" />
+    <Compile Include="ZY_NURSE_CONFIG.cs" />
+    <Compile Include="ZY_NURSE_FEEMODEL.cs" />
+    <Compile Include="ZY_NURSE_FEEMODELLIST.cs" />
+    <Compile Include="ZY_NURSE_FEE_SPECI.cs" />
+    <Compile Include="ZY_NURSE_INPATIENT_BABY.cs" />
+    <Compile Include="ZY_NURSE_ORDEREXEC.cs" />
+    <Compile Include="ZY_PatList.cs" />
+    <Compile Include="ZY_PresMaster.cs" />
+    <Compile Include="ZY_PresOrder.cs" />
+    <Compile Include="ZY_PresOrder_Son.cs" />
+    <Compile Include="ZY_Ticket.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

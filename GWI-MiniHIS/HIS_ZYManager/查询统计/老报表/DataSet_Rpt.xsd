@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Rpt" targetNamespace="http://tempuri.org/DataSet_Rpt.xsd" xmlns:mstns="http://tempuri.org/DataSet_Rpt.xsd" xmlns="http://tempuri.org/DataSet_Rpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Rpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_Rpt" msprop:Generator_DataSetName="DataSet_Rpt" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DeptCostTotal_Rpt" msprop:Generator_UserTableName="DeptCostTotal_Rpt" msprop:Generator_RowDeletedName="DeptCostTotal_RptRowDeleted" msprop:Generator_RowChangedName="DeptCostTotal_RptRowChanged" msprop:Generator_RowClassName="DeptCostTotal_RptRow" msprop:Generator_RowChangingName="DeptCostTotal_RptRowChanging" msprop:Generator_RowEvArgName="DeptCostTotal_RptRowChangeEvent" msprop:Generator_RowEvHandlerName="DeptCostTotal_RptRowChangeEventHandler" msprop:Generator_TableClassName="DeptCostTotal_RptDataTable" msprop:Generator_TableVarName="tableDeptCostTotal_Rpt" msprop:Generator_RowDeletingName="DeptCostTotal_RptRowDeleting" msprop:Generator_TablePropName="DeptCostTotal_Rpt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="科室名称" msprop:Generator_UserColumnName="科室名称" msprop:Generator_ColumnPropNameInRow="科室名称" msprop:Generator_ColumnVarNameInTable="column科室名称" msprop:Generator_ColumnPropNameInTable="科室名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="医生名称" msprop:Generator_UserColumnName="医生名称" msprop:Generator_ColumnPropNameInRow="医生名称" msprop:Generator_ColumnVarNameInTable="column医生名称" msprop:Generator_ColumnPropNameInTable="医生名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="合计" msprop:Generator_UserColumnName="合计" msprop:Generator_ColumnPropNameInRow="合计" msprop:Generator_ColumnVarNameInTable="column合计" msprop:Generator_ColumnPropNameInTable="合计Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PatCostTotal_Rpt" msprop:Generator_UserTableName="PatCostTotal_Rpt" msprop:Generator_RowDeletedName="PatCostTotal_RptRowDeleted" msprop:Generator_RowChangedName="PatCostTotal_RptRowChanged" msprop:Generator_RowClassName="PatCostTotal_RptRow" msprop:Generator_RowChangingName="PatCostTotal_RptRowChanging" msprop:Generator_RowEvArgName="PatCostTotal_RptRowChangeEvent" msprop:Generator_RowEvHandlerName="PatCostTotal_RptRowChangeEventHandler" msprop:Generator_TableClassName="PatCostTotal_RptDataTable" msprop:Generator_TableVarName="tablePatCostTotal_Rpt" msprop:Generator_RowDeletingName="PatCostTotal_RptRowDeleting" msprop:Generator_TablePropName="PatCostTotal_Rpt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="科室名称" msprop:Generator_UserColumnName="科室名称" msprop:Generator_ColumnVarNameInTable="column科室名称" msprop:Generator_ColumnPropNameInRow="科室名称" msprop:Generator_ColumnPropNameInTable="科室名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="住院号" msprop:Generator_UserColumnName="住院号" msprop:Generator_ColumnVarNameInTable="column住院号" msprop:Generator_ColumnPropNameInRow="住院号" msprop:Generator_ColumnPropNameInTable="住院号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="病人姓名" msprop:Generator_UserColumnName="病人姓名" msprop:Generator_ColumnVarNameInTable="column病人姓名" msprop:Generator_ColumnPropNameInRow="病人姓名" msprop:Generator_ColumnPropNameInTable="病人姓名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="合计" msprop:Generator_UserColumnName="合计" msprop:Generator_ColumnVarNameInTable="column合计" msprop:Generator_ColumnPropNameInRow="合计" msprop:Generator_ColumnPropNameInTable="合计Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

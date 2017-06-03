@@ -1,0 +1,196 @@
+2010年05月10日14时47分47秒187 :Send
+<Program><FunctionID>BIZC131251</FunctionID><parameters><biz_type>12</biz_type><hospital_id>43990011069</hospital_id><ic_flag>0</ic_flag><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><patient_id>00001651</patient_id></parameters></Program>
+
+2010年05月10日14时47分47秒765 :Receive
+
+2010年05月10日14时49分25秒531 :Send
+<Program><FunctionID>BIZC131251</FunctionID><parameters><biz_type>12</biz_type><hospital_id>43990011069</hospital_id><ic_flag>0</ic_flag><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><patient_id>00001651</patient_id></parameters></Program>
+
+2010年05月10日14时49分25秒734 :Receive
+
+2010年05月10日14时49分26秒156 :Send
+<Program><FunctionID>BIZC131252</FunctionID><parameters><biz_type>12</biz_type><doctor_name></doctor_name><doctor_no></doctor_no><hospital_id>43990011069</hospital_id><indi_id>209379</indi_id><input_man>000</input_man><input_staff>000</input_staff><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><recipe_no></recipe_no><serial_no>1622555</serial_no></parameters><feeinfo><row1><dosage>0</dosage><factory></factory><fee_date>2010-05-10 14:49:11</fee_date><his_item_code>CZ120200003_12503</his_item_code><his_item_name>小抢救</his_item_name><hos_serial>239697</hos_serial><item_code>N120200003_02</item_code><item_name>小抢救</item_name><medi_item_type>0</medi_item_type><model></model><money>16.80</money><opp_serial_fee>0</opp_serial_fee><price>16.8</price><remark></remark><standard></standard><stat_type>005</stat_type><unit>次</unit><usage_days></usage_days><usage_flag>0</usage_flag></row1></feeinfo></Program>
+
+2010年05月10日14时49分27秒109 :Receive
+
+2010年05月10日14时49分27秒125 :Send
+<Program><FunctionID>BIZC131252</FunctionID><parameters><biz_type>12</biz_type><doctor_name></doctor_name><doctor_no></doctor_no><hospital_id>43990011069</hospital_id><indi_id>209379</indi_id><input_man>000</input_man><input_staff>000</input_staff><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><recipe_no></recipe_no><serial_no>1622555</serial_no></parameters><feeinfo><row1><dosage>0</dosage><factory></factory><fee_date>2010-05-10 14:49:11</fee_date><his_item_code>CZ120200001_12501</his_item_code><his_item_name>大抢救</his_item_name><hos_serial>239696</hos_serial><item_code>N120200001_02</item_code><item_name>大抢救</item_name><medi_item_type>0</medi_item_type><model></model><money>67.20</money><opp_serial_fee>0</opp_serial_fee><price>67.2</price><remark></remark><standard></standard><stat_type>005</stat_type><unit>次</unit><usage_days></usage_days><usage_flag>0</usage_flag></row1></feeinfo></Program>
+
+2010年05月10日14时49分27秒218 :Receive
+
+2010年05月10日14时49分27秒234 :Send
+<Program><FunctionID>BIZC131252</FunctionID><parameters><biz_type>12</biz_type><doctor_name></doctor_name><doctor_no></doctor_no><hospital_id>43990011069</hospital_id><indi_id>209379</indi_id><input_man>000</input_man><input_staff>000</input_staff><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><recipe_no></recipe_no><serial_no>1622555</serial_no></parameters><feeinfo><row1><dosage>0</dosage><factory></factory><fee_date>2010-05-10 14:49:11</fee_date><his_item_code>CZ120400001_12508</his_item_code><his_item_name>肌肉注射</his_item_name><hos_serial>239698</hos_serial><item_code>N120400001_01</item_code><item_name>肌肉注射</item_name><medi_item_type>0</medi_item_type><model></model><money>1.30</money><opp_serial_fee>0</opp_serial_fee><price>1.3</price><remark></remark><standard></standard><stat_type>005</stat_type><unit>次</unit><usage_days></usage_days><usage_flag>0</usage_flag></row1></feeinfo></Program>
+
+2010年05月10日14时49分27秒343 :Receive
+
+2010年05月10日14时50分19秒171 :Send
+<Program><FunctionID>BIZC131201</FunctionID><parameters><biz_type>12</biz_type><center_id>439900</center_id><hospital_id>43990011069</hospital_id><idcard></idcard><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid></parameters></Program>
+
+2010年05月10日14时50分19秒453 :Receive
+<Program><ErrorNo>BIZC1301010202</ErrorNo><ErrorMessage>无法获取人员检索条件值</ErrorMessage><ErrorType>2</ErrorType><parameters><log_session_id>48200787</log_session_id></parameters></Program>
+
+2010年05月10日14时58分04秒265 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>1</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:58:04</last_date><last_row>1000</last_row><last_version_id>500000</last_version_id><once_find>1</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时58分27秒171 :Receive
+
+2010年05月10日14时58分27秒187 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>1</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:58:27</last_date><last_row>1000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时58分49秒828 :Receive
+
+2010年05月10日14时58分49秒937 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>1001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:58:49</last_date><last_row>2000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时59分05秒515 :Receive
+
+2010年05月10日14时59分05秒593 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>2001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:59:05</last_date><last_row>3000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时59分20秒453 :Receive
+
+2010年05月10日14时59分20秒546 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>3001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:59:20</last_date><last_row>4000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时59分33秒968 :Receive
+
+2010年05月10日14时59分34秒078 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>4001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:59:34</last_date><last_row>5000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日14时59分52秒234 :Receive
+
+2010年05月10日14时59分52秒328 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>5001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 14:59:52</last_date><last_row>6000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时00分12秒515 :Receive
+
+2010年05月10日15时00分12秒609 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>6001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:00:12</last_date><last_row>7000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时00分24秒656 :Receive
+
+2010年05月10日15时00分24秒750 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>7001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:00:24</last_date><last_row>8000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时00分43秒500 :Receive
+
+2010年05月10日15时00分43秒609 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>8001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:00:43</last_date><last_row>9000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时01分02秒734 :Receive
+
+2010年05月10日15时01分02秒828 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>9001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:01:02</last_date><last_row>10000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时01分19秒546 :Receive
+
+2010年05月10日15时01分19秒640 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>10001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:01:19</last_date><last_row>11000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时01分33秒421 :Receive
+
+2010年05月10日15时01分33秒546 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>11001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:01:33</last_date><last_row>12000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时02分02秒906 :Receive
+
+2010年05月10日15时02分02秒984 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>12001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:02:02</last_date><last_row>13000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时02分41秒968 :Receive
+
+2010年05月10日15时02分42秒062 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>13001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:02:42</last_date><last_row>14000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时03分01秒937 :Receive
+
+2010年05月10日15时03分02秒031 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>14001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:03:02</last_date><last_row>15000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时03分15秒890 :Receive
+
+2010年05月10日15时03分15秒984 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>15001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:03:15</last_date><last_row>16000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时03分27秒109 :Receive
+
+2010年05月10日15时03分27秒203 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>16001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:03:27</last_date><last_row>17000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时03分50秒625 :Receive
+
+2010年05月10日15时03分50秒718 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>17001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:03:50</last_date><last_row>18000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时04分11秒265 :Receive
+
+2010年05月10日15时04分11秒359 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>18001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:04:11</last_date><last_row>19000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时04分36秒859 :Receive
+
+2010年05月10日15时04分36秒953 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>19001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:04:36</last_date><last_row>20000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时04分57秒765 :Receive
+
+2010年05月10日15时04分57秒906 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>20001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:04:57</last_date><last_row>21000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时05分15秒093 :Receive
+
+2010年05月10日15时05分15秒187 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>21001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:05:15</last_date><last_row>22000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时06分10秒546 :Receive
+
+2010年05月10日15时06分10秒640 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>22001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:06:10</last_date><last_row>23000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时06分46秒046 :Receive
+
+2010年05月10日15时06分46秒140 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>23001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:06:46</last_date><last_row>24000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时07分00秒953 :Receive
+
+2010年05月10日15时07分01秒046 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>24001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:07:01</last_date><last_row>25000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时07分13秒156 :Receive
+
+2010年05月10日15时07分13秒250 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>25001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:07:13</last_date><last_row>26000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时07分30秒093 :Receive
+
+2010年05月10日15时07分30秒187 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>26001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:07:30</last_date><last_row>27000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时07分50秒593 :Receive
+
+2010年05月10日15时07分50秒687 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>27001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:07:50</last_date><last_row>28000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时08分14秒265 :Receive
+
+2010年05月10日15时08分14秒359 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>28001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:08:14</last_date><last_row>29000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时08分28秒890 :Receive
+
+2010年05月10日15时08分28秒984 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>29001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:08:28</last_date><last_row>30000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时08分53秒125 :Receive
+
+2010年05月10日15时08分53秒218 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>30001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:08:53</last_date><last_row>31000</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时09分15秒031 :Receive
+
+2010年05月10日15时09分15秒156 :Send
+<Program><FunctionID>BIZC110118</FunctionID><parameters><center_id>439900</center_id><condition>bs_medi</condition><first_row>31001</first_row><first_version_id>1</first_version_id><last_date>2010-5-10 15:09:15</last_date><last_row>31200</last_row><last_version_id>500000</last_version_id><once_find>0</once_find><oper_centerid>439900</oper_centerid><oper_hospitalid>43990011069</oper_hospitalid><oper_staffid>000</oper_staffid><type>version</type></parameters></Program>
+
+2010年05月10日15时09分17秒890 :Receive
+

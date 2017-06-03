@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIS_ZYManager.Action.FrmAllAccountController">
+    <Position X="6.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gBAAIAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAIAA=</HashCode>
+      <FileName>Action\QueryAction\FrmAllAccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HIS_ZYManager.Action.IFrmAllAccountView">
+    <Position X="0.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAIKAAAAAAAAgAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Action\QueryAction\IFrmAllAccountView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

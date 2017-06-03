@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_MZDocManager", "GWI-MiniHIS\HIS_MZDocManager\HIS_MZDocManager.csproj", "{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.MZDoc_BLL", "Public-HIS\HIS.MZDoc_BLL\HIS.MZDoc_BLL.csproj", "{B571EC62-34DF-41C0-B2D1-7F787A157BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TownShipHIS", "GWI-MiniHIS\TownShipHIS\TownShipHIS.csproj", "{8B6138A3-B108-42F7-9713-944D27DBBB35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0A467E-0706-4CC5-8F31-1F5A32933FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B571EC62-34DF-41C0-B2D1-7F787A157BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B571EC62-34DF-41C0-B2D1-7F787A157BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B571EC62-34DF-41C0-B2D1-7F787A157BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B571EC62-34DF-41C0-B2D1-7F787A157BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D83658B-BA71-4A0C-BA47-9CA100660BAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.ZYNurse_BLL</RootNamespace>
+    <AssemblyName>HIS.ZYNurse_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Base_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.ZY_BLL, Version=1.2.0.14, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyIInPatient.cs" />
+    <Compile Include="DrugAmoutCalculation.cs" />
+    <Compile Include="FeeModelList.cs" />
+    <Compile Include="FeeModelProcess.cs" />
+    <Compile Include="OP_Account.cs" />
+    <Compile Include="Op_BaseData.cs" />
+    <Compile Include="OP_Bed.cs" />
+    <Compile Include="OP_Config.cs" />
+    <Compile Include="OP_Order.cs" />
+    <Compile Include="OP_OrderExec.cs" />
+    <Compile Include="OP_OrderPrint.cs" />
+    <Compile Include="OP_PatientOut.cs" />
+    <Compile Include="OP_SendDrugMessage.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderPrt.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TomorrowDrug.cs" />
+    <Compile Include="医嘱处理类\AbstractOrderOperation.cs" />
+    <Compile Include="医嘱处理类\OrderOperationFactory.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\AbstractDrug.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\临时药品\NormalTempDrug.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\临时药品\OutHospitalDrug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\药品类抽象\临时药品\PsStatementOrder.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\临时药品\SelfPrepareTempDrug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\药品类抽象\临时药品\TempDrugCommon.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\长期药品\LongDrugCommon.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\长期药品\NormalDrug.cs" />
+    <Compile Include="医嘱处理类\药品类抽象\长期药品\NormalStopDrug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\药品类抽象\长期药品\SelfPrepareDrug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\说明类医嘱\AbstractStateOrder.cs" />
+    <Compile Include="医嘱处理类\说明类医嘱\LongStateOrder.cs" />
+    <Compile Include="医嘱处理类\说明类医嘱\OutDeathOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\说明类医嘱\PregOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\说明类医嘱\TempStateOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\项目类医嘱\AbstractItem.cs" />
+    <Compile Include="医嘱处理类\项目类医嘱\临时项目\TempComponentItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\项目类医嘱\临时项目\TempSingleItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\项目类医嘱\长期项目\LongComponentItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱处理类\项目类医嘱\长期项目\LongSingleItem.cs" />
+    <Compile Include="医嘱处理类\项目类医嘱\长期项目\LongStopItem.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

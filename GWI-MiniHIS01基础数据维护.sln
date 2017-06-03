@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TownShipHIS", "GWI-MiniHIS\TownShipHIS\TownShipHIS.csproj", "{8B6138A3-B108-42F7-9713-944D27DBBB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_BaseManager", "GWI-MiniHIS\HIS_BaseManager\HIS_BaseManager.csproj", "{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.Base_BLL", "Public-HIS\HIS.Base_BLL\HIS.Base_BLL.csproj", "{C2A0B478-E7B6-4216-8A06-F11B75B506B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_ReportManager", "GWI-MiniHIS\HIS_ReportManager\HIS_ReportManager.csproj", "{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.Report_BLL", "Public-HIS\HIS.Report_BLL\HIS.Report_BLL.csproj", "{8A0123CF-6F20-4D3D-A9B2-670486008FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GWI_DesReport", "Public-HIS\GWI_DesReport\GWI_DesReport.csproj", "{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_ZYManager", "GWI-MiniHIS\HIS_ZYManager\HIS_ZYManager.csproj", "{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164B2B21-BA19-4C3D-B97F-FA7EFA7B4BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A0B478-E7B6-4216-8A06-F11B75B506B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A0B478-E7B6-4216-8A06-F11B75B506B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A0B478-E7B6-4216-8A06-F11B75B506B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A0B478-E7B6-4216-8A06-F11B75B506B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0123CF-6F20-4D3D-A9B2-670486008FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0123CF-6F20-4D3D-A9B2-670486008FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0123CF-6F20-4D3D-A9B2-670486008FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0123CF-6F20-4D3D-A9B2-670486008FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79ECDB0-02A3-465D-BFF6-06E857C7CA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912F2DD8-7F0D-4E3D-AF07-C6229D5876EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

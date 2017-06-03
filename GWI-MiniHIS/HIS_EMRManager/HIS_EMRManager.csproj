@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40568B6F-3BC9-42E5-8F18-C5AD5CCC404F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_EMRManager</RootNamespace>
+    <AssemblyName>HIS_EMRManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.EMR_BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.EMR_BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEMRInfoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEMRInfoUpdate.Designer.cs">
+      <DependentUpon>FrmEMRInfoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmrList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmrList.Designer.cs">
+      <DependentUpon>FrmEmrList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMRPrintObjectFactory.cs" />
+    <Compile Include="Public\PublicStaticFunction.cs" />
+    <Compile Include="FrmPatList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatList.Designer.cs">
+      <DependentUpon>FrmPatList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\StaticVariable.cs" />
+    <Compile Include="自定义控件\IEMRPrint.cs" />
+    <Compile Include="自定义控件\出院记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\出院记录.Designer.cs">
+      <DependentUpon>出院记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\手术记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\手术记录.Designer.cs">
+      <DependentUpon>手术记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\死亡记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\死亡记录.Designer.cs">
+      <DependentUpon>死亡记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\病程记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\病程记录.Designer.cs">
+      <DependentUpon>病程记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\EMRControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\EMRControl.Designer.cs">
+      <DependentUpon>EMRControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\EMRControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\EMRControlPanel.Designer.cs">
+      <DependentUpon>EMRControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\EMRRecordControlFactory.cs" />
+    <Compile Include="Public\Enum.cs" />
+    <Compile Include="Public\ExternalInterFace.cs" />
+    <Compile Include="FrmElementMould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmElementMould.Designer.cs">
+      <DependentUpon>FrmElementMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWholeMould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWholeMould.Designer.cs">
+      <DependentUpon>FrmWholeMould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Struct.cs" />
+    <Compile Include="自定义控件\入院记录.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\入院记录.Designer.cs">
+      <DependentUpon>入院记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\ElementButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\ElementLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\ElementTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmEmrMouldInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmrMouldInfo.Designer.cs">
+      <DependentUpon>FrmEmrMouldInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmrMouldSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmrMouldSite.Designer.cs">
+      <DependentUpon>FrmEmrMouldSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Action\FrmEmrMouldSiteController.cs" />
+    <Compile Include="Action\IFrmEmrMouldSiteView.cs" />
+    <Compile Include="Public\InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEMRInfoUpdate.resx">
+      <DependentUpon>FrmEMRInfoUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmrList.resx">
+      <DependentUpon>FrmEmrList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatList.resx">
+      <DependentUpon>FrmPatList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\EMRControlPanel.resx">
+      <DependentUpon>EMRControlPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmElementMould.resx">
+      <DependentUpon>FrmElementMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmrMouldInfo.resx">
+      <DependentUpon>FrmEmrMouldInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmrMouldSite.resx">
+      <DependentUpon>FrmEmrMouldSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWholeMould.resx">
+      <DependentUpon>FrmWholeMould.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\出院记录.resx">
+      <DependentUpon>出院记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\手术记录.resx">
+      <DependentUpon>手术记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\死亡记录.resx">
+      <DependentUpon>死亡记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\病程记录.resx">
+      <DependentUpon>病程记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\入院记录.resx">
+      <DependentUpon>入院记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\ElementTextBox.resx">
+      <DependentUpon>ElementTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\门急诊病历.resx">
+      <DependentUpon>门急诊病历.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="自定义控件\门急诊病历.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\门急诊病历.Designer.cs">
+      <DependentUpon>门急诊病历.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.MZDoc_BLL\HIS.MZDoc_BLL.csproj">
+      <Project>{B571EC62-34DF-41C0-B2D1-7F787A157BDF}</Project>
+      <Name>HIS.MZDoc_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

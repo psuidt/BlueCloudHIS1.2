@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E77A6A4B-26EB-4F3A-B152-ED8B0CBF91A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_ReportManager</RootNamespace>
+    <AssemblyName>HIS_ReportManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FormSite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GWI_DesReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHISFrame, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHISFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.MZDoc_BLL, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="HIS.MZ_BLL, Version=1.2.0.3, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_BaseManager, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS_EMRManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="HIS_MZDocManager, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HIS_MZDocManager\obj\Release\HIS_MZDocManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.4.18164, Culture=neutral, PublicKeyToken=02a83cbd123fcd60" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\FrmGetInParaterController.cs" />
+    <Compile Include="Controller\Inteface.cs" />
+    <Compile Include="FrmAddParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddParameter.Designer.cs">
+      <DependentUpon>FrmAddParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddReport.Designer.cs">
+      <DependentUpon>FrmAddReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddReportType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddReportType.Designer.cs">
+      <DependentUpon>FrmAddReportType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditSource.Designer.cs">
+      <DependentUpon>FrmEditSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnumeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnumeManager.Designer.cs">
+      <DependentUpon>FrmEnumeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGetInParater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetInParater.Designer.cs">
+      <DependentUpon>FrmGetInParater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOldSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOldSource.Designer.cs">
+      <DependentUpon>FrmOldSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryControl.Designer.cs">
+      <DependentUpon>FrmQueryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportGroup.Designer.cs">
+      <DependentUpon>FrmReportGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportPermissionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportPermissionManager.Designer.cs">
+      <DependentUpon>frmReportPermissionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportShow.Designer.cs">
+      <DependentUpon>FrmReportShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetLocation.Designer.cs">
+      <DependentUpon>FrmSetLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmtest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtest.Designer.cs">
+      <DependentUpon>Frmtest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVindicatorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVindicatorConfig.Designer.cs">
+      <DependentUpon>FrmVindicatorConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddParameter.resx">
+      <DependentUpon>FrmAddParameter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddReport.resx">
+      <DependentUpon>FrmAddReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddReportType.resx">
+      <DependentUpon>FrmAddReportType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditSource.resx">
+      <DependentUpon>FrmEditSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnumeManager.resx">
+      <DependentUpon>FrmEnumeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGetInParater.resx">
+      <DependentUpon>FrmGetInParater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOldSource.resx">
+      <DependentUpon>FrmOldSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryControl.resx">
+      <DependentUpon>FrmQueryControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportGroup.resx">
+      <DependentUpon>FrmReportGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportPermissionManager.resx">
+      <DependentUpon>frmReportPermissionManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportShow.resx">
+      <DependentUpon>FrmReportShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetLocation.resx">
+      <DependentUpon>FrmSetLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtest.resx">
+      <DependentUpon>Frmtest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVindicatorConfig.resx">
+      <DependentUpon>FrmVindicatorConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportShow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Base_BLL\HIS.Base_BLL.csproj">
+      <Project>{C2A0B478-E7B6-4216-8A06-F11B75B506B4}</Project>
+      <Name>HIS.Base_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Report_BLL\HIS.Report_BLL.csproj">
+      <Project>{8A0123CF-6F20-4D3D-A9B2-670486008FD3}</Project>
+      <Name>HIS.Report_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

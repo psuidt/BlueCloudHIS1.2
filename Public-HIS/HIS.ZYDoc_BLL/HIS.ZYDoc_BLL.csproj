@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E10CEE1-A2D4-413E-B8D3-36134976B56D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.ZYDoc_BLL</RootNamespace>
+    <AssemblyName>HIS.ZYDoc_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GWI_DesReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Base_BLL, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.Entity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.grdesLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseInfo\SsBase.cs" />
+    <Compile Include="GetName.cs" />
+    <Compile Include="MediApply\ApplyDao.cs" />
+    <Compile Include="OperaApply\SsApply.cs" />
+    <Compile Include="OrderInfo\PubOP\MessageShows.cs" />
+    <Compile Include="OrderInfo\LongOrder\AfterOperation.cs" />
+    <Compile Include="OrderInfo\TempOrder\LeaveDeath.cs" />
+    <Compile Include="OrderInfo\LongOrder\LongOperation.cs" />
+    <Compile Include="OrderInfo\Interface\IOrderOP.cs" />
+    <Compile Include="OrderInfo\TempOrder\TempOperation.cs" />
+    <Compile Include="OrderInfo\Interface\OrderOperation.cs" />
+    <Compile Include="OrderInfo\TempOrder\TurnDept.cs" />
+    <Compile Include="OrderInfo\PubOP\PubOperation.cs" />
+    <Compile Include="MediApply\Interface\ApplyOP.cs" />
+    <Compile Include="MediApply\CheckApply.cs" />
+    <Compile Include="MediApply\CureApply.cs" />
+    <Compile Include="MediApply\Interface\IMediApply.cs" />
+    <Compile Include="MediApply\MediCenter.cs" />
+    <Compile Include="MediApply\ApplyFactory.cs" />
+    <Compile Include="MediApply\TestApply.cs" />
+    <Compile Include="BaseInfo\BaseLoads.cs" />
+    <Compile Include="OrderInfo\PubOP\DeleteDeal.cs" />
+    <Compile Include="OrderInfo\PubOP\ModelApply.cs" />
+    <Compile Include="OrderInfo\PubOP\OrderCheck.cs" />
+    <Compile Include="OrderInfo\PubOP\SaveOrders.cs" />
+    <Compile Include="BaseInfo\MediApplyBase.cs" />
+    <Compile Include="BaseInfo\ShowCardBase.cs" />
+    <Compile Include="BaseInfo\DrugBase.cs" />
+    <Compile Include="BaseInfo\CheckBase.cs" />
+    <Compile Include="NurseInterface\INurseQuery.cs" />
+    <Compile Include="NurseInterface\InurseSend.cs" />
+    <Compile Include="NurseInterface\INurseTrans.cs" />
+    <Compile Include="ModelInfo\IModelOP.cs" />
+    <Compile Include="NurseInterface\INurseBase.cs" />
+    <Compile Include="NurseInterface\NurseOperation.cs" />
+    <Compile Include="Config\OP_Config.cs" />
+    <Compile Include="ModelInfo\ModelList.cs" />
+    <Compile Include="ModelInfo\ModelMain.cs" />
+    <Compile Include="ModelInfo\ModelOperation.cs" />
+    <Compile Include="QueryWork\OP_Rpt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OrderInfo\PubMethd.cs" />
+    <Compile Include="OrderInfo\PubOP\Types.cs" />
+    <Compile Include="PatInfo\GetInBed.cs" />
+    <Compile Include="PatInfo\GetOutPat.cs" />
+    <Compile Include="PatInfo\PatOperation.cs" />
+    <Compile Include="PatInfo\PatType.cs" />
+    <Compile Include="QueryWork\OP_SsRpt.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

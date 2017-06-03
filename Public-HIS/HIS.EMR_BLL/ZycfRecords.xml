@@ -1,0 +1,24 @@
+﻿  <chs>
+    <table>
+      <row type="0">
+        <CFBH>处方编号</CFBH>
+        <DAHID>档案号ID</DAHID>
+        <JZSJ>就诊时间</JZSJ>
+        <XMMC> 项目名称</XMMC>
+        <GG>规格</GG>
+        <CS>产商</CS>
+        <PH>批号</PH>
+        <SL>数量</SL>
+        <DW>单位</DW>
+        <DJ>单价</DJ>
+        <YF>用法</YF>
+        <YL>用量</YL>
+        <PL>频率</PL>
+        <DJR>登记人</DJR>
+        <DJRQ>登记日期</DJRQ>
+        <JGDM>机构代码</JGDM>
+        <HIS_BLBH>病历编号</HIS_BLBH>
+      </row>
+    </table>
+  </chs>
+

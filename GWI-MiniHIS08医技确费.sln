@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.MedicalConfir_BLL", "Public-HIS\HIS.MedicalConfir_BLL\HIS.MedicalConfir_BLL.csproj", "{856843F0-A669-40CC-8A80-3797CD01489A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_MediConfirManager", "GWI-MiniHIS\HIS_MediConfirManager\HIS_MediConfirManager.csproj", "{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TownShipHIS", "GWI-MiniHIS\TownShipHIS\TownShipHIS.csproj", "{8B6138A3-B108-42F7-9713-944D27DBBB35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{856843F0-A669-40CC-8A80-3797CD01489A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856843F0-A669-40CC-8A80-3797CD01489A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856843F0-A669-40CC-8A80-3797CD01489A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856843F0-A669-40CC-8A80-3797CD01489A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC12150-CFC3-4F99-B1DC-3193B40A64CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6138A3-B108-42F7-9713-944D27DBBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

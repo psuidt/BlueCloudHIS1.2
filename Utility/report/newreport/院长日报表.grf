@@ -1,0 +1,94 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Object DetailGrid
+		Object Recordset
+			Items Field
+				Item
+					Name='费用总额'
+				End
+				Item
+					Name='项目名称'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='费用总额'
+				Width=2
+			End
+			Item
+				Name='项目名称'
+				Width=2
+			End
+		End
+		Object ColumnContent
+			Items ColumnContentCell
+				Item
+					Column='费用总额'
+					DataField='费用总额'
+				End
+				Item
+					Column='项目名称'
+					DataField='项目名称'
+				End
+			End
+		End
+		Object ColumnTitle
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='费用总额'
+					Text='费用总额'
+				End
+				Item
+					GroupTitle=F
+					Column='项目名称'
+					Text='项目名称'
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='开始日期'
+			Value='2011-6-15 0:00:00'
+		End
+		Item
+			Name='结束日期'
+			Value='2011-6-15 23:59:59'
+		End
+		Item
+			Name='报表名称'
+			Value='茶陵县人民医院院长日报表'
+		End
+		Item
+			Name='打印时间'
+			Value='2011-6-15 19:03:24'
+		End
+		Item
+			Name='当前科室'
+			Value='门诊西药房'
+		End
+		Item
+			Name='当前人员'
+			Value='超级用户'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+		End
+		Item
+			Type=ReportFooter
+		End
+	End
+End

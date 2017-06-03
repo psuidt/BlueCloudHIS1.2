@@ -1,0 +1,259 @@
+Object Report
+	Version='4.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Oriention=Landscape
+	End
+	Object DetailGrid
+		BorderWidth=2
+		IsCrossTab=T
+		Object Recordset
+			Items Field
+				Item
+					Name='ID'
+				End
+				Item
+					Name='CODE'
+				End
+				Item
+					Name='TOTAL_FEE'
+					Type=Float
+					Format='0.00'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='名称'
+				Width=1.69333
+			End
+			Item
+				Name='项目'
+				Width=2.09021
+			End
+			Item
+				Name='合计'
+				Width=1.98438
+			End
+		End
+		Object ColumnContent
+			Height=0.635
+			Object Font
+				Name='宋体'
+				Size=90000,0
+				Weight=400
+				Charset=134
+			End
+			Items ColumnContentCell
+				Item
+					Column='名称'
+					DataField='ID'
+				End
+				Item
+					Column='项目'
+					TextAlign=MiddleRight
+					DataField='TOTAL_FEE'
+				End
+				Item
+					Column='合计'
+					TextAlign=MiddleRight
+					DataField='TOTAL_FEE'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.608542
+			Object Font
+				Name='宋体'
+				Size=90000,0
+				Weight=400
+				Charset=134
+			End
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='名称'
+					TextAlign=MiddleCenter
+					Text='名  称'
+				End
+				Item
+					GroupTitle=F
+					Column='项目'
+					FreeCell=T
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Dock=Top
+							Height=0.582083
+							TextAlign=MiddleCenter
+							DataField='CODE'
+						End
+					End
+				End
+				Item
+					GroupTitle=F
+					Column='合计'
+					TextAlign=MiddleCenter
+					Text='合 计'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+				End
+				Object GroupFooter
+					Height=0.635
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					Items Control
+						Item
+							Type=StaticBox
+							Name='StaticBox1'
+							AlignColumn='名称'
+							Width=1.71979
+							Height=0.582083
+							TextAlign=MiddleCenter
+							Text='合  计'
+						End
+					End
+				End
+			End
+		End
+		Object CrossTab
+			PercentFormat='0.##%'
+			HTotalAtFirst=T
+			HCrossFields='CODE'
+			VCrossFields='ID'
+			TotalCols=1
+		End
+	End
+	Items Parameter
+		Item
+			Name='医院名称'
+		End
+		Item
+			Name='报表标题'
+		End
+		Item
+			Name='统计时间'
+		End
+		Item
+			Name='制表人'
+		End
+		Item
+			Name='备注'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Name='ReportHeader'
+			Height=2.19604
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox2'
+					Object Font
+						Name='宋体'
+						Size=180000,0
+						Bold=T
+						Charset=134
+					End
+					Left=0.211667
+					Top=0.211667
+					Width=24.3946
+					Height=0.79375
+					TextAlign=MiddleCenter
+					Text='StaticBox2'
+					Parameter='医院名称'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox3'
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Weight=400
+						Charset=134
+					End
+					Left=0.211667
+					Top=1.00542
+					Width=24.3946
+					Height=0.608542
+					TextAlign=MiddleCenter
+					Text='StaticBox3'
+					Parameter='报表标题'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox4'
+					Left=0.211667
+					Top=1.5875
+					Width=11.8004
+					Height=0.582083
+					Text='StaticBox4'
+					Parameter='统计时间'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox5'
+					Left=20.0025
+					Top=1.5875
+					Width=4.60375
+					Height=0.582083
+					Text='StaticBox5'
+					Parameter='制表人'
+				End
+			End
+		End
+		Item
+			Type=ReportFooter
+			Name='ReportFooter'
+			Height=1.32292
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox6'
+					Left=0.211667
+					Top=0.211667
+					Width=2.01083
+					Height=0.608542
+					Text='审核人：'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox7'
+					Left=17.0127
+					Top=0.211667
+					Width=1.79917
+					Height=0.582083
+					Text='打印日期：'
+				End
+				Item
+					Type=SystemVarBox
+					Name='SystemVarBox1'
+					Left=18.8119
+					Top=0.211667
+					Width=5.58271
+					Height=0.582083
+					Format='yyyy年MM月dd日 HH:mm:ss'
+					SystemVar=CurrentDateTime
+				End
+			End
+		End
+	End
+End

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIS.ZYNurse_BLL.Order">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.OrderOperationFactory">
+    <Position X="4.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\OrderOperationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.AbstractOrderOperation">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>GAAABggAAAAAEAAAAEAAAAAAAAAAIAAAACIAAhACAAA=</HashCode>
+      <FileName>医嘱处理类\AbstractOrderOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.AbstractStateOrder">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\说明类医嘱\AbstractStateOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.LongStateOrder" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\说明类医嘱\LongStateOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.OutDeathOrder" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\说明类医嘱\OutDeathOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.PregOrder" Collapsed="true">
+    <Position X="3.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\说明类医嘱\PregOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.TempStateOrder" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\说明类医嘱\TempStateOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.AbstractItem">
+    <Position X="10" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAEAAgAgCAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\AbstractItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.LongComponentItem">
+    <Position X="7" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\长期项目\LongComponentItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.LongSingleItem">
+    <Position X="8.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\长期项目\LongSingleItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.LongStopItem">
+    <Position X="10.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\长期项目\LongStopItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.TempComponentItem">
+    <Position X="12.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\临时项目\TempComponentItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.TempSingleItem">
+    <Position X="14" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\项目类医嘱\临时项目\TempSingleItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.AbstractDrug" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\AbstractDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.LongDrugCommon" Collapsed="true">
+    <Position X="17.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\长期药品\LongDrugCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.TempDrugCommon" Collapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\临时药品\TempDrugCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.NormalDrug">
+    <Position X="15.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\长期药品\NormalDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.NormalStopDrug">
+    <Position X="17.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\长期药品\NormalStopDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.SelfPrepareDrug" Collapsed="true">
+    <Position X="19.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\长期药品\SelfPrepareDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.NormalTempDrug" Collapsed="true">
+    <Position X="21.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\临时药品\NormalTempDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.OutHospitalDrug" Collapsed="true">
+    <Position X="23.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\临时药品\OutHospitalDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.PsStatementOrder" Collapsed="true">
+    <Position X="25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\临时药品\PsStatementOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.ZYNurse_BLL.SelfPrepareTempDrug" Collapsed="true">
+    <Position X="26.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>医嘱处理类\药品类抽象\临时药品\SelfPrepareTempDrug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

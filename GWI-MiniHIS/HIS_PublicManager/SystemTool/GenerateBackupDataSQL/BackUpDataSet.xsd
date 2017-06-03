@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BackUpDataSet" targetNamespace="http://tempuri.org/BackUpDataSet.xsd" xmlns:mstns="http://tempuri.org/BackUpDataSet.xsd" xmlns="http://tempuri.org/BackUpDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BackUpDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="BackUpDataSet" msprop:Generator_UserDSName="BackUpDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="data" msprop:Generator_UserTableName="data" msprop:Generator_RowDeletedName="dataRowDeleted" msprop:Generator_TableClassName="dataDataTable" msprop:Generator_RowChangedName="dataRowChanged" msprop:Generator_RowClassName="dataRow" msprop:Generator_RowChangingName="dataRowChanging" msprop:Generator_RowEvArgName="dataRowChangeEvent" msprop:Generator_RowEvHandlerName="dataRowChangeEventHandler" msprop:Generator_TablePropName="data" msprop:Generator_TableVarName="tabledata" msprop:Generator_RowDeletingName="dataRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableName" msprop:Generator_UserColumnName="TableName" msprop:Generator_ColumnPropNameInRow="TableName" msprop:Generator_ColumnVarNameInTable="columnTableName" msprop:Generator_ColumnPropNameInTable="TableNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FieldName" msprop:Generator_UserColumnName="FieldName" msprop:Generator_ColumnPropNameInRow="FieldName" msprop:Generator_ColumnVarNameInTable="columnFieldName" msprop:Generator_ColumnPropNameInTable="FieldNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MinNum" msprop:Generator_UserColumnName="MinNum" msprop:Generator_ColumnPropNameInRow="MinNum" msprop:Generator_ColumnVarNameInTable="columnMinNum" msprop:Generator_ColumnPropNameInTable="MinNumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxNum" msprop:Generator_UserColumnName="MaxNum" msprop:Generator_ColumnPropNameInRow="MaxNum" msprop:Generator_ColumnVarNameInTable="columnMaxNum" msprop:Generator_ColumnPropNameInTable="MaxNumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AddName" msprop:Generator_UserColumnName="AddName" msprop:Generator_ColumnPropNameInRow="AddName" msprop:Generator_ColumnVarNameInTable="columnAddName" msprop:Generator_ColumnPropNameInTable="AddNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AddNum" msprop:Generator_UserColumnName="AddNum" msprop:Generator_ColumnPropNameInRow="AddNum" msprop:Generator_ColumnVarNameInTable="columnAddNum" msprop:Generator_ColumnPropNameInTable="AddNumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BaseTableName" msprop:Generator_UserColumnName="BaseTableName" msprop:Generator_ColumnPropNameInRow="BaseTableName" msprop:Generator_ColumnVarNameInTable="columnBaseTableName" msprop:Generator_ColumnPropNameInTable="BaseTableNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

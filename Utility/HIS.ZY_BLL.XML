@@ -1,0 +1,1257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIS.ZY_BLL</name>
+    </assembly>
+    <members>
+        <member name="T:HIS.ZY_BLL.OP_PatientObject">
+            <summary>
+            入院
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetPatNo">
+            <summary>
+            得到新病人的住院号
+            </summary>
+            <returns>住院号</returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.NccmCheck_SavePatientInfo(HIS.Model.ZY_PatList)">
+            <summary>
+            农合入院
+            </summary>
+            <param name="zypatlist"></param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.SavePatientInfo(HIS.Model.PatientInfo,HIS.Model.ZY_PatList)">
+            <summary>
+            入院，保存病人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.NccmCheck_CancelPatient(HIS.Model.ZY_PatList)">
+            <summary>
+            农合取消入院
+            </summary>
+            <param name="zypatlist"></param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.CancelPatient(HIS.Model.ZY_PatList)">
+            <summary>
+            取消病人入院
+            </summary>
+            <param name="zypatlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.AlterPatient(HIS.Model.PatientInfo,HIS.Model.ZY_PatList)">
+            <summary>
+            修改病人信息
+            </summary>
+            <param name="Patinfo"></param>
+            <param name="zypatlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.BindPatList">
+            <summary>
+            得到全部在院病人列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.BindPatList(System.Boolean,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="IsIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.BindPatList(System.Boolean,System.String)">
+            <summary>
+            根据条件查询病人列表
+            </summary>
+            <param name="IsIn">是否在院</param>
+            <param name="CureDeptCode">科室代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetPatInfo(System.String)">
+            <summary>
+            根据住院号得到病人信息
+            </summary>
+            <param name="CureNo">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetPatInfo(System.Int32)">
+            <summary>
+            根据住院号得到病人信息
+            </summary>
+            <param name="CureNo">病人列表ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetDisease">
+            <summary>
+            得到所有诊断
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetNationco">
+            <summary>
+            得到所有民族
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetPatientType">
+            <summary>
+            获取病人类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.AlterPatType(System.Int32)">
+            <summary>
+            召回病人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.IsCanelReg(System.Int32)">
+            <summary>
+            取消病人
+            </summary>
+            <param name="patListid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetNccmPat_LH(HIS.ZY_BLL.SearchNccmPatType,System.String)">
+            <summary>
+            读卡,得到病人信息
+            </summary>
+            <param name="snpt">查询类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetNccmPat_Web(HIS.ZY_BLL.SearchNccmPatType,System.String)">
+            <summary>
+            读卡,得到病人信息
+            </summary>
+            <param name="snpt">查询类型</param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetCureNo(System.String)">
+            <summary>
+            根据农合病人代码查询病人住院号
+            </summary>
+            <param name="PatCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PatientObject.GetNewNccmNo(System.DateTime)">
+            <summary>
+            生成新的编码
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.YP_Interface">
+            <summary>
+            药品发药类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.GetPatInfo(System.String)">
+            <summary>
+            根据住院号得到病人信息
+            </summary>
+            <param name="CureNo">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.GetPatInfo">
+            <summary>
+            得到在院病人信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.GetPatInfo(System.Int32)">
+            <summary>
+            得到在院病人信息
+            </summary>
+            <param name="CureDeptCode">科室代码</param>
+            <returns>住院科室代码</returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.GetPatPresInfo(System.Int32,System.String)">
+            <summary>
+            根据病人ID得到待发药处方信?
+            </summary>
+            <param name="PatListID">病人ID</param>
+            <param name="deptcode">科室代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.GetPatPresInfo(System.String,System.String)">
+            <summary>
+            根据住院号得到待发药处方信息
+            </summary>
+            <param name="CureNo">住院号</param>
+            <param name="deptcode">科室代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.UpdateSendDrugFlag(System.Int32)">
+            <summary>
+            �更新发药标识
+            </summary>
+            <param name="PresOrderID">处方明细ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.UpdateBackDrugFlag(System.Int32)">
+            <summary>
+            更新退药标?
+            </summary>
+            <param name="PresOrderID">处方明细ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.YP_Interface.UpdateSendDrugNum(System.Int32)">
+            <summary>
+            根据住院处方明细ID获取发药总量
+            </summary>
+            <param name="recipeOrderID">处方明细ID</param>
+            <returns>该处方明细ID对应的退药总量</returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.SearchNccmPatType">
+            <summary>
+            获取农合病人的方式
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.SearchNccmPatType.病人姓名">
+            <summary>
+            病人姓名
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.SearchNccmPatType.身份证号">
+            <summary>
+            身份证号
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.SearchNccmPatType.医疗卡号">
+            <summary>
+            医疗卡号
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.SearchNccmPatType.家庭编码">
+            <summary>
+            家庭编码
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.ZY_NccmInterface">
+            <summary>
+            住院农合接口
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.ZY_NccmInterface.hospitalInfo">
+            <summary>
+            医院信息，实例化该类的时候调用接口赋值该类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.#ctor">
+            <summary>
+            住院农合接口
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.GetPatientInfo(HIS.ZY_BLL.SearchNccmPatType,System.String)">
+            <summary>
+            读取病人信息
+            </summary>
+            <param name="snpt">查询类别</param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.NccmRegister">
+            <summary>
+            农合入院
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.UploadZYPatFee(FeeDetail[])">
+            <summary>
+            住院病人费用上传
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.DownloadZYPatFee">
+            <summary>
+            下载病人费用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.PreviewCharge(FeeDetail[],System.String)">
+            <summary>
+            预算
+            </summary>
+            <param name="prescriptions"></param>
+            <param name="Is_midWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.Charge(FeeDetail[],System.String,System.String)">
+            <summary>
+            出院结算
+            </summary>
+            <param name="prescriptions"></param>
+            <param name="Is_midWay"></param>
+            <param name="Nccm_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.CancelCharge(System.String)">
+            <summary>
+            取消出院结算
+            </summary>
+            <param name="Nccm_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.CancelRegister">
+            <summary>
+            取消入院
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.ConvertFeeDetail(System.Data.DataTable)">
+            <summary>
+            处方明细信息转化为接口明细
+            </summary>
+            <param name="dt">处方信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.ConvertDT(FeeDetail[])">
+            <summary>
+            接口明细转化为处方明细
+            </summary>
+            <param name="feeDetail">接口明细</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ZY_NccmInterface.GetNccmNo">
+            <summary>
+            得到农合产生的编码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.ZY_BLL.ZY_NccmInterface.zy_Patlist">
+            <summary>
+            医院病人信息
+            </summary>
+        </member>
+        <member name="P:HIS.ZY_BLL.ZY_NccmInterface.HospitalInfo">
+            <summary>
+            接口得到医院基本信息
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_CostManage">
+            <summary>
+            费用结算操作类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatFee(System.Int32)">
+            <summary>
+            病人显示费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatCostFee(System.Int32)">
+            <summary>
+            病人结算费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatOrderFee(System.Int32)">
+            <summary>
+            得到病人的收费分类项目费用
+            </summary>
+            <param name="patlistid">病人入院ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatBigItemOrderFee(System.Int32)">
+            <summary>
+            得到病人的大项目分类项目费用
+            </summary>
+            <param name="patlistid">病人入院ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatPresData(System.Int32)">
+            <summary>
+            得到病人已记账未结算的处方
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.NccmCheck_CostPat(HIS.Model.ZY_CostMaster,HIS.Model.ZY_PatList)">
+            <summary>
+            农合结算
+            </summary>
+            <param name="zyPatL"></param>
+            <param name="zyCostM"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.CostPat(HIS.Model.ZY_CostMaster,System.Collections.Generic.List{HIS.Model.ZY_CostOrder},HIS.Model.ZY_PatList)">
+            <summary>
+            结算病人
+            </summary>
+            <param name="zyCostM">结算主表</param>
+            <param name="zyCostOList">结算汇总记录</param>
+            <param name="zyPatL">病人类表对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.CheckCanelCost(System.Int32,System.Int32)">
+            <summary>
+            验证取消病人的结算记录是否符合逻辑(作了出院结算的不能对其中途结算取消)
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.NccmCheck_CanelCostPat(HIS.Model.ZY_PatList,System.String)">
+            <summary>
+            取消结算
+            </summary>
+            <param name="zy_PatList"></param>
+            <param name="Nccm_NO"></param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.CanelCostPat(HIS.Model.ZY_CostMaster)">
+            <summary>
+            取消结算
+            </summary>
+            <param name="zyCostM"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.Check_CanelCostPat(HIS.Model.ZY_CostMaster)">
+            <summary>
+            检测是否可以取消结算
+            </summary>
+            <param name="zyCostM"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetNewTicketNO(System.DateTime)">
+            <summary>
+            得到新的发票流水号
+            </summary>
+            <param name="date">当前服务器时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.Again_Ticket(System.Int32,System.String,System.String,System.DateTime)">
+            <summary>
+            重打发票
+            </summary>
+            <param name="CostMasterID">结算ID</param>
+            <param name="TicketNO">发票号</param>
+            <param name="CostCode">结算人代码</param>
+            <param name="CostDate">结算日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.Again_Ticket(System.Int32,System.String)">
+            <summary>
+            补打发票
+            </summary>
+            <param name="CostMasterID">结算ID</param>
+            <param name="TicketNO">发票号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetCostData(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            得到结算的记录
+            </summary>
+            <param name="PatlistID"></param>
+            <param name="Bdate"></param>
+            <param name="Edate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_CostManage.GetPatSelfFee(System.Int32)">
+            <summary>
+            得到病人甲类乙类的费用（试算需要）
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.NccmFactory">
+            <summary>
+            农合接口创建对象类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.NccmFactory.Create">
+            <summary>
+            创建农合接口对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_ChargeList_GetMenoyAndPosFee(System.String)">
+            <summary>
+            得到预交金的现金金额和pos金额分别为多少
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_GetMenoyAndPosFee(System.String)">
+            <summary>
+            得到结算费用的现金和pos金额分别为多少
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_ChargeList_GetDetailCharge(System.String,System.Int32)">
+            <summary>
+            得到明细
+            </summary>
+            <param name="feeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_GetDetailFee(System.String,System.Int32)">
+            <summary>
+            查询所有明细
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_ChargeList_UpdateAccount(System.String,System.Int32)">
+            <summary>
+            更新明细
+            </summary>
+            <param name="ChargeCode">交款人代码</param>
+            <param name="ID">交款ID</param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_UpdateAccount(System.String,System.Int32)">
+            <summary>
+            更新明细
+            </summary>
+            <param name="ChargeCode">交款人代码</param>
+            <param name="ID">交款ID</param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_GetTicketTotle(System.Int32)">
+            <summary>
+            得到所有票据汇总
+            </summary>
+            <param name="AccountID">交款ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PatList_GetNewPatientNo">
+            <summary>
+            生成新的发票流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_ChargeList_GetNewBillNo(System.DateTime)">
+            <summary>
+            生成新的票据号
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_ChargeList_GetNoCostAll_Fee(System.Int32)">
+            <summary>
+            得到中结后的累计预交金
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresMaster_GetNoCostAll_Fee(System.Int32)">
+            <summary>
+            得到所有记账处方未结算的费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresMaster_GetfaoverAll_Fee(System.Int32,System.String,System.Decimal)">
+            <summary>
+            得到所有记账处方未结算的优惠费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresMaster_GetvillageAll_Fee(System.Int32)">
+            <summary>
+            得到所有记账处方未结算的农合费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_AlterCostID(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            更新处方所有ID
+            </summary>
+            <param name="patlistID"></param>
+            <param name="CostID"></param>
+            <param name="CostType"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_RePrintTicket(System.Int32,System.Int32)">
+            <summary>
+            重打发票
+            </summary>
+            <param name="OldCostID"></param>
+            <param name="NewCostID"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PatList_AlterPatType(System.Int32,System.Int32)">
+            <summary>
+            更改住院病人登记表病人类型为3，出院未结算
+            </summary>
+            <param name="patlistid"></param>
+            <param name="patType"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_GetNewTicketNo(System.DateTime)">
+            <summary>
+            得到结算新的发票流水号
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostMaster_Update(System.Int32,System.Int32)">
+            <summary>
+            修改结算表的记录标识1,为被退(外面添加收费人代码和取消结算时间)
+            </summary>
+            <param name="CostMasterID"></param>
+            <param name="Record_Flag"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_CostOrder_UpdateCostMID(System.Int32,System.Int32)">
+            <summary>
+            结算汇总记录
+            </summary>
+            <param name="oldCMID"></param>
+            <param name="NewCMID"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresMaster_GetCostAll_Fee(System.Int32)">
+            <summary>
+            所有记账的费用
+            </summary>
+            <param name="patlistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_GetAllFee(System.Int32)">
+            <summary>
+            更新处方头的总费用
+            </summary>
+            <param name="PRESMASTERID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_ChargeFee(System.Int32,System.String,System.String,System.DateTime)">
+            <summary>
+            处方记账
+            </summary>
+            <param name="Orderid"></param>
+            <param name="ChargeCode"></param>
+            <param name="date"></param>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_CheckBack(HIS.Model.ZY_PresOrder)">
+            <summary>
+            检查冲帐处方是否合理
+            </summary>
+            <param name="zypo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_GetSendGrugPres(System.Int32,System.String)">
+            <summary>
+            获取待发药的处方资料
+            </summary>
+            <param name="patlistid">病人列表ID</param>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_GetSendGrugPres(System.Int32)">
+            <summary>
+            获取待发药的处方资料
+            </summary>
+            <param name="patlistid">病人列表ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.DAL.ZY_DAL.ZY_PresOrder_GetSendGrugPres(System.String,System.String)">
+            <summary>
+            获取待发药的处方资料
+            </summary>
+            <param name="cureNO">病人住院号</param>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.PatType">
+            <summary>
+            病人类型
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.CostItemType">
+            <summary>
+            统计类型
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.CostItemType.发票项目">
+            <summary>
+            发票项目
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.CostItemType.核算项目">
+            <summary>
+            核算项目
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.CostItemStyle">
+            <summary>
+            统计方式
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.ReportStat">
+            <summary>
+            报表统计
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.ReportStat.GetTicketItemName">
+            <summary>
+            得到发票项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.ReportStat.GetCalcuItemName">
+            <summary>
+            得到核算项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.ExecDeptAndUserReport">
+            <summary>
+            按执行科室执行人统计
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.PatDeptAndPatientReport">
+            <summary>
+            按病人和病人所在科室统计
+            </summary>
+        </member>
+        <member name="P:HIS.ZY_BLL.PatDeptAndPatientReport.IsInHis">
+            <summary>
+            病人是否在院
+            </summary>
+        </member>
+        <member name="P:HIS.ZY_BLL.PatDeptAndPatientReport.CureDeptCode">
+            <summary>
+            需要统计的科室代码
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.PresDeptAndDocReport">
+            <summary>
+            按开方科室和开方医生统计
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.PresDocReport">
+            <summary>
+            按开方医生统计
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_ChargeList">
+            <summary>
+            预交金管理
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ChargeList.GetBillNo(System.DateTime)">
+            <summary>
+            得到新票据号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ChargeList.Charge(HIS.Model.ZY_ChargeList)">
+            <summary>
+            收费
+            </summary>
+            <param name="zyCharge"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ChargeList.BindPatFeeList(System.Int32)">
+            <summary>
+            得到病人的全部预交金
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ChargeList.DelChargeList(HIS.Model.ZY_ChargeList,HIS.Model.ZY_ChargeList)">
+            <summary>
+            作废
+            </summary>
+            <param name="zyCharge">收费对象</param>
+            <param name="New_zyCharge">新收费对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ChargeList.BackChargeList(HIS.Model.ZY_ChargeList,HIS.Model.ZY_ChargeList)">
+            <summary>
+            退费
+            </summary>
+            <param name="zyCharge"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_Account">
+            <summary>
+            住院财务结账操作类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetLastTime(System.String)">
+            <summary>
+            得到最后一次交款日期
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAllCharge(System.String)">
+            <summary>
+            得到未交款的所有预交金
+            
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAllCost(System.String)">
+            <summary>
+            得到所有未交款的结算
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAllChargeAndCost(System.String)">
+            <summary>
+            得到所有未交款的预交金和结算费用合计
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetMenoyAndPosFee(System.String,System.Int32)">
+            <summary>
+            得到现金和pos金额分别多少
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <param name="type">类别(0,全部.1，预交金.2,结算.)</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetCostAllTolFee(System.String)">
+            <summary>
+            得到结算交款的费用
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <returns>总金额、优惠、记账、结欠</returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetCostAllTolFee(System.Int32)">
+            <summary>
+            得到结算交款的费用
+            </summary>
+            <param name="AccountID">交款ID</param>
+            <returns>总金额、优惠、记账、结欠</returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetDetailCharge(System.String,System.String)">
+            <summary>
+            得到明细
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <param name="feeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.SaveAccount(System.Int32,System.String)">
+            <summary>
+            交款
+            </summary>
+            <param name="type">交款类型（1预交金，2结算费用，3全部）</param>
+            <param name="empID">交款人ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetTicketTotle(System.Int32)">
+            <summary>
+            得到所有票据汇总
+            </summary>
+            <param name="AccountID">交款ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAccount(System.Int32)">
+             <summary>
+            得到结账记录 
+             </summary>
+             <param name="AccountID">结账号</param>
+             <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAccountList(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            得到结账历史记录
+            </summary>
+            <param name="ChargeCode">操作员代码</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAccountFee(System.Int32)">
+            <summary>
+            得到结账记录的对应金额
+            </summary>
+            <param name="AccountID">交款ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.UpdatePrintNum(System.Int32)">
+            <summary>
+            更新打印次数
+            </summary>
+            <param name="AccountID">交款ID</param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetAllData(System.DateTime,System.DateTime)">
+            <summary>
+            交款表汇总数据
+            </summary>
+            <param name="BDate">开始时间</param>
+            <param name="EDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetChargeData(System.String[],System.Int32)">
+            <summary>
+            得到预交金收据清单
+            </summary>
+            <param name="AccountID">结算ID</param>
+            <param name="type">-1,全部预交金收据0，正常收据，1为退费收据,2(结算)预交金收据</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetCostData(System.String[],System.Int32)">
+            <summary>
+            得到结算收据清单
+            </summary>
+            <param name="AccountID">结算ID</param>
+            <param name="type">0，正常收据，1为退费收据,2预交金收据</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetBIGItemData(System.String[])">
+            <summary>
+            得到项目数据
+            </summary>
+            <param name="AccountID">结算ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Account.GetVillage_Fee(System.Int32)">
+            <summary>
+            得到记账费用
+            </summary>
+            <param name="AccountID">记账ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_PresManage">
+            <summary>
+            处方管理
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresDataTable(System.Int32,System.DateTime,System.String)">
+            <summary>
+            得到病人的处方
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="date">处方日期</param>
+            <param name="prestype">处方类型（长期、临时）</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresDataTable(System.Int32,System.DateTime)">
+            <summary>
+            得到病人的处方
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="date">处方日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresDataTable(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            得到病人费用清单（已记账的）
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresDataTable(System.Int32)">
+            <summary>
+            得到上传农合的费用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetNotSendDurgPresDataTable(System.Int32)">
+            <summary>
+            返回未发药的处方
+            </summary>
+            <param name="patlistid">病人列表ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresDataTableOld(System.Int32)">
+            <summary>
+            得到已上传农合的费用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.LoadDrugData">
+            <summary>
+            加载药品数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.LoadDrugData(System.String)">
+            <summary>
+            加载药品数据
+            </summary>
+            <param name="deptcode">根据执行科室加载药品</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.LoadItemData">
+            <summary>
+            加载项目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.LoadAllData">
+            <summary>
+            加载所有数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.SavePres(System.Collections.Generic.List{HIS.Model.ZY_PresOrder},HIS.Model.ZY_PatList,System.String)">
+            <summary>
+            保存单张处方
+            </summary>
+            <param name="zyPresOrderList">项目列表</param>
+            <param name="zyPatlist">病人信息</param>
+            <param name="IsLong">0，是长期医嘱，1，临时医嘱</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresAllFee(System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            得到某天长期医嘱或临时医嘱的总费用
+            </summary>
+            <param name="PresDate"></param>
+            <param name="PresType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.DelPres(System.Int32,System.Int32)">
+            <summary>
+            删除指定处方
+            </summary>
+            <param name="masterid"></param>
+            <param name="presorderid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.ChargePres(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.DateTime})">
+            <summary>
+            处方记账
+            </summary>
+            <param name="zyPresOrderList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.CheckBackPres(HIS.Model.ZY_PresOrder)">
+            <summary>
+            检查冲帐的处方是否合理
+            </summary>
+            <param name="zyo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.BackPres(System.Collections.Generic.List{HIS.Model.ZY_PresOrder})">
+            <summary>
+            写入要冲帐的处方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.BackPres(System.Int32,HIS.Model.ZY_PresOrder)">
+            <summary>
+            写入要取消冲帐的处方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetSendGrugPres(System.Int32,System.String)">
+            <summary>
+            得到病人发药处方
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetSendGrugPres(System.String,System.String)">
+            <summary>
+            得到病人发药处方
+            </summary>
+            <param name="CureNo">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.UpdateComp(System.Int32[])">
+            <summary>
+            正式结算更新报销农合上传标识
+            </summary>
+            <param name="PRESORDERID">明细ID</param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.DelComp(System.Int32[])">
+            <summary>
+            取消农合上传标识
+            </summary>
+            <param name="PRESORDERID">明细ID</param>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetFPXM_Code(System.String)">
+            <summary>
+            得到发票项目代码（农合接口用）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_PresManage.GetPresTemplateData(System.Int32)">
+            <summary>
+            得到模板里的数据
+            </summary>
+            <param name="Template_ID">模板ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_Ticket">
+            <summary>
+            发票打印操作
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Ticket.NumToChar(System.Char)">
+            <summary>
+            数字转大写
+            </summary>
+            <param name="x">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_Ticket.GetTicketInfo(System.Int32)">
+            <summary>
+            得到住院发票数据
+            </summary>
+            <param name="CostMasterID">结算ID</param>
+            <returns>发票实体对象</returns>
+        </member>
+        <member name="T:HIS.ZY_BLL.OP_ItemList">
+            <summary>
+            费用清单操作类
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.GetPresDataTable(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            得到病人费用清单（已记账的）
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.GetPresTotalData(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            得到病人费用清单(项目汇总)
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.GetPresTotalGroupData(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            得到病人费用清单(项目分组汇总)
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.GetCostCalData(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            得到病人费用清单(核算汇总)
+            </summary>
+            <param name="patlistid">病人ID</param>
+            <param name="Bdate">开始日期</param>
+            <param name="Edate">结束日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.GetFeeType(System.Data.DataTable)">
+            <summary>
+            打印费用项目加入医保类型
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.ZY_BLL.OP_ItemList.AlterPatBedNo(System.Int32,System.String)">
+            <summary>
+            修改病人床位
+            </summary>
+            <param name="patlistid">病人列表ID</param>
+            <param name="BedNo">床位号</param>
+        </member>
+        <member name="T:HIS.ZY_BLL.PatFee">
+            <summary>
+            病人费用
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.chargeFee">
+            <summary>
+            预交金
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.costFee">
+            <summary>
+            记账费用
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.faoverFee">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.villageFee">
+            <summary>
+            记账金额（农合、医保等）
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.selfFee">
+            <summary>
+            自付金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.surplusFee">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.retreatFee">
+            <summary>
+            退费
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.PatFee.receiveFee">
+            <summary>
+            补收
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.Op_PatFee">
+            <summary>
+            病人费用操作
+            </summary>
+        </member>
+        <member name="M:HIS.ZY_BLL.Op_PatFee.SetvillageFee(HIS.ZY_BLL.PatFee@,System.Decimal)">
+            <summary>
+            设置农合费用
+            </summary>
+            <param name="patFee"></param>
+            <param name="villageFee"></param>
+        </member>
+        <member name="M:HIS.ZY_BLL.Op_PatFee.SetfaoverFee(HIS.ZY_BLL.PatFee@,System.Decimal)">
+            <summary>
+            设置优惠费用
+            </summary>
+            <param name="patFee"></param>
+            <param name="villageFee"></param>
+        </member>
+        <member name="T:HIS.ZY_BLL.AccountFee">
+            <summary>
+            交款费用
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountFee.Tol_Fee">
+            <summary>
+            总金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountFee.Account_Fee">
+            <summary>
+            上缴金额（现金+POS）
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountFee.Faover_Fee">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountFee.Village_Fee">
+            <summary>
+            记账金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountFee.Arrears_Fee">
+            <summary>
+            结欠金额(总金额-预交金-（现金+POS）)
+            </summary>
+        </member>
+        <member name="T:HIS.ZY_BLL.AccountMenoyFee">
+            <summary>
+            上缴金额
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountMenoyFee.Cash_Fee">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="F:HIS.ZY_BLL.AccountMenoyFee.POS_Fee">
+            <summary>
+            POS
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,3 @@
+1,"统计大类","",17
+2,"门诊科室","select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where mz_flag=1",17
+3,"住院科室","select name,dept_id as id,py_code from  BASE_DEPT_PROPERTY where zy_flag=1",17

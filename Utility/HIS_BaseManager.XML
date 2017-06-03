@@ -1,0 +1,1091 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIS_BaseManager</name>
+    </assembly>
+    <members>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.#ctor(System.String,HIS.Base_BLL.Enums.MatchClass,GWMHIS.BussinessLogicLayer.Classes.User)">
+            <summary>
+            药品项目匹配窗口
+            </summary>
+            <param name="matchClass"></param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.CreateGridOfInsurDrug">
+            <summary>
+            创建农合、医保药品目录网格列式样
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.CreateGridOfInsurItem">
+            <summary>
+            创建农合、医保药品目录网格列式样
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.CreateGridOfHisDrug">
+            <summary>
+            创建医院药品目录网格列式样
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.CreateGridOfHisItem">
+            <summary>
+            创建医院药品项目网格列式样
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.CreateGridOfRelation">
+            <summary>
+            创建对应关系网格
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.FormatKeyWord(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.LoadData">
+            <summary>
+            加载数据
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmInsurMatch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInsurMatch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmLayerAttr.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmLayerAttr.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmLayerAttr.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmLayerAttr.AddSubLayerNode(System.Windows.Forms.TreeNode,System.Data.DataTable)">
+            <summary>
+            增加子层
+            </summary>
+            <param name="parentNode"></param>
+            <param name="tbAllLay"></param>
+        </member>
+        <member name="F:HIS_BaseManager.FrmTemplate.opType">
+            <summary>
+            0-划价模板 1-医生处方模板
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmTemplate.#ctor(System.String,GWMHIS.BussinessLogicLayer.Classes.User,GWMHIS.BussinessLogicLayer.Classes.Deptment,System.Int32)">
+            <summary>
+            模板维护
+            </summary>
+            <param name="FormText"></param>
+            <param name="CurrentUser"></param>
+            <param name="OPType">0-划价模板 1-医生处方模板</param>
+        </member>
+        <member name="F:HIS_BaseManager.FrmTemplate.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmTemplate.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmTemplate.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmBaseServiceItem.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmBaseServiceItem.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmBaseServiceItem.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmSetLocation.SnapControl(System.Int32)">
+            <summary>
+            对齐控件
+            </summary>
+            <param name="direct">0-左对齐 1-顶对齐,2 - 大小相同，3-水平间距，4-垂直间距</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmSetLocation.ReSortSelectedControls(System.Int32)">
+            <summary>
+            重排序控件
+            </summary>
+            <param name="direct">0-左对齐 1-顶对齐,2 - 大小相同，3-水平间距，4-垂直间距</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmSetLocation.#ctor(System.Collections.Generic.List{HIS.Base_BLL.FieldConfig})">
+            <summary>
+            
+            </summary>
+            <param name="LstTableFields"></param>
+        </member>
+        <member name="F:HIS_BaseManager.基本数据维护.FrmSetLocation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmSetLocation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmSetLocation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.FrmSetLocation.LocationSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmHospitalItems.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmHospitalItems.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmHospitalItems.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmHospitalItems.GetSelectBaseServiceItemsForm">
+            <summary>
+            获取从基本医疗服务项目中选择要添加到本院服务项目中的项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS_BaseManager.FrmHospitalItems.ServiceItems">
+            <summary>
+            医院的基本医疗服务项目
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.FrmHospitalItems.ComplexItems">
+            <summary>
+            医院的组合项目
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.FrmHospitalItems.ComplexDetails">
+            <summary>
+            医院的组合项目明细
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.FrmHospitalItems.AllHospitalItems">
+            <summary>
+            本院所有医疗服务项目（包括组合项目）
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.Controller.IFrmVindicatorConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.CreateFieldTree">
+            <summary>
+            创建字段的树形
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.ResetInputContent">
+            <summary>
+            重置输入内容
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.BindControlEvents">
+            <summary>
+            控件绑定事件
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.RemoveControlEvents">
+            <summary>
+            取消控件绑定事件
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.RefrshFieldInfo">
+            <summary>
+            刷新信息
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmVindicatorConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmpDeptSetting.LoadDepartmentLayer">
+            <summary>
+            加载科室层次结构
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmpDeptSetting.AddSubLayerNode(System.Windows.Forms.TreeNode,System.Data.DataTable)">
+            <summary>
+            增加子层
+            </summary>
+            <param name="parentNode"></param>
+            <param name="tbAllLay"></param>
+        </member>
+        <member name="F:HIS_BaseManager.FrmEmpDeptSetting.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmpDeptSetting.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmpDeptSetting.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.FrmBaseDataVindicator">
+            <summary>
+            基础数据维护
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.Controller.IFrmBaseDataVindicatorView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.IFrmBaseDataVindicatorView.SelectedTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.基本数据维护.FrmBaseDataVindicator.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmBaseDataVindicator.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmBaseDataVindicator.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmBaseDataVindicator.#ctor(System.String,GWMHIS.BussinessLogicLayer.Classes.User)">
+            <summary>
+            基础数据维护
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmStatItemEdit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmStatItemEdit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmStatItemEdit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmSelectServiceItem.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmSelectServiceItem.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmSelectServiceItem.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmEmployeeAtter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmployeeAtter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEmployeeAtter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmInforSerch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInforSerch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInforSerch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmInforSerch.LoadData">
+            <summary>
+            加载数据
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.FrmGroupMenu">
+            <summary>
+            Form1 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmGroupMenu.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmGroupMenu.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.Controller.IFrmTableConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.基本数据维护.FrmTableConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmTableConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.FrmTableConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmDeptAttr.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmDeptAttr.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmDeptAttr.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmDeptAttr.AddSubLayerNode(System.Windows.Forms.TreeNode,System.Data.DataTable)">
+            <summary>
+            增加子层
+            </summary>
+            <param name="parentNode"></param>
+            <param name="tbAllLay"></param>
+        </member>
+        <member name="T:HIS_BaseManager.FrmCreatePYWB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmCreatePYWB.#ctor(GWMHIS.BussinessLogicLayer.Classes.User)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmCreatePYWB.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmCreatePYWB.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmCreatePYWB.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.UIController.UCFrmHospitalItems">
+            <summary>
+            界面控制器
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.UIController.UCFrmHospitalItems.HospitalServiceItemsAndComplexItems">
+            <summary>
+            本院全部医疗服务项目(包括组合项目)
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.UIController.UCFrmHospitalItems.HospitalBaseServiceItem">
+            <summary>
+            本院使用的基本医疗服务项目
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.UIController.UCFrmHospitalItems.HospitalComplexItem">
+            <summary>
+            本院使用的组合项目
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.UIController.UCFrmHospitalItems.BaseSeriveItems">
+            <summary>
+            基本医疗服务项目
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.UIController.UCFrmHospitalItems.BaseDeptProperty">
+            <summary>
+            基本科室
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.#ctor(HIS_BaseManager.UIController.IFrmHospitalItems)">
+            <summary>
+            界面视图
+            </summary>
+            <param name="View"></param>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.LoadData">
+            <summary>
+            加载数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.BindGridData">
+            <summary>
+            绑定界面的网格数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.AddSelectedServiceItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.RemoveServiceItems(System.Int32)">
+            <summary>
+            移除一个项目
+            </summary>
+            <param name="ItemId"></param>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.AddComplexItem">
+            <summary>
+            增加组合项目
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.SaveComplexItem">
+            <summary>
+            保存组合项目
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.ShowComplexDetail">
+            <summary>
+            显示组合项目明细
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.ShowItemExecDept">
+            <summary>
+            显示项目的执行科室
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.SaveItemExecDept">
+            <summary>
+            保存项目执行科室
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.UIController.UCFrmHospitalItems.ValidateData(HIS.Base_BLL.ComplexItem)">
+            <summary>
+            数据验证
+            </summary>
+            <param name="complexItem"></param>
+        </member>
+        <member name="F:HIS_BaseManager.FrmStatItem.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmStatItem.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmStatItem.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmSubItemEdit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmSubItemEdit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmSubItemEdit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmNewReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmNewReport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmNewReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.Properties.Resources.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController">
+            <summary>
+            基本医疗服务项目界面控制器
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.#ctor(HIS_BaseManager.收费项目维护.UIController.Interface.IFrmBaseServiceItem)">
+            <summary>
+            基医疗服务项目界面
+            </summary>
+            <param name="FormView">对应的界面对象</param>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.Initizale">
+            <summary>
+            初始化控制器
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.ShowDataGridView">
+            <summary>
+            显示网格数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.ShowSelectedItem">
+            <summary>
+            显示选中的项目
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.ReLoadData">
+            <summary>
+            重新加载数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.Filter">
+            <summary>
+            过滤数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.SaveNewItem">
+            <summary>
+            保存新的基本服务项目
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.收费项目维护.UIController.FrmBaseServiceItemController.UpdateItem">
+            <summary>
+            更新基本服务项目
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmReportManager.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmReportManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmReportManager.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmReportManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController">
+            <summary>
+            字段维护界面控制器
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.#ctor(HIS_BaseManager.基本数据维护.Controller.IFrmVindicatorConfig)">
+            <summary>
+            控制器
+            </summary>
+            <param name="FormView">界面试图</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.Initalize">
+            <summary>
+            加载数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.ShowFieldConfig">
+            <summary>
+            显示配置明细内容
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.GetSystemFieldList(System.String)">
+            <summary>
+            获取指定的表字段
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.CheckUpDataBeforeUpdate">
+            <summary>
+            更新前的数据验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.UpdateConfig">
+            <summary>
+            更新配置
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.ConfigValueChanged">
+            <summary>
+            数据发生改变
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.GetFieldConfigs">
+            <summary>
+            返回配置列表
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.AccecptLoactionSetting(System.Collections.Generic.List{HIS.Base_BLL.FieldConfig})">
+            <summary>
+            提交Loacition配置
+            </summary>
+            <param name="LocationConfig"></param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.ConfirmFieldExists">
+            <summary>
+            验证数据库字段与实体表字段是否对应
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.ReviseConfigFields">
+            <summary>
+            修正配置表字段，使之与数据库、实体同步
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.TestSQL">
+            <summary>
+            测试SQL是否正确
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.SystemTable">
+            <summary>
+            系统数据表名列表
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.TableInfo">
+            <summary>
+            当前表信息
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmVindicatorConfigController.TableFields">
+            <summary>
+            当前表的字段列表
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmEdit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEdit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmEdit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.InstanceForm">
+            <summary>
+            InstanceForm 的摘要说明。
+            该类是每个DLL供外界访问的接口函数类
+            名称不能改（包括大小写）
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.InstanceForm.InstanceXcForm">
+            <summary>
+            根据函数名称实例化窗体
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.InstanceForm.GetObject">
+            <summary>
+            返回一个FORM对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.InstanceForm.GetDllInfo">
+            <summary>
+            获得该Dll的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.InstanceForm.GetFunctionsInfo">
+            <summary>
+            获得该Dll所有引出函数信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.FunctionName">
+            <summary>
+            实例化窗体函数名称
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.ChineseName">
+            <summary>
+            窗体中文名称
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.CurrentUserId">
+            <summary>
+            当前操作员ID
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.CurrentDeptId">
+            <summary>
+            当前操作科室ID
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.MenuId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.MdiParent">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.InstanceForm.CommunicateValue">
+            <summary>
+            内部通信参数
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmHisReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmHisReport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmHisReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController">
+            <summary>
+            通用数据维护界面控制
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.CreateControls">
+            <summary>
+            初始化控件
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.ctrl_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            控件回车键事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.CreateSpellCode(System.String)">
+            <summary>
+            生成拼音五笔字段
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.FindNextControl(System.Windows.Forms.Control)">
+            <summary>
+            按TableIndex查找下一个控件
+            </summary>
+            <param name="CurrentControl">当前的控件TabIndex</param>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.ShowDataInGrid">
+            <summary>
+            在网格内显示表数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.FilterGridData">
+            <summary>
+            查找数据
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.ShowRecordContent">
+            <summary>
+            显示记录数据的详细信息
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.SetAddNewStatus">
+            <summary>
+            置为新增记录状态
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.AddNewBaseDataRecord">
+            <summary>
+            新增记录
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.UpdateBaseDataRecord">
+            <summary>
+            更新记录
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.CreateRecordInstance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.BastTableList">
+            <summary>
+            需要维护的基础表的名称的列表
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.DataGrid">
+            <summary>
+            网格列表
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmBaseDataVindicatorController.PropertyPanel">
+            <summary>
+            属性面板
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmGBDictionary.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmGBDictionary.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmGBDictionary.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.GetEditedTableConfig">
+            <summary>
+            从界面获取配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.SaveTableConfig">
+            <summary>
+            保存配置
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.UpdateTableConfig">
+            <summary>
+            更新配置
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.DeleteTableConfig">
+            <summary>
+            删除配置
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.CheckDataBeforeSave">
+            <summary>
+            保存前的验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.Initiazle">
+            <summary>
+            初始化控制器
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.ShowTableConfig">
+            <summary>
+            显示表配置信息
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.VindicateTableList">
+            <summary>
+            当前需要维护的表的列表
+            </summary>
+        </member>
+        <member name="P:HIS_BaseManager.基本数据维护.Controller.FrmTableConfigController.SystemTables">
+            <summary>
+            IBMSYS.SYSTABLES系统表中的HIS系统的所有表
+            </summary>
+        </member>
+        <member name="F:HIS_BaseManager.FrmWorkUnit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.FrmWorkUnit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HIS_BaseManager.FrmWorkUnit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HIS_BaseManager.HisReport.FillRecordToReport(grproLib.IGridppReport,System.Data.IDataReader)">
+            <summary>
+            将 DataReader 的数据转储到 Grid++Report 的数据集中
+            </summary>
+            <param name="Report"></param>
+            <param name="dr"></param>
+        </member>
+        <member name="M:HIS_BaseManager.HisReport.FillRecordToReport(grproLib.IGridppReport,System.Data.DataTable)">
+            <summary>
+            将 DataTable 的数据转储到 Grid++Report 的数据集中
+            </summary>
+            <param name="Report"></param>
+            <param name="dt"></param>
+        </member>
+        <member name="M:HIS_BaseManager.HisReport.FillRecordToReport(grproLib.IGridppReport,System.Object)">
+            <summary>
+            将 对象 的属性数据转储到 Grid++Report 的数据集中
+            </summary>
+            <param name="Report"></param>
+            <param name="obj"></param>
+        </member>
+    </members>
+</doc>

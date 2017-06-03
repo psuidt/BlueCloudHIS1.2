@@ -1,0 +1,1891 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\临床检验申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\介入治疗申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_CT申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_X光申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_凝血四项申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_尿液申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_心电图申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_照片申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_生化申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_病理检查申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_粪便申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_胃镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_血液分析申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_输血前四项申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_造影申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发票.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发票_HN.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发票模板_GD.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发票模板_HN.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发票统计.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院发药单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士临时医嘱.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单临时处置治疗单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单化验标本采集单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单服药单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单治疗卡.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单注射单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单瓶签.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单输液卡.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单长期处置治疗单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院护士长期医嘱.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院摆药单(经管).grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院摆药单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院收费收据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院病人费用统计[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院病人费用统计[核算项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院科室医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院科室医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院结算交款模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院结算单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总1.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总附表.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐预交金汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院财务结账发票汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院费用一日清单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院费用清单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_核算.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_汇总分组.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院退药单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\住院预交金交款模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\免疫学申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\入库单汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\其他申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\医生收入[发票分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\医生收入[核算分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\医生科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\医生科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\复件 门诊_B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\库房入出库统计.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\彩色B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\微生物申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\心电图申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\护士统领汇总单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\新农合门诊补偿结算单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\核磁共振申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\检查申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\检验申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\治疗申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\照片申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\生化申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\病理检查申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\科室领药出库单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\统领发药单据(经管).grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\统领发药单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\肠镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\肺功能申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\胃镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\脑电图申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品供应商统计单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品入库单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品库存清单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品报损出库单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品明细帐报表.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品期初盘点单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品盘点单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品盘点报告.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品盘点盈亏图表.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品空盘点表单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品调价单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品进销存报表.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\药品采购计划单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\财务结帐汇总.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\造影申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\钡餐申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_CT申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_凝血四项申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_医技化验申请单模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_尿液申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_心电图申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_治疗申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_照片申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_生化申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_病理检查申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_粪便申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_胃镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_血液分析申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_输血前四项申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_造影申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表模板_HN.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表附表_科室收入.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生中药处方.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生住院证.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生处方费用明细.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[核算项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生西成药处方.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊医生非药品处方.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊发药单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊执行科室收入统计表模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊挂号发票模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_A.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_B.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_C.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_D.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_发票项目.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_核算项目.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入月报表[发票项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收入月报表[核算项目].grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收费发票模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收费发票模板_HN.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊病人费用清单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊病人费用统计表模板_B.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊输液卡.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊退药单据.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\黑白B超申请单.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊收费员工作量统计报表模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\GWI-TownShipHISv1.0\11源代码\MiniHIS1.2(临澧版)\Utility\report\门诊交款表汇总模板.grf</FileFullName>
+    <PrinterName>在 WWW-219C822FE8B 上自动 Microsoft XPS Document Writer</PrinterName>
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\临床检验申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\介入治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_CT申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_X光申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_凝血四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_尿液申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_粪便申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_血液分析申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_输血前四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发票.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发票_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发票模板_GD.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发票模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发票统计.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院已发药摆药单(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士临时医嘱.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单临时处置治疗单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单化验标本采集单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单服药单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单治疗卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单注射单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单瓶签.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单输液卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士执行单长期处置治疗单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院护士长期医嘱.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院摆药单(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院摆药单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院收费收据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院病人费用统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院病人费用统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院科室医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院科室医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院结算交款模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院结算单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总1.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐结算汇总附表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结帐预交金汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院财务结账发票汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院费用一日清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院费用清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_核算.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院费用清单_汇总分组.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院退药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\住院预交金交款模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\免疫学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\入库单汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\其他申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\医生收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\医生收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\医生科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\医生科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\复件 门诊_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\库房入出库统计.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\彩色B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\微生物申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\护士统领汇总单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\新农合门诊补偿结算单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\核磁共振申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\检验申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\科室领药出库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\统领发药单据(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\统领发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\肠镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\肺功能申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\脑电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品供应商统计单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品入库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品库存清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品报损出库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品明细帐报表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品期初盘点单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品盘点单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品盘点报告.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品盘点盈亏图表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品空盘点表单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品调价单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品进销存报表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\药品采购计划单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\财务结帐汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\钡餐申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_CT申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_凝血四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_医技化验申请单模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_尿液申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_粪便申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_血液分析申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_输血前四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊个人交款表附表_科室收入.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊交款表汇总模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生中药处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生住院证.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生处方费用明细.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生科室月报表[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生西成药处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊医生非药品处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊执行科室收入统计表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊挂号发票模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_A.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_B.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_C.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_D.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_发票项目.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入报表模板_核算项目.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入月报表[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收入月报表[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收费发票模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收费发票模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊收费员工作量统计报表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊病人费用清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊病人费用统计表模板_B.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊输液卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\门诊退药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>D:\Kakake\蓝风医院信息系统\单机构版\MiniHIS1.2(临澧版)\Utility\report\黑白B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\临床检验申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\介入治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_CT申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_X光申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_凝血四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_尿液申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_粪便申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_血液分析申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_输血前四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发票.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发票_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发票模板_GD.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发票模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发票统计.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院已发药摆药单(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士临时医嘱.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单临时处置治疗单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单化验标本采集单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单服药单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单治疗卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单注射单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单瓶签.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单输液卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士执行单长期处置治疗单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院护士长期医嘱.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院摆药单(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院摆药单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院收入汇总表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院收费收据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院病人费用统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院病人费用统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院科室医生收入统计[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院科室医生收入统计[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院结算交款模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院结算单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院结算明细表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结帐汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结帐结算汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结帐结算汇总1.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结帐结算汇总附表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结帐预交金汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院财务结账发票汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院费用一日清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院费用清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院费用清单_核算.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院费用清单_汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院费用清单_汇总分组.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院退药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院预交金与结算汇总表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\住院预交金交款模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\免疫学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\入库单汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\其他申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\医生收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\医生收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\医生科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\医生科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\复件 门诊_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\库房入出库统计.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\彩色B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\微生物申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\护士统领汇总单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\新农合门诊补偿结算单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\核磁共振申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\检验申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\科室收入[发票分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\科室收入[核算分类]模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\科室领药出库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\统领发药单据(经管).grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\统领发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\肠镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\肺功能申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\脑电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品供应商统计单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品入库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品库存清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品报损出库单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品明细帐报表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品期初盘点单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品盘点单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品盘点报告.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品盘点盈亏图表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品空盘点表单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品调价单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品进销存报表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\药品采购计划单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\财务结帐汇总.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\钡餐申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_CT申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_免疫微生物学申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_凝血四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_医技化验申请单模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_尿液申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_彩色多普勒B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_心电图申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_治疗申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_照片申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_生化申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_病理检查申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_粪便申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_胃镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_血液分析申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_输血前四项申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_造影申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊_鼻咽喉镜申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊个人交款表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊个人交款表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊个人交款表模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊个人交款表附表_科室收入.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊交款表汇总模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生中药处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生住院证.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生处方费用明细.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生科室月报表[[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生科室月报表[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生科室月报表[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生西成药处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊医生非药品处方.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊发药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊执行科室收入统计表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊挂号与收费汇总表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊挂号发票模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_A.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_B.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_C.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_D.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_发票项目.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入报表模板_核算项目.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入月报表[发票项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收入月报表[核算项目].grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收费发票模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收费发票模板_HN.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊收费员工作量统计报表模板.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊病人费用清单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊病人费用统计表模板_B.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊科室医生收入表.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊输液卡.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\门诊退药单据.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+  <Table1>
+    <FileFullName>E:\Medical_Project\蓝云医院信息系统\BlueCloudHIS1.2\Utility\report\黑白B超申请单.grf</FileFullName>
+    <PrinterName />
+  </Table1>
+</NewDataSet>

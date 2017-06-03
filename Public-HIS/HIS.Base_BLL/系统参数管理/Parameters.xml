@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GWI_HIS>
+  <门诊经管>
+    <Parameters  code="001" name="控制是否允许录入POS金额" notes="0-允许；1-不允许" deptid="0">0</Parameters>
+    <Parameters  code="002" name="控制是否允许手工录入医保农合支付金额" notes="0-允许；1-不允许" deptid="0">0</Parameters>
+    <Parameters  code="003" name="发票打印内容显示方式" notes="0-打印明细；1-打印发票项目" deptid="0">0</Parameters>
+    <Parameters  code="004" name="发票打印前预览" notes="0-允许预览；1-不预览" deptid="0">1</Parameters>
+    <Parameters  code="005" name="就诊号最大长度" notes="" deptid="0">12</Parameters>
+    <Parameters  code="006" name="姓名允许长度" notes="" deptid="0">5</Parameters>
+    <Parameters  code="007" name="统计日" notes="" deptid="0">25</Parameters>
+    <Parameters  code="008" name="选项卡是否显示农合补偿比例" notes="0-显示；1-不显示" deptid="0">0</Parameters>
+    <Parameters  code="009" name="划价时是否自动分方" notes="0-不自动；1-自动" deptid="0">1</Parameters>
+    <Parameters  code="010" name="处方有效天数" notes="" deptid="0">15</Parameters>
+    <Parameters  code="011" name="就诊号有效天数" notes="" deptid="0">15</Parameters>
+    <Parameters  code="012" name="挂号的票据使用门诊收费票据" notes="0-不使用，1-使用" deptid="0">0</Parameters>
+    <Parameters  code="013" name="划价时明细项目单价为0时允许输入单价" notes="0-不允许，1-允许" deptid="0">0</Parameters>
+    <Parameters  code="014" name="结算方式" notes="0 - 一张处方一次结算 1 - 多张处方一次结算" deptid="0">0</Parameters>
+    <Parameters  code="015" name="门诊发票号码长度" notes="指示发票号码长度，当系统长度不足时会自动补0，默认8位" deptid="0">8</Parameters>
+    <Parameters  code="016" name="允许部分退费" notes="" deptid="0">0</Parameters>
+    <Parameters  code="017" name="开放门诊医生站处方读取" notes="0-不开放，1-开放" deptid="0">1</Parameters>
+    <Parameters  code="018" name="是否允许修改医生的非药品处方" notes="0-不允许，1-允许" deptid="0">0</Parameters>
+    <Parameters  code="019" name="是否必须强制录入过敏史" notes="0-不控制 1-控制" deptid="0">0</Parameters>
+    <Parameters  code="020" name="四舍五入方式" notes="0-正常的四舍五入进位算法 1- 逢分进位算法" deptid="0">0</Parameters>
+    <Parameters  code="021" name="发票格式" notes="广东省，湖南省等等。。" deptid="0">0</Parameters>
+  </门诊经管>
+
+  <门诊医生站>
+    <Parameters  code="001" name="皮试医嘱项目ID" notes="皮试医嘱项目ID" deptid="0">0</Parameters>
+    <Parameters  code="002" name="皮试用法ID" notes="皮试用法ID" deptid="0">0</Parameters>
+    <Parameters  code="003" name="是否强制控制未皮试和皮试阳性的药品" notes="1：控制；0不控制" deptid="0">0</Parameters>
+    <Parameters  code="004" name="急诊处方时间段" notes="开始时间和结束时间之间用 - 表示时间" deptid="0">00:00-08:00,11:30-14:30,17:30-23:59</Parameters>
+    <Parameters  code="005" name="门诊科室药房对应关系" notes="科室代码和药房代码之间用 - 隔开" deptid="0"></Parameters>
+    <Parameters  code="006" name="打印非药品处方明细还是只打印费用汇" notes="1：打印明细；0：打印汇总" deptid="0">1</Parameters>
+    <Parameters  code="007" name="门诊无号时自动生成的费用" notes="医嘱项目ID之间用,隔开" deptid="0">0</Parameters>
+    <Parameters  code="008" name="门诊医生开处方时是否自动生成用法联" notes="1：自动生成；0：不自动生成" deptid="0">1</Parameters>
+    <Parameters  code="009" name="医技报告接口类型" notes="前面为PACS接口（可选项：华奕）,后面为LIS接口（可选项：华奕）,中间用逗号隔开，没有为空字符，如 ," deptid="0"></Parameters>
+    <Parameters  code="010" name="打印费用清单时需要显示的医嘱项目分" notes="编号之间用逗号隔开" deptid="0">1,2,3,4,5,6</Parameters>
+  </门诊医生站>
+
+  <住院经管>
+    <Parameters  code="001" name="费用清单打印" notes="0:组合项目不打明细|1:组合项目打明细" deptid="0">1</Parameters>
+    <Parameters  code="002" name="划价是否显示库存为零的药品" notes="0:不显示|1:显示|" deptid="0">0</Parameters>
+    <Parameters  code="003" name="费用清单时间方式" notes="0:开方时间|1:记账时间|" deptid="0">1</Parameters>
+    <Parameters  code="004" name="预交金作废权限" notes="0:只能自己操作自己的费用|1:可以操作别人的费用|" deptid="0">0</Parameters>
+    <Parameters  code="005" name="住院发票管理" notes="0:住院管发票|1:住院不管发票|" deptid="0">0</Parameters>
+    <Parameters  code="006" name="结算取消权限" notes="0:只能本人取消本人的结算记录|1:可以|" deptid="0">0</Parameters>
+    <Parameters  code="007" name="发票分类明细配置" notes="0:'30'|1:'50'|2:'18','19'|3:'79'|4:'21','23','24'|5:'12'|6:'13'|" deptid="0">0</Parameters>
+    <Parameters  code="008" name="临床程序只上经管" notes="0:临床程序|1:经管程序|" deptid="0">0</Parameters>
+    <Parameters  code="009" name="入院登记控制哪些必填" notes="0:不必|1:必填|" deptid="0">0</Parameters>
+    <Parameters  code="010" name="转科病人费用清单是否分开打" notes="0:不分开|1:分开|" deptid="0">0</Parameters>
+  </住院经管>
+
+  <住院医生站>
+    <Parameters  code="001" name="住院医生开医嘱能否开库存为0的药品" notes="0=能 1=不能" deptid="0">1</Parameters>
+    <Parameters  code="002" name="住院医生站是否连PACS接口" notes="0=不连 1=连" deptid="0">0</Parameters>
+    <Parameters  code="003" name="住院医生站是否连LIS接口" notes="0=不连 1=连" deptid="0">0</Parameters>
+    <Parameters  code="004" name="开医嘱时限制科室和药房的对应关系" notes="科室和药房之间用-隔开。每组对应关系用,隔开" deptid="0"></Parameters>
+    <Parameters  code="005" name="精神类药品是否可以开在长期医嘱中" notes="0不能开,1能开" deptid="0">0</Parameters>
+    <Parameters  code="006" name="医院是否上医技确费系统" notes="0没有上，1上了" deptid="0">0</Parameters>
+    <Parameters  code="007" name="医技确费是否按项目执行科室确" notes="0＝不按执行科室 1＝按执行科室'" deptid="0">1</Parameters>
+  </住院医生站>
+
+  <住院护士站>
+    <Parameters  code="001" name="未发药是否能够定义出院" notes="0=能 1=不能" deptid="0">1</Parameters>
+    <Parameters  code="002" name="未退药是否能够定义出院" notes="0=能 1=不能" deptid="0">1</Parameters>
+    <Parameters  code="003" name="打印医嘱长嘱内容每行宽度" notes="宽度字符（汉字）个数" deptid="0">16</Parameters>
+    <Parameters  code="004" name="打印医嘱临嘱内容每行宽度" notes="宽度字符（汉字）个数" deptid="0">20</Parameters>
+    <Parameters  code="005" name="打印医嘱每页显示的行数" notes="行数" deptid="0">30</Parameters>
+    <Parameters  code="006" name="查询最近多久出院的患者" notes="时间单位月" deptid="0">6</Parameters>
+    <Parameters  code="007" name="控制是否打印瓶签" notes="0=打印 1=不打印" deptid="0">0</Parameters>
+    <Parameters  code="008" name="明日发送药品模式" notes="0=发送明日非口服药 1=发送明日所有药品" deptid="0">0</Parameters>
+    <Parameters  code="009" name="护士账单录入限制科室和药房的对应关系" notes="科室和药房之间用-隔开。每组对应关系用,隔开" deptid="0"></Parameters>
+  </住院护士站>
+  
+  <药品管理>
+    <公共参数>
+      <Parameters  code="009" name="MANAGETRADEPRICEYF" notes="0不管,1管理" deptid="0">1</Parameters>
+      <Parameters  code="014" name="DISPMODEL" notes="发药模式:0经管发药1统领发药" deptid="0">0</Parameters>
+      <Parameters  code="015" name="XY_PRICEPERCENT" notes="西药利润率(百分比)" deptid="0">15</Parameters>
+      <Parameters  code="016" name="ZCY_PRICEPERCENT" notes="中成药利润率(百分比)" deptid="0">25</Parameters>
+      <Parameters  code="017" name="ZY_PRICEPERCENT" notes="中药利润率(百分比)" deptid="0">20</Parameters>
+      <Parameters  code="018" name="ONLY_PRINT_TROCHE" notes="摆药单只打印口服药品" deptid="0">1</Parameters>
+      <Parameters  code="019" name="ONLY_PRINT_INJECTION" notes="统领单只打印针剂药品" deptid="0">1</Parameters>
+      <Parameters  code="020" name="AUDIT_WHEN_SAVEINSTORE" notes="保存入库单时直接审核" deptid="0">0</Parameters>
+      <Parameters  code="021" name="AUDIT_WHEN_SAVEOUTSTORE" notes="保存出库单时直接审核" deptid="0">0</Parameters>
+    </公共参数>
+    <药剂科室参数>
+      <Parameters  code="006" name="ISCHECKING" notes="0正常,1开始" deptid="-1">0</Parameters>
+      <Parameters  code="008" name="ACCOUNTDAY" notes="月结时间" deptid="-1">25</Parameters>
+      <Parameters  code="010" name="CONTROLSTORE" notes="0不强制控制库存1强制控制库存" deptid="-1">0</Parameters>
+      <Parameters  code="011" name="ALLOWRANGEACCOUNT" notes="0不允许强制平帐1允许强制平帐" deptid="-1">1</Parameters>
+      <Parameters  code="012" name="CHECKACCOUNT_MONTHBALANCE" notes="0月结时不对账1月结时对账" deptid="-1">0</Parameters>
+      <Parameters  code="013" name="ERROR_RANGE" notes="对账误差范围" deptid="-1">1</Parameters>
+    </药剂科室参数>
+  </药品管理>
+</GWI_HIS>
+

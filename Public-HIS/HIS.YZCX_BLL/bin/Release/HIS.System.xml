@@ -1,0 +1,3557 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HIS.System</name>
+    </assembly>
+    <members>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.EntityException">
+            <summary>
+            EntityException 实体控制层异常。在实体层发生的异常都会以EntityException异常抛出。
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.EntityException.#ctor(System.String)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.EntityException.#ctor(System.String,HIS.SYSTEM.PubicBaseClasses.ErrorTypes)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+            <param name="errorType">异常代码</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.EntityException.#ctor(System.Exception)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="e">异常实例</param>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.EntityException.ErrorType">
+            <summary>
+            	返回当前PlExcetpion实例的错误代码(枚举类型)
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.EntityException.ErrorSource">
+            <summary>
+            	返回引起抛出PlExcetpion的Exception。当从PlException无法得到足够的错误信息，
+            	可从这里获得引发异常的原始Exception。
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.IBaseDAL`1">
+            <summary>
+            实体操作接口
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetMaxId">
+            <summary>
+            得到最大ID
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetMaxId(System.String,System.String)">
+            <summary>
+            得到最大ID
+            </summary>
+            <param name="FieldName"></param>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetSum(System.String,System.String)">
+            <summary>
+            根据SQL条件得到指定列的和
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Exists(System.Int32)">
+            <summary>
+            是否存在该记录
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Exists(System.String)">
+            <summary>
+            根据SQL条件判断记录在表中是否存在
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Add(`0)">
+            <summary>
+            增加一条数据
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Add(System.String[],System.String[],System.Boolean[])">
+            <summary>
+            向表中添加一条记录
+            </summary>
+            <param name="filedNames">要插入的字段</param>
+            <param name="filedvalues">对应的值</param>
+            <param name="Isquotation">是否需要单引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Update(`0)">
+            <summary>
+            更新一条数据
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Update(System.String,System.String[])">
+            <summary>
+            根据条件更新指定列的值
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldNameAndValue">列名和值</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Delete(System.Int32)">
+            <summary>
+            删除一条数据
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.Delete(System.String)">
+            <summary>
+            根据SQL条件删除一条记录
+            </summary>
+            <param name="strWhere">SQL语句</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetModel(System.Int32)">
+            <summary>
+            得到一个对象实体
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetModel(System.String)">
+            <summary>
+            根据SQL条件语句得到一个实体
+            </summary>
+            <param name="strWhere">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetFieldValue(System.String,System.String)">
+            <summary>
+            根据条件得到指定列的值
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetList(System.String)">
+            <summary>
+            获得数据列表
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetList(System.String,System.String[])">
+            <summary>
+            根据条件得到一个指定列的datatable
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldName">列参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IBaseDAL`1.GetListArray(System.String)">
+            <summary>
+            获得数据列表（比DataSet效率高，推荐使用）
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.SECURITY_ATTRIBUTES">
+            <summary>
+            SECURITY_ATTRIBUTES 的说明
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SECURITY_ATTRIBUTES.nLength">
+            <summary>nLength</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SECURITY_ATTRIBUTES.lpSecurityDescriptor">
+            <summary>lpSecurityDescriptor</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SECURITY_ATTRIBUTES.bInheritHandle">
+            <summary>bInheritHandle</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ApiFunction">
+            <summary>
+            ApiFunction 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ApiFunction.ERROR_ALREADY_EXISTS">
+            <summary>
+            错误句柄
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.FindWindow(System.String,System.String)">
+            <summary>
+            根据类名或者窗口名称获得句柄
+            </summary>
+            <param name="lpClassName">类名</param>
+            <param name="lpWindowName">窗口名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.CloseWindow(System.IntPtr)">
+            <summary>
+            根据句柄关闭窗口
+            </summary>
+            <param name="hwnd">句柄</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.GetLastError">
+            <summary>
+            获得错误信息标识
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.CreateMutex(HIS.SYSTEM.PubicBaseClasses.SECURITY_ATTRIBUTES,System.Boolean,System.String)">
+            <summary>
+            创建一个句柄
+            </summary>
+            <param name="lpMutexAttributes"></param>
+            <param name="bInitialOwner"></param>
+            <param name="lpName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.ReleaseMutex(System.IntPtr)">
+            <summary>
+            释放指定的句柄
+            </summary>
+            <param name="hMutex">句柄</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="hwnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.PostMessage(System.IntPtr,System.Int32,System.Int64,System.Int64)">
+            <summary>
+            寄送消息
+            </summary>
+            <param name="hWnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.UpdateWindow(System.IntPtr)">
+            <summary>
+            更新消息
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.GetIniString(System.String,System.String,System.String)">
+            <summary>
+            读取INI文件
+            </summary>
+            <param name="lpApplicationName">节名</param>
+            <param name="lpKeyName">关键字</param>
+            <param name="lpFileName">INI文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.WriteIniString(System.String,System.String,System.String,System.String)">
+            <summary>
+            写Ini文件
+            </summary>
+            <param name="lpApplicationName">节名</param>
+            <param name="lpKeyName">关键字</param>
+            <param name="lpString">值</param>
+            <param name="lpFileName">INI文件路径</param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.SelfSrcoll(System.IntPtr)">
+            <summary>
+            自动滚屏
+            </summary>
+            <param name="handle">句柄</param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.ActivateWindow(System.String)">
+            <summary>
+            激活指定名称的窗体
+            </summary>
+            <param name="windowText"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.CloseWindow(System.String)">
+            <summary>
+            关闭指定名称的窗体
+            </summary>
+            <param name="windowText"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.DataTableToObject(System.Data.DataTable,System.Int32,System.Object)">
+            <summary>
+            DataTable 的指定 行 映射 到 对象
+            </summary>
+            <param name="dt">表</param>
+            <param name="Rowindex">行数</param>
+            <param name="obj">对象</param>
+            <returns>返回结果对象</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.ObjectToObj(System.Object,System.Object)">
+            <summary>
+            相同对象属性的值拷贝
+            </summary>
+            <param name="in_obj">要拷贝的对象</param>
+            <param name="out_obj">拷贝出的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.ApiFunction.ObjToDataTable(System.Collections.IList)">
+            <summary>
+             将集合类转换成DataTable
+             </summary>
+             <param name="list">集合</param>
+             <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.BaseDAL`2">
+            <summary>
+            数据操作基类
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="W"></typeparam>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.BaseDAL`2._OleDB">
+            <summary>
+            数据访问对象
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.BaseDAL`2.GetMaxId(System.String)">
+            <summary>
+            得到最大自增长ID
+            </summary>
+            <param name="strsql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.BaseDAL`2.Exists(System.String)">
+            <summary>
+            判断是否存在记录
+            </summary>
+            <param name="strsql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.BaseDAL`2.Add(System.String)">
+            <summary>
+            新增一条数据
+            </summary>
+            <param name="strsql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer">
+            <summary>
+            MsSqlServer 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase">
+            <summary>
+            RelationalDatabase 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase._vendor">
+            <summary>
+            数据库平台
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.connection">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.transaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.isInTransaction">
+            <summary>
+            是否在事务中	
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.cnnString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.#ctor">
+            <summary>
+            关系型数据库访问对象
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.#ctor(System.String)">
+            <summary>
+            根据数据库名称构造关系型数据库访问对象
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetCommand">
+            <summary>
+            获取IDbCommand对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Open">
+            <summary>
+            打开数据库
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Close">
+            <summary>
+            关闭数据库
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Dispose">
+            <summary>
+            释放连接资源
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.BeginTransaction">
+            <summary>
+            启动一个事务
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.CommitTransaction">
+            <summary>
+            提交一个事务
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.RollbackTransaction">
+            <summary>
+            回滚一个事务
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetCopy">
+            <summary>
+            返回一个RelationalDatabase 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常对象</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Initialize">
+            <summary>
+            数据库初始化
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Initialize(System.String)">
+            <summary>
+            数据库初始化
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetStringParameter(System.String)">
+            <summary>
+            获取参数的字符串形式
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GetSqlValue(System.Object)">
+            <summary>
+            根据属性值得到正确的Sql值
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.And">
+            <summary>
+            获得AND字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Distinct(System.String)">
+            <summary>
+            distinct用法
+            </summary>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ASC">
+            <summary>
+            获得ASC字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Between">
+            <summary>
+            获得BETWEEN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DESC(System.String[])">
+            <summary>
+            获得DESC字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DESC">
+            <summary>
+            DESC
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.EuqalTo">
+            <summary>
+            获得=字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Add(System.String[])">
+            <summary>
+            求和
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Subtract(System.String[])">
+            <summary>
+            减法
+            </summary>
+            <param name="fieldnames">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Multiply(System.String[])">
+            <summary>
+            乘法
+            </summary>
+            <param name="fieldnames">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Division(System.String[])">
+            <summary>
+            除法
+            </summary>
+            <param name="fieldnames">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ForUpdate">
+            <summary>
+            获得FOR UPDATE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.InsertInto(System.String,System.String[])">
+            <summary>
+            插入语法
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Values(System.String[])">
+            <summary>
+            插入语法填充值
+            </summary>
+            <param name="fieldname">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.From">
+            <summary>
+            获得FROM字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Having">
+            <summary>
+            获得HAVING字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.In">
+            <summary>
+            获得IN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Is">
+            <summary>
+            获得IS字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Like">
+            <summary>
+            获得LIKE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Not">
+            <summary>
+            获得NOT字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Or">
+            <summary>
+            获得OR字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.OrderBy">
+            <summary>
+            获得ORDER BY字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.OrderBy(System.String[])">
+            <summary>
+            获得ORDER BY字符串
+            </summary>
+            <param name="filedname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GroupBy">
+            <summary>
+            获得Group by 字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GroupBy(System.String[])">
+            <summary>
+            获得Group by 字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.InnerJoin">
+            <summary>
+            获得innerjoin字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.LeftJoin">
+            <summary>
+            获得LEFT JOIN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.LeftOuterJoin">
+            <summary>
+            获得LEFT Outer JOIN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.RightJoin">
+            <summary>
+            获得Right JOIN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.UnionAll">
+            <summary>
+            Union all字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Union">
+            <summary>
+            Union字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ON">
+            <summary>
+            左外连接ON
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ON(System.String,System.String)">
+            <summary>
+            左外连接ON
+            </summary>
+            <param name="fieldnameA">字段名</param>
+            <param name="fieldnameB">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.When">
+            <summary>
+            获得When字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Then">
+            <summary>
+            获得then字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Else">
+            <summary>
+            获得else字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Sum(System.String,System.String)">
+            <summary>
+            合计
+            </summary>
+            <param name="FieldName">需要合计的字段名</param>
+            <param name="NewFieldName">合计后的新字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Count(System.String,System.String)">
+            <summary>
+            数目
+            </summary>
+            <param name="FieldName">需要计算的字段名</param>
+            <param name="NewFieldName">计算后的新字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ChildTable(System.String,System.String,System.String,System.String[])">
+            <summary>
+            得到子查询语句
+            </summary>
+            <param name="TableName">表名</param>
+            <param name="NewTableName">新别名</param>
+            <param name="strWhere">条件语句</param>
+            <param name="FieldName">查询字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Table(System.String,System.String,System.String,System.String[])">
+            <summary>
+            得到查询语句
+            </summary>
+            
+            <param name="TableName">表名</param>
+            <param name="BMTableName">别名（没有别名默认为“”）</param>
+            <param name="strWhere">Where条件语句</param>
+            <param name="FieldName">查询字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.FiledNameBM(System.String,System.String)">
+            <summary>
+            字段加别名
+            </summary>
+            <param name="filedname">字段名</param>
+            <param name="bmname">字段别名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.TableNameBM(System.String,System.String)">
+            <summary>
+            表加别名
+            </summary>
+            <param name="tablename">表名</param>
+            <param name="bmname">别名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.TableName(System.String[])">
+            <summary>
+            多表合并（对于多表连查的语句）
+            </summary>
+            <param name="tablename">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.FETCH">
+            <summary>
+            取数据集的第一行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.CASE(System.String,System.String,System.String[])">
+            <summary>
+            case用法
+            </summary>
+            <param name="FieldName">字段名</param>
+            <param name="NewFieldName">字段别名</param>
+            <param name="strWhen">when条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.CASEWhen(System.String,System.String[])">
+            <summary>
+            case用法
+            </summary>
+            <param name="NewFieldName">字段别名</param>
+            <param name="strWhen">when条件</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.NotEqualTo”忽略有格式错误的 XML 注释 -->
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GreaterThan">
+            <summary>
+            大于
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.GreaterThanAndEqualTo">
+            <summary>
+            大于等于(>=)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.LessThan">
+            <summary>
+            小于
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.LessThanAndEqualTo">
+            <summary>
+            小于等于
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.DBConvert(System.String,System.String)">
+            <summary>
+            类型转换
+            </summary>
+            <param name="fieldname"></param>
+            <param name="dbtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Date(System.String)">
+            <summary>
+            取日期
+            </summary>
+            <param name="fieldname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Mod(System.String,System.String)">
+            <summary>
+            MOD函数
+            </summary>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Max(System.String)">
+            <summary>
+            Max函数
+            </summary>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Min(System.String)">
+            <summary>
+            Min函数
+            </summary>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Value(System.String,System.String)">
+            <summary>
+            Value函数
+            </summary>
+            <param name="fieldname">字段名</param>
+            <param name="typevalue">字段类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ABS(System.String)">
+            <summary>
+            ABS函数
+            </summary>
+            <param name="fieldname">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.UCASE(System.String)">
+            <summary>
+            UCASE函数
+            </summary>
+            <param name="fieldname"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.ConnectionString">
+            <summary>
+            返回数据库连接字符串
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Name">
+            <summary>
+            返回或设置数据库名
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.IsInTransaction">
+            <summary>
+            返回是否处于事务中
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.Vendor">
+            <summary>
+            返回或设置数据库平台名
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.QuotationMarksStart">
+            <summary>
+            返回或设置左边引号
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase.QuotationMarksEnd">
+            <summary>
+            返回或设置右边引号
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.#ctor">
+            <summary>
+            构造一MsSqlServer
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.Initialize">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MsSqlServer.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.EntityConfig">
+            <summary>
+            实体配置类
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.FrameWorkType">
+            <summary>
+            true为bs，false为cs 平台
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.DbType">
+            <summary>
+            保存数据库类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.TableName_">
+            <summary>
+            数据库表名前缀
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.WorkID">
+            <summary>
+            工作组ID
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.ConnStr">
+            <summary>
+            连接数据库语句
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.EntityNamespace">
+            <summary>
+            实体默认命名空间
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.EntityFileName">
+            <summary>
+            实体文件名
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.EntityAssmlyName">
+            <summary>
+            实体程序集路径
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.EntityXMLRoot">
+            <summary>
+            实体XML文件根节点名
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.EntityXMLTable">
+            <summary>
+            实体XML文件表名
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.Key">
+            <summary>
+            主键字段字符
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.None">
+            <summary>
+            外键字段字符
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.String">
+            <summary>
+            字符字段类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.DateTime">
+            <summary>
+            时间字段类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.Int32">
+            <summary>
+            int字段类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.EntityConfig.dal_m">
+            <summary>
+            XML配置映射对象
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.ReadXML">
+            <summary>
+            读取XML配置文件
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.BindTableName(System.String)">
+            <summary>
+            绑定Dal语句所需要的表名和字段名
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.BindTableName_DAL(System.String)">
+            <summary>
+            绑定Dal语句所需要的表名和字段名
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.BindConfig">
+            <summary>
+            绑定配置参数
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.BindConfig_DAL">
+            <summary>
+            绑定配置参数
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.EntityConfig.GetDefaultCnnString">
+            <summary>
+            取得默认连接字符串
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.ApplicationDAL`1">
+            <summary>
+            数据层操作类
+            </summary>
+            <typeparam name="T">实体对象名</typeparam>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.IDAL_ReaderBind`1">
+            <summary>
+            实体对象绑定接口
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.IDAL_ReaderBind`1.ReaderBind(System.Data.IDataReader)">
+            <summary>
+            对象实体绑定数据
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetMaxId">
+            <summary>
+            得到主键自增长ID最大数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetMaxId(System.String,System.String)">
+            <summary>
+            得到指定列的最大数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetSum(System.String,System.String)">
+            <summary>
+            根据SQL条件得到指定列的和
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Exists(System.Int32)">
+            <summary>
+            判断该ID的记录在表中是否存在
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Exists(System.String)">
+            <summary>
+            根据SQL条件判断记录在表中是否存在
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Add(`0)">
+            <summary>
+            向表中添加一条记录
+            </summary>
+            <param name="model">传入的实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Add(System.String[],System.String[],System.Boolean[])">
+            <summary>
+            向表中添加一条记录
+            </summary>
+            <param name="filedNames">要插入的字段</param>
+            <param name="filedvalues">对应的值</param>
+            <param name="Isquotation">是否需要单引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Update(`0)">
+            <summary>
+            修改数据
+            </summary>
+            <param name="model">传入的实体</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Update(System.String,System.String[])">
+            <summary>
+            根据条件更新指定列的值
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldNameAndValue">列名和值</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Delete(System.Int32)">
+            <summary>
+            根据ID删除一条记录
+            </summary>
+            <param name="ID">ID</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.Delete(System.String)">
+            <summary>
+            根据SQL条件删除一条记录
+            </summary>
+            <param name="strWhere">SQL语句</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetModel(System.Int32)">
+            <summary>
+            根据ID得到一个实体
+            </summary>
+            <param name="ID">唯一ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetModel(System.String)">
+            <summary>
+            根据SQL条件语句得到一个实体
+            </summary>
+            <param name="strWhere">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetFieldValue(System.String,System.String)">
+            <summary>
+            根据条件得到指定列的值
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetList(System.String)">
+            <summary>
+            根据条件得到一个datatable
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetList(System.String,System.String[])">
+            <summary>
+            根据条件得到一个指定列的datatable
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldName">列参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.GetListArray(System.String)">
+            <summary>
+            根据条件得到list实体集合
+            </summary>
+            <param name="strWhere">sql条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL`1.ReaderBind(System.Data.IDataReader)">
+            <summary>
+            绑定实体
+            </summary>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.ApplicationDAL`1.Dal_Model">
+            <summary>
+            XML对象集合
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.ApplicationDAL_GB`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetMaxId">
+            <summary>
+            得到主键自增长ID最大数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetMaxId(System.String,System.String)">
+            <summary>
+            得到指定列的最大数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetSum(System.String,System.String)">
+            <summary>
+            根据SQL条件得到指定列的和
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Exists(System.Int32)">
+            <summary>
+            判断该ID的记录在表中是否存在
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Exists(System.String)">
+            <summary>
+            根据SQL条件判断记录在表中是否存在
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Add(`0)">
+            <summary>
+            向表中添加一条记录
+            </summary>
+            <param name="model">传入的实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Add(System.String[],System.String[],System.Boolean[])">
+            <summary>
+            向表中添加一条记录
+            </summary>
+            <param name="filedNames">要插入的字段</param>
+            <param name="filedvalues">对应的值</param>
+            <param name="Isquotation">是否需要单引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Update(`0)">
+            <summary>
+            修改数据
+            </summary>
+            <param name="model">传入的实体</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Update(System.String,System.String[])">
+            <summary>
+            根据条件更新指定列的值
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldNameAndValue">列名和值</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Delete(System.Int32)">
+            <summary>
+            根据ID删除一条记录
+            </summary>
+            <param name="ID">ID</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Delete(System.String)">
+            <summary>
+            根据SQL条件删除一条记录
+            </summary>
+            <param name="strWhere">SQL语句</param>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetModel(System.Int32)">
+            <summary>
+            根据ID得到一个实体
+            </summary>
+            <param name="ID">唯一ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetModel(System.String)">
+            <summary>
+            根据SQL条件语句得到一个实体
+            </summary>
+            <param name="strWhere">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetFieldValue(System.String,System.String)">
+            <summary>
+            根据条件得到指定列的值
+            </summary>
+            <param name="FieldName">列名</param>
+            <param name="strWhere">SQL条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetList(System.String)">
+            <summary>
+            根据条件得到一个datatable
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetList(System.String,System.String[])">
+            <summary>
+            根据条件得到一个指定列的datatable
+            </summary>
+            <param name="strWhere">SQL条件</param>
+            <param name="FieldName">列参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.GetListArray(System.String)">
+            <summary>
+            根据条件得到list实体集合
+            </summary>
+            <param name="strWhere">sql条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.ApplicationDAL_GB`1.ReaderBind(System.Data.IDataReader)">
+            <summary>
+            绑定实体
+            </summary>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.ApplicationDAL_GB`1.Dal_Model">
+            <summary>
+            XML对象集合
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.DAL_Model">
+            <summary>
+            映射XML类
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.type">
+            <summary>
+            类型（表、视图）
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.tcode">
+            <summary>
+            表的代码
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.IsBG">
+            <summary>
+            是否为国标
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.FieldName">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.FieldKey">
+            <summary>
+            字段是否主键
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.FieldType">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.DAL_Model.ccode">
+            <summary>
+            字段代码
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData">
+            <summary>
+            获取医院基本信息
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.Core.BaseBLL.Static_OleDB">
+            <summary>
+            保存数据库对象
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.Core.BaseBLL.oleDb">
+            <summary>
+            得到数据库对象
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetUserName(System.String)">
+            <summary>
+            获得员工姓名
+            </summary>
+            <param name="EmpID"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetDeptName(System.String)">
+            <summary>
+            获得科室名称
+            </summary>
+            <param name="DeptID"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetUserData">
+            <summary>
+            得到说所有用户数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetUserData(HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.EmpType)">
+            <summary>
+            得到说所有用户数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetDeptData">
+            <summary>
+            得到所有科室数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetDeptData(HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.DeptType,HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.DeptType2)">
+            <summary>
+            得到有关科室数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetPatName(System.Int32)">
+            <summary>
+            根据病人ID得到病人的名字
+            </summary>
+            <param name="PatID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetPatDept(System.Int32)">
+            <summary>
+            根据病人ID得到病人的在院科室
+            </summary>
+            <param name="PatListID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetCureNo(System.Int32)">
+            <summary>
+            根据病人ID得到住院号
+            </summary>
+            <param name="PatListID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetDisease">
+            <summary>
+            得到所有诊断
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.GetNationco">
+            <summary>
+            得到所有民族
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.DeptType">
+            <summary>
+            科室类型
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.DeptType2">
+            <summary>
+            科室类型
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.BussinessLogicLayer.Classes.BaseData.EmpType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.Money">
+            <summary>
+            本类实现阿拉伯数字到大写中文的转换
+            该类没有对非法数字进行判别
+            请调用NumToChn方法
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Money.#ctor">
+            <summary>
+            金额类
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Money.NumToChn(System.String)">
+            <summary>
+            将阿拉伯小写金额转换成大写金额
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ItemEx">
+            <summary>
+            项目名称与项目值
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemEx.Text">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemEx.Value">
+            <summary>
+            项目值
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ParameterEx">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ParameterEx.Text">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ParameterEx.Value">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ParameterEx.DataType">
+            <summary>
+            参数数据类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ParameterEx.ParaDirection">
+            <summary>
+            参数传入传出方向
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ParameterEx.ParaSize">
+            <summary>
+            参数大小
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ObjectInfo">
+            <summary>
+            对象信息
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ObjectInfo.Name">
+            <summary>
+            对象名称
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ObjectInfo.Text">
+            <summary>
+            对象描述
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ObjectInfo.Remark">
+            <summary>
+            对象备注
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.TableField">
+            <summary>
+             数据库表字段信息
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.DatabaseName">
+            <summary>
+            数据库字段名称
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.ChineseName">
+            <summary>
+            显示列标题
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.ViewWidth">
+            <summary>
+            显示宽度
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsUniqueKey">
+            <summary>
+            是否为唯一索引字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.FieldType">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.DefaultValue">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsDeleteField">
+            <summary>
+            是否为删除标记字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsAutoIncrease">
+            <summary>
+            是否自动增长字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.ShowCardSql">
+            <summary>
+            弹出ShowCard选项卡SQL语句
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsPYField">
+            <summary>
+            拼音码字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsWBField">
+            <summary>
+            五笔码字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsNameField">
+            <summary>
+            需要生成五笔拼音的字段
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.UnAllowRepeat">
+            <summary>
+            是否不允许重复
+            </summary>	
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.TableField.IsNoNull">
+            <summary>
+            是否不允许为空数据
+            </summary>	
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.Item">
+            <summary>
+            Item 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Item.#ctor">
+            <summary>
+            构造一空Item对象
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Item.ToString">
+            <summary>
+            返回Item对象的Text
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Item.Text">
+            <summary>
+            设置或者返回Item对象的Text
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Item.Value">
+            <summary>
+            设置或者返回Item对象的Value
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.OleDB">
+            <summary>
+            OleDB 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.OleDB.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.#ctor">
+            <summary>
+            构造一OleDB
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.Initialize">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetDefaultCnnString">
+            <summary>
+            取得默认连接字符串
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.OleDB.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.Core.BindEntity`1">
+            <summary>
+            操作实体对象类
+            </summary>
+            <typeparam name="T">实体对象名</typeparam>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.BindEntity`1.CreateInstanceDAL(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase)">
+            <summary>
+            创建对个数据操作对象
+            </summary>
+            <param name="oleDb">数据库访问对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.Core.BindEntity`1.CreateInstanceDAL(HIS.SYSTEM.DatabaseAccessLayer.RelationalDatabase,System.String)">
+            <summary>
+            创建对个数据操作对象
+            </summary>
+            <param name="oleDb">数据库访问对象</param>
+            <param name="tableName">数据库表名</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.Constant">
+            <summary>
+            Constant 的摘要说明。
+            常量
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Constant.ApplicationDirectory">
+            <summary>
+            项目路径
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Constant.XYBigItemCode">
+            <summary>
+            西药大项目代码
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Constant.CYBigItemCode">
+            <summary>
+            中成药药大项目代码
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Constant.ZYBigItemCode">
+            <summary>
+            中草药大项目代码
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CustomDirectory">
+            <summary>
+            用户自定义可改写路径
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CustomImeMode">
+            <summary>
+            输入法2005-07-08值类型改为String
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CustomSearchType">
+            <summary>
+            过滤方式
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CustomFilterType">
+            <summary>
+            过滤字段
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.LoadNavigation">
+            <summary>
+             启动时是否加载导航器
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.LoadBrowserStyle">
+            <summary>
+             启动时是否为浏览器模式
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.BackGroundPicturePath">
+            <summary>
+             背景图片路径
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.ComPort">
+            <summary>
+             报价器COM端口
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CInvoicePrinterName">
+            <summary>
+             发票打印机
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.CReportPrinterName">
+            <summary>
+             报表打印机
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.AcceptMessage">
+            <summary>
+             运行过程中是否接收消息
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.NewInFormation">
+            <summary>
+             是否有新通知
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.NewMessage">
+            <summary>
+             是否有新消息
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.Constant.RegisterCode">
+            <summary>
+            软件注册码
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.AgeUnit">
+            <summary>
+            年龄单位
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.AgeUnit.岁">
+            <summary>岁</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.AgeUnit.月">
+            <summary>月</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.AgeUnit.天">
+            <summary>天</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.AgeUnit.小时">
+            <summary>小时</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.CImeMode">
+            <summary>
+            自定义默认输入法
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CImeMode.拼音输入法">
+            <summary>拼音输入法</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CImeMode.五笔输入法">
+            <summary>五笔输入法</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.SearchType">
+            <summary>
+            查找类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SearchType.前导相似">
+            <summary>前导相似</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SearchType.精确定位">
+            <summary>精确定位</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SearchType.模糊查询">
+            <summary>模糊查询</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.FilterType">
+            <summary>
+            过滤类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.FilterType.五笔">
+            <summary>五笔</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.FilterType.拼音">
+            <summary>拼音</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.FilterType.数字">
+            <summary>数字</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.FilterType.自编">
+            <summary>自编</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.FilterType.智能">
+            <summary>智能</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus">
+            <summary>
+            处方记录状态
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.全部记录">
+            <summary>全部记录</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.录入后状态">
+            <summary>录入后状态</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.收费已读取">
+            <summary>收费已读取</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.划价处取消">
+            <summary>划价处取消</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.医技确认">
+            <summary>医技确认</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.医技作废">
+            <summary>医技作废</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.读取未收费">
+            <summary>读取未收费</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescRecordStatus.医生站取消">
+            <summary>医生站取消</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.PatientStatus">
+            <summary>
+            病人就诊状态
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.未分诊">
+            <summary>未分诊</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.分诊">
+            <summary>分诊</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.就诊">
+            <summary>就诊</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.就诊结束">
+            <summary>就诊结束</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.转诊中">
+            <summary>转诊中</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PatientStatus.全部">
+            <summary>全部状态</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable">
+            <summary>
+            基本表查询类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_JSFLK">
+            <summary>结算类别</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_USAGEDICTION">
+            <summary>用法</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_FREQUENCY">
+            <summary>频次</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DEPT_PROPERTY">
+            <summary>员工科室</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_EMPLOYEE_PROPERTY">
+            <summary>员工信息</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_MARITALS">
+            <summary>婚姻状态</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_PROFESSION">
+            <summary>职业</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DISEASE_XYZD">
+            <summary>西医诊断</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DISEASE_ZYZD">
+            <summary>中医诊断</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DISEASE_ZX">
+            <summary>证型</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_PARAM_APPENDDESC">
+            <summary>医技项目开具附加说明</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DEPT_PROPERTY_JC">
+            <summary>检查科室</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DEPT_PROPERTY_HY">
+            <summary>化验科室</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_RPTPARA_TYPE">
+            <summary>报表参数类别</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_GROUP">
+            <summary>操作人员组</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DOCTOR">
+            <summary>医生</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DEPT_PROPERTY_PRESC">
+            <summary> 临床科室（可以开处方的科室）</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_ENTRUST">
+            <summary>嘱托</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.YP_YJKS">
+            <summary>药剂科室</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectBaseTable.BASE_DISEASE_QBZD">
+            <summary>全部诊断（包括中医诊断与西医诊断）</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.PrescModuleLevel">
+            <summary>
+            处方模板级别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescModuleLevel.院级">
+            <summary>院级</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescModuleLevel.科室级">
+            <summary>科室级</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.PrescModuleLevel.个人级">
+            <summary>个人级</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.DrugItemID">
+            <summary>
+            药品项目类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DrugItemID.XY_ID">
+            <summary>西药ID</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DrugItemID.CY_ID">
+            <summary>成药ID</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DrugItemID.ZY_ID">
+            <summary>中药ID</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ItemPrintType">
+            <summary>
+            医技申请项目打印类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.病理">
+            <summary>病理</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.CT">
+            <summary>CT</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.照片">
+            <summary>照片</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.介入治疗">
+            <summary>介入治疗</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.造影">
+            <summary>造影</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.钡餐">
+            <summary>钡餐</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.肠镜">
+            <summary>肠镜</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.胃镜">
+            <summary>胃镜</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.黑白B超">
+            <summary>黑白B超</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.彩色B超">
+            <summary>彩色B超</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.心电图">
+            <summary>心电图</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.肺功能">
+            <summary>肺功能</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.脑电图">
+            <summary>脑电图</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.多普勒">
+            <summary>多普勒</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ItemPrintType.未知">
+            <summary>未知</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.WindowType">
+            <summary>
+            窗口类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.WindowType.收费窗口">
+            <summary>收费窗口</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.WindowType.配药窗口">
+            <summary>配药窗口</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.WindowType.发药窗口">
+            <summary>发药窗口</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ReportParaType">
+            <summary>
+            报表参数类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ReportParaType.日期型">
+            <summary>日期型</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ReportParaType.日期时间型">
+            <summary>日期时间型</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ReportParaType.数值型">
+            <summary>数值型</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ReportParaType.字符型">
+            <summary>字符型</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.UnitType">
+            <summary>
+            药品单位类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.UnitType.含量单位">
+            <summary>含量单位</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.UnitType.包装单位">
+            <summary>包装单位</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.UnitType.药库单位">
+            <summary>药库单位</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.UnitType.药房单位">
+            <summary>药房单位</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.EmployeeType">
+            <summary>
+            人员类型
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.DatabaseType">
+            <summary>
+            数据库类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.UnKnown">
+            <summary>未指定数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.IbmDb2">
+            <summary>IBMDB2数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.SqlServer2000">
+            <summary>SqlServer2000数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.SqlServer2005">
+            <summary>SqlServer2005数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.MsAccess">
+            <summary>Access数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.MySQL">
+            <summary>MySQL数据库</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.DatabaseType.Oracle">
+            <summary>Oracle数据库</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.CardinalityTypes">
+            <summary>
+            CardinalityTypes 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CardinalityTypes.None">
+            <summary>None</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CardinalityTypes.OneToOne">
+            <summary>OneToOne</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CardinalityTypes.OneToMany">
+            <summary>OneToMany</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ActionTypes">
+            <summary>
+            	ActionTypes 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ActionTypes.InsertCommand">
+            <summary>InsertCommand</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ActionTypes.SelectCommand">
+            <summary>SelectCommand</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ActionTypes.UpdateCommand">
+            <summary>UpdateCommand</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ActionTypes.DeleteCommand">
+            <summary>DeleteCommand</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ActionTypes.PesistentCriteria">
+            <summary>处理标准</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ColumnKeyTypes">
+            <summary>
+            	ColumnKeyTypes 数据表Column的键类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ColumnKeyTypes.NoneKey">
+            <summary>不是键</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ColumnKeyTypes.PrimaryKey">
+            <summary>主键</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ColumnKeyTypes.ForeignKey">
+            <summary>外键</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.ErrorTypes">
+            <summary>
+            	实体层错误类型
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.FormatException">
+            <summary>格式错误</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.NotFound">
+            <summary>未发现</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.XmlError">
+            <summary>Xml文件错误</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.Unknown">
+            <summary>未知错误 </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.DatabaseUnknownError">
+            <summary>数据库未处理错误</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.NotUnique">
+            <summary>数据不唯一，原因可能是标识该条记录的主键、索引重复</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.DataTooLong">
+            <summary>数据过长</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.NotAllowStringEmpty">
+            <summary>字符串不能为零长度</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.NotAllowDataNull">
+            <summary>数据不能为空</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.DataTypeNotMatch">
+            <summary>数据类型不匹配</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.AutoValueOn">
+            <summary>自动产生值，不能指定</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.UpdateFail">
+            <summary>更新失败，原因可能是数据已被删除，或则数据被其他人修改</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.RestrictError">
+            <summary>由于约束机制，导致的错误</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.ErrorTypes.PesistentError">
+            <summary>实体层一般错误 </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.SelectionTypes">
+            <summary>
+            查询类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.EqualTo">
+            <summary> 等于</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.GreaterThan">
+            <summary>大于 </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.GreaterThanAndEqualTo">
+            <summary>大于或等于</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.NotEqualTo">
+            <summary>不等于</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.LessThan">
+            <summary>小于</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.LessThanAndEqualTo">
+            <summary>小于或等于</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.Match">
+            <summary>LIKE %..%</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.MatchPrefix">
+            <summary> LIKE %...</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SelectionTypes.In">
+            <summary>IN	</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.CriteriaTypes">
+            <summary>
+            CriteriaTypes说明
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CriteriaTypes.Retrive">
+            <summary>RetrieveCritera</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CriteriaTypes.Delete">
+            <summary>DeleteCriteria</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.CriteriaTypes.Update">
+            <summary>UpdateCriteria</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes">
+            <summary>
+            SQL值类别
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.PrototypeString">
+            <summary>字符串型</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.SimpleQuotesString">
+            <summary>'xxxx'型的字符串</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.String">
+            <summary>String</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.BoolToString">
+            <summary>BoolToString</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.BoolToInterger">
+            <summary>BoolToInterger</summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.SqlValueTypes.NotSupport">
+            <summary> NotSupport</summary>
+        </member>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.MySql">
+            <summary>
+            OleDB 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.DatabaseAccessLayer.MySql.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.#ctor">
+            <summary>
+            构造一OleDB
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.Initialize">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetDefaultCnnString">
+            <summary>
+            取得默认连接字符串
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.MySql.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker">
+            <summary>
+            工作组类(医疗机构)
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.GetWorker(System.Int64)">
+            <summary>
+            根据Wordid得到一个对象
+            </summary>
+            <param name="workid"></param>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.workID">
+            <summary>
+            医疗机构ID
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.WorkNo">
+            <summary>
+            医疗机构编码
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.WorkName">
+            <summary>
+            医疗机构名称
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.TableName">
+            <summary>
+            多表表头名称
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.IsCryp">
+            <summary>
+            是否启用加密（true加密）
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.PassLength">
+            <summary>
+            修改密码最小长度
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.PassBack">
+            <summary>
+            是否恢复初始密码
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.BussinessLogicLayer.Classes.Worker.RegKey">
+            <summary>
+            注册码
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.XcConvert">
+            <summary>
+            Convert 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcConvert.IsNull(System.Object,System.String)">
+            <summary>
+            将Null值转换为指定值
+            </summary>
+            <param name="obj">待判断的值</param>
+            <param name="nValue">指定值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcConvert.IsNumeric(System.String)">
+             <summary>
+            判断输入字符串是否为数字
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcConvert.IsInteger(System.String)">
+             <summary>
+            判断输入字符串是否为整数
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.Crypto">
+            <summary>
+            Crypto 的摘要说明。
+            采用Sington模式，系统中只能有一个副本
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Instance">
+            <summary>
+            获取Crypto实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Cryp(System.String)">
+            <summary>
+            对明文进行加密，返回加密后的密文 
+            </summary>
+            <param name="source">密码明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.UnCryp(System.String)">
+            <summary>
+            对密文进行解密，返回明文
+            </summary>
+            <param name="cryptograph">密码密文</param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.GetLegalKey">
+            <summary>
+            获得初始Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.GetLegalKey(System.String)">
+            <summary>
+            获得初始Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.GetLegalIV">
+            <summary>
+            获得初始向量IV
+            </summary>
+            <returns>初试向量IV</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.GetLegalIV(System.String)">
+            <summary>
+            获得初始向量IV
+            </summary>
+            <param name="iv"></param>
+            <returns>初试向量IV</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Encrypto(System.String)">
+            <summary>
+            加密方法
+            </summary>
+            <param name="Source">待加密的串</param>
+            <returns>经过加密的串</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Decrypto(System.String)">
+            <summary>
+            解密方法
+            </summary>
+            <param name="Source">待解密的串</param>
+            <returns>经过解密的串</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Encrypto(System.String,System.String)">
+            <summary>
+            加密方法
+            </summary>
+            <param name="Source">待加密的串</param>
+            <param name="Key"></param>
+            <returns>经过加密的串</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Crypto.Decrypto(System.String,System.String)">
+            <summary>
+            解密方法
+            </summary>
+            <param name="Source">待解密的串</param>
+            <param name="Key"></param>
+            <param name="IV"></param>
+            <returns>经过解密的串</returns>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.XcDate">
+            <summary>
+            ServerDate 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcDate.#ctor">
+            <summary>
+            自定义时间类
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcDate.AgeToDate(HIS.SYSTEM.PubicBaseClasses.Age)">
+            <summary>
+            把年龄转换成日期
+            </summary>
+            <param name="age"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcDate.DateToAge(System.DateTime)">
+            <summary>
+            把日期转换成年龄
+            </summary>
+            <param name="birthday"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcDate.SetSystemTime(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+            <summary>
+            设置本机系统时间
+            </summary>
+            <param name="wYear">年</param>
+            <param name="wMonth">月</param>
+            <param name="wDay">日</param>
+            <param name="wHour">小时</param>
+            <param name="wMinute">分钟</param>
+            <param name="wSecond">秒</param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.XcDate.SetSystemTime(System.DateTime)">
+            <summary>
+            设置本机系统时间
+            </summary>
+            <param name="dtime">要设置的时间</param>
+        </member>
+        <member name="P:HIS.SYSTEM.PubicBaseClasses.XcDate.ServerDateTime">
+            <summary>
+            取得服务器时间（DB2数据库服务器）
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.DatabaseAccessLayer.DALException">
+            <summary>
+            数据层异常类
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.DALException.#ctor(System.String)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.DALException.#ctor(System.String,System.String)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+            <param name="errorType">异常代码</param>
+        </member>
+        <member name="M:HIS.SYSTEM.DatabaseAccessLayer.DALException.#ctor(System.Exception)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="e">异常实例</param>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.DALException.ErrorSQL">
+            <summary>
+            	返回当前Excetpion实例的错误代码(SQL语句)
+            </summary>
+        </member>
+        <member name="P:HIS.SYSTEM.DatabaseAccessLayer.DALException.ErrorSource">
+            <summary>
+            	返回引起抛出PlExcetpion的Exception。当从PlException无法得到足够的错误信息，
+            	可从这里获得引发异常的原始Exception。
+            </summary>
+        </member>
+        <member name="T:HIS.SYSTEM.PubicBaseClasses.Age">
+            <summary>
+            定义年龄结构
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Age.AgeNum">
+            <summary>
+            年龄数字
+            </summary>
+        </member>
+        <member name="F:HIS.SYSTEM.PubicBaseClasses.Age.Unit">
+            <summary>
+            年龄单位
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Age.#ctor">
+            <summary>
+            获取年龄实例
+            </summary>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Age.#ctor(System.Int32,HIS.SYSTEM.PubicBaseClasses.AgeUnit)">
+            <summary>
+            根据年龄与单位获取年龄实例
+            </summary>
+            <param name="age"></param>
+            <param name="ageuint"></param>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Age.op_Implicit(HIS.SYSTEM.PubicBaseClasses.Age)~System.DateTime">
+            <summary>
+            将年龄转换为出生日期
+            </summary>
+            <param name="age">年龄</param>
+            <returns>出生日期</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Age.op_Implicit(System.DateTime)~HIS.SYSTEM.PubicBaseClasses.Age">
+            <summary>
+            将出生日期转换为年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <returns>年龄</returns>
+        </member>
+        <member name="M:HIS.SYSTEM.PubicBaseClasses.Age.GetAgeString(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            根据生日得到年龄字符串（岁月天格式）
+            </summary>
+            <param name="birth">出生日期</param>
+            <param name="nowDate">当前日期</param>
+            <param name="type">0表示最多只显示两个时间单位,1表示最多只显示三个时间单位</param>
+            <returns>年龄字符串</returns>
+        </member>
+    </members>
+</doc>

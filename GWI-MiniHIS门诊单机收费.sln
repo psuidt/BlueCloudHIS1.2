@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS_DJSFManager", "GWI-MiniHIS\HIS_DJSFManager\HIS_DJSFManager.csproj", "{E214F513-F11C-4930-88DC-1D761E7E264D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.DownUpLoadData", "Public-HIS\HIS.DownUpLoadData\HIS.DownUpLoadData.csproj", "{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.LocalDb", "Public-HIS\HIS.LocalDb\HIS.LocalDb.csproj", "{13E4995E-EEEE-47D0-980A-119F927B887D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIS.MSAccess", "Public-HIS\HIS.MSAccess\HIS.MSAccess.csproj", "{589BB126-84AA-4D83-84A4-FDC44A724F9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E214F513-F11C-4930-88DC-1D761E7E264D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E214F513-F11C-4930-88DC-1D761E7E264D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E214F513-F11C-4930-88DC-1D761E7E264D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E214F513-F11C-4930-88DC-1D761E7E264D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7677C4D1-73ED-4546-980A-B5E7D74E2DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E4995E-EEEE-47D0-980A-119F927B887D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E4995E-EEEE-47D0-980A-119F927B887D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E4995E-EEEE-47D0-980A-119F927B887D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E4995E-EEEE-47D0-980A-119F927B887D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589BB126-84AA-4D83-84A4-FDC44A724F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589BB126-84AA-4D83-84A4-FDC44A724F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589BB126-84AA-4D83-84A4-FDC44A724F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589BB126-84AA-4D83-84A4-FDC44A724F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

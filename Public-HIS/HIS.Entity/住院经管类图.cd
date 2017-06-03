@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="HIS.Model.PatientInfo" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UABAQhgEZgIAAAAUgQAAAAKAAqIEgkAMgAISBgUMgAA=</HashCode>
+      <FileName>PatientInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_Account" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADIAAOAAAJAAAAiAAhgAoBAgAAIiAABAgAA0QAAAMAA=</HashCode>
+      <FileName>ZY_Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_ChargeList" Collapsed="true">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhCIAAAABICEKgADICCIEABgAEAAAgAERAQAAAA=</HashCode>
+      <FileName>ZY_ChargeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_CostMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAsEFRCMCB4AAEiWK0gCrAAUPBBpIwAEggAFTAASgBg=</HashCode>
+      <FileName>ZY_CostMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HIS.Model.ZY_CostOrder" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAABggABACAACEAQAABgAAAABgAAAAAAAARAAAAAA=</HashCode>
+      <FileName>ZY_CostOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_PatList" Collapsed="true">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgASFhkIgEQACMSEABjEgAQCAQgCAFA0EIAABiAQAAA=</HashCode>
+      <FileName>ZY_PatList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_PresMaster" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABESAQAACACEAAEAABAAAAAgAAAAAAAARAAQAAA=</HashCode>
+      <FileName>ZY_PresMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_PresOrder_Son" Collapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACBgIAEAYQABCCIAAgAAgEAACEAAUEQIIAAAEABQ=</HashCode>
+      <FileName>ZY_PresOrder_Son.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_PresOrder" Collapsed="true">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAREUVG8gIDwAACXqAlwqgGgGchhApCAAiBAREEQQwc=</HashCode>
+      <FileName>ZY_PresOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_Ticket" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qSADkrgEME4GhzAgAIELyEAAKthgiYgOIHSAhAI0IAg=</HashCode>
+      <FileName>ZY_Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIS.Model.ZY_INVOICE" Collapsed="true">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAQABAAgABAAQBAAABBAIIAIEABwABCAAAEAAA=</HashCode>
+      <FileName>ZY_INVOICE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF256C72-00AE-4D26-A821-698B088251F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.YP_BLL</RootNamespace>
+    <AssemblyName>HIS.YP_BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI_DesReport, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI_DesReport.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Interface, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HIS.System, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountCenter\AccountFactory.cs" />
+    <Compile Include="AccountCenter\AccountQuery.cs" />
+    <Compile Include="AccountCenter\AccountWriter.cs" />
+    <Compile Include="AccountCenter\AdjPriceAccount.cs" />
+    <Compile Include="AccountCenter\CheckAccount.cs" />
+    <Compile Include="AccountCenter\YF_MonthBalance.cs" />
+    <Compile Include="AccountCenter\YK_AccountQuery.cs" />
+    <Compile Include="AccountCenter\YF_AccountQuery.cs" />
+    <Compile Include="AccountCenter\YK_BackStoreAccount.cs" />
+    <Compile Include="AccountCenter\YK_MonthBalance.cs" />
+    <Compile Include="AccountCenter\YK_OutStoreAccount.cs" />
+    <Compile Include="AccountCenter\YF_OutStoreAccount.cs" />
+    <Compile Include="AccountCenter\OutStoreAccount.cs" />
+    <Compile Include="AccountCenter\DispenseAccount.cs" />
+    <Compile Include="AccountCenter\RefundAccount.cs" />
+    <Compile Include="AccountCenter\YK_CheckAccount.cs" />
+    <Compile Include="AccountCenter\YF_CheckAccount.cs" />
+    <Compile Include="AccountCenter\YK_InstoreAccount.cs" />
+    <Compile Include="AccountCenter\YF_InstoreAccount.cs" />
+    <Compile Include="AccountCenter\InStoreAccount.cs" />
+    <Compile Include="BillCenter\AdjpriceProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BillCenter\ApplyInProcessor.cs" />
+    <Compile Include="BillCenter\BillFactory.cs" />
+    <Compile Include="BillCenter\BillProcessor.cs" />
+    <Compile Include="BillCenter\BillQuery.cs" />
+    <Compile Include="BillCenter\CheckProcessor.cs" />
+    <Compile Include="BaseDataCenter\ConfigManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BillCenter\DispenseProcessor.cs" />
+    <Compile Include="BaseDataCenter\DrugBaseDataBll.cs" />
+    <Compile Include="BillCenter\InStoreProcessor.cs" />
+    <Compile Include="AccountCenter\MonthBalanceProcessor.cs" />
+    <Compile Include="BillCenter\MZ_DispProcessor.cs" />
+    <Compile Include="BillCenter\MZ_Refund.cs" />
+    <Compile Include="BillCenter\OutStoreProcessor.cs" />
+    <Compile Include="BillCenter\StockPlanProcessor.cs" />
+    <Compile Include="BillCenter\YF_CheckPorcessor.cs" />
+    <Compile Include="BillCenter\YF_InstoreProcessor.cs" />
+    <Compile Include="BillCenter\YF_OutstoreProcessor.cs" />
+    <Compile Include="BillCenter\YK_BackStoreProcessor.cs" />
+    <Compile Include="BillCenter\YK_CheckPorcessor.cs" />
+    <Compile Include="BillCenter\YK_InstoreProcessor.cs" />
+    <Compile Include="BillCenter\YK_OutstoreProcessor.cs" />
+    <Compile Include="BillCenter\ZY_DispProcessor.cs" />
+    <Compile Include="BillCenter\ZY_DispEconomy.cs" />
+    <Compile Include="BillCenter\ZY_Refund.cs" />
+    <Compile Include="BLLEntity\ConditionParam.cs" />
+    <Compile Include="InterFace_Input\IN_InterFace.cs" />
+    <Compile Include="PrintCenter\AccountOrderPrint.cs" />
+    <Compile Include="PrintCenter\AdjPricePrint.cs" />
+    <Compile Include="PrintCenter\CheckEmptyPrint.cs" />
+    <Compile Include="PrintCenter\CheckPrint.cs" />
+    <Compile Include="PrintCenter\InStorePrint.cs" />
+    <Compile Include="PrintCenter\IOSPrint.cs" />
+    <Compile Include="PrintCenter\MZDispPrint.cs" />
+    <Compile Include="PrintCenter\MZRefundPrint.cs" />
+    <Compile Include="PrintCenter\OutStorePrint.cs" />
+    <Compile Include="PrintCenter\PrintFactory.cs" />
+    <Compile Include="PrintCenter\StockPlanPrint.cs" />
+    <Compile Include="PrintCenter\SupportPrinter.cs" />
+    <Compile Include="PrintCenter\YP_Printer.cs" />
+    <Compile Include="PrintCenter\ZYMultiPrint.cs" />
+    <Compile Include="PrintCenter\ZYRefundPint.cs" />
+    <Compile Include="PrintCenter\ZYSinglePrint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BillCenter\RefundProcessor.cs" />
+    <Compile Include="StoreCenter\BatchProcessor.cs" />
+    <Compile Include="StoreCenter\BatchQuery.cs" />
+    <Compile Include="StoreCenter\StoreFactory.cs" />
+    <Compile Include="StoreCenter\StoreProcessor.cs" />
+    <Compile Include="StoreCenter\StoreQuery.cs" />
+    <Compile Include="InterFace_Output\ZY_Interface.cs" />
+    <Compile Include="StoreCenter\YF_StoreQuery.cs" />
+    <Compile Include="StoreCenter\YK_StoreQuery.cs" />
+    <Compile Include="YP_Dal\YP_DAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.MZ_BLL\HIS.MZ_BLL.csproj">
+      <Project>{024DC798-990B-419E-B1D9-B5C06C679C01}</Project>
+      <Name>HIS.MZ_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.ZY_BLL\HIS.ZY_BLL.csproj">
+      <Project>{19DC990D-6D1D-4F50-83E8-3E4FEDDA6D97}</Project>
+      <Name>HIS.ZY_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

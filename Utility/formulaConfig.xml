@@ -1,0 +1,222 @@
+<?xml version="1.0" standalone="yes"?>
+<formulaConfig>
+  <xs:schema id="formulaConfig" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="formulaConfig" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="formulaConfigSystem.Data.DataRowView">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig02">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="C0" type="xs:string" minOccurs="0" />
+                <xs:element name="C1" type="xs:string" minOccurs="0" />
+                <xs:element name="C2" type="xs:string" minOccurs="0" />
+                <xs:element name="C3" type="xs:string" minOccurs="0" />
+                <xs:element name="C4" type="xs:string" minOccurs="0" />
+                <xs:element name="C5" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig03">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="C0" type="xs:string" minOccurs="0" />
+                <xs:element name="C1" type="xs:string" minOccurs="0" />
+                <xs:element name="C2" type="xs:string" minOccurs="0" />
+                <xs:element name="C3" type="xs:string" minOccurs="0" />
+                <xs:element name="C4" type="xs:string" minOccurs="0" />
+                <xs:element name="C5" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig04">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="C0" type="xs:string" minOccurs="0" />
+                <xs:element name="C1" type="xs:string" minOccurs="0" />
+                <xs:element name="C2" type="xs:string" minOccurs="0" />
+                <xs:element name="C3" type="xs:string" minOccurs="0" />
+                <xs:element name="C4" type="xs:string" minOccurs="0" />
+                <xs:element name="C5" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig05">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="C0" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig06">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="C0" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="formulaConfig01">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <formulaConfig02>
+    <C0>第一步:</C0>
+  </formulaConfig02>
+  <formulaConfig02>
+    <C1>总金额</C1>
+    <C2>起伏线</C2>
+    <C3>诊金</C3>
+    <C4>自付金额</C4>
+    <C5>入档费用</C5>
+  </formulaConfig02>
+  <formulaConfig02>
+    <C1>{总金额=1000}</C1>
+    <C2>100</C2>
+    <C3>{诊金=10}</C3>
+    <C4>{自费金额=200}</C4>
+    <C5>[C1|3][-][C2|3][-][C3|3][-][C4|3]</C5>
+  </formulaConfig02>
+  <formulaConfig02>
+    <C0>第二步:</C0>
+    <C1>入档费用</C1>
+    <C2>报销比率</C2>
+    <C3>农合记账金额</C3>
+  </formulaConfig02>
+  <formulaConfig02>
+    <C1>[C5|3]</C1>
+    <C2>0.7</C2>
+    <C3>结果=[C1|5][*][C2|5]</C3>
+  </formulaConfig02>
+  <formulaConfig03>
+    <C0>第一步:</C0>
+  </formulaConfig03>
+  <formulaConfig03>
+    <C1>总费用</C1>
+    <C2>起伏线</C2>
+    <C3>诊金</C3>
+    <C4>自付金额</C4>
+    <C5>入档费用</C5>
+  </formulaConfig03>
+  <formulaConfig03>
+    <C1>{总金额=1000}</C1>
+    <C2>100</C2>
+    <C3>{诊金=10}</C3>
+    <C4>{自费金额=200}</C4>
+    <C5>[C1|3][-][C2|3][-][C3|3][-][C4|3]</C5>
+  </formulaConfig03>
+  <formulaConfig03>
+    <C0>第二步:</C0>
+    <C1>入档费用</C1>
+    <C2>报销比率</C2>
+    <C3>居民医保记账金额</C3>
+  </formulaConfig03>
+  <formulaConfig03>
+    <C1>[C5|3]</C1>
+    <C2>0.8</C2>
+    <C3>结果=[C1|5][*][C2|5]</C3>
+  </formulaConfig03>
+  <formulaConfig04>
+    <C0>第一步:</C0>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>住院费用</C1>
+    <C2>自费诊金及自费药费</C2>
+    <C3>起付费</C3>
+    <C4>入档费用</C4>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>{总金额=963.8}</C1>
+    <C2>10</C2>
+    <C3>400</C3>
+    <C4>[C1|3][-][C2|3][-][C3|3]</C4>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C0>第二步:</C0>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>入档费用</C1>
+    <C2>自付比例</C2>
+    <C3>基本医疗个人自付</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C4|3]</C1>
+    <C2>0.25</C2>
+    <C3>[C1|6][*][C2|6]</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C0>第三步:</C0>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>基本医疗个人自付</C1>
+    <C2>再报销支付比例</C2>
+    <C3>再报销支付金额</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C3|6]</C1>
+    <C2>0.5</C2>
+    <C3>[C1|9][*][C2|9]</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>基本医疗个人自付</C1>
+    <C2>补充医疗报销比例</C2>
+    <C3>补充报销支付金额</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C3|6]</C1>
+    <C2>0.3</C2>
+    <C3>[C1|11][*][C2|11]</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>基本医疗个人自付</C1>
+    <C2>基金报销比例</C2>
+    <C3>基金报销支付金额</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C3|6]</C1>
+    <C2>0.2</C2>
+    <C3>[C1|13][*][C2|13]</C3>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C0>第四步:</C0>
+    <C1>自费诊金及自费药费</C1>
+    <C2>起付费</C2>
+    <C3>再报销支付金额</C3>
+    <C4>个人自付总额</C4>
+    <C5>记账金额</C5>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C2|3]</C1>
+    <C2>[C3|3]</C2>
+    <C3>[C3|9]</C3>
+    <C4>[C1|15][+][C2|15][+][C3|15]</C4>
+    <C5>结果=[C1|3][-][C4|15]</C5>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C0>第五步:</C0>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>入档费用</C1>
+    <C2>基金比例</C2>
+    <C3>基金报销支付金额</C3>
+    <C4>统筹支付</C4>
+  </formulaConfig04>
+  <formulaConfig04>
+    <C1>[C4|3]</C1>
+    <C2>0.75</C2>
+    <C3>[C3|13]</C3>
+    <C4>[C1|18][*][C2|18][+][C3|18]</C4>
+  </formulaConfig04>
+  <formulaConfig05>
+    <C0>{总金额=1000}</C0>
+  </formulaConfig05>
+  <formulaConfig06>
+    <C0>{总金额=1000}</C0>
+  </formulaConfig06>
+</formulaConfig>

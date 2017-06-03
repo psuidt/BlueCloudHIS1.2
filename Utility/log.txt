@@ -1,0 +1,2038 @@
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+
+
+select itemname,  sum (Tolal_Fee) Tolal_Fee from ( select  ( select itemname from   childtable_1    where int(aa.code)=int (itemtype)) itemname,   Tolal_Fee    from ZY_PresOrder where PATLISTID=188 and CostMasterID=0 and charge_flag=1    ) a     group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string sum_2=_OleDB.Sum(Tolal_Fee,"");
+
+
+select itemname,  sum_2  Tolal_Fee from ( select  ( select itemname from   childtable_1    where int(aa.code)=int (itemtype)) itemname,   Tolal_Fee    from ZY_PresOrder where PATLISTID=188 and CostMasterID=0 and charge_flag=1    ) a     group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string sum_2=_OleDB.Sum(Tolal_Fee,"");
+string _gs_1_3=(aa.code);
+
+
+select itemname,  sum_2  Tolal_Fee from ( select  ( select itemname from   childtable_1    where int _gs_1_3 =int (itemtype)) itemname,   Tolal_Fee    from ZY_PresOrder where PATLISTID=188 and CostMasterID=0 and charge_flag=1    ) a     group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string sum_2=_OleDB.Sum(Tolal_Fee,"");
+string _gs_1_3=(aa.code);
+string _gs_1_4=(itemtype);
+
+
+select itemname,  sum_2  Tolal_Fee from ( select  ( select itemname from   childtable_1    where int _gs_1_3 =int  _gs_1_4 ) itemname,   Tolal_Fee    from ZY_PresOrder where PATLISTID=188 and CostMasterID=0 and charge_flag=1    ) a     group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string sum_2=_OleDB.Sum(Tolal_Fee,"");
+string _gs_1_3=(aa.code);
+string _gs_1_4=(itemtype);
+string strWhere_5=int_gs_1_3 +_OleDB.EuqalTo()+ int_gs_1_4;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_5,
+			itemname);
+
+
+select itemname,  sum_2  Tolal_Fee from ( select   childtable_2 ,   tolal_fee    from zy_presorder where patlistid=188 and costmasterid=0 and charge_flag=1    ) a     group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code ,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string sum_2=_OleDB.Sum(Tolal_Fee,"");
+string _gs_1_3=(aa.code);
+string _gs_1_4=(itemtype);
+string strWhere_5=int_gs_1_3 +_OleDB.EuqalTo()+ int_gs_1_4;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_5,
+			itemname);
+string strWhere_6=Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "188" +_OleDB.And()+ Tables.zy_presorder.COSTMASTERID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1";
+string childtable_3=_OleDB.ChildTable(Tables.ZY_PRESORDER,"a",strWhere_6,
+			childtable_2 ,
+			   tolal_fee);
+
+
+select itemname,  sum_2  Tolal_Fee from  childtable_3      group by a.itemname
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast (  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast (   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string cast_4=_OleDB.DBConvert(childtable_4,"bigint");
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string cast_4=_OleDB.DBConvert(childtable_4,"bigint");
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ cast_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+
+
+ select ITEMTYPE, SUM _gs_1_1    as tolal_fee from sdf   from   ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  CAST(ITEMTYPE as int) 
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+string sum_2=_OleDB.Sum(ITEMTYPE as int,"");
+
+
+ select ITEMTYPE, sum_2  
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+
+
+ select ITEMTYPE, SUM _gs_1_1    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  CAST(ITEMTYPE as int) 
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+string sum_2=_OleDB.Sum(ITEMTYPE as int,"");
+
+
+ select ITEMTYPE, sum_2  
+
+--------------------------------------------
+
+string cast_1=_OleDB.DBConvert(itemtype,"int");
+string sum_2=_OleDB.Sum(TOLAL_FEE,"");
+
+
+ select ITEMTYPE, sum_2    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  cast_1  
+
+--------------------------------------------
+
+string cast_1=_OleDB.DBConvert(itemtype,"int");
+string sum_2=_OleDB.Sum(TOLAL_FEE,"");
+
+
+ select ITEMTYPE, sum_2    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  cast_1  
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+
+
+ select ITEMTYPE, SUM _gs_1_1    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  CAST(ITEMTYPE as int) 
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+string sum_2=_OleDB.Sum(ITEMTYPE as int,"");
+
+
+ select ITEMTYPE, sum_2  
+
+--------------------------------------------
+
+string cast_1=_OleDB.DBConvert(itemtype,"int");
+string sum_2=_OleDB.Sum(TOLAL_FEE,"");
+
+
+ select ITEMTYPE, sum_2    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  cast_1  
+
+--------------------------------------------
+
+string cast_1=_OleDB.DBConvert(itemtype,"int");
+string sum_2=_OleDB.Sum(TOLAL_FEE,"");
+
+
+ select ITEMTYPE, sum_2    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  cast_1  
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+
+
+ select ITEMTYPE, SUM _gs_1_1    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  CAST(itemtype as int) 
+
+--------------------------------------------
+
+string _gs_1_1=(TOLAL_FEE);
+string sum_2=_OleDB.Sum(itemtype as int,"");
+
+
+ select ITEMTYPE, sum_2  
+
+--------------------------------------------
+
+string cast_1=_OleDB.DBConvert(itemtype,"int");
+string sum_2=_OleDB.Sum(TOLAL_FEE,"");
+
+
+ select ITEMTYPE, sum_2    as tolal_fee from  ZY_PRESORDER   where PATLISTID = 154 AND COSTMASTERID = 0 AND CHARGE_FLAG = 1 Group BY ITEMTYPE ORDER BY  cast_1  
+
+--------------------------------------------
+
+
+
+SELECT A.DEPT_ID,A.NAME,A.D_CODE,A.PY_CODE,A.P_DEPT_ID,A.DEPTADDR,A.WB_CODE,A.MZ_FLAG,A.ZY_FLAG,A.JZ_FLAG,C.WARD_ID,C.WARD_NAME,C.DEPT_ID AS WARDDEPT_ID,A.MEMO                             FROM BASE_DEPT_PROPERTY AS A                             LEFT JOIN (BASE_WARDRDEPT AS B INNER JOIN BASE_WARD AS C ON B.ward_id=C.ward_id)                             ON A.dept_id=B.dept_id                             WHERE A.DEPT_ID=" + deptID
+
+--------------------------------------------
+
+string _gs_1_1=(BASE_WARDRDEPT AS B INNER JOIN BASE_WARD AS C ON B.ward_id=C.ward_id);
+
+
+SELECT A.DEPT_ID,A.NAME,A.D_CODE,A.PY_CODE,A.P_DEPT_ID,A.DEPTADDR,A.WB_CODE,A.MZ_FLAG,A.ZY_FLAG,A.JZ_FLAG,C.WARD_ID,C.WARD_NAME,C.DEPT_ID AS WARDDEPT_ID,A.MEMO                             FROM BASE_DEPT_PROPERTY AS A                             LEFT JOIN  _gs_1_1                              ON A.dept_id=B.dept_id                             WHERE A.DEPT_ID=" + deptID
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_dept_property.DELETED +_OleDB.EuqalTo()+ 0 +_OleDB.And()+ Tables.base_dept_property.ISFACT +_OleDB.EuqalTo()+ 1;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"",strWhere_1,
+			*);
+
+
+SELECT A.DEPT_ID,A.NAME AS DEPT_NAME,PY_CODE,WB_CODE,D_CODE,B.DEFAULT  							FROM  childtable_1 as a  							inner join  base_emp_dept_role  as b on a.dept_id=b.dept_id where b.employee_id="+_employeeid+" order by b.default desc
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_user.EMPLOYEE_ID +_OleDB.EuqalTo()+ "+_employeeid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_USER,"",strWhere_1,
+			Tables.base_user.USER_ID);
+
+
+select *  FROM BASE_GROUP_USER WHERE USER_ID IN  childtable_1 
+
+--------------------------------------------
+
+string _gs_1_1=( CODE);
+
+
+SELECT USER_ID,EMPLOYEE_ID,CODE,PASSWORD,LOCK,workID FROM BASE_USER WHERE UCASE  _gs_1_1 ='"+loginCode.Trim().ToUpper()+"'
+
+--------------------------------------------
+
+string _gs_1_1=( CODE);
+string _gs_1_2=();
+
+
+SELECT USER_ID,EMPLOYEE_ID,CODE,PASSWORD,LOCK,workID FROM BASE_USER WHERE UCASE  _gs_1_1 ='"+loginCode.Trim _gs_1_2 .ToUpper _gs_1_2 +"'
+
+--------------------------------------------
+
+string _gs_1_1=( CODE);
+
+
+SELECT USER_ID,EMPLOYEE_ID,CODE,PASSWORD,LOCK,workID FROM BASE_USER WHERE UCASE  _gs_1_1 ='"+loginCode
+
+--------------------------------------------
+
+string _gs_1_1=(*);
+
+
+SELECT COUNT _gs_1_1  FROM BASE_GROUP_USER AS A INNER JOIN BASE_GROUP AS B ON A.GROUP_ID=B.GROUP_ID WHERE B.ADMINISTRATORS=1 AND A.USER_ID="+_userID
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+
+
+SELECT DISTINCT A.module_id,B.name AS module_name FROM base_group_menu AS A  								INNER JOIN base_module AS B ON A.module_id=B.module_id 								INNER JOIN  childtable_1 as c on a.group_id=c.group_id
+
+--------------------------------------------
+
+
+
+SELECT COUNT(*) FROM BASE_GROUP AS A INNER JOIN BASE_GROUP_USER AS B ON A.GROUP_ID=B.GROUP_ID                                 WHERE A.ADMINISTRATORS=1 AND B.USER_ID=" + _userID
+
+--------------------------------------------
+
+string _gs_1_1=(*);
+
+
+SELECT COUNT _gs_1_1  FROM BASE_GROUP AS A INNER JOIN BASE_GROUP_USER AS B ON A.GROUP_ID=B.GROUP_ID                                 WHERE A.ADMINISTRATORS=1 AND B.USER_ID=" + _userID
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+
+
+select * from base_menu                              where menu_id in ( select menu_id from base_group_menu                                                  where group_id in  childtable_1 )
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+string strWhere_2=Tables.base_group_menu.GROUP_ID"in"childtable_1;
+string childtable_2=_OleDB.ChildTable(Tables.BASE_GROUP_MENU,"",strWhere_2,
+			Tables.base_group_menu.MENU_ID);
+
+
+select * from base_menu                              where menu_id in  childtable_2 
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+
+
+select * from base_module where module_id in (                             select distinct module_id  from base_menu                              where menu_id in ( select menu_id from base_group_menu                                                  where group_id in  childtable_1 ) )
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+string strWhere_2=Tables.base_group_menu.GROUP_ID"in"childtable_1;
+string childtable_2=_OleDB.ChildTable(Tables.BASE_GROUP_MENU,"",strWhere_2,
+			Tables.base_group_menu.MENU_ID);
+
+
+select * from base_module where module_id in (                             select distinct module_id  from base_menu                              where menu_id in  childtable_2 )
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_group_user.USER_ID +_OleDB.EuqalTo()+ "+_userid+";
+string childtable_1=_OleDB.ChildTable(Tables.BASE_GROUP_USER,"",strWhere_1,
+			Tables.base_group_user.GROUP_ID);
+string strWhere_2=Tables.base_group_menu.GROUP_ID"in"childtable_1;
+string childtable_2=_OleDB.ChildTable(Tables.BASE_GROUP_MENU,"",strWhere_2,
+			Tables.base_group_menu.MENU_ID);
+string strWhere_3=Tables.base_menu.MENU_ID"in"childtable_2;
+string childtable_3=_OleDB.ChildTable(Tables.BASE_MENU,"",strWhere_3,
+			_OleDB.FiledNameBM(distinct,"module_id"));
+
+
+select * from base_module where module_id in  childtable_3 
+
+--------------------------------------------
+
+string _gs_1_1=(name);
+
+
+select * from base_systemupdate where type=1 and ucase _gs_1_1 ='"+systemUpdateName+"'
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM(AMOUNT)   IS  null  THEN 0   ELSE  SUM(AMOUNT)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM _gs_1_1    IS  null  THEN 0   ELSE  SUM _gs_1_1     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select  casewhen_1 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM _gs_1_4    IS  null  THEN 0   ELSE  SUM _gs_1_4     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select  casewhen_3 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in _gs_1_7   AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string _gs_1_1=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+string strWhere_8=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PRESTYPE"in"_gs_1_7 +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "288";
+string childtable_5=_OleDB.ChildTable(Tables.ZY_PRESORDER,"aa",strWhere_8,
+			Tables.zy_presorder.PRESORDERID,
+			 patid,
+			 patlistid,
+			 presmasterid,
+			 itemid,
+			 itemtype,
+			 prestype     ,
+			 itemname,
+			 standard,
+			 unit,
+			 relationnum,
+			 buy_price,
+			 sell_price,
+			      presamount,
+			 presdeptcode,
+			 presdoccode,
+			 execdeptcode,
+			 chargecode     ,
+			 presdate,
+			 markdate,
+			 costdate,
+			 order_flag,
+			 charge_flag,
+			 drug_flag,
+			      delete_flag,
+			 oldid,
+			 record_flag,
+			 costmasterid,
+			 cost_flag,
+			 passid,
+			 workid,
+			      packunit,
+			 comp_money,
+			_OleDB.FiledNameBM(_gs_1_3,"amount"),
+			_OleDB.FiledNameBM(_gs_1_6,"tolal_fee"));
+
+
+select * from   childtable_5  	where aa.amount>0
+
+--------------------------------------------
+
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM ( AMOUNT )   IS  null  THEN 0   ELSE  SUM(AMOUNT)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  sum_1    IS  null  THEN 0   ELSE  SUM(AMOUNT)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  sum_1    IS  null  THEN 0   ELSE  SUM _gs_1_2     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select  casewhen_1 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM _gs_1_5    IS  null  THEN 0   ELSE  SUM _gs_1_5     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_5    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select  casewhen_3 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_5    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_5    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount, _gs_1_7   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_5    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+string _gs_1_8=('1','2','3');
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount, _gs_1_7   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in _gs_1_8   AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string _gs_1_2=(AMOUNT);
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_2);
+string strWhere_3=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_3,
+			casewhen_1);
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_5    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+string _gs_1_8=('1','2','3');
+string strWhere_9=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PRESTYPE"in"_gs_1_8 +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "288";
+string childtable_5=_OleDB.ChildTable(Tables.ZY_PRESORDER,"aa",strWhere_9,
+			Tables.zy_presorder.PRESORDERID,
+			 patid,
+			 patlistid,
+			 presmasterid,
+			 itemid,
+			 itemtype,
+			 prestype     ,
+			 itemname,
+			 standard,
+			 unit,
+			 relationnum,
+			 buy_price,
+			 sell_price,
+			      presamount,
+			 presdeptcode,
+			 presdoccode,
+			 execdeptcode,
+			 chargecode     ,
+			 presdate,
+			 markdate,
+			 costdate,
+			 order_flag,
+			 charge_flag,
+			 drug_flag,
+			      delete_flag,
+			 oldid,
+			 record_flag,
+			 costmasterid,
+			 cost_flag,
+			 passid,
+			 workid,
+			      packunit,
+			 comp_money,
+			_OleDB.FiledNameBM(_gs_1_4,"amount"),
+			_OleDB.FiledNameBM(_gs_1_7,"tolal_fee"));
+
+
+select * from   childtable_5  	where aa.amount>0
+
+--------------------------------------------
+
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM ( AMOUNT )   IS  null  THEN 0   ELSE  SUM ( AMOUNT )    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  sum_1    IS  null  THEN 0   ELSE  sum_1     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select  casewhen_1 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM(TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select (case   WHEN  SUM _gs_1_4    IS  null  THEN 0   ELSE  SUM _gs_1_4     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +  (select  casewhen_3 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_3   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in _gs_1_7   AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string _gs_1_3=(AMOUNT +   childtable_2 );
+string _gs_1_4=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum _gs_1_4    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_4);
+string strWhere_5=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_5,
+			casewhen_3);
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+string strWhere_8=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PRESTYPE"in"_gs_1_7 +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "288";
+string childtable_5=_OleDB.ChildTable(Tables.ZY_PRESORDER,"aa",strWhere_8,
+			Tables.zy_presorder.PRESORDERID,
+			 patid,
+			 patlistid,
+			 presmasterid,
+			 itemid,
+			 itemtype,
+			 prestype     ,
+			 itemname,
+			 standard,
+			 unit,
+			 relationnum,
+			 buy_price,
+			 sell_price,
+			      presamount,
+			 presdeptcode,
+			 presdoccode,
+			 execdeptcode,
+			 chargecode     ,
+			 presdate,
+			 markdate,
+			 costdate,
+			 order_flag,
+			 charge_flag,
+			 drug_flag,
+			      delete_flag,
+			 oldid,
+			 record_flag,
+			 costmasterid,
+			 cost_flag,
+			 passid,
+			 workid,
+			      packunit,
+			 comp_money,
+			_OleDB.FiledNameBM(_gs_1_3,"amount"),
+			_OleDB.FiledNameBM(_gs_1_6,"tolal_fee"));
+
+
+select * from   childtable_5  	where aa.amount>0
+
+--------------------------------------------
+
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM ( AMOUNT )   IS  null  THEN 0   ELSE  SUM ( AMOUNT )    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  sum_1    IS  null  THEN 0   ELSE  sum_1     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select  casewhen_1 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  sum_3    IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select (case   WHEN  sum_3    IS  null  THEN 0   ELSE  SUM(TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select (case   WHEN  sum_3    IS  null  THEN 0   ELSE  SUM _gs_1_5     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +  (select  casewhen_3 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount, _gs_1_7   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+string _gs_1_8=('1','2','3');
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_4   as amount, _gs_1_7   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in _gs_1_8   AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string _gs_1_4=(AMOUNT +   childtable_2 );
+string _gs_1_5=(TOLAL_FEE);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum _gs_1_5);
+string strWhere_6=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_6,
+			casewhen_3);
+string _gs_1_7=(TOLAL_FEE +   childtable_4 );
+string _gs_1_8=('1','2','3');
+string strWhere_9=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PRESTYPE"in"_gs_1_8 +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "288";
+string childtable_5=_OleDB.ChildTable(Tables.ZY_PRESORDER,"aa",strWhere_9,
+			Tables.zy_presorder.PRESORDERID,
+			 patid,
+			 patlistid,
+			 presmasterid,
+			 itemid,
+			 itemtype,
+			 prestype     ,
+			 itemname,
+			 standard,
+			 unit,
+			 relationnum,
+			 buy_price,
+			 sell_price,
+			      presamount,
+			 presdeptcode,
+			 presdoccode,
+			 execdeptcode,
+			 chargecode     ,
+			 presdate,
+			 markdate,
+			 costdate,
+			 order_flag,
+			 charge_flag,
+			 drug_flag,
+			      delete_flag,
+			 oldid,
+			 record_flag,
+			 costmasterid,
+			 cost_flag,
+			 passid,
+			 workid,
+			      packunit,
+			 comp_money,
+			_OleDB.FiledNameBM(_gs_1_4,"amount"),
+			_OleDB.FiledNameBM(_gs_1_7,"tolal_fee"));
+
+
+select * from   childtable_5  	where aa.amount>0
+
+--------------------------------------------
+
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  SUM ( AMOUNT )   IS  null  THEN 0   ELSE  SUM ( AMOUNT )    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM (TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select (case   WHEN  sum_1    IS  null  THEN 0   ELSE  sum_1     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as amount,    (TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM (TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +  (select  casewhen_1 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM (TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  SUM (TOLAL_FEE)   IS  null  THEN 0   ELSE  SUM (TOLAL_FEE)    end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select (case   WHEN  sum_3    IS  null  THEN 0   ELSE  sum_3     end) from  zy_presorder  as a where   CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND RECORD_FLAG = 1 AND a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  ZY_PRESORDER   where CHARGE_FLAG = 1 AND DRUG_FLAG = 0 AND PRESTYPE IN('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +  (select  casewhen_3 from  zy_presorder  as a where   charge_flag = 1 and drug_flag = 0 and record_flag = 1 and a.oldid = zy_presorder.presorderid )  )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+string strWhere_4=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_4,
+			casewhen_3);
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,   (AMOUNT +   childtable_2 )  as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+string strWhere_4=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_4,
+			casewhen_3);
+string _gs_1_5=(AMOUNT +   childtable_2 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_5   as amount,(TOLAL_FEE +   childtable_4 )  as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+string strWhere_4=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_4,
+			casewhen_3);
+string _gs_1_5=(AMOUNT +   childtable_2 );
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_5   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in('1','2','3')  AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+string strWhere_4=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_4,
+			casewhen_3);
+string _gs_1_5=(AMOUNT +   childtable_2 );
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+
+
+select * from  ( select PRESORDERID, PATID, PATLISTID, PRESMASTERID, ITEMID, ITEMTYPE, PRESTYPE     , ITEMNAME, STANDARD, UNIT, RELATIONNUM, BUY_PRICE, SELL_PRICE,      PRESAMOUNT, PRESDEPTCODE, PRESDOCCODE, EXECDEPTCODE, CHARGECODE     , PRESDATE, MARKDATE, COSTDATE, ORDER_FLAG, CHARGE_FLAG, DRUG_FLAG,      DELETE_FLAG, OLDID, RECORD_FLAG, COSTMASTERID, COST_FLAG, PASSID, WORKID,      PACKUNIT, COMP_MONEY,    _gs_1_5   as amount, _gs_1_6   as tolal_fee      from  zy_presorder   where charge_flag = 1 and drug_flag = 0 and prestype in _gs_1_7   AND RECORD_FLAG = 0   AND PATLISTID = 288  ) aa 	where aa.AMOUNT>0
+
+--------------------------------------------
+
+string sum_1=_OleDB.Sum(AMOUNT,"");
+string casewhen_1=_OleDB.CASEWhen("", _OleDB.When()+   sum_1    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_1);
+string strWhere_2=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_2,
+			casewhen_1);
+string sum_3=_OleDB.Sum(TOLAL_FEE,"");
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+   sum_3    is  null  + _OleDB.Then()+  0   ,_OleDB.Else()+  sum_3);
+string strWhere_4=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ "a.oldid" +_OleDB.EuqalTo()+ "zy_presorder.presorderid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PRESORDER,"",strWhere_4,
+			casewhen_3);
+string _gs_1_5=(AMOUNT +   childtable_2 );
+string _gs_1_6=(TOLAL_FEE +   childtable_4 );
+string _gs_1_7=('1','2','3');
+string strWhere_8=Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1" +_OleDB.And()+ Tables.zy_presorder.DRUG_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PRESTYPE"in"_gs_1_7 +_OleDB.And()+ Tables.zy_presorder.RECORD_FLAG +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.PATLISTID +_OleDB.EuqalTo()+ "288";
+string childtable_5=_OleDB.ChildTable(Tables.ZY_PRESORDER,"aa",strWhere_8,
+			Tables.zy_presorder.PRESORDERID,
+			 patid,
+			 patlistid,
+			 presmasterid,
+			 itemid,
+			 itemtype,
+			 prestype     ,
+			 itemname,
+			 standard,
+			 unit,
+			 relationnum,
+			 buy_price,
+			 sell_price,
+			      presamount,
+			 presdeptcode,
+			 presdoccode,
+			 execdeptcode,
+			 chargecode     ,
+			 presdate,
+			 markdate,
+			 costdate,
+			 order_flag,
+			 charge_flag,
+			 drug_flag,
+			      delete_flag,
+			 oldid,
+			 record_flag,
+			 costmasterid,
+			 cost_flag,
+			 passid,
+			 workid,
+			      packunit,
+			 comp_money,
+			_OleDB.FiledNameBM(_gs_1_5,"amount"),
+			_OleDB.FiledNameBM(_gs_1_6,"tolal_fee"));
+
+
+select * from   childtable_5  	where aa.amount>0
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+
+
+select  childtable_1  ,sum(total_fee) total_fee   from DB2INST2.ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in (111) )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from DB2INST2.ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in (111) )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+string _gs_1_3=(111);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from DB2INST2.ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in  _gs_1_3  )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+string _gs_1_3=(111);
+string strWhere_4=Tables.zy_costmaster.ACCOUNTID"in"_gs_1_3;
+string childtable_2=_OleDB.ChildTable(Tables.ZY_COSTMASTER,"group",strWhere_4,
+			Tables.zy_costmaster.COSTMASTERID);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from DB2INST2.ZY_COSTORDER     where costid in  childtable_2  by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+
+
+select  childtable_1  ,sum(total_fee) total_fee   from ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in (111) )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in (111) )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+string _gs_1_3=(111);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from ZY_COSTORDER     where costid in (select costmasterid from zy_costmaster where ACCOUNTID in  _gs_1_3  )     group by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=Tables.base_stat_item.CODE +_OleDB.EuqalTo()+ bigitemcode;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"itemname",strWhere_1,
+			Tables.base_stat_item.ITEM_NAME);
+string _gs_1_2=(total_fee);
+string _gs_1_3=(111);
+string strWhere_4=Tables.zy_costmaster.ACCOUNTID"in"_gs_1_3;
+string childtable_2=_OleDB.ChildTable(Tables.ZY_COSTMASTER,"group",strWhere_4,
+			Tables.zy_costmaster.COSTMASTERID);
+
+
+select  childtable_1  ,sum _gs_1_2  total_fee   from ZY_COSTORDER     where costid in  childtable_2  by bigitemcode
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.code,"itemcode"));
+
+
+ select code,sum(tolal_fee) tolal_fee from   (  select    (select  itemcode  from   childtable_1   where   aa.code = itemtype ) code ,  tolal_fee   from  zy_presorder    where   costmasterid = 0 and charge_flag = 1  ) a group by a.code
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.code,"itemcode"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"code",strWhere_2,
+			itemcode);
+
+
+ select code,sum(tolal_fee) tolal_fee from   (  select     childtable_2  ,  tolal_fee   from  zy_presorder    where   costmasterid = 0 and charge_flag = 1  ) a group by a.code
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.code,"itemcode"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"code",strWhere_2,
+			itemcode);
+string strWhere_3=Tables.zy_presorder.COSTMASTERID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1";
+string childtable_3=_OleDB.ChildTable(Tables.ZY_PRESORDER,"a",strWhere_3,
+			childtable_2  ,
+			  tolal_fee);
+
+
+ select code,sum(tolal_fee) tolal_fee from    childtable_3  group by a.code
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.code,"itemcode"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"code",strWhere_2,
+			itemcode);
+string strWhere_3=Tables.zy_presorder.COSTMASTERID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_presorder.CHARGE_FLAG +_OleDB.EuqalTo()+ "1";
+string childtable_3=_OleDB.ChildTable(Tables.ZY_PRESORDER,"a",strWhere_3,
+			childtable_2  ,
+			  tolal_fee);
+string _gs_1_4=(tolal_fee);
+
+
+ select code,sum _gs_1_4  tolal_fee from    childtable_3  group by a.code
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(  (select  casewhen_3 from zy_patlist where patlistid=a.patlistid)  as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast(   childtable_4 as bigint))   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 ,(SELECT NAME FROM BASE_DEPT_PROPERTY  WHERE DEPT_ID= cast _gs_1_4 )   curedeptcode    from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string strWhere_1=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ a.patid;
+string childtable_1=_OleDB.ChildTable(Tables.PATIENTINFO,"cureno",strWhere_1,
+			Tables.patientinfo.CURENO);
+string strWhere_2=Tables.patientinfo.PATID +_OleDB.EuqalTo()+ "a.patid";
+string childtable_2=_OleDB.ChildTable(Tables.PATIENTINFO,"patname",strWhere_2,
+			Tables.patientinfo.PATNAME);
+string casewhen_3=_OleDB.CASEWhen("", _OleDB.When()+  curedeptcode='' + _OleDB.Then()+  '0' ,_OleDB.Else()+ curedeptcode);
+string strWhere_3=Tables.zy_patlist.PATLISTID +_OleDB.EuqalTo()+ "a.patlistid";
+string childtable_4=_OleDB.ChildTable(Tables.ZY_PATLIST,"",strWhere_3,
+			casewhen_3);
+string _gs_1_4=(   childtable_4 as bigint);
+string strWhere_5=Tables.base_dept_property.DEPT_ID +_OleDB.EuqalTo()+ "cast"_gs_1_4;
+string childtable_5=_OleDB.ChildTable(Tables.BASE_DEPT_PROPERTY,"curedeptcode",strWhere_5,
+			Tables.base_dept_property.NAME);
+
+
+select TICKETNUM BILLNO,COSTDATE  COSTDATE , REALITY_FEE TOTAL_FEE,   childtable_1  , childtable_2 , childtable_5     from  zy_costmaster a where accountid=0 and chargecode='8888' and reality_fee<0 and ntype<>1
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  'í?·?'   + _OleDB.Then()+  '?y3￡');
+
+
+select typename, SUM (TOTAL_FEE) tol_fee, Count (distinct BILLNO) count from ( select  BILLNO,  casewhen_1 ,  total_fee,  accountid    from zy_chargelist  where  workid=81 and accountid = 0 and chargecode = '10467'  ) a group by typename;
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  'í?·?'   + _OleDB.Then()+  '?y3￡');
+string strWhere_1="workid" +_OleDB.EuqalTo()+ "81" +_OleDB.And()+ Tables.zy_chargelist.ACCOUNTID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_chargelist.CHARGECODE +_OleDB.EuqalTo()+ "'10467'";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_CHARGELIST,"a",strWhere_1,
+			Tables.zy_chargelist.BILLNO,
+			  casewhen_1 ,
+			  total_fee,
+			  accountid);
+
+
+select typename, SUM (TOTAL_FEE) tol_fee, Count (distinct BILLNO) count from  childtable_2  group by typename;
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  'í?·?'   + _OleDB.Then()+  '?y3￡');
+string strWhere_1="workid" +_OleDB.EuqalTo()+ "81" +_OleDB.And()+ Tables.zy_chargelist.ACCOUNTID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_chargelist.CHARGECODE +_OleDB.EuqalTo()+ "'10467'";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_CHARGELIST,"a",strWhere_1,
+			Tables.zy_chargelist.BILLNO,
+			  casewhen_1 ,
+			  total_fee,
+			  accountid);
+string sum_2=_OleDB.Sum(TOTAL_FEE,"");
+string count_3=_OleDB.Count(distinct BILLNO,"");
+
+
+select typename, sum_2  tol_fee, count_3  count from  childtable_2  group by typename;
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  '退费' + _OleDB.Then()+  '正常');
+
+
+select typename, SUM (TOTAL_FEE) tol_fee, Count (distinct BILLNO) count from ( select  BILLNO,  casewhen_1 ,  total_fee,  accountid    from zy_chargelist  where  workid=81 and accountid = 0 and chargecode = '10467'  ) a group by typename;
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  '退费' + _OleDB.Then()+  '正常');
+string strWhere_1="workid" +_OleDB.EuqalTo()+ "81" +_OleDB.And()+ Tables.zy_chargelist.ACCOUNTID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_chargelist.CHARGECODE +_OleDB.EuqalTo()+ "'10467'";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_CHARGELIST,"a",strWhere_1,
+			Tables.zy_chargelist.BILLNO,
+			  casewhen_1 ,
+			  total_fee,
+			  accountid);
+
+
+select typename, SUM (TOTAL_FEE) tol_fee, Count (distinct BILLNO) count from  childtable_2  group by typename;
+
+--------------------------------------------
+
+string casewhen_1=_OleDB.CASEWhen("typename", _OleDB.When()+ record_flag  + _OleDB.Then()+  2 , _OleDB.When()+  '退费' + _OleDB.Then()+  '正常');
+string strWhere_1="workid" +_OleDB.EuqalTo()+ "81" +_OleDB.And()+ Tables.zy_chargelist.ACCOUNTID +_OleDB.EuqalTo()+ "0" +_OleDB.And()+ Tables.zy_chargelist.CHARGECODE +_OleDB.EuqalTo()+ "'10467'";
+string childtable_2=_OleDB.ChildTable(Tables.ZY_CHARGELIST,"a",strWhere_1,
+			Tables.zy_chargelist.BILLNO,
+			  casewhen_1 ,
+			  total_fee,
+			  accountid);
+string sum_2=_OleDB.Sum(TOTAL_FEE,"");
+string count_3=_OleDB.Count(distinct BILLNO,"");
+
+
+select typename, sum_2  tol_fee, count_3  count from  childtable_2  group by typename;
+
+--------------------------------------------
+
+
+
+select EXECDEPTCODE,CHARGECODE from  zy_presorder where     date (costdate) >= '2009-01-01' and  date (costdate) <= '2009-07-01' and charge_flag = 1 group by EXECDEPTCODE,CHARGECODE;
+
+--------------------------------------------
+
+string date_1_1=_OleDB.Date(costdate);
+
+
+select EXECDEPTCODE,CHARGECODE from  zy_presorder where     date_1_1  >= '2009-01-01' and  date_1_1  <= '2009-07-01' and charge_flag = 1 group by EXECDEPTCODE,CHARGECODE;
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+
+
+ select currdeptcode,CHARGECODE,itemname, SUM (TOTAL_FEE) TOLAL_FEE    from  (   select    ZY_PRESORDER.EXECDEPTCODE currdeptcode ,   ZY_PRESORDER.CHARGECODE,    ( select itemname from   childtable_1   where    aa.code =  zy_presorder.itemtype   ) itemname    ,zy_presorder.tolal_fee as total_fee    from  zy_account , zy_costmaster , zy_presorder  where    date(ACCOUNTDATE) >= '2009-01-01' AND  DATE (ACCOUNTDATE) <= '2009-07-07' AND ZY_ACCOUNT.ACCOUNTID = zy_costmaster.accountid AND ZY_COSTMASTER.COSTMASTERID = ZY_PRESORDER.COSTMASTERID         ) D  group by d.currdeptcode,d.CHARGECODE,d.itemname  
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ zy_presorder.itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_2,
+			itemname);
+
+
+ select currdeptcode,CHARGECODE,itemname, SUM (TOTAL_FEE) TOLAL_FEE    from  (   select    ZY_PRESORDER.EXECDEPTCODE currdeptcode ,   ZY_PRESORDER.CHARGECODE,     childtable_2     ,zy_presorder.tolal_fee as total_fee    from  zy_account , zy_costmaster , zy_presorder  where    date(ACCOUNTDATE) >= '2009-01-01' AND  DATE (ACCOUNTDATE) <= '2009-07-07' AND ZY_ACCOUNT.ACCOUNTID = zy_costmaster.accountid AND ZY_COSTMASTER.COSTMASTERID = ZY_PRESORDER.COSTMASTERID         ) D  group by d.currdeptcode,d.CHARGECODE,d.itemname  
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ zy_presorder.itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_2,
+			itemname);
+string sum_3=_OleDB.Sum(TOTAL_FEE,"");
+string date_1_4=_OleDB.Date(ACCOUNTDATE);
+
+
+ select currdeptcode,CHARGECODE,itemname, sum_3  TOLAL_FEE    from  (   select    ZY_PRESORDER.EXECDEPTCODE currdeptcode ,   ZY_PRESORDER.CHARGECODE,     childtable_2     ,zy_presorder.tolal_fee as total_fee    from  zy_account , zy_costmaster , zy_presorder  where    date(ACCOUNTDATE) >= '2009-01-01' AND  date_1_4  <= '2009-07-07' AND ZY_ACCOUNT.ACCOUNTID = zy_costmaster.accountid AND ZY_COSTMASTER.COSTMASTERID = ZY_PRESORDER.COSTMASTERID         ) D  group by d.currdeptcode,d.CHARGECODE,d.itemname  
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ zy_presorder.itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_2,
+			itemname);
+string sum_3=_OleDB.Sum(TOTAL_FEE,"");
+string date_1_4=_OleDB.Date(ACCOUNTDATE);
+string _gs_1_5=(ACCOUNTDATE);
+
+
+ select currdeptcode,CHARGECODE,itemname, sum_3  TOLAL_FEE    from  (   select    ZY_PRESORDER.EXECDEPTCODE currdeptcode ,   ZY_PRESORDER.CHARGECODE,     childtable_2     ,zy_presorder.tolal_fee as total_fee    from  zy_account , zy_costmaster , zy_presorder  where    date _gs_1_5  >= '2009-01-01' AND  date_1_4  <= '2009-07-07' AND ZY_ACCOUNT.ACCOUNTID = zy_costmaster.accountid AND ZY_COSTMASTER.COSTMASTERID = ZY_PRESORDER.COSTMASTERID         ) D  group by d.currdeptcode,d.CHARGECODE,d.itemname  
+
+--------------------------------------------
+
+string strWhere_1=a.zyfp_code +_OleDB.EuqalTo()+ b.code;
+string childtable_1=_OleDB.ChildTable(Tables.BASE_STAT_ITEM,"aa",strWhere_1,
+			a.code,
+			_OleDB.FiledNameBM(b.item_name,"itemname"));
+string strWhere_2=aa.code +_OleDB.EuqalTo()+ zy_presorder.itemtype;
+string childtable_2=_OleDB.ChildTable(childtable_1,"itemname",strWhere_2,
+			itemname);
+string sum_3=_OleDB.Sum(TOTAL_FEE,"");
+string date_1_4=_OleDB.Date(ACCOUNTDATE);
+string _gs_1_5=(ACCOUNTDATE);
+string strWhere_6="date"_gs_1_5 +_OleDB.GreaterThanAndEqualTo()+ "'2009-01-01'" +_OleDB.And()+ date_1_4 +_OleDB.LessThanAndEqualTo()+ "'2009-07-07'" +_OleDB.And()+ "zy_account.accountid" +_OleDB.EuqalTo()+ "zy_costmaster.accountid" +_OleDB.And()+ "zy_costmaster.costmasterid" +_OleDB.EuqalTo()+ "zy_presorder.costmasterid";
+string childtable_3=_OleDB.ChildTable(Tables.ZY_ACCOUNT,"d",strWhere_6,
+			_OleDB.FiledNameBM(zy_presorder.execdeptcode,"currdeptcode"),
+			   zy_presorder.chargecode,
+			     childtable_2     ,
+			_OleDB.FiledNameBM(zy_presorder.tolal_fee,"total_fee"));
+
+
+ select currdeptcode,CHARGECODE,itemname, sum_3  TOLAL_FEE    from   childtable_3   group by d.currdeptcode,d.chargecode,d.itemname
+
+--------------------------------------------
+

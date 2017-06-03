@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0328ED7-13B4-49A7-8093-710E1ACAD80E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_PublicManager</RootNamespace>
+    <AssemblyName>HIS_PublicManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Utility\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GWI.HIS.Windows.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWI.HIS.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GWMHIS, Version=1.0.3448.33686, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\GWMHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\HIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=2.0.0.922, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utility\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CostCalculate\formulaManager\formulaManager.cs" />
+    <Compile Include="CostCalculate\formulaManager\formulaValue.cs" />
+    <Compile Include="CostCalculate\FrmCostCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculate\FrmCostCalculate.Designer.cs">
+      <DependentUpon>FrmCostCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculate\FrmCostFavorable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculate\FrmCostFavorable.Designer.cs">
+      <DependentUpon>FrmCostFavorable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatType_Favorable\FrmFavorable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatType_Favorable\FrmFavorable.Designer.cs">
+      <DependentUpon>FrmFavorable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaManager.Designer.cs">
+      <DependentUpon>FrmformulaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaName.Designer.cs">
+      <DependentUpon>FrmformulaName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaVar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculate\FrmformulaVar.Designer.cs">
+      <DependentUpon>FrmformulaVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatType_Favorable\FrmPatientType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatType_Favorable\FrmPatientType.Designer.cs">
+      <DependentUpon>FrmPatientType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrinterSet\FrmReportPrinterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrinterSet\FrmReportPrinterSet.Designer.cs">
+      <DependentUpon>FrmReportPrinterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\DBClient\FrmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\DBClient\FrmClient.Designer.cs">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PrinterSet\PublicPrintSet.cs" />
+    <Compile Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet.cs">
+      <DependentUpon>BackUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet.Designer.cs">
+      <DependentUpon>BackUpDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BackUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateBackupDataSQL\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateBackupDataSQL\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateDalSQL\DemoClass.cs" />
+    <Compile Include="SystemTool\GenerateDalSQL\Compiler.cs" />
+    <Compile Include="SystemTool\GenerateDalSQL\FrmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateDalSQL\FrmData.Designer.cs">
+      <DependentUpon>FrmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateDalSQL\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateDalSQL\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateDalSQL\HIS.BLL.Table&amp;View.cs" />
+    <Compile Include="SystemTool\GenerateDalSQL\SqlEngine.cs" />
+    <Compile Include="SystemTool\GenerateEntityXML\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateEntityXML\DataSet1.Designer.cs">
+      <DependentUpon>DataSet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateEntityXML\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateEntityXML\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateEntityXML\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateWorkers\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateWorkers\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\GenerateWorkers\FrmWorkInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\GenerateWorkers\FrmWorkInfo.Designer.cs">
+      <DependentUpon>FrmWorkInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\RegisterCode\Dsdata.cs">
+      <DependentUpon>Dsdata.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SystemTool\RegisterCode\Dsdata.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsdata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\RegisterCode\FrmRegisterCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\RegisterCode\FrmRegisterCode.Designer.cs">
+      <DependentUpon>FrmRegisterCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTool\ServerIniConfig\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CostCalculate\FrmCostCalculate.resx">
+      <DependentUpon>FrmCostCalculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculate\FrmCostFavorable.resx">
+      <DependentUpon>FrmCostFavorable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatType_Favorable\FrmFavorable.resx">
+      <DependentUpon>FrmFavorable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculate\FrmformulaManager.resx">
+      <DependentUpon>FrmformulaManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculate\FrmformulaName.resx">
+      <DependentUpon>FrmformulaName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculate\FrmformulaVar.resx">
+      <DependentUpon>FrmformulaVar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatType_Favorable\FrmPatientType.resx">
+      <DependentUpon>FrmPatientType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrinterSet\FrmReportPrinterSet.resx">
+      <DependentUpon>FrmReportPrinterSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\DBClient\FrmClient.resx">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateBackupDataSQL\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateDalSQL\FrmData.resx">
+      <DependentUpon>FrmData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateDalSQL\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateEntityXML\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateWorkers\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\GenerateWorkers\FrmWorkInfo.resx">
+      <DependentUpon>FrmWorkInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\RegisterCode\FrmRegisterCode.resx">
+      <DependentUpon>FrmRegisterCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\ServerIniConfig\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Public-HIS\HIS.Public_BLL\HIS.Public_BLL.csproj">
+      <Project>{315F2CF2-5EAB-4D1C-B224-06C25FA2556D}</Project>
+      <Name>HIS.Public_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemTool\GenerateWorkers\MySharePoints.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet.xsc">
+      <DependentUpon>BackUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BackUpDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemTool\GenerateBackupDataSQL\BackUpDataSet.xss">
+      <DependentUpon>BackUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemTool\GenerateEntityXML\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SystemTool\GenerateEntityXML\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemTool\GenerateEntityXML\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SystemTool\RegisterCode\Dsdata.xsc">
+      <DependentUpon>Dsdata.xsd</DependentUpon>
+    </None>
+    <None Include="SystemTool\RegisterCode\Dsdata.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsdata.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemTool\RegisterCode\Dsdata.xss">
+      <DependentUpon>Dsdata.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
